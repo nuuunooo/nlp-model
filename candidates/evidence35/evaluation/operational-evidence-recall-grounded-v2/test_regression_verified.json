@@ -1,0 +1,7527 @@
+{
+  "purpose": "previously_inspected_development_regression",
+  "identity": {
+    "scripts/recover_explicit_breaches.py": "fff40e18c65afcc7468ff22caba70c37a7c1d52fd4402485f946d44f8c315e02",
+    "scripts/observed_breach_recovery.py": "b8574ecfd230d83b87a01e5b9a75bb092b2b8f1ca06b1d074d106d74c67fe06d"
+  },
+  "source_artifacts_sha256": {
+    "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+    "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+    "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+    "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+    "evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+  },
+  "categories": [
+    "Public Order",
+    "Stall Construction",
+    "Stall Occupancy",
+    "Traffic",
+    "WeightMeasures"
+  ],
+  "candidate_pairs": 0,
+  "prior_metrics": {
+    "true_positives": 555,
+    "false_positives": 8,
+    "false_negatives": 261,
+    "precision": 0.9857904085257548,
+    "recall": 0.6801470588235294,
+    "multi_rows": 60,
+    "multi_exact": 34,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "metrics": {
+    "true_positives": 555,
+    "false_positives": 8,
+    "false_negatives": 261,
+    "precision": 0.9857904085257548,
+    "recall": 0.6801470588235294,
+    "multi_rows": 60,
+    "multi_exact": 34,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "decisions": [
+    {
+      "scenario_id": "SYN-01-TEST-01",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-01",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-01",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-02",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-02",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-02",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01-TEST-03",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-03",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-03",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-04",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-04",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-04",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-05",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-05",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-05",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-06",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-06",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-06",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01-TEST-07",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-07",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-07",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-08",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-08",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-TEST-08",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-01",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-01",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-01",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-02",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-02",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-02",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-03",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-03",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-03",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-04",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-04",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-04",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-05",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-05",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-05",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-06",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-TEST-06",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-TEST-06",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-TEST-07",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-TEST-07",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-TEST-07",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-TEST-08",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-08",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-TEST-08",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-01",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-01",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-01",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-02",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-02",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-02",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-03",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-03",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-03",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-04",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-04",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-04",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-05",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-05",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-05",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-06",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-06",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-06",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-TEST-07",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-07",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-07",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-08",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-08",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-TEST-08",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-01",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-01",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-01",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-02",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-02",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-02",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-03",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-03",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-03",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-04",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-04",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-04",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-05",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-05",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-05",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-06",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-06",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-06",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-07",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-07",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-07",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-08",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-08",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-TEST-08",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-02",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-TEST-02",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-02",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-03",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-TEST-03",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-03",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-04",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-TEST-04",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-04",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-05",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-05",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-05",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-06",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-TEST-06",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-06",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-07",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-07",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-07",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-08",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-08",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-TEST-08",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-01",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-01",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-01",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-02",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-02",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-02",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-03",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-03",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-03",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-04",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-04",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-04",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-TEST-05",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-05",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-05",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-06",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-06",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-06",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-07",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-07",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-07",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-08",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-08",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-TEST-08",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-01",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-01",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-01",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-02",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-02",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-02",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-07-TEST-03",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-03",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-03",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-04",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-04",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-04",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-05",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-05",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-05",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-06",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-06",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-06",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-07",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-07",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-07",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-08",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-08",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-TEST-08",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-01",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-01",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-01",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-02",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-02",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-02",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-03",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-03",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-03",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-04",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-04",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-04",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-05",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-TEST-05",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-05",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-TEST-06",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-06",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-TEST-06",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-TEST-07",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-TEST-07",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-TEST-07",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-TEST-08",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-08",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-TEST-08",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-01",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-01",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-01",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-02",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-02",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-TEST-02",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-03",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-03",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-03",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-04",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-04",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-04",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-05",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-05",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-05",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-06",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-06",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-06",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-07",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-TEST-07",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-07",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-08",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-TEST-08",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-TEST-08",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-01",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-01",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-01",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-02",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-02",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-02",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-03",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-03",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-03",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-04",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-04",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-04",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-05",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-05",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-05",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-06",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-TEST-06",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-TEST-06",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-TEST-07",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-07",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-TEST-07",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-TEST-08",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-TEST-08",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-TEST-08",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-01",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-01",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-01",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-TEST-02",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-02",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-02",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-TEST-03",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-03",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-03",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-04",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-04",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-04",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-TEST-05",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-05",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-05",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-TEST-06",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-06",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-06",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-TEST-07",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-07",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-07",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-TEST-08",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-08",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-TEST-08",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-12-TEST-01",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-01",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-01",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-02",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-02",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-02",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-03",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-03",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-03",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-04",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-04",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-04",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-05",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-05",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-05",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-06",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-06",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-06",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-07",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-07",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-07",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-08",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-08",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-TEST-08",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-01",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-01",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-01",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-02",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-02",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-02",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-03",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-03",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-03",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-04",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-04",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-04",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-05",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-05",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-05",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-06",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-06",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-06",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-07",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-07",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-07",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-TEST-08",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-08",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-TEST-08",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-TEST-01",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-01",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-01",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-02",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-02",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-02",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-03",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-03",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-03",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-04",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-04",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-04",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-05",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-05",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-05",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-06",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-06",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-06",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-07",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-07",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-07",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-08",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-08",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-TEST-08",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-01",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-01",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-01",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-02",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-02",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-02",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-03",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-03",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-03",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-04",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-04",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-04",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-05",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-05",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-05",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-06",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-06",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-06",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-07",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-07",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-07",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-TEST-08",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-08",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-TEST-08",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-01",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-01",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-01",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-02",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-02",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-02",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-03",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-03",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-03",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-04",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-04",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-04",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-05",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-05",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-05",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-06",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-06",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-06",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-07",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-07",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-07",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-08",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-TEST-08",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-TEST-08",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-01",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-01",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-01",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-02",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-02",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-02",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-03",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-03",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-03",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-04",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-04",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-04",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-05",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-05",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-05",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-06",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-06",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-TEST-06",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-TEST-07",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-TEST-07",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-TEST-07",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-08",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-TEST-08",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-TEST-08",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-01",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-01",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-01",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-02",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-02",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-02",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-03",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-03",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-03",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-04",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-04",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-04",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-05",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-05",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-05",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-06",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-06",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-06",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-07",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-07",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-TEST-07",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-08",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-08",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-TEST-08",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-01",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-01",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-01",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-02",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-02",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-02",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-03",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-03",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-03",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-TEST-04",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-04",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-04",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-05",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-05",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-05",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-06",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-06",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-06",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-07",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-07",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-07",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-08",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-08",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-TEST-08",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-01",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-TEST-01",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-01",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-TEST-02",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-TEST-02",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-TEST-02",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-TEST-03",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-03",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-TEST-03",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-TEST-04",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-04",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-04",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-05",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-05",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-05",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-06",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-06",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-06",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-07",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-07",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-07",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-08",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-TEST-08",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-TEST-08",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-01",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-01",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-01",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-02",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-02",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-02",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-03",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-03",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-03",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-04",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-04",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-04",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-05",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-05",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-05",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-06",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-06",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-06",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-07",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-TEST-07",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-07",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-08",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-08",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-TEST-08",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-01",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-01",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-01",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-02",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-02",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-02",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-03",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-03",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-03",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-04",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-04",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-TEST-04",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-05",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-05",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-05",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-06",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-06",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-06",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-07",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-07",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-07",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-08",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-08",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-TEST-08",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-01",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-01",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-01",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-02",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-02",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-02",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-03",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-03",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-03",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-04",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-04",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-04",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-23-TEST-05",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-05",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-05",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-06",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-06",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-06",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-07",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-07",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-07",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-08",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-08",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-TEST-08",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-01",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-01",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-01",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-TEST-02",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-02",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-02",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-TEST-03",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-03",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-03",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-TEST-04",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-04",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-04",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-TEST-05",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-TEST-05",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-05",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-06",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-TEST-06",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-06",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-07",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-07",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-07",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-TEST-08",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-TEST-08",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-TEST-08",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-TEST-01",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-01",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-TEST-01",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-TEST-02",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-02",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-02",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-TEST-03",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-03",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-03",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-TEST-04",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-04",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-TEST-04",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-TEST-05",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-05",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-05",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-06",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-06",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-06",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-07",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-07",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-07",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-08",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-08",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-TEST-08",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-01",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-TEST-01",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-TEST-01",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-TEST-02",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-02",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-02",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-03",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-03",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-03",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-04",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-04",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-04",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-05",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-TEST-05",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-TEST-05",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-TEST-06",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-06",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-TEST-06",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-TEST-07",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-07",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-07",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-08",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-08",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-TEST-08",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-TEST-01",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-01",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-TEST-01",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-02",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-02",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-02",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-03",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-03",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-03",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-04",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-TEST-04",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-04",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-05",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-05",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-05",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-06",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-06",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-06",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-07",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-07",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-07",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-08",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-TEST-08",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-TEST-08",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-01",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-01",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-01",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-02",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-02",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-02",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-03",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-03",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-03",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-04",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-04",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-04",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-05",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-05",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-05",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-06",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-06",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-06",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-07",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-07",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-07",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-08",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-TEST-08",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-TEST-08",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-TEST-01",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-01",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-01",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-02",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-02",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-02",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-03",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-03",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-03",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-04",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-04",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-04",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-05",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-05",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-05",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-06",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-06",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-06",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-07",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-07",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-07",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-08",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-08",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-TEST-08",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x02-TEST-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x02-TEST-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x02-TEST-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x03-TEST-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x03-TEST-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x03-TEST-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02x26-TEST-01",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02x26-TEST-01",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02x26-TEST-01",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x04-TEST-01",
+      "expected_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x04-TEST-01",
+      "expected_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x04-TEST-01",
+      "expected_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x15-TEST-01",
+      "expected_codes": [
+        "Sanitation",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x15-TEST-01",
+      "expected_codes": [
+        "Sanitation",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x15-TEST-01",
+      "expected_codes": [
+        "Sanitation",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x24-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x24-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x24-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05x09-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05x09-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x09-TEST-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06x10-TEST-01",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06x10-TEST-01",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06x10-TEST-01",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07x15-TEST-01",
+      "expected_codes": [
+        "Stall Management",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07x15-TEST-01",
+      "expected_codes": [
+        "Stall Management",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07x15-TEST-01",
+      "expected_codes": [
+        "Stall Management",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08x22-TEST-01",
+      "expected_codes": [
+        "Stall Construction",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers",
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08x22-TEST-01",
+      "expected_codes": [
+        "Stall Construction",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08x22-TEST-01",
+      "expected_codes": [
+        "Stall Construction",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11x18-TEST-01",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11x18-TEST-01",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11x18-TEST-01",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x13-TEST-01",
+      "expected_codes": [
+        "Public Order",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x13-TEST-01",
+      "expected_codes": [
+        "Public Order",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x13-TEST-01",
+      "expected_codes": [
+        "Public Order",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x28-TEST-01",
+      "expected_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x28-TEST-01",
+      "expected_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x28-TEST-01",
+      "expected_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14x26-TEST-01",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14x26-TEST-01",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14x26-TEST-01",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15x18-TEST-01",
+      "expected_codes": [
+        "Obstruction",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15x18-TEST-01",
+      "expected_codes": [
+        "Obstruction",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15x18-TEST-01",
+      "expected_codes": [
+        "Obstruction",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16x19-TEST-01",
+      "expected_codes": [
+        "DressCode",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16x19-TEST-01",
+      "expected_codes": [
+        "DressCode",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16x19-TEST-01",
+      "expected_codes": [
+        "DressCode",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17x28-TEST-01",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17x28-TEST-01",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17x28-TEST-01",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20x21-TEST-01",
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20x21-TEST-01",
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20x21-TEST-01",
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21x22-TEST-01",
+      "expected_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21x22-TEST-01",
+      "expected_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21x22-TEST-01",
+      "expected_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22x23-TEST-01",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22x23-TEST-01",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22x23-TEST-01",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-TEST-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-TEST-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-TEST-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-TEST-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    }
+  ]
+}

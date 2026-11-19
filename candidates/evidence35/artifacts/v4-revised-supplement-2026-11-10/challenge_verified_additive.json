@@ -1,0 +1,950 @@
+{
+  "revised_head": [
+    {
+      "scenario_id": "MULTI-NEW-001",
+      "expected_codes": [
+        "Vendor Identification",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-002",
+      "expected_codes": [
+        "WeightMeasures",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-003",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-004",
+      "expected_codes": [
+        "Stall Management",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management",
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-005",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-006",
+      "expected_codes": [
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-007",
+      "expected_codes": [
+        "Public Order",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-008",
+      "expected_codes": [
+        "Obstruction",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-009",
+      "expected_codes": [
+        "Stall Management",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-010",
+      "expected_codes": [
+        "Market Conduct",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-011",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-012",
+      "expected_codes": [
+        "Stall Rental",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction",
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-013",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-014",
+      "expected_codes": [
+        "Liquor",
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-015",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-016",
+      "expected_codes": [
+        "Porter Regulation",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-017",
+      "expected_codes": [
+        "Promotions",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-018",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-019",
+      "expected_codes": [
+        "Market Rules",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-020",
+      "expected_codes": [
+        "WeightMeasures",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-021",
+      "expected_codes": [
+        "Obstruction",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-022",
+      "expected_codes": [
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-023",
+      "expected_codes": [
+        "Sanitation",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-024",
+      "expected_codes": [
+        "Utilities",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-025",
+      "expected_codes": [
+        "Public Order",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-026",
+      "expected_codes": [
+        "Stall Construction",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-027",
+      "expected_codes": [
+        "Stall Management",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-028",
+      "expected_codes": [
+        "DressCode",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-029",
+      "expected_codes": [
+        "Porter Regulation",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-030",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-031",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-032",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-033",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-034",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-035",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-036",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-037",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-038",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-039",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-040",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-041",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-042",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-043",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-044",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-045",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-046",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-047",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-048",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-049",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    }
+  ],
+  "original_head_control": [
+    {
+      "scenario_id": "MULTI-NEW-001",
+      "expected_codes": [
+        "Vendor Identification",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-002",
+      "expected_codes": [
+        "WeightMeasures",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-003",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-004",
+      "expected_codes": [
+        "Stall Management",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management",
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-005",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-006",
+      "expected_codes": [
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-007",
+      "expected_codes": [
+        "Public Order",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-008",
+      "expected_codes": [
+        "Obstruction",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-009",
+      "expected_codes": [
+        "Stall Management",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-010",
+      "expected_codes": [
+        "Market Conduct",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-011",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-012",
+      "expected_codes": [
+        "Stall Rental",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction",
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-013",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-014",
+      "expected_codes": [
+        "Liquor",
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-015",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-016",
+      "expected_codes": [
+        "Porter Regulation",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-017",
+      "expected_codes": [
+        "Promotions",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-018",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-019",
+      "expected_codes": [
+        "Market Rules",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-020",
+      "expected_codes": [
+        "WeightMeasures",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-021",
+      "expected_codes": [
+        "Obstruction",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-022",
+      "expected_codes": [
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-023",
+      "expected_codes": [
+        "Sanitation",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-024",
+      "expected_codes": [
+        "Utilities",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-025",
+      "expected_codes": [
+        "Public Order",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-026",
+      "expected_codes": [
+        "Stall Construction",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-027",
+      "expected_codes": [
+        "Stall Management",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-028",
+      "expected_codes": [
+        "DressCode",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-029",
+      "expected_codes": [
+        "Porter Regulation",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-030",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-031",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-032",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-033",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-034",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-035",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "MULTI-NEW-036",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-037",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-038",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-039",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-040",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-041",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-042",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-043",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-044",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-045",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-046",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-047",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-048",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "MULTI-NEW-049",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    }
+  ]
+}

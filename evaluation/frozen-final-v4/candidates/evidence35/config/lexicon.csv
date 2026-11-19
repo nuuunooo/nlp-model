@@ -1,0 +1,16 @@
+code,pattern,confidence,negatable,notes
+Obstruction,"\b(?:nakaharang|harang|obstruct(?:ed|ion)?|blocked|blocking)\b.{0,55}\b(?:daan|pathway|walkway|aisle|pasilyo|exit)\b",0.97,true,Passage blocked
+Obstruction,"\b(?:daan|pathway|walkway|aisle|pasilyo|exit)\b.{0,45}\b(?:nakaharang|harang|obstruct(?:ed|ion)?|blocked)\b",0.96,true,Passage blocked with reversed order
+Public Order,"\b(?:vendors?|stallholders?|tindero)\b.{0,35}\b(?:traded punches|threw punches|nagkasuntukan)\b",0.97,true,Observed vendor fight
+Vendor Identification,\b(?:walang|no|missing|without)\s+(?:current |assigned |valid )?(?:vendor id|vendor identification)\b(?!\s+(?:fees?|charges?)\b),0.99,false,Missing vendor ID
+Vendor Identification,"\b(?:vendor|seller|tindero|tindera)\b.{0,35}\b(?:has no id|has no current id|walang id)\b",0.98,false,Missing ID attributed to the seller
+Permit & Licensing,\b(?:expired|paso|walang|no|missing)\s+(?:na |valid |current )?(?:vendor |business )(?:permit|lisensya|license)\b,0.97,false,Missing or expired vendor or business permit
+Permit & Licensing,"\b(?:vendor |business )(?:permit|lisensya|license)\b.{0,15}\b(?:expired|paso)\b",0.95,true,Expired vendor or business permit
+Sanitation,"\b(?:marumi|dirty|unsanitary|hindi malinis)\b.{0,45}\b(?:stall|puwesto|kainan|counter|paligid)\b",0.97,true,Dirty stall
+Sanitation,"\b(?:basura|garbage|trash|waste)\b.{0,45}\b(?:nakakalat|kalat|scattered|improper|iniwan|tambak)\b",0.95,true,Garbage left
+Sanitation,"\b(?:nakakalat|kalat|tambak)\b.{0,40}\b(?:basura|garbage)\b",0.94,true,Garbage left with reversed order
+Sanitation,\b(?:uncovered food|exposed food|hindi natakpan ang pagkain|may ipis|may daga|cockroaches|pests)\b,0.95,true,Unprotected food or pests
+WeightMeasures,"\b(?:madaya(?:ng)?|tampered|rigged|dinaya|manipulated|altered)\b.{0,45}\b(?:timbangan|scale|weighing)\b",0.99,true,Observed scale tampering
+WeightMeasures,"\b(?:timbangan|scale)\b.{0,35}\b(?:madaya(?:ng)?|tampered|rigged|dinaya)\b",0.98,true,Observed scale tampering with reversed order
+WeightMeasures,"\b(?:unregistered|uncalibrated|hindi calibrated|walang seal|walang calibration|hindi rehistrado)\b.{0,45}\b(?:timbangan|scale|weighing)\b",0.96,true,Scale verification failure
+WeightMeasures,"\b(?:timbangan|scale)\b.{0,45}\b(?:unregistered|uncalibrated|walang seal|walang calibration)\b",0.95,true,Scale verification failure with reversed order

@@ -1,0 +1,15 @@
+{
+  "metadata.json": "d829073cf448b06f4b3ff5c20145c01e191aa9847c57bb64b13694cfd5aea6be",
+  "model/1_Pooling/config.json": "64230a97629225324725c35e1a1cbd15025a9f656eafaaeb86cf8ec6a4ecb4d8",
+  "model/config.json": "533ccc63e3d75f47f9c9beb603286bcb686cb9faeb870063f6398af7b2878f43",
+  "model/config_sentence_transformers.json": "ff6ee575ab642e4d633fb9f50ec9419598bc0e24c904c9ac25684685d0050ac7",
+  "model/config_setfit.json": "c155004c9bda68ba05e3152c91d52fc314bb9488166295481cc1bade3e52ff26",
+  "model/model.safetensors": "fc56ecffccc67cc5fb6c5aeec6e62829bdff3738b4f9431b2f3ccd0825392b9d",
+  "model/model_head.pkl": "79e7e0aee9492671af1158f22fa89141233d160b72532f00bb8c30cd3a3f6535",
+  "model/modules.json": "e7989e94b5b809d895a9521b708312c1ccd333e183effebaf3838908da2acd53",
+  "model/README.md": "66c8fc8fab2f31a6a0e247942b7f0c16426d8d364dee7473fe2b95aedd4e33b0",
+  "model/sentence_bert_config.json": "0d36864e76a49566363ccbe0eca352b0d532868fa3892de8d78270bc6e652615",
+  "model/special_tokens_map.json": "edd71739099fe63dc2f70815facad5253c70ded0e0d4df49ef883ce4511af365",
+  "model/tokenizer.json": "ef04f2b385d1514f500e779207ace0f53e30895ce37563179e29f4022d28ca38",
+  "model/tokenizer_config.json": "74c97b58b7de2c9474beaddfe2f3e23ef41652138ca84c607e16c5b51a3a156f"
+}

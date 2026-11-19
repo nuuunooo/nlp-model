@@ -1,0 +1,59 @@
+{
+  "method": "Metadata/provenance audit only. No predictions or test metrics were produced on these files.",
+  "files": [
+    {
+      "path": "C:\\Users\\admin\\Downloads\\INSPECTION_DESCRIPTIONS_PILOT.csv",
+      "rows": 50,
+      "eligibility": "Descriptions only; no independent gold labels."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\INSPECTION_DESCRIPTIONS_PILOT (5).csv",
+      "rows": 250,
+      "eligibility": "Descriptions only; no independent gold labels."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\MARIKINA_HUMAN_REVIEW.csv",
+      "rows": 250,
+      "reviewed_rows": 238,
+      "pending_rows": 12,
+      "taxonomy_versions": [
+        "category_boundaries_v5_owner_approved_20261031_v1"
+      ],
+      "taxonomy": "Legacy 23-code taxonomy, incompatible with current 29 category contract; no unreviewed crosswalk is permitted.",
+      "rows_previously_compared_with_proposals": 1,
+      "overlap_ids_with_prior_training_receipts": 0,
+      "eligibility": "Cannot certify as independently labeled untouched test for this catalog."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\marikina_supplemental_training_records.csv",
+      "eligibility": "Explicit training source using legacy codes and review flags."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\Marikina_Field_Inspection_Training_Dataset.xlsx",
+      "eligibility": "Training workbook with synthetic-label counts and legacy taxonomy."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\Marikina_Ticket_Descriptions_New_Categories.xlsx",
+      "eligibility": "Category-membership labels; no current full multilabel gold contract or independent provenance."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\Marikina_Ticket_Descriptions (1).xlsx",
+      "eligibility": "Descriptions only."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\Marikina_NLP_Dataset_Template.xlsx",
+      "eligibility": "Development template; no certified untouched operational set."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\Marikina_NLP_Sample_Dataset.xlsx",
+      "eligibility": "Twelve sample development records under older taxonomy."
+    },
+    {
+      "path": "C:\\Users\\admin\\Downloads\\market_inspection_eval_multilabel.csv",
+      "rows": 150,
+      "eligibility": "Previously evaluated and inspected; development/regression only for candidate changes."
+    }
+  ],
+  "result": "No suitable, independently labeled untouched 29-category test set could be established from the available local data.",
+  "remaining_requirement": "A new independently labeled set, or documented provenance and independent current-catalog relabeling of an unused source. Final test remains unrun."
+}

@@ -1,0 +1,1756 @@
+{
+  "purpose": "Previously inspected development data. Exclude from independent validation and final test.",
+  "annotation": "Source-specific incident review against the frozen catalog, archived working policy, and description text. No model predictions or external verification fields were used. Labels are development annotations without independent adjudication.",
+  "anonymization": "Source notes were provided anonymized. Stall codes were replaced with [stall], and source identifiers are confined to this local provenance audit.",
+  "grouping": "Same reported stall grouped across batches. A note lacking a stall falls back to its source vendor pseudonym. Source vendor IDs and stall IDs do not consistently correspond. Repeated incident templates occur across stall groups. Keep these batches together and obtain validation and test from separate sources.",
+  "other_sources_excluded": "The revised weight files do not document which cases are new operational observations. The inspection pilot and legacy human review lack sufficient operational provenance. The field training workbook marks its records synthetic.",
+  "csv_sha256": "99438feedfb138d75c40483a5898e1c059a94e3c875c2674a90399b917fe83ff",
+  "sources": {
+    "market_inspection_eval_multilabel.csv": {
+      "source_rows": 150,
+      "included_records": 150,
+      "sha256": "4bf50b0f84d132e54e223bcb54e4dd99c8f8aa0d00be39ad0e5cb5bf8a7684b4"
+    },
+    "weightmeasures_eval_120 real records descrpitions.csv": {
+      "source_rows": 120,
+      "included_records": 95,
+      "sha256": "3be033f00e95ba75c88e818ca8bad3d6e42eefb74ea3dcd3f3d4a9591c32e73a"
+    }
+  },
+  "counts": {
+    "descriptions": 245,
+    "incident_rows": 427,
+    "multiple_incident_descriptions": 144,
+    "mixed_supported_and_other_descriptions": 29,
+    "categories_with_any_examples": 29,
+    "categories_with_all_three_states": 8,
+    "category_state_cells_meeting_five": 37,
+    "category_state_cells_total": 87,
+    "rows_by_state": {
+      "supported": 262,
+      "insufficient": 74,
+      "compliant": 91
+    },
+    "descriptions_by_language_heuristic": {
+      "en": 95,
+      "taglish": 101,
+      "fil": 49
+    }
+  },
+  "shortfall_against_collection_targets": {
+    "distinct_descriptions": 55,
+    "multiple_incident_descriptions": 0,
+    "mixed_supported_and_other_descriptions": 21
+  },
+  "coverage": {
+    "Vendor Identification": {
+      "supported": 9,
+      "compliant": 1,
+      "insufficient": 1
+    },
+    "Permit & Licensing": {
+      "supported": 8,
+      "compliant": 6,
+      "insufficient": 2
+    },
+    "Sanitation": {
+      "supported": 9,
+      "compliant": 10,
+      "insufficient": 0
+    },
+    "WeightMeasures": {
+      "supported": 41,
+      "compliant": 29,
+      "insufficient": 39
+    },
+    "Lighting & Energy": {
+      "supported": 9,
+      "compliant": 0,
+      "insufficient": 0
+    },
+    "Stall Occupancy": {
+      "supported": 8,
+      "compliant": 6,
+      "insufficient": 0
+    },
+    "Stall Management": {
+      "supported": 5,
+      "compliant": 3,
+      "insufficient": 3
+    },
+    "Stall Construction": {
+      "supported": 8,
+      "compliant": 0,
+      "insufficient": 1
+    },
+    "Utilities": {
+      "supported": 9,
+      "compliant": 1,
+      "insufficient": 0
+    },
+    "Stall Rental": {
+      "supported": 9,
+      "compliant": 2,
+      "insufficient": 2
+    },
+    "Illegal Vendor": {
+      "supported": 9,
+      "compliant": 0,
+      "insufficient": 0
+    },
+    "Public Order": {
+      "supported": 8,
+      "compliant": 0,
+      "insufficient": 2
+    },
+    "Liquor": {
+      "supported": 4,
+      "compliant": 0,
+      "insufficient": 8
+    },
+    "Market Conduct": {
+      "supported": 8,
+      "compliant": 0,
+      "insufficient": 1
+    },
+    "Obstruction": {
+      "supported": 8,
+      "compliant": 4,
+      "insufficient": 3
+    },
+    "DressCode": {
+      "supported": 8,
+      "compliant": 4,
+      "insufficient": 0
+    },
+    "Bladed Instruments": {
+      "supported": 8,
+      "compliant": 5,
+      "insufficient": 1
+    },
+    "Traffic": {
+      "supported": 8,
+      "compliant": 3,
+      "insufficient": 0
+    },
+    "Porter Regulation": {
+      "supported": 9,
+      "compliant": 2,
+      "insufficient": 0
+    },
+    "Promotions": {
+      "supported": 9,
+      "compliant": 0,
+      "insufficient": 0
+    },
+    "Advertising": {
+      "supported": 2,
+      "compliant": 0,
+      "insufficient": 7
+    },
+    "Signage & Streamers": {
+      "supported": 8,
+      "compliant": 3,
+      "insufficient": 0
+    },
+    "Entertainment Activities": {
+      "supported": 9,
+      "compliant": 0,
+      "insufficient": 0
+    },
+    "Lighting Facilities": {
+      "supported": 8,
+      "compliant": 6,
+      "insufficient": 3
+    },
+    "Market Rules": {
+      "supported": 8,
+      "compliant": 0,
+      "insufficient": 0
+    },
+    "Price Monitoring": {
+      "supported": 9,
+      "compliant": 1,
+      "insufficient": 0
+    },
+    "Market Fees & Surcharges": {
+      "supported": 8,
+      "compliant": 5,
+      "insufficient": 0
+    },
+    "Resisting Authority": {
+      "supported": 8,
+      "compliant": 0,
+      "insufficient": 0
+    },
+    "General Penalties": {
+      "supported": 8,
+      "compliant": 0,
+      "insufficient": 1
+    }
+  },
+  "shortfall_to_five_per_category_and_state": {
+    "Vendor Identification": {
+      "supported": 0,
+      "compliant": 4,
+      "insufficient": 4
+    },
+    "Permit & Licensing": {
+      "supported": 0,
+      "compliant": 0,
+      "insufficient": 3
+    },
+    "Sanitation": {
+      "supported": 0,
+      "compliant": 0,
+      "insufficient": 5
+    },
+    "WeightMeasures": {
+      "supported": 0,
+      "compliant": 0,
+      "insufficient": 0
+    },
+    "Lighting & Energy": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 5
+    },
+    "Stall Occupancy": {
+      "supported": 0,
+      "compliant": 0,
+      "insufficient": 5
+    },
+    "Stall Management": {
+      "supported": 0,
+      "compliant": 2,
+      "insufficient": 2
+    },
+    "Stall Construction": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 4
+    },
+    "Utilities": {
+      "supported": 0,
+      "compliant": 4,
+      "insufficient": 5
+    },
+    "Stall Rental": {
+      "supported": 0,
+      "compliant": 3,
+      "insufficient": 3
+    },
+    "Illegal Vendor": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 5
+    },
+    "Public Order": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 3
+    },
+    "Liquor": {
+      "supported": 1,
+      "compliant": 5,
+      "insufficient": 0
+    },
+    "Market Conduct": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 4
+    },
+    "Obstruction": {
+      "supported": 0,
+      "compliant": 1,
+      "insufficient": 2
+    },
+    "DressCode": {
+      "supported": 0,
+      "compliant": 1,
+      "insufficient": 5
+    },
+    "Bladed Instruments": {
+      "supported": 0,
+      "compliant": 0,
+      "insufficient": 4
+    },
+    "Traffic": {
+      "supported": 0,
+      "compliant": 2,
+      "insufficient": 5
+    },
+    "Porter Regulation": {
+      "supported": 0,
+      "compliant": 3,
+      "insufficient": 5
+    },
+    "Promotions": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 5
+    },
+    "Advertising": {
+      "supported": 3,
+      "compliant": 5,
+      "insufficient": 0
+    },
+    "Signage & Streamers": {
+      "supported": 0,
+      "compliant": 2,
+      "insufficient": 5
+    },
+    "Entertainment Activities": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 5
+    },
+    "Lighting Facilities": {
+      "supported": 0,
+      "compliant": 0,
+      "insufficient": 2
+    },
+    "Market Rules": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 5
+    },
+    "Price Monitoring": {
+      "supported": 0,
+      "compliant": 4,
+      "insufficient": 5
+    },
+    "Market Fees & Surcharges": {
+      "supported": 0,
+      "compliant": 0,
+      "insufficient": 5
+    },
+    "Resisting Authority": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 5
+    },
+    "General Penalties": {
+      "supported": 0,
+      "compliant": 5,
+      "insufficient": 4
+    }
+  },
+  "record_provenance": {
+    "R001": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-001"
+    },
+    "R002": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-002"
+    },
+    "R003": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-003"
+    },
+    "R004": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-004"
+    },
+    "R005": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-005"
+    },
+    "R006": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-006"
+    },
+    "R007": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-007"
+    },
+    "R008": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-008"
+    },
+    "R009": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-009"
+    },
+    "R010": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-010"
+    },
+    "R011": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-011"
+    },
+    "R012": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-012"
+    },
+    "R013": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-013"
+    },
+    "R014": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-014"
+    },
+    "R015": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-015"
+    },
+    "R016": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-016"
+    },
+    "R017": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-017"
+    },
+    "R018": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-018"
+    },
+    "R019": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-019"
+    },
+    "R020": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-020"
+    },
+    "R021": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-021"
+    },
+    "R022": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-022"
+    },
+    "R023": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-023"
+    },
+    "R024": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-024"
+    },
+    "R025": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-025"
+    },
+    "R026": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-026"
+    },
+    "R027": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-027"
+    },
+    "R028": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-028"
+    },
+    "R029": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-029"
+    },
+    "R030": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-030"
+    },
+    "R031": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-031"
+    },
+    "R032": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-032"
+    },
+    "R033": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-033"
+    },
+    "R034": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-034"
+    },
+    "R035": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-035"
+    },
+    "R036": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-036"
+    },
+    "R037": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-037"
+    },
+    "R038": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-038"
+    },
+    "R039": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-039"
+    },
+    "R040": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-040"
+    },
+    "R041": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-041"
+    },
+    "R042": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-042"
+    },
+    "R043": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-043"
+    },
+    "R044": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-044"
+    },
+    "R045": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-045"
+    },
+    "R046": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-046"
+    },
+    "R047": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-047"
+    },
+    "R048": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-048"
+    },
+    "R049": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-049"
+    },
+    "R050": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-050"
+    },
+    "R051": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-051"
+    },
+    "R052": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-052"
+    },
+    "R053": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-053"
+    },
+    "R054": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-054"
+    },
+    "R055": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-055"
+    },
+    "R056": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-056"
+    },
+    "R057": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-057"
+    },
+    "R058": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-058"
+    },
+    "R059": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-059"
+    },
+    "R060": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-060"
+    },
+    "R061": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-061"
+    },
+    "R062": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-062"
+    },
+    "R063": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-063"
+    },
+    "R064": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-064"
+    },
+    "R065": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-065"
+    },
+    "R066": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-066"
+    },
+    "R067": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-067"
+    },
+    "R068": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-068"
+    },
+    "R069": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-069"
+    },
+    "R070": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-070"
+    },
+    "R071": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-071"
+    },
+    "R072": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-072"
+    },
+    "R073": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-073"
+    },
+    "R074": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-074"
+    },
+    "R075": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-075"
+    },
+    "R076": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-076"
+    },
+    "R077": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-077"
+    },
+    "R078": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-078"
+    },
+    "R079": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-079"
+    },
+    "R080": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-080"
+    },
+    "R081": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-081"
+    },
+    "R082": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-082"
+    },
+    "R083": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-083"
+    },
+    "R084": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-084"
+    },
+    "R085": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-085"
+    },
+    "R086": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-086"
+    },
+    "R087": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-087"
+    },
+    "R088": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-088"
+    },
+    "R089": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-089"
+    },
+    "R090": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-090"
+    },
+    "R091": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-091"
+    },
+    "R092": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-092"
+    },
+    "R093": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-093"
+    },
+    "R094": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-094"
+    },
+    "R095": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-095"
+    },
+    "R096": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-096"
+    },
+    "R097": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-097"
+    },
+    "R098": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-098"
+    },
+    "R099": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-099"
+    },
+    "R100": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-100"
+    },
+    "R101": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-101"
+    },
+    "R102": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-102"
+    },
+    "R103": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-103"
+    },
+    "R104": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-104"
+    },
+    "R105": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-105"
+    },
+    "R106": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-106"
+    },
+    "R107": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-107"
+    },
+    "R108": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-108"
+    },
+    "R109": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-109"
+    },
+    "R110": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-110"
+    },
+    "R111": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-111"
+    },
+    "R112": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-112"
+    },
+    "R113": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-113"
+    },
+    "R114": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-114"
+    },
+    "R115": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-115"
+    },
+    "R116": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-116"
+    },
+    "R117": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-117"
+    },
+    "R118": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-118"
+    },
+    "R119": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-119"
+    },
+    "R120": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-120"
+    },
+    "R121": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-121"
+    },
+    "R122": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-122"
+    },
+    "R123": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-123"
+    },
+    "R124": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-124"
+    },
+    "R125": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-125"
+    },
+    "R126": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-126"
+    },
+    "R127": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-127"
+    },
+    "R128": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-128"
+    },
+    "R129": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-129"
+    },
+    "R130": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-130"
+    },
+    "R131": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-131"
+    },
+    "R132": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-132"
+    },
+    "R133": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-133"
+    },
+    "R134": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-134"
+    },
+    "R135": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-135"
+    },
+    "R136": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-136"
+    },
+    "R137": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-137"
+    },
+    "R138": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-138"
+    },
+    "R139": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-139"
+    },
+    "R140": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-140"
+    },
+    "R141": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-141"
+    },
+    "R142": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-142"
+    },
+    "R143": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-143"
+    },
+    "R144": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-144"
+    },
+    "R145": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-145"
+    },
+    "R146": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-146"
+    },
+    "R147": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-147"
+    },
+    "R148": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-148"
+    },
+    "R149": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-149"
+    },
+    "R150": {
+      "file": "market_inspection_eval_multilabel.csv",
+      "source_record": "SYN-MI-150"
+    },
+    "R151": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-001"
+    },
+    "R152": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-002"
+    },
+    "R153": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-003"
+    },
+    "R154": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-004"
+    },
+    "R155": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-006"
+    },
+    "R156": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-007"
+    },
+    "R157": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-009"
+    },
+    "R158": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-010"
+    },
+    "R159": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-011"
+    },
+    "R160": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-012"
+    },
+    "R161": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-014"
+    },
+    "R162": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-015"
+    },
+    "R163": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-016"
+    },
+    "R164": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-017"
+    },
+    "R165": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-018"
+    },
+    "R166": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-019"
+    },
+    "R167": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-020"
+    },
+    "R168": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-021"
+    },
+    "R169": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-023"
+    },
+    "R170": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-024"
+    },
+    "R171": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-025"
+    },
+    "R172": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-026"
+    },
+    "R173": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-027"
+    },
+    "R174": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-028"
+    },
+    "R175": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-029"
+    },
+    "R176": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-031"
+    },
+    "R177": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-032"
+    },
+    "R178": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-033"
+    },
+    "R179": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-034"
+    },
+    "R180": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-035"
+    },
+    "R181": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-036"
+    },
+    "R182": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-037"
+    },
+    "R183": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-038"
+    },
+    "R184": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-039"
+    },
+    "R185": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-040"
+    },
+    "R186": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-042"
+    },
+    "R187": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-043"
+    },
+    "R188": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-045"
+    },
+    "R189": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-046"
+    },
+    "R190": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-047"
+    },
+    "R191": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-048"
+    },
+    "R192": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-049"
+    },
+    "R193": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-051"
+    },
+    "R194": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-052"
+    },
+    "R195": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-053"
+    },
+    "R196": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-055"
+    },
+    "R197": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-056"
+    },
+    "R198": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-058"
+    },
+    "R199": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-060"
+    },
+    "R200": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-061"
+    },
+    "R201": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-062"
+    },
+    "R202": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-065"
+    },
+    "R203": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-066"
+    },
+    "R204": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-067"
+    },
+    "R205": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-069"
+    },
+    "R206": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-070"
+    },
+    "R207": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-071"
+    },
+    "R208": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-072"
+    },
+    "R209": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-073"
+    },
+    "R210": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-074"
+    },
+    "R211": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-075"
+    },
+    "R212": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-077"
+    },
+    "R213": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-079"
+    },
+    "R214": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-081"
+    },
+    "R215": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-082"
+    },
+    "R216": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-084"
+    },
+    "R217": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-086"
+    },
+    "R218": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-087"
+    },
+    "R219": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-088"
+    },
+    "R220": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-089"
+    },
+    "R221": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-090"
+    },
+    "R222": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-091"
+    },
+    "R223": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-092"
+    },
+    "R224": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-093"
+    },
+    "R225": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-094"
+    },
+    "R226": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-095"
+    },
+    "R227": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-098"
+    },
+    "R228": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-099"
+    },
+    "R229": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-100"
+    },
+    "R230": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-101"
+    },
+    "R231": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-102"
+    },
+    "R232": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-104"
+    },
+    "R233": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-105"
+    },
+    "R234": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-106"
+    },
+    "R235": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-107"
+    },
+    "R236": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-108"
+    },
+    "R237": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-109"
+    },
+    "R238": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-110"
+    },
+    "R239": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-111"
+    },
+    "R240": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-112"
+    },
+    "R241": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-113"
+    },
+    "R242": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-115"
+    },
+    "R243": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-116"
+    },
+    "R244": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-117"
+    },
+    "R245": {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-118"
+    }
+  },
+  "duplicate_exclusions": [
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-005",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-008",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-013",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-022",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-030",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-041",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-044",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-050",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-054",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-057",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-059",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-063",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-064",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-068",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-076",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-078",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-080",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-083",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-085",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-096",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-097",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-103",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-114",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-119",
+      "reason": "duplicate wording after stall anonymization"
+    },
+    {
+      "file": "weightmeasures_eval_120 real records descrpitions.csv",
+      "source_record": "SYN-WM-120",
+      "reason": "duplicate wording after stall anonymization"
+    }
+  ],
+  "source_outcome_differences": [
+    {
+      "record_id": "R022",
+      "category": "Liquor",
+      "state": "insufficient",
+      "reason": "The note describes sale by the bottle without establishing drinking, serving, or dispensing."
+    },
+    {
+      "record_id": "R023",
+      "category": "Advertising",
+      "state": "insufficient",
+      "reason": "The note establishes a missing approval record without confirming that required approval was absent."
+    },
+    {
+      "record_id": "R027",
+      "category": "Liquor",
+      "state": "insufficient",
+      "reason": "The note describes sale by the bottle without establishing drinking, serving, or dispensing."
+    },
+    {
+      "record_id": "R033",
+      "category": "Advertising",
+      "state": "insufficient",
+      "reason": "The note establishes a missing approval record without confirming that required approval was absent."
+    },
+    {
+      "record_id": "R044",
+      "category": "Liquor",
+      "state": "insufficient",
+      "reason": "The note describes sale by the bottle without establishing drinking, serving, or dispensing."
+    },
+    {
+      "record_id": "R047",
+      "category": "Stall Management",
+      "state": "insufficient",
+      "reason": "The note does not identify the applicable stallholder duty."
+    },
+    {
+      "record_id": "R075",
+      "category": "Stall Management",
+      "state": "insufficient",
+      "reason": "The note does not identify the applicable stallholder duty."
+    },
+    {
+      "record_id": "R082",
+      "category": "Liquor",
+      "state": "insufficient",
+      "reason": "The note describes sale by the bottle without establishing drinking, serving, or dispensing."
+    },
+    {
+      "record_id": "R084",
+      "category": "Advertising",
+      "state": "insufficient",
+      "reason": "The note establishes a missing approval record without confirming that required approval was absent."
+    },
+    {
+      "record_id": "R101",
+      "category": "Stall Management",
+      "state": "insufficient",
+      "reason": "The note does not identify the applicable stallholder duty."
+    },
+    {
+      "record_id": "R111",
+      "category": "Advertising",
+      "state": "insufficient",
+      "reason": "The note establishes a missing approval record without confirming that required approval was absent."
+    },
+    {
+      "record_id": "R116",
+      "category": "Advertising",
+      "state": "insufficient",
+      "reason": "The note establishes a missing approval record without confirming that required approval was absent."
+    },
+    {
+      "record_id": "R125",
+      "category": "Liquor",
+      "state": "insufficient",
+      "reason": "The note describes sale by the bottle without establishing drinking, serving, or dispensing."
+    },
+    {
+      "record_id": "R127",
+      "category": "Advertising",
+      "state": "insufficient",
+      "reason": "The note establishes a missing approval record without confirming that required approval was absent."
+    },
+    {
+      "record_id": "R151",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The broken seal is documented. The note does not establish the scale use or applicable reporting condition needed to resolve this incident."
+    },
+    {
+      "record_id": "R152",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "This observation concerns scale disclosure during inspection. It does not establish the measurement result or a scale condition covered by the current category."
+    },
+    {
+      "record_id": "R154",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "This observation concerns scale disclosure during inspection. It does not establish the measurement result or a scale condition covered by the current category."
+    },
+    {
+      "record_id": "R156",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R159",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R160",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R164",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R165",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R168",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "This observation concerns scale disclosure during inspection. It does not establish the measurement result or a scale condition covered by the current category."
+    },
+    {
+      "record_id": "R169",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R171",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R174",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The seal age is stated. The note does not establish the applicable renewal deadline or verify that registration was overdue."
+    },
+    {
+      "record_id": "R177",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R178",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R180",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R182",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The broken seal is documented. The note does not establish the scale use or applicable reporting condition needed to resolve this incident."
+    },
+    {
+      "record_id": "R189",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R192",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R195",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R196",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R199",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R200",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R210",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The seal age is stated. The note does not establish the applicable renewal deadline or verify that registration was overdue."
+    },
+    {
+      "record_id": "R211",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R212",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R217",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R218",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R219",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R223",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R224",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R226",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R230",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The seal age is stated. The note does not establish the applicable renewal deadline or verify that registration was overdue."
+    },
+    {
+      "record_id": "R237",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R240",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The seal age is stated. The note does not establish the applicable renewal deadline or verify that registration was overdue."
+    },
+    {
+      "record_id": "R241",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R243",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The quantities are present, but the note does not identify a verified measurement or reference scale."
+    },
+    {
+      "record_id": "R244",
+      "category": "WeightMeasures",
+      "state": "insufficient",
+      "reason": "The broken seal is documented. The note does not establish the scale use or applicable reporting condition needed to resolve this incident."
+    }
+  ]
+}

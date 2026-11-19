@@ -1,0 +1,85 @@
+{
+  "purpose": "Synthetic development retest. These descriptions informed the parser change.",
+  "policy_id": "any-person-drinking-inside-market",
+  "policy_sha256": null,
+  "baseline_source": "Recorded v4 decisions from the exact submitted descriptions before the policy change.",
+  "scorer_sha256": {
+    "evaluate_pilot_liquor.py": "60a6d78c04959ffbdf60462a77680a07245e9ecf0ba7247c3f93bbd2eae57319",
+    "liquor_evidence.py": "99d5dd2749c84531440219c8263225a26c275aa63f4eec3412e4e7fd49cd9831",
+    "pilot_evidence.py": "3e96d4cef5fcdc11fd4aac1f78dc9911145132c61bb218560c824454c0fed192"
+  },
+  "v4_metrics": {
+    "true_positives": 1,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "multi_rows": 0,
+    "multi_exact": 0,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 1
+  },
+  "with_policy_metrics": {
+    "true_positives": 1,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "multi_rows": 0,
+    "multi_exact": 0,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "records": [
+    {
+      "record": 1,
+      "description": "umiinom ng alak sa pampublikong lugar",
+      "v4_codes": [],
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "with_policy_codes": [],
+      "comparisons": [
+        {
+          "state": "insufficient",
+          "fact": "observed_drinking_inside_market"
+        }
+      ]
+    },
+    {
+      "record": 2,
+      "description": "si vendor nagtitinda habang umiinom ng alak",
+      "v4_codes": [
+        "Liquor"
+      ],
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "with_policy_codes": [],
+      "comparisons": [
+        {
+          "state": "insufficient",
+          "fact": "observed_drinking_inside_market"
+        }
+      ]
+    },
+    {
+      "record": 3,
+      "description": "umiinom ng alak sa loob ng palengke",
+      "v4_codes": [
+        "Liquor"
+      ],
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "supported",
+          "fact": "observed_drinking_inside_market"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "version": "3.4.0-candidate",
+  "source": {
+    "local_path": "C:\\Users\\admin\\Downloads\\2014 MARIKINA MARKET CODE.pdf",
+    "sha256": "168bed7d6bf21de5847e37212b977fc33a5b66c444df3fdbdf8205e229c0b05b",
+    "url": "https://marikina.gov.ph/ordinance/ORDINANCE%20NO.%2011%20S.%202014.pdf",
+    "ordinance": "011 series 2014",
+    "scope": "Supplied 2014 code checked against city-hosted document. This is not certification of all later amendments."
+  },
+  "fixed_rules": {
+    "vendor_id": {
+      "code": "Vendor Identification",
+      "sections": [
+        12
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "requirement": "Vendor or helper must have a Market Identification Card; display requires an explicit display rule in the note."
+    },
+    "liquor": {
+      "code": "Liquor",
+      "sections": [
+        44
+      ],
+      "pdf_pages": [
+        15
+      ],
+      "requirement": "Observed drinking, serving or dispensing liquor inside the city market."
+    },
+    "dress": {
+      "code": "DressCode",
+      "sections": [
+        49
+      ],
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "requirement": "Required apron and prohibited sando or exposed torso while vending; knee-length walking shorts are expressly allowed."
+    },
+    "blade_storage": {
+      "code": "Bladed Instruments",
+      "sections": [
+        55
+      ],
+      "pdf_pages": [
+        16,
+        17
+      ],
+      "requirement": "Non-use storage must be locked; utensil retail displays are excepted."
+    },
+    "blade_carry": {
+      "code": "Bladed Instruments",
+      "sections": [
+        55
+      ],
+      "pdf_pages": [
+        16,
+        17
+      ],
+      "requirement": "Carrying outside vending area or transferring without opaque covering; utensil retail displays are excepted."
+    },
+    "grease": {
+      "code": "Utilities",
+      "sections": [
+        50
+      ],
+      "pdf_pages": [
+        16
+      ],
+      "requirement": "Stall sinks require p-traps and grease traps."
+    },
+    "dwelling": {
+      "code": "Market Rules",
+      "sections": [
+        46
+      ],
+      "pdf_pages": [
+        15
+      ],
+      "requirement": "Conversion of stall to temporary or permanent dwelling; sleeping alone without dwelling use is insufficient."
+    },
+    "children": {
+      "code": "Market Rules",
+      "sections": [
+        43
+      ],
+      "pdf_pages": [
+        15
+      ],
+      "requirement": "Parents must not allow their children to play in or around market stalls."
+    },
+    "animals": {
+      "code": "Market Rules",
+      "sections": [
+        45
+      ],
+      "pdf_pages": [
+        15
+      ],
+      "requirement": "Dogs and other animals must not be left astray in market zone."
+    },
+    "mobile_registration": {
+      "code": "Illegal Vendor",
+      "sections": [
+        57,
+        61
+      ],
+      "pdf_pages": [
+        17,
+        18
+      ],
+      "requirement": "Mobile vendor registration and ID; missing ordinary vendor ID remains Vendor Identification."
+    }
+  },
+  "description_required": [
+    "Safety equipment duty, inspection interval or expiry requirement for extinguisher findings",
+    "Specific approval conditions for promotion, advertising, streamer and entertainment findings",
+    "Active closure or suspension plus continued prohibited trading",
+    "Verified unpaid amount or ledger discrepancy for fees and rent"
+  ],
+  "category_boundaries": {
+    "Stall Construction": "Physical work and its approval belong here, not Permit & Licensing.",
+    "WeightMeasures": "Scale registration, seals and measurement faults belong here, not Permit & Licensing.",
+    "Illegal Vendor": "Location/mobile-vending authorization; exclude utility jumper and ordinary business certificate.",
+    "Permit & Licensing": "Business/activity permit or required health certificate; exclude construction, events and sidewalk permits.",
+    "Market Rules": "Specific operating rules; do not duplicate findings already covered by an explicit category.",
+    "Stall Occupancy": "Unauthorized occupant or space relative to award/contract; dwelling itself belongs to Market Rules."
+  }
+}

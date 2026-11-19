@@ -1,0 +1,13 @@
+{
+  "version": "3.4.0-candidate",
+  "fixtures": 7,
+  "worker_and_database_findings": "passed",
+  "http_routes": [
+    "recommendations",
+    "section-insights",
+    "review-queue"
+  ],
+  "automatic_actions_without_user_queue": true,
+  "edited_and_voided_findings_invalidated_immediately": true,
+  "scope": "Isolated portable development database only; no production deployment."
+}

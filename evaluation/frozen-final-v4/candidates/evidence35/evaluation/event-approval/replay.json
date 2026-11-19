@@ -1,0 +1,748 @@
+{
+  "purpose": "Offline development replay with synthetic examples and previously inspected cohorts.",
+  "comparison": "Add a documented approval breach and withhold approval-only findings on a verified pass or explicitly unverifiable approval. Preserve independent event findings.",
+  "verifier_cutoff": 0.9999997615814209,
+  "original_v4_reproduced_rows": 35,
+  "sources": {
+    "validation_verified": {
+      "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+      "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+      "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+    },
+    "test_regression_verified": {
+      "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+      "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+      "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+    },
+    "challenge_verified": {
+      "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+      "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+      "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+    }
+  },
+  "addon_sha256": {
+    "scripts/evaluate_event_approval.py": "610dfc847db1c9f397225ef0fe4a4f9cfb37d9a0375427bccf1d362201ad83fb",
+    "src/event_approval.py": "85b5509407c9fcf202a1991a1048c9b08d7a8f5499a471a7314079e0ef057317",
+    "evaluation/event-approval/fresh-cases.json": "70240f0d8797fbc57497324e766a2847e4c92c7ff13724d299573cd0858c330d"
+  },
+  "gates": {
+    "historical_at_least_26_correct_zero_incorrect": true,
+    "no_added_false_positives": true,
+    "all_correct_baseline_findings_preserved": true,
+    "other_categories_unchanged": true,
+    "all_fresh_evidence_states_correct": true,
+    "zero_fresh_incorrect_event_findings": true
+  },
+  "metrics": {
+    "validation_verified": {
+      "all_categories": {
+        "v4": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_event_approval": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "entertainment_activities": {
+        "v4": {
+          "true_positives": 27,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "with_event_approval": {
+          "true_positives": 27,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_correct_findings": [],
+      "cleared_baseline_false_positives": [],
+      "other_category_changes": []
+    },
+    "test_regression_verified": {
+      "all_categories": {
+        "v4": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_event_approval": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "entertainment_activities": {
+        "v4": {
+          "true_positives": 26,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.9629629629629629
+        },
+        "with_event_approval": {
+          "true_positives": 26,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": 1.0,
+          "recall": 0.9629629629629629
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_correct_findings": [],
+      "cleared_baseline_false_positives": [],
+      "other_category_changes": []
+    },
+    "challenge_verified": {
+      "all_categories": {
+        "v4": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_event_approval": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "entertainment_activities": {
+        "v4": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "with_event_approval": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_correct_findings": [],
+      "cleared_baseline_false_positives": [],
+      "other_category_changes": []
+    },
+    "fresh_matched": {
+      "all_categories": {
+        "v4": {
+          "true_positives": 2,
+          "false_positives": 6,
+          "false_negatives": 7,
+          "precision": 0.25,
+          "recall": 0.2222222222222222,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 3,
+          "unclear_false_actions": 2
+        },
+        "with_event_approval": {
+          "true_positives": 9,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "precision": 0.9,
+          "recall": 1.0,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "entertainment_activities": {
+        "v4": {
+          "true_positives": 2,
+          "false_positives": 5,
+          "false_negatives": 7,
+          "precision": 0.2857142857142857,
+          "recall": 0.2222222222222222
+        },
+        "with_event_approval": {
+          "true_positives": 9,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "recovered_misses": [
+        "en-scope:supported",
+        "en-dates:supported",
+        "en-standing:supported",
+        "fil-scope:supported",
+        "fil-dates:supported",
+        "fil-standing:supported",
+        "taglish-standing:supported"
+      ],
+      "new_false_positives": [],
+      "removed_correct_findings": [],
+      "cleared_baseline_false_positives": [
+        "en-scope:compliant",
+        "taglish-scope:compliant",
+        "taglish-scope:insufficient",
+        "taglish-dates:compliant",
+        "taglish-dates:insufficient"
+      ],
+      "other_category_changes": []
+    }
+  },
+  "fresh_state_counts": {
+    "en:compliant": 3,
+    "en:insufficient": 3,
+    "en:supported": 3,
+    "fil:compliant": 3,
+    "fil:insufficient": 3,
+    "fil:supported": 3,
+    "taglish:compliant": 3,
+    "taglish:insufficient": 3,
+    "taglish:supported": 3
+  },
+  "fresh_decisions": [
+    {
+      "group": "en-scope",
+      "language": "en",
+      "state": "supported",
+      "description": "The vendor hosted a magic show. The event permit was for a cooking demo only.",
+      "record": "en-scope:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [],
+      "with_event_approval": [
+        "Entertainment Activities"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "approval_for_different_event",
+        "evidence": "the vendor hosted a magic show.; the event permit was for a cooking demo only."
+      }
+    },
+    {
+      "group": "en-scope",
+      "language": "en",
+      "state": "compliant",
+      "description": "The vendor hosted a magic show. The event permit was for that magic show.",
+      "record": "en-scope:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [
+        "Entertainment Activities"
+      ],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "the vendor hosted a magic show.; the event permit was for that magic show."
+      }
+    },
+    {
+      "group": "en-scope",
+      "language": "en",
+      "state": "insufficient",
+      "description": "The vendor hosted a magic show. The event permit scope was unreadable.",
+      "record": "en-scope:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "the vendor hosted a magic show. the event permit scope was unreadable."
+      }
+    },
+    {
+      "group": "en-dates",
+      "language": "en",
+      "state": "supported",
+      "description": "Vendor held a puppet show on Nov 18. Permit valid on Nov 12 and Nov 15 only.",
+      "record": "en-dates:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [],
+      "with_event_approval": [
+        "Entertainment Activities"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "outside_approved_dates",
+        "evidence": "vendor held a puppet show on nov 18.; permit valid on nov 12 and nov 15 only."
+      }
+    },
+    {
+      "group": "en-dates",
+      "language": "en",
+      "state": "compliant",
+      "description": "Vendor held a puppet show on Nov 15. Permit valid on Nov 12 and Nov 15 only.",
+      "record": "en-dates:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "vendor held a puppet show on nov 15.; permit valid on nov 12 and nov 15 only."
+      }
+    },
+    {
+      "group": "en-dates",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Vendor held a puppet show on Nov 18. Permit was checked but the approved dates were unreadable.",
+      "record": "en-dates:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "vendor held a puppet show on nov 18. permit was checked but the approved dates were unreadable."
+      }
+    },
+    {
+      "group": "en-standing",
+      "language": "en",
+      "state": "supported",
+      "description": "Vendor held a concert on Friday. Active standing permit covers concerts every Saturday.",
+      "record": "en-standing:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [],
+      "with_event_approval": [
+        "Entertainment Activities"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "outside_approved_dates",
+        "evidence": "vendor held a concert on friday.; active standing permit covers concerts every saturday."
+      }
+    },
+    {
+      "group": "en-standing",
+      "language": "en",
+      "state": "compliant",
+      "description": "Vendor held a concert on Saturday. Active standing permit covers concerts every Saturday.",
+      "record": "en-standing:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "vendor held a concert on saturday.; active standing permit covers concerts every saturday."
+      }
+    },
+    {
+      "group": "en-standing",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Vendor held a concert on Friday. Standing permit covers concerts every Saturday, but its validity was not verified.",
+      "record": "en-standing:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "vendor held a concert on friday. standing permit covers concerts every saturday, but its validity was not verified."
+      }
+    },
+    {
+      "group": "fil-scope",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nagdaos ng konsiyerto ang tindero. Pahintulot para sa demo sa pagluluto lamang.",
+      "record": "fil-scope:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [],
+      "with_event_approval": [
+        "Entertainment Activities"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "approval_for_different_event",
+        "evidence": "nagdaos ng konsiyerto ang tindero.; pahintulot para sa demo sa pagluluto lamang."
+      }
+    },
+    {
+      "group": "fil-scope",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nagdaos ng konsiyerto ang tindero. Pahintulot para sa konsiyertong ito.",
+      "record": "fil-scope:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "nagdaos ng konsiyerto ang tindero.; pahintulot para sa konsiyertong ito."
+      }
+    },
+    {
+      "group": "fil-scope",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nagdaos ng konsiyerto ang tindero. Di nabasa kung anong palabas ang nasa pahintulot.",
+      "record": "fil-scope:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "nagdaos ng konsiyerto ang tindero. di nabasa kung anong palabas ang nasa pahintulot."
+      }
+    },
+    {
+      "group": "fil-dates",
+      "language": "fil",
+      "state": "supported",
+      "description": "Idinaos ng tindera ang palabas ng mahika noong Agosto 17. Para lamang sa Agosto 16 ang pahintulot.",
+      "record": "fil-dates:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [],
+      "with_event_approval": [
+        "Entertainment Activities"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "outside_approved_dates",
+        "evidence": "idinaos ng tindera ang palabas ng mahika noong agosto 17.; para lamang sa agosto 16 ang pahintulot."
+      }
+    },
+    {
+      "group": "fil-dates",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Idinaos ng tindera ang palabas ng mahika noong Agosto 16. Para lamang sa Agosto 16 ang pahintulot.",
+      "record": "fil-dates:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "idinaos ng tindera ang palabas ng mahika noong agosto 16.; para lamang sa agosto 16 ang pahintulot."
+      }
+    },
+    {
+      "group": "fil-dates",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Idinaos ng tindera ang palabas ng mahika noong Agosto 17. Di mabasa ang petsa sa pahintulot.",
+      "record": "fil-dates:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "idinaos ng tindera ang palabas ng mahika noong agosto 17. di mabasa ang petsa sa pahintulot."
+      }
+    },
+    {
+      "group": "fil-standing",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nagdaos ng palabas ng mahika ang tindera. Pahintulot na may bisa para lang sa bingo at bunutan.",
+      "record": "fil-standing:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [],
+      "with_event_approval": [
+        "Entertainment Activities"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "approval_for_different_event",
+        "evidence": "nagdaos ng palabas ng mahika ang tindera.; pahintulot na may bisa para lang sa bingo at bunutan."
+      }
+    },
+    {
+      "group": "fil-standing",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nagdaos ng palabas ng mahika ang tindera. Pahintulot na may bisa para sa bingo at palabas ng mahika.",
+      "record": "fil-standing:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "nagdaos ng palabas ng mahika ang tindera.; pahintulot na may bisa para sa bingo at palabas ng mahika."
+      }
+    },
+    {
+      "group": "fil-standing",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nagdaos ng palabas ng mahika ang tindera. May bisa ang pahintulot sa ilang palabas pero di nabasa ang listahan.",
+      "record": "fil-standing:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "nagdaos ng palabas ng mahika ang tindera. may bisa ang pahintulot sa ilang palabas pero di nabasa ang listahan."
+      }
+    },
+    {
+      "group": "taglish-scope",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Ginamit ni vendor yung raffle approval para magdaos ng dance show.",
+      "record": "taglish-scope:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [
+        "Entertainment Activities",
+        "Promotions"
+      ],
+      "with_event_approval": [
+        "Entertainment Activities",
+        "Promotions"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "approval_for_different_event",
+        "evidence": "ginamit ni vendor yung raffle approval para magdaos ng dance show."
+      }
+    },
+    {
+      "group": "taglish-scope",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Ginamit ni vendor yung dance show approval para magdaos ng dance show.",
+      "record": "taglish-scope:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [
+        "Entertainment Activities"
+      ],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "ginamit ni vendor yung dance show approval para magdaos ng dance show."
+      }
+    },
+    {
+      "group": "taglish-scope",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Nagdaos si vendor ng dance show. May approval pero di na-check kung para saan.",
+      "record": "taglish-scope:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [
+        "Entertainment Activities"
+      ],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "nagdaos si vendor ng dance show. may approval pero di na check kung para saan."
+      }
+    },
+    {
+      "group": "taglish-dates",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Vendor held a karaoke contest nung Nov 21. Permit valid from Nov 16 to Nov 20.",
+      "record": "taglish-dates:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [
+        "Entertainment Activities"
+      ],
+      "with_event_approval": [
+        "Entertainment Activities"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "outside_approved_dates",
+        "evidence": "vendor held a karaoke contest nung nov 21.; permit valid from nov 16 to nov 20."
+      }
+    },
+    {
+      "group": "taglish-dates",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Vendor held a karaoke contest nung Nov 20. Permit valid from Nov 16 to Nov 20.",
+      "record": "taglish-dates:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [
+        "Entertainment Activities"
+      ],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "vendor held a karaoke contest nung nov 20.; permit valid from nov 16 to nov 20."
+      }
+    },
+    {
+      "group": "taglish-dates",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Vendor held a karaoke contest nung Nov 21. Permit di pa makita, walang verified dates.",
+      "record": "taglish-dates:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [
+        "Entertainment Activities"
+      ],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "vendor held a karaoke contest nung nov 21. permit di pa makita, walang verified dates."
+      }
+    },
+    {
+      "group": "taglish-standing",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Nagdaos ng bingo si vendor nung Dis 2. Valid standing permit covers bingo from Nob 1 to Nob 30.",
+      "record": "taglish-standing:supported",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "v4": [],
+      "with_event_approval": [
+        "Entertainment Activities"
+      ],
+      "approval_evidence": {
+        "state": "supported",
+        "reason": "outside_approved_dates",
+        "evidence": "nagdaos ng bingo si vendor nung dis 2.; valid standing permit covers bingo from nob 1 to nob 30."
+      }
+    },
+    {
+      "group": "taglish-standing",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Nagdaos ng bingo si vendor nung Nob 30. Valid standing permit covers bingo from Nob 1 to Nob 30.",
+      "record": "taglish-standing:compliant",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "compliant",
+        "reason": "within_documented_approval",
+        "evidence": "nagdaos ng bingo si vendor nung nob 30.; valid standing permit covers bingo from nob 1 to nob 30."
+      }
+    },
+    {
+      "group": "taglish-standing",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Nagdaos ng bingo si vendor nung Dis 2. Standing permit covers bingo, di pa sure kung valid pa.",
+      "record": "taglish-standing:insufficient",
+      "expected_decision": "abstain",
+      "expected_codes": [],
+      "v4": [],
+      "with_event_approval": [],
+      "approval_evidence": {
+        "state": "insufficient",
+        "reason": "no_verified_event_approval_pair",
+        "evidence": "nagdaos ng bingo si vendor nung dis 2. standing permit covers bingo, di pa sure kung valid pa."
+      }
+    }
+  ],
+  "archived_decision_changes": {
+    "validation_verified": [],
+    "test_regression_verified": [],
+    "challenge_verified": []
+  }
+}

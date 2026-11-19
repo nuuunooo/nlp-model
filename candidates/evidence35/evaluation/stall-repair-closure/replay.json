@@ -1,0 +1,893 @@
+{
+  "purpose": "Offline synthetic development replay of the Stall Occupancy repair-closure check.",
+  "verifier_cutoff": 0.9999997615814209,
+  "original_v4_reproduced_rows": 35,
+  "sources": {
+    "validation_verified": {
+      "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+      "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+      "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+    },
+    "test_regression_verified": {
+      "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+      "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+      "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+    },
+    "challenge_verified": {
+      "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+      "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+      "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+    }
+  },
+  "addon_sha256": {
+    "scripts/evaluate_stall_repair_closure.py": "82a7d93ecc6d1e6b200dacef2152e79ef08fd747689ed4fa01d9e2d8c9b8e758",
+    "src/stall_repair_closure.py": "d8e2b8bd8c48249af92c7af42c93cf238144d4ce26e9c364f3a8fa1196ff295e",
+    "src/event_approval.py": "85b5509407c9fcf202a1991a1048c9b08d7a8f5499a471a7314079e0ef057317",
+    "src/stall_operating_days.py": "b4be72b96d96cd64fdc22eb05a03cb825b22b37bd968d5a73a75b171c0555c60",
+    "src/vendor_id_stall.py": "48882ae56054f91567a343583f0938bd61db586d88401756ce77f55c87b9b508",
+    "scripts/evaluate_stall_operating_days.py": "27bb67bede6f0d4f07d7712e648d3eb381ec88c55a05c4688b3fae19824c8809",
+    "evaluation/stall-repair-closure/fresh-cases.json": "624af3ad20b020d361a329dd7c44d92eb3f2e1e0ec1f2ae9650d2e824917abc7"
+  },
+  "gates": {
+    "no_new_false_positives": true,
+    "all_original_v4_findings_preserved": true,
+    "other_categories_unchanged": true,
+    "all_fresh_evidence_states_correct": true
+  },
+  "metrics": {
+    "validation_verified": {
+      "stall_occupancy": {
+        "v4": {
+          "true_positives": 20,
+          "false_positives": 0,
+          "false_negatives": 7,
+          "precision": 1.0,
+          "recall": 0.7407407407407407
+        },
+        "with_repair_closure": {
+          "true_positives": 20,
+          "false_positives": 0,
+          "false_negatives": 7,
+          "precision": 1.0,
+          "recall": 0.7407407407407407
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_repair_closure": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "corroborated_existing_findings": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "test_regression_verified": {
+      "stall_occupancy": {
+        "v4": {
+          "true_positives": 15,
+          "false_positives": 0,
+          "false_negatives": 12,
+          "precision": 1.0,
+          "recall": 0.5555555555555556
+        },
+        "with_repair_closure": {
+          "true_positives": 24,
+          "false_positives": 0,
+          "false_negatives": 3,
+          "precision": 1.0,
+          "recall": 0.8888888888888888
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_repair_closure": {
+          "true_positives": 564,
+          "false_positives": 8,
+          "false_negatives": 252,
+          "precision": 0.986013986013986,
+          "recall": 0.6911764705882353,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [
+        "SYN-06-TEST-02:fil",
+        "SYN-06-TEST-02:en",
+        "SYN-06-TEST-02:taglish",
+        "SYN-06-TEST-03:fil",
+        "SYN-06-TEST-03:en",
+        "SYN-06-TEST-03:taglish",
+        "SYN-06-TEST-04:fil",
+        "SYN-06-TEST-04:en",
+        "SYN-06-TEST-04:taglish"
+      ],
+      "new_false_positives": [],
+      "corroborated_existing_findings": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "challenge_verified": {
+      "stall_occupancy": {
+        "v4": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "with_repair_closure": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": null,
+          "recall": 0.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_repair_closure": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "corroborated_existing_findings": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "fresh_matched": {
+      "stall_occupancy": {
+        "v4": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 9,
+          "precision": null,
+          "recall": 0.0
+        },
+        "with_repair_closure": {
+          "true_positives": 9,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 9,
+          "precision": 0,
+          "recall": 0.0,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_repair_closure": {
+          "true_positives": 9,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [
+        "en-active:supported",
+        "en-dates:supported",
+        "en-row:supported",
+        "fil-active:supported",
+        "fil-dates:supported",
+        "fil-row:supported",
+        "taglish-active:supported",
+        "taglish-dates:supported",
+        "taglish-row:supported"
+      ],
+      "new_false_positives": [],
+      "corroborated_existing_findings": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    }
+  },
+  "fresh_state_counts": {
+    "en:compliant": 3,
+    "en:insufficient": 3,
+    "en:supported": 3,
+    "fil:compliant": 3,
+    "fil:insufficient": 3,
+    "fil:supported": 3,
+    "taglish:compliant": 3,
+    "taglish:insufficient": 3,
+    "taglish:supported": 3
+  },
+  "fresh_decisions": [
+    {
+      "group": "en-active",
+      "language": "en",
+      "state": "supported",
+      "description": "Market office closed Stall A-4 for repairs, no entry. Vendor entered Stall A-4.",
+      "record": "en-active:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "vendor entered stall a 4. market office closed stall a 4 for repairs, no entry."
+      }
+    },
+    {
+      "group": "en-active",
+      "language": "en",
+      "state": "compliant",
+      "description": "Market office closed Stall A-4 for repairs, no entry. Vendor entered Stall A-4 with written clearance.",
+      "record": "en-active:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "vendor entered stall a 4 with written clearance. market office closed stall a 4 for repairs, no entry."
+      }
+    },
+    {
+      "group": "en-active",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Market office closed Stall A-4 for repairs, no entry. Vendor entered Stall A-4, clearance not verified.",
+      "record": "en-active:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "vendor entered stall a 4, clearance not verified. market office closed stall a 4 for repairs, no entry."
+      }
+    },
+    {
+      "group": "en-dates",
+      "language": "en",
+      "state": "supported",
+      "description": "Repair notice: Stall J-2 closed from May 2 through May 5, no selling. Vendor sold in Stall J-2 on May 4.",
+      "record": "en-dates:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "vendor sold in stall j 2 on may 4. repair notice stall j 2 closed from may 2 through may 5, no selling."
+      }
+    },
+    {
+      "group": "en-dates",
+      "language": "en",
+      "state": "compliant",
+      "description": "Repair notice: Stall J-2 closed from May 2 to May 5, no entry. Vendor entered Stall J-2 on May 4 with written clearance.",
+      "record": "en-dates:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "vendor entered stall j 2 on may 4 with written clearance. repair notice stall j 2 closed from may 2 to may 5, no entry."
+      }
+    },
+    {
+      "group": "en-dates",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Repair notice: Stall J-2 closed from May 2 through May 5, no selling. Vendor sold in Stall J-2, date unknown.",
+      "record": "en-dates:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "vendor sold in stall j 2, date unknown. repair notice stall j 2 closed from may 2 through may 5, no selling."
+      }
+    },
+    {
+      "group": "en-row",
+      "language": "en",
+      "state": "supported",
+      "description": "No occupancy in the closed row during repairs. Vendor worked inside a closed stall.",
+      "record": "en-row:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "vendor worked inside a closed stall. no occupancy in the closed row during repairs."
+      }
+    },
+    {
+      "group": "en-row",
+      "language": "en",
+      "state": "compliant",
+      "description": "No occupancy in the closed row during repairs. Vendor entered a closed stall with permission to retrieve stock.",
+      "record": "en-row:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "vendor entered a closed stall with permission to retrieve stock. no occupancy in the closed row during repairs."
+      }
+    },
+    {
+      "group": "en-row",
+      "language": "en",
+      "state": "insufficient",
+      "description": "No occupancy in the closed row during repairs. Vendor sold behind safety tape, row status not confirmed.",
+      "record": "en-row:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "vendor sold behind safety tape, row status not confirmed. no occupancy in the closed row during repairs."
+      }
+    },
+    {
+      "group": "fil-active",
+      "language": "fil",
+      "state": "supported",
+      "description": "Isinara ng admin ang puwesto B-2 para sa repair, bawal pumasok. Pumasok ang tindero sa loob ng puwesto B-2.",
+      "record": "fil-active:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "pumasok ang tindero sa loob ng puwesto b 2. isinara ng admin ang puwesto b 2 para sa repair, bawal pumasok."
+      }
+    },
+    {
+      "group": "fil-active",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Isinara ng admin ang puwesto B-2 para sa repair, bawal pumasok. Pumasok doon ang tindero, pinayagan ng admin.",
+      "record": "fil-active:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "pumasok doon ang tindero, pinayagan ng admin. isinara ng admin ang puwesto b 2 para sa repair, bawal pumasok."
+      }
+    },
+    {
+      "group": "fil-active",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Isinara ng admin ang puwesto B-2 para sa repair, bawal pumasok. Pumasok ang tindero, di alam kung pinayagan.",
+      "record": "fil-active:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "pumasok ang tindero, di alam kung pinayagan. isinara ng admin ang puwesto b 2 para sa repair, bawal pumasok."
+      }
+    },
+    {
+      "group": "fil-dates",
+      "language": "fil",
+      "state": "supported",
+      "description": "Utos ng admin: sarado ang puwesto Hun 5 hanggang Hun 9, bawal pasok. Hun 7 pumasok doon ang tindera.",
+      "record": "fil-dates:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "hun 7 pumasok doon ang tindera. utos ng admin sarado ang puwesto hun 5 hanggang hun 9, bawal pasok."
+      }
+    },
+    {
+      "group": "fil-dates",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Utos ng admin: sarado ang puwesto Hun 5 hanggang Hun 9. Hun 7 pumasok doon ang tindera, may pahintulot ng admin.",
+      "record": "fil-dates:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "hun 7 pumasok doon ang tindera, may pahintulot ng admin. utos ng admin sarado ang puwesto hun 5 hanggang hun 9."
+      }
+    },
+    {
+      "group": "fil-dates",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Utos ng admin: sarado ang puwesto Hun 5 hanggang Hun 9, bawal pasok. Pumasok doon ang tindera, di alam ang petsa.",
+      "record": "fil-dates:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "pumasok doon ang tindera, di alam ang petsa. utos ng admin sarado ang puwesto hun 5 hanggang hun 9, bawal pasok."
+      }
+    },
+    {
+      "group": "fil-row",
+      "language": "fil",
+      "state": "supported",
+      "description": "Bawal okupahan ang saradong hanay habang may repair. Inookupahan ng tindero ang puwesto sa saradong hanay.",
+      "record": "fil-row:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "inookupahan ng tindero ang puwesto sa saradong hanay. bawal okupahan ang saradong hanay habang may repair."
+      }
+    },
+    {
+      "group": "fil-row",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Bawal okupahan ang saradong hanay habang may repair. Pumasok ang tindero sa saradong hanay, pinayagan ng admin.",
+      "record": "fil-row:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "pumasok ang tindero sa saradong hanay, pinayagan ng admin. bawal okupahan ang saradong hanay habang may repair."
+      }
+    },
+    {
+      "group": "fil-row",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Bawal okupahan ang saradong hanay habang may repair. May tape sa tinda ng tindero, di alam kung sarado pa.",
+      "record": "fil-row:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "may tape sa tinda ng tindero, di alam kung sarado pa. bawal okupahan ang saradong hanay habang may repair."
+      }
+    },
+    {
+      "group": "taglish-active",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Market office: closed stall J-6 for repair, no selling. Nagbenta si vendor sa loob ng stall J-6.",
+      "record": "taglish-active:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "nagbenta si vendor sa loob ng stall j 6. market office closed stall j 6 for repair, no selling."
+      }
+    },
+    {
+      "group": "taglish-active",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Market office: closed stall J-6 for repair. Vendor picked up stock inside stall J-6 with written clearance.",
+      "record": "taglish-active:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "vendor picked up stock inside stall j 6 with written clearance. market office closed stall j 6 for repair."
+      }
+    },
+    {
+      "group": "taglish-active",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Market office: closed stall J-6 for repair. Vendor pumasok sa stall J-6, di sure kung may clearance.",
+      "record": "taglish-active:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "vendor pumasok sa stall j 6, di sure kung may clearance. market office closed stall j 6 for repair."
+      }
+    },
+    {
+      "group": "taglish-dates",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Repair notice: Stall F-8 closed from Nov 3 to Nov 5, no entry. Pumasok si vendor sa Stall F-8 Nov 4.",
+      "record": "taglish-dates:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "pumasok si vendor sa stall f 8 nov 4. repair notice stall f 8 closed from nov 3 to nov 5, no entry."
+      }
+    },
+    {
+      "group": "taglish-dates",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Repair notice: Stall F-8 closed from Nov 3 to Nov 5. Pumasok si vendor sa Stall F-8 Nov 4, pinayagan ng admin.",
+      "record": "taglish-dates:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "pumasok si vendor sa stall f 8 nov 4, pinayagan ng admin. repair notice stall f 8 closed from nov 3 to nov 5."
+      }
+    },
+    {
+      "group": "taglish-dates",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Repair notice: Stall F-8 closed from Nov 3 to Nov 5, no entry. Pumasok si vendor sa Stall F-8, date not verified.",
+      "record": "taglish-dates:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "pumasok si vendor sa stall f 8, date not verified. repair notice stall f 8 closed from nov 3 to nov 5, no entry."
+      }
+    },
+    {
+      "group": "taglish-row",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Bawal i-occupy ang closed row habang may repairs. Nagwo-work si seller sa loob ng closed stall.",
+      "record": "taglish-row:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_repair_closure": [
+        "Stall Occupancy"
+      ],
+      "repair_closure_evidence": {
+        "state": "supported",
+        "reason": "prohibited_use_during_official_closure",
+        "evidence": "nagwo work si seller sa loob ng closed stall. bawal i occupy ang closed row habang may repairs."
+      }
+    },
+    {
+      "group": "taglish-row",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Bawal i-occupy ang closed row habang may repairs. Vendor entered a closed stall with approval to retrieve stock.",
+      "record": "taglish-row:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "compliant",
+        "reason": "observed_access_explicitly_permitted",
+        "evidence": "vendor entered a closed stall with approval to retrieve stock. bawal i occupy ang closed row habang may repairs."
+      }
+    },
+    {
+      "group": "taglish-row",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Bawal i-occupy ang closed row habang may repairs. Nagwo-work si seller doon daw, di nakita.",
+      "record": "taglish-row:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_repair_closure": [],
+      "repair_closure_evidence": {
+        "state": "insufficient",
+        "reason": "closure_status_date_or_permission_unverified",
+        "evidence": "nagwo work si seller doon daw, di nakita. bawal i occupy ang closed row habang may repairs."
+      }
+    }
+  ],
+  "archived_decision_changes": {
+    "validation_verified": [],
+    "test_regression_verified": [
+      {
+        "description": "Nakita sa Stall D-21 na ibinalik ng may-puwesto ang stock sa saradong puwesto at inookupahan ito. Nakasaad sa patakaran na bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-02:fil",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "nakita sa stall d 21 na ibinalik ng may puwesto ang stock sa saradong puwesto at inookupahan ito. nakasaad sa patakaran na bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito."
+        }
+      },
+      {
+        "description": "At Stall D-21, the stallholder moved stock back into the closed stall and was occupying it. Stalls in a row closed for structural repairs may not be occupied until the row reopens.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-02:en",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "at stall d 21, the stallholder moved stock back into the closed stall and was occupying it. stalls in a row closed for structural repairs may not be occupied until the row reopens."
+        }
+      },
+      {
+        "description": "During ikot, napansin sa Stall D-21 na binalik ni stallholder yung stock sa saradong stall at ino-occupy. Bawal i-occupy ang stalls sa row na sarado for structural repairs hanggang mag-reopen.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-02:taglish",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "during ikot, napansin sa stall d 21 na binalik ni stallholder yung stock sa saradong stall at ino occupy. bawal i occupy ang stalls sa row na sarado for structural repairs hanggang mag reopen."
+        }
+      },
+      {
+        "description": "Nakapaskil na patakaran: bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito. Sa inspeksyon sa Stall H-20, inookupahan ng may-puwesto ang puwesto sa saradong hanay habang may repair.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-03:fil",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "sa inspeksyon sa stall h 20, inookupahan ng may puwesto ang puwesto sa saradong hanay habang may repair. nakapaskil na patakaran bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito."
+        }
+      },
+      {
+        "description": "Rule in force: stalls in a row closed for structural repairs may not be occupied until the row reopens. Stall H-20: the stallholder was occupying the stall in the closed row during the repairs.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-03:en",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "stall h 20 the stallholder was occupying the stall in the closed row during the repairs. rule in force stalls in a row closed for structural repairs may not be occupied until the row reopens."
+        }
+      },
+      {
+        "description": "Rule: bawal i-occupy ang stalls sa row na sarado for structural repairs hanggang mag-reopen. Stall H-20: ino-occupy ni stallholder yung stall sa closed row habang may repairs.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-03:taglish",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "stall h 20 ino occupy ni stallholder yung stall sa closed row habang may repairs. rule bawal i occupy ang stalls sa row na sarado for structural repairs hanggang mag reopen."
+        }
+      },
+      {
+        "description": "St. F-37 — patakaran: bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito / nagtatrabaho ang tindero sa loob ng saradong puwesto sa tabi ng nakatukod na kisame.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-04:fil",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "nagtatrabaho ang tindero sa loob ng saradong puwesto sa tabi ng nakatukod na kisame. st. f 37 patakaran bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito"
+        }
+      },
+      {
+        "description": "St. F-37 — rule: stalls in a row closed for structural repairs may not be occupied until the row reopens / the seller was working inside the closed stall next to the propped ceiling.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-04:en",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "the seller was working inside the closed stall next to the propped ceiling. st. f 37 rule stalls in a row closed for structural repairs may not be occupied until the row reopens"
+        }
+      },
+      {
+        "description": "St. F-37; nagwo-work si seller sa loob ng saradong stall katabi ng nakatukod na ceiling; req: bawal i-occupy ang stalls sa row na sarado for structural repairs hanggang mag-reopen.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-04:taglish",
+        "v4": [],
+        "with_repair_closure": [
+          "Stall Occupancy"
+        ],
+        "repair_closure_evidence": {
+          "state": "supported",
+          "reason": "prohibited_use_during_official_closure",
+          "evidence": "nagwo work si seller sa loob ng saradong stall katabi ng nakatukod na ceiling req bawal i occupy ang stalls sa row na sarado for structural repairs hanggang mag reopen."
+        }
+      }
+    ],
+    "challenge_verified": []
+  }
+}

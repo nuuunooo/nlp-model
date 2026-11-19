@@ -1,0 +1,368 @@
+{
+  "purpose": "validation_only_architecture_experiment_not_deployed",
+  "provenance": {
+    "model": {
+      "repository": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+      "revision": "8adb042d524ecd5c26d3e3ba0e3fbcf7e2d0864c",
+      "files": {
+        "config.json": {
+          "sha256": "4e4430c95100d613df80fa01276f231931e1b535557cf62fbb3cc50323e50cca",
+          "bytes": 1066
+        },
+        "tokenizer.json": {
+          "sha256": "3aca3ce69a0a35aeb144a52c4f1d41c4246b8785f8f398315cc8fb6b24057810",
+          "bytes": 16331396
+        },
+        "tokenizer_config.json": {
+          "sha256": "df9fd3a4482cc4a866788244824573fab8e74dadd1609d4f0e5997f9e96921dc",
+          "bytes": 1256
+        },
+        "special_tokens_map.json": {
+          "sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+          "bytes": 286
+        },
+        "added_tokens.json": {
+          "sha256": "fb697283833d25e2c711f1bc37730ecd8b20f4bd5f015db1d84aefe0adc9155a",
+          "bytes": 23
+        },
+        "spm.model": {
+          "sha256": "13c8d666d62a7bc4ac8f040aab68e942c861f93303156cc28f5c7e885d86d6e3",
+          "bytes": 4305025
+        },
+        "README.md": {
+          "sha256": "c6cc8ca44d55e6ff3dd75672c8fcc41c22ca18b551aa52fb5d611d720a5f966b",
+          "bytes": 6514
+        },
+        "onnx/model_quantized.onnx": {
+          "sha256": "27c39e884c14b03cf46cfc5485971b6db70ff330220d93dfe729c63fde43af0e",
+          "bytes": 338679133
+        }
+      }
+    },
+    "hypotheses": {
+      "Vendor Identification": [
+        "The seller failed the assigned identification requirement.",
+        "The seller has no valid vendor ID.",
+        "The ID belongs to another person.",
+        "The ID is not displayed as required.",
+        "The name or photograph on the ID is not legible."
+      ],
+      "Permit & Licensing": [
+        "The vendor's required permit or certificate is invalid or missing.",
+        "The business permit has expired.",
+        "The required certificate is missing.",
+        "The license was revoked.",
+        "The permit does not cover the vendor's activity."
+      ],
+      "Sanitation": [
+        "The vendor's food handling or stall hygiene is unsanitary.",
+        "The food is exposed to contamination.",
+        "The food preparation surface is dirty.",
+        "The vendor is mishandling waste."
+      ],
+      "Lighting & Energy": [
+        "The vendor used lighting or electricity contrary to the stated restriction.",
+        "The vendor uses colored lights to make food look fresh.",
+        "The freezer uses a common outlet instead of its required metered outlet.",
+        "The vendor is charging devices in violation of a restriction."
+      ],
+      "Stall Occupancy": [
+        "The stallholder's use of the stall violates the stated occupancy condition.",
+        "The vendor is using space that was not awarded to them.",
+        "A household holds more stalls than allowed.",
+        "The stall is being used for something other than selling."
+      ],
+      "Stall Management": [
+        "The stallholder failed to perform the stated management duty.",
+        "The stallholder failed to report damage.",
+        "The required emergency contact information is missing or incorrect.",
+        "The required security or safety equipment is not maintained."
+      ],
+      "Stall Construction": [
+        "The stallholder altered the stall without the required approval.",
+        "The vendor built an improvement without approval.",
+        "The completed work differs from the approved plan.",
+        "The vendor has finished construction while approval is still pending."
+      ],
+      "Utilities": [
+        "The vendor used water or drainage contrary to the stated utility requirement.",
+        "The vendor made an unauthorized water connection.",
+        "The vendor drew water outside the permitted hours.",
+        "The vendor damaged or obstructed drainage."
+      ],
+      "Stall Rental": [
+        "The stallholder failed to fulfill the stated rent or lease obligation.",
+        "The rent remains unpaid.",
+        "The rent check was dishonored.",
+        "The stall was subleased against the lease conditions."
+      ],
+      "Illegal Vendor": [
+        "The vendor sold goods without authorization for that location.",
+        "The vendor is selling in a location without permission.",
+        "The vendor is selling without the required vending authorization."
+      ],
+      "Public Order": [
+        "The vendor caused dangerous disorder that disrupted market activity.",
+        "The vendor caused a fight.",
+        "The vendor caused a dangerous crowd that disrupted trade.",
+        "The vendor caused a disturbance that drove shoppers away."
+      ],
+      "Liquor": [
+        "The vendor served or consumed alcohol contrary to the stated restriction.",
+        "The vendor served alcohol in open containers.",
+        "The vendor drank alcohol in the stall.",
+        "The vendor sold alcohol during an active liquor ban."
+      ],
+      "Market Conduct": [
+        "The vendor mistreated a customer or another vendor.",
+        "The vendor harassed a customer.",
+        "The vendor deceived a customer.",
+        "The vendor mistreated another vendor."
+      ],
+      "Obstruction": [
+        "The vendor's items obstructed a passage.",
+        "The vendor's goods block the passage.",
+        "The vendor placed items across the exit.",
+        "People cannot pass because of the vendor's items."
+      ],
+      "DressCode": [
+        "The worker's clothing violated the stated attire requirement.",
+        "The worker did not wear the required protective clothing.",
+        "The worker's clothes are dirty or torn.",
+        "The worker is wearing prohibited attire."
+      ],
+      "Bladed Instruments": [
+        "The worker violated the stated blade handling or storage requirement.",
+        "A blade was handled contrary to the stated restriction.",
+        "Knives were not locked away when not in use.",
+        "A blade was used outside the permitted area."
+      ],
+      "Traffic": [
+        "The vendor's vehicle violated the stated traffic restriction.",
+        "The vendor's vehicle went the wrong way.",
+        "The vendor's vehicle entered a prohibited area.",
+        "The vendor's delivery breached a loading or parking restriction."
+      ],
+      "Porter Regulation": [
+        "The porter violated the stated porter operating requirement.",
+        "The porter lacks required identification.",
+        "The porter's load exceeds the stated limit.",
+        "The porter did not wear the required numbered vest."
+      ],
+      "Promotions": [
+        "The vendor's promotion violated a stated condition.",
+        "The raffle violated its approved conditions.",
+        "The promotion gave items to prohibited recipients.",
+        "The promised promotion prize was not provided."
+      ],
+      "Advertising": [
+        "The vendor's advertisement violated a stated content or approval condition.",
+        "The advertisement disparaged another vendor.",
+        "Advertisements were distributed without required approval.",
+        "The vendor used customers' contact details without consent."
+      ],
+      "Signage & Streamers": [
+        "The vendor's sign violated a stated display requirement.",
+        "The sign exceeds the stated size or placement limit.",
+        "The sign covers another stall's frontage or number.",
+        "The sign remained after its approved display period."
+      ],
+      "Entertainment Activities": [
+        "The vendor's event violated a stated operating condition.",
+        "The vendor's event exceeded its permitted attendance.",
+        "The event's sound violated the stated conditions.",
+        "The event continued past the approved time."
+      ],
+      "Lighting Facilities": [
+        "A light failed and keeping it working was the stallholder's duty.",
+        "The light is not working despite the stallholder's maintenance duty.",
+        "The required fixture was removed and not replaced."
+      ],
+      "Market Rules": [
+        "The vendor breached the specific market operating rule described.",
+        "The vendor smoked where smoking is prohibited.",
+        "The vendor traded outside the allowed hours.",
+        "The vendor violated a specified cleaning or delivery rule."
+      ],
+      "Price Monitoring": [
+        "The vendor failed to provide required accurate price information.",
+        "The price display omits the required unit.",
+        "The vendor charged above the displayed price for the same quantity.",
+        "Required price information is missing."
+      ],
+      "Market Fees & Surcharges": [
+        "The vendor failed to pay the stated required market fee in full.",
+        "The required fee remains unpaid.",
+        "The vendor paid less than the required fee."
+      ],
+      "Resisting Authority": [
+        "The vendor interfered with an inspector performing an enforcement duty.",
+        "The vendor obstructed the inspector.",
+        "The vendor concealed their identity to interfere with enforcement.",
+        "The vendor forcibly interfered with inspection equipment."
+      ],
+      "General Penalties": [
+        "The vendor continued trading while an active suspension or closure was in force.",
+        "The vendor continued selling during an active suspension.",
+        "The stall continued trading while a closure order remained in force."
+      ]
+    },
+    "pairs_sha256": "964c0d4c7e5b7f867b3999363c5c3ee7f844c6be36bea393d4688661dbf77fae",
+    "eligibility_sha256": "f1ec33c814beb41d2a2a4115a53472e706caac264bb4523ccc429f4f98461930",
+    "strict_base_report_sha256": "41895129e663f15ea6ad95b4b7a45dd551f1037d175243d6324e4039706ea5df"
+  },
+  "pairs": 152,
+  "threshold_comparison": [
+    {
+      "threshold": 0.05,
+      "true_positives": 635,
+      "false_positives": 10,
+      "false_negatives": 181,
+      "precision": 0.9844961240310077,
+      "recall": 0.7781862745098039,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 597
+    },
+    {
+      "threshold": 0.1,
+      "true_positives": 594,
+      "false_positives": 5,
+      "false_negatives": 222,
+      "precision": 0.991652754590985,
+      "recall": 0.7279411764705882,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 562
+    },
+    {
+      "threshold": 0.15,
+      "true_positives": 577,
+      "false_positives": 2,
+      "false_negatives": 239,
+      "precision": 0.9965457685664939,
+      "recall": 0.7071078431372549,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 546
+    },
+    {
+      "threshold": 0.2,
+      "true_positives": 563,
+      "false_positives": 2,
+      "false_negatives": 253,
+      "precision": 0.9964601769911504,
+      "recall": 0.6899509803921569,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 532
+    },
+    {
+      "threshold": 0.25,
+      "true_positives": 548,
+      "false_positives": 2,
+      "false_negatives": 268,
+      "precision": 0.9963636363636363,
+      "recall": 0.6715686274509803,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 519
+    },
+    {
+      "threshold": 0.3,
+      "true_positives": 543,
+      "false_positives": 2,
+      "false_negatives": 273,
+      "precision": 0.9963302752293578,
+      "recall": 0.6654411764705882,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 514
+    },
+    {
+      "threshold": 0.4,
+      "true_positives": 538,
+      "false_positives": 2,
+      "false_negatives": 278,
+      "precision": 0.9962962962962963,
+      "recall": 0.6593137254901961,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 509
+    },
+    {
+      "threshold": 0.5,
+      "true_positives": 534,
+      "false_positives": 2,
+      "false_negatives": 282,
+      "precision": 0.996268656716418,
+      "recall": 0.6544117647058824,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 505
+    },
+    {
+      "threshold": 0.6,
+      "true_positives": 534,
+      "false_positives": 2,
+      "false_negatives": 282,
+      "precision": 0.996268656716418,
+      "recall": 0.6544117647058824,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 505
+    },
+    {
+      "threshold": 0.7,
+      "true_positives": 532,
+      "false_positives": 2,
+      "false_negatives": 284,
+      "precision": 0.9962546816479401,
+      "recall": 0.6519607843137255,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 503
+    },
+    {
+      "threshold": 0.8,
+      "true_positives": 531,
+      "false_positives": 2,
+      "false_negatives": 285,
+      "precision": 0.9962476547842402,
+      "recall": 0.6507352941176471,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 502
+    },
+    {
+      "threshold": 0.9,
+      "true_positives": 531,
+      "false_positives": 2,
+      "false_negatives": 285,
+      "precision": 0.9962476547842402,
+      "recall": 0.6507352941176471,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 502
+    },
+    {
+      "threshold": 0.95,
+      "true_positives": 531,
+      "false_positives": 2,
+      "false_negatives": 285,
+      "precision": 0.9962476547842402,
+      "recall": 0.6507352941176471,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "exact": 502
+    }
+  ],
+  "adoption_target": {
+    "precision": 0.98318,
+    "recall": 0.78799,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "adopted": false,
+  "reason": "Does not preserve the validation recall target; no semantic cutoff enabled in the worker."
+}

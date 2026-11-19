@@ -1,0 +1,144 @@
+{
+  "source": "R01–R03 are user-provided regression notes. F01–F20 are assistant-authored synthetic development holdout notes, labeled from the supplied policy before any inference.",
+  "policy": "Anyone observed drinking alcohol in public, including the market, or while actively selling.",
+  "records": [
+    {
+      "record": "R01",
+      "description": "umiinom ng alak sa pampublikong lugar",
+      "expected_decision": "accept",
+      "basis": "public_place"
+    },
+    {
+      "record": "R02",
+      "description": "si vendor nagtitinda habang umiinom ng alak",
+      "expected_decision": "accept",
+      "basis": "actively_selling"
+    },
+    {
+      "record": "R03",
+      "description": "umiinom ng alak sa loob ng palengke",
+      "expected_decision": "accept",
+      "basis": "public_place"
+    },
+    {
+      "record": "F01",
+      "description": "Nakita ng inspektor na humihigop ng beer ang isang mamimili sa pasilyo ng palengke.",
+      "expected_decision": "accept",
+      "basis": "public_place"
+    },
+    {
+      "record": "F02",
+      "description": "While taking payment from customers, the stallholder drank from a bottle of gin.",
+      "expected_decision": "accept",
+      "basis": "actively_selling"
+    },
+    {
+      "record": "F03",
+      "description": "Sa pampublikong plaza, nag-inom ng gin ang isang bisita habang naghihintay.",
+      "expected_decision": "accept",
+      "basis": "public_place"
+    },
+    {
+      "record": "F04",
+      "description": "Habang nagbebenta ng gulay, umiinom ng beer si ate sa likod ng counter.",
+      "expected_decision": "accept",
+      "basis": "actively_selling"
+    },
+    {
+      "record": "F05",
+      "description": "A shopper took several sips of wine on the public sidewalk outside the stalls.",
+      "expected_decision": "accept",
+      "basis": "public_place"
+    },
+    {
+      "record": "F06",
+      "description": "The cashier was drinking beer while ringing up purchases for customers.",
+      "expected_decision": "accept",
+      "basis": "actively_selling"
+    },
+    {
+      "record": "F07",
+      "description": "Alak ang iniinom ng isang mamimili sa loob ng palengke nang dumating ang inspektor.",
+      "expected_decision": "accept",
+      "basis": "public_place"
+    },
+    {
+      "record": "F08",
+      "description": "The inspector saw the vendor drink a shot of rum as she continued selling fruit.",
+      "expected_decision": "accept",
+      "basis": "actively_selling"
+    },
+    {
+      "record": "F09",
+      "description": "The inspector saw a shopper carrying a sealed bottle of gin along the market aisle.",
+      "expected_decision": "clear",
+      "basis": "sealed_bottle"
+    },
+    {
+      "record": "F10",
+      "description": "Habang nagtitinda, umiinom ng tubig ang vendor. May saradong bote ng beer sa counter.",
+      "expected_decision": "clear",
+      "basis": "nonalcoholic_drink"
+    },
+    {
+      "record": "F11",
+      "description": "A shopper drank beer at home after the stall had closed for the day.",
+      "expected_decision": "clear",
+      "basis": "private_off_duty"
+    },
+    {
+      "record": "F12",
+      "description": "The vendor sold a bottle of beer to a customer. The inspector saw nobody drinking inside the market.",
+      "expected_decision": "clear",
+      "basis": "sale_without_consumption"
+    },
+    {
+      "record": "F13",
+      "description": "Sa loob ng palengke, walang umiinom ng alak. Nakita lang ng inspector ang mga selyadong bote.",
+      "expected_decision": "clear",
+      "basis": "explicit_no_consumption"
+    },
+    {
+      "record": "F14",
+      "description": "The customer sipped alcohol-free beer in the public plaza, as confirmed from the bottle label.",
+      "expected_decision": "clear",
+      "basis": "nonalcoholic_drink"
+    },
+    {
+      "record": "F15",
+      "description": "May nagreklamo na umiinom daw ng alak ang tindero sa palengke. Hindi pa kumpirmado ang ulat.",
+      "expected_decision": "abstain",
+      "basis": "unconfirmed_report"
+    },
+    {
+      "record": "F16",
+      "description": "The vendor was drinking gin. The note gives no location or indication that the vendor was selling at the time.",
+      "expected_decision": "abstain",
+      "basis": "scope_missing"
+    },
+    {
+      "record": "F17",
+      "description": "A helper was drinking beer while the vendor sold vegetables. The location was not recorded.",
+      "expected_decision": "abstain",
+      "basis": "different_people"
+    },
+    {
+      "record": "F18",
+      "description": "Nagtitinda ang vendor habang umiinom mula sa isang baso. Hindi matukoy kung may alak ang laman.",
+      "expected_decision": "abstain",
+      "basis": "beverage_unverified"
+    },
+    {
+      "record": "F19",
+      "description": "Sa loob ng palengke, mukhang uminom ng alak ang customer. The inspector could not verify what was in the cup.",
+      "expected_decision": "abstain",
+      "basis": "beverage_unverified"
+    },
+    {
+      "record": "F20",
+      "description": "The observer initially thought the vendor was drinking beer in the public plaza. This was not confirmed.",
+      "expected_decision": "abstain",
+      "basis": "unconfirmed_followup"
+    }
+  ]
+}

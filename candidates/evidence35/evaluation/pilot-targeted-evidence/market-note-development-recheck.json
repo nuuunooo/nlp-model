@@ -1,0 +1,293 @@
+{
+  "purpose": "Market-note development fixes. The submitted descriptions informed this change.",
+  "scope": "Offline market inspection notes. Market context identifies a note's otherwise unnamed entrance.",
+  "v4_archive_checks": 35,
+  "source_sha256": {
+    "evaluate_market_note_pilot.py": "9f0674482cb4ed619b8d23781a336a70f1e01f6100c3877866534c39c8ddb16a",
+    "inspection_evidence.py": "84a4e5aee0b35941728ab8f0d765dd755947b29031cd5d4eb7f96033928a87e5",
+    "liquor_consumption.py": "099b24f23c7a94ef8211994e4f69cab71f9200856bc6162055381c9ad1890132",
+    "liquor-safeguards-regression.json": "d34a51c572a46ce5601093b14aad1ae44cfac71e0ac7c7f695257b95357d1e92"
+  },
+  "records": [
+    {
+      "record": 1,
+      "description": "Food stall helper has no hairnets and no gloves while handling cooked food",
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [
+        "DressCode"
+      ],
+      "added_evidence": {
+        "DressCode": "missing_hairnet_during_food_work"
+      },
+      "review_only": {},
+      "observed_compliance": []
+    },
+    {
+      "record": 2,
+      "description": "&#x20;nag-uumpukan yung mga porter sa may entrance, nag-iinuman ng gin, ayaw tumanggap ng customer na hindi magbabayad ng doble",
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [
+        "Liquor"
+      ],
+      "added_evidence": {
+        "Liquor": "public_place"
+      },
+      "review_only": {
+        "Porter Regulation": "verify_posted_rate_or_service_rule"
+      },
+      "observed_compliance": []
+    },
+    {
+      "record": 3,
+      "description": "walang ID, walang hairnet yung nagtitinda ng kakanin",
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [
+        "DressCode",
+        "Vendor Identification"
+      ],
+      "added_evidence": {
+        "DressCode": "missing_hairnet_during_food_work",
+        "Vendor Identification": "missing_id_during_vending"
+      },
+      "review_only": {},
+      "observed_compliance": []
+    },
+    {
+      "record": 4,
+      "description": "walang suot na id si kuya sa gulayan, nasa bulsa daw pero di nya mapakita",
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [],
+      "added_evidence": {},
+      "review_only": {
+        "Vendor Identification": "verify_display_requirement_and_assigned_id"
+      },
+      "observed_compliance": []
+    },
+    {
+      "record": 5,
+      "description": "No unregistered vendors found during the sweep of the parking area and entrances",
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [],
+      "added_evidence": {},
+      "review_only": {},
+      "observed_compliance": []
+    },
+    {
+      "record": 6,
+      "description": "malinis ang stall, may yelo ang isda, walang langaw",
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [],
+      "added_evidence": {},
+      "review_only": {},
+      "observed_compliance": [
+        "Sanitation"
+      ]
+    },
+    {
+      "record": 7,
+      "description": "tuloy ang videoke sa ihaw-ihaw hanggang 12mn kahit 10pm lang ang allowed sa entertainment permit nila, at walang suot na hairnet yung nag-iihaw",
+      "v4": [
+        "DressCode"
+      ],
+      "v4_age_time": [
+        "DressCode"
+      ],
+      "v4_consumption": [
+        "DressCode"
+      ],
+      "revised_v4": [
+        "DressCode"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [
+        "DressCode",
+        "Entertainment Activities"
+      ],
+      "added_evidence": {
+        "Entertainment Activities": "observed_end_after_permit_cutoff"
+      },
+      "review_only": {},
+      "observed_compliance": []
+    },
+    {
+      "record": 8,
+      "description": "Tatlong stall sa row H: lahat walang fire extinguisher na required",
+      "v4": [
+        "Stall Management"
+      ],
+      "v4_age_time": [
+        "Stall Management"
+      ],
+      "v4_consumption": [
+        "Stall Management"
+      ],
+      "revised_v4": [
+        "Stall Management"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [
+        "Stall Management"
+      ],
+      "added_evidence": {},
+      "review_only": {},
+      "observed_compliance": []
+    },
+    {
+      "record": 9,
+      "description": "2 months na hindi bayad ang renta ng stall 70, at nakikisaksak pa sa kuryente ng kabilang stall gamit extension nang walang paalam",
+      "v4": [
+        "Stall Rental"
+      ],
+      "v4_age_time": [
+        "Stall Rental"
+      ],
+      "v4_consumption": [
+        "Stall Rental"
+      ],
+      "revised_v4": [
+        "Stall Rental"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [
+        "Stall Rental"
+      ],
+      "added_evidence": {},
+      "review_only": {},
+      "observed_compliance": []
+    },
+    {
+      "record": 10,
+      "description": "3 weeks nang sira yung chiller sa stall 8, di pa rin pinapagawa kahit may warning na",
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null,
+      "with_market_checks": [
+        "Stall Management"
+      ],
+      "added_evidence": {
+        "Stall Management": "stall_equipment_unrepaired_after_warning"
+      },
+      "review_only": {},
+      "observed_compliance": []
+    }
+  ],
+  "development_regression": {
+    "sources": {
+      "validation_verified": {
+        "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+        "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+        "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+      },
+      "test_regression_verified": {
+        "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+        "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+        "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+      },
+      "challenge_verified": {
+        "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+        "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+        "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+      }
+    },
+    "rows": 1657,
+    "changes": {
+      "counts": {
+        "correct_added": 0,
+        "incorrect_added": 0,
+        "correct_removed": 0,
+        "incorrect_removed": 0
+      },
+      "records": []
+    },
+    "locked_consumption_changes": {
+      "counts": {
+        "correct_added": 0,
+        "incorrect_added": 0,
+        "correct_removed": 0,
+        "incorrect_removed": 0
+      },
+      "records": []
+    },
+    "no_new_errors_or_misses": true,
+    "before": {
+      "true_positives": 1263,
+      "false_positives": 10,
+      "false_negatives": 434,
+      "precision": 0.9921445404556166,
+      "recall": 0.7442545668827343,
+      "multi_rows": 150,
+      "multi_exact": 99,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "f1": 0.8505050505050505,
+      "compliant_records": 54,
+      "abstention_records": 56
+    },
+    "after": {
+      "true_positives": 1263,
+      "false_positives": 10,
+      "false_negatives": 434,
+      "precision": 0.9921445404556166,
+      "recall": 0.7442545668827343,
+      "multi_rows": 150,
+      "multi_exact": 99,
+      "clear_false_actions": 0,
+      "unclear_false_actions": 0,
+      "f1": 0.8505050505050505,
+      "compliant_records": 54,
+      "abstention_records": 56
+    }
+  }
+}

@@ -1,0 +1,1820 @@
+{
+  "purpose": "Previously inspected synthetic development regressions. Independent operational test data was excluded.",
+  "comparison_scope": "Archived frozen 3.3 and v4 outputs for the broader cohorts. Recomputed v4 on the locked consumption batch.",
+  "source_sha256": {
+    "evaluate_liquor_regression.py": "de7ec22e6447be0b56afa0e954af832a5a39db0eafbb19a3c51d92a9359d8683",
+    "liquor_consumption.py": "6d91ca35ba9df4a5c74376adb582a5eed014ee70810d427a46cf40bba53bfa96",
+    "liquor_evidence.py": "99d5dd2749c84531440219c8263225a26c275aa63f4eec3412e4e7fd49cd9831",
+    "evaluate_pilot_consumption.py": "0be4f6ddfbc334b237d2b025d2b136464780a33a799ef4ab6884b6e09dfe6b16",
+    "liquor_consumption_pilot_policy.json": "9baaffcceef37ed0d20ccd880cefe04d1b29dc1d280929a5bf12a5f18d7ebb52",
+    "liquor_pilot_policy.json": "973e30015619aa2b10498c4564f7f759405623711729998eec654fbf569a795b",
+    "liquor-consumption-batch.json": "968ced47c0553a904de590f2a90a7aa1c55b721baf85d879c6bface402314b65",
+    "liquor-policy-recheck.json": "19bb07383bf54b2d0208cdead5b6a1a28e37a4885ecad7d8780d53cce618f09f"
+  },
+  "v4_archive_checks": 35,
+  "broad_sources": {
+    "validation_verified": {
+      "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+      "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+      "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+    },
+    "test_regression_verified": {
+      "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+      "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+      "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+    },
+    "challenge_verified": {
+      "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+      "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+      "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+    }
+  },
+  "metrics": {
+    "known_consumption": {
+      "v4": {
+        "true_positives": 2,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8,
+        "compliant_records": 0,
+        "abstention_records": 0
+      },
+      "v4_age_time": {
+        "true_positives": 2,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8,
+        "compliant_records": 0,
+        "abstention_records": 0
+      },
+      "v4_consumption": {
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 1.0,
+        "compliant_records": 0,
+        "abstention_records": 0
+      },
+      "revised_v4": {
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 1.0,
+        "compliant_records": 0,
+        "abstention_records": 0
+      }
+    },
+    "consumption_20": {
+      "v4": {
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 7,
+        "precision": 0.5,
+        "recall": 0.125,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 1,
+        "unclear_false_actions": 1,
+        "f1": 0.2,
+        "compliant_records": 6,
+        "abstention_records": 6
+      },
+      "v4_age_time": {
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 7,
+        "precision": 0.5,
+        "recall": 0.125,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 1,
+        "unclear_false_actions": 1,
+        "f1": 0.2,
+        "compliant_records": 6,
+        "abstention_records": 6
+      },
+      "v4_consumption": {
+        "true_positives": 8,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "precision": 0.8888888888888888,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 1,
+        "unclear_false_actions": 1,
+        "f1": 0.9411764705882353,
+        "compliant_records": 6,
+        "abstention_records": 6
+      },
+      "revised_v4": {
+        "true_positives": 8,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 1.0,
+        "compliant_records": 6,
+        "abstention_records": 6
+      }
+    },
+    "age_time_10": {
+      "v4": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 4,
+        "precision": null,
+        "recall": 0.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.0,
+        "compliant_records": 3,
+        "abstention_records": 3
+      },
+      "v4_age_time": {
+        "true_positives": 4,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 1.0,
+        "compliant_records": 3,
+        "abstention_records": 3
+      },
+      "v4_consumption": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 4,
+        "precision": null,
+        "recall": 0.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.0,
+        "compliant_records": 3,
+        "abstention_records": 3
+      },
+      "revised_v4": {
+        "true_positives": 4,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 1.0,
+        "compliant_records": 3,
+        "abstention_records": 3
+      }
+    },
+    "validation_verified": {
+      "frozen_33": {
+        "true_positives": 643,
+        "false_positives": 11,
+        "false_negatives": 173,
+        "precision": 0.9831804281345565,
+        "recall": 0.7879901960784313,
+        "multi_rows": 60,
+        "multi_exact": 42,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8748299319727891,
+        "compliant_records": 24,
+        "abstention_records": 24
+      },
+      "v4": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8809849521203831,
+        "compliant_records": 24,
+        "abstention_records": 24
+      },
+      "v4_age_time": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8809849521203831,
+        "compliant_records": 24,
+        "abstention_records": 24
+      },
+      "v4_consumption": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8809849521203831,
+        "compliant_records": 24,
+        "abstention_records": 24
+      },
+      "revised_v4": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8809849521203831,
+        "compliant_records": 24,
+        "abstention_records": 24
+      }
+    },
+    "test_regression_verified": {
+      "frozen_33": {
+        "true_positives": 590,
+        "false_positives": 28,
+        "false_negatives": 226,
+        "precision": 0.9546925566343042,
+        "recall": 0.7230392156862745,
+        "multi_rows": 60,
+        "multi_exact": 36,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8228730822873083,
+        "compliant_records": 24,
+        "abstention_records": 24
+      },
+      "v4": {
+        "true_positives": 555,
+        "false_positives": 8,
+        "false_negatives": 261,
+        "precision": 0.9857904085257548,
+        "recall": 0.6801470588235294,
+        "multi_rows": 60,
+        "multi_exact": 34,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8049311094996374,
+        "compliant_records": 24,
+        "abstention_records": 24
+      },
+      "v4_age_time": {
+        "true_positives": 571,
+        "false_positives": 8,
+        "false_negatives": 245,
+        "precision": 0.9861830742659758,
+        "recall": 0.6997549019607843,
+        "multi_rows": 60,
+        "multi_exact": 37,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8186379928315413,
+        "compliant_records": 24,
+        "abstention_records": 24
+      },
+      "v4_consumption": {
+        "true_positives": 555,
+        "false_positives": 8,
+        "false_negatives": 261,
+        "precision": 0.9857904085257548,
+        "recall": 0.6801470588235294,
+        "multi_rows": 60,
+        "multi_exact": 34,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8049311094996374,
+        "compliant_records": 24,
+        "abstention_records": 24
+      },
+      "revised_v4": {
+        "true_positives": 571,
+        "false_positives": 8,
+        "false_negatives": 245,
+        "precision": 0.9861830742659758,
+        "recall": 0.6997549019607843,
+        "multi_rows": 60,
+        "multi_exact": 37,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8186379928315413,
+        "compliant_records": 24,
+        "abstention_records": 24
+      }
+    },
+    "challenge_verified": {
+      "frozen_33": {
+        "true_positives": 48,
+        "false_positives": 1,
+        "false_negatives": 17,
+        "precision": 0.9795918367346939,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 19,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 1,
+        "f1": 0.8421052631578947,
+        "compliant_records": 6,
+        "abstention_records": 8
+      },
+      "v4": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8495575221238938,
+        "compliant_records": 6,
+        "abstention_records": 8
+      },
+      "v4_age_time": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8495575221238938,
+        "compliant_records": 6,
+        "abstention_records": 8
+      },
+      "v4_consumption": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8495575221238938,
+        "compliant_records": 6,
+        "abstention_records": 8
+      },
+      "revised_v4": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8495575221238938,
+        "compliant_records": 6,
+        "abstention_records": 8
+      }
+    },
+    "broader_total": {
+      "frozen_33": {
+        "true_positives": 1281,
+        "false_positives": 40,
+        "false_negatives": 416,
+        "precision": 0.9697199091597275,
+        "recall": 0.7548615203299941,
+        "multi_rows": 150,
+        "multi_exact": 97,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 1,
+        "f1": 0.8489065606361829,
+        "compliant_records": 54,
+        "abstention_records": 56
+      },
+      "v4": {
+        "true_positives": 1247,
+        "false_positives": 10,
+        "false_negatives": 450,
+        "precision": 0.9920445505171042,
+        "recall": 0.7348261638185032,
+        "multi_rows": 150,
+        "multi_exact": 96,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8442789438050101,
+        "compliant_records": 54,
+        "abstention_records": 56
+      },
+      "v4_age_time": {
+        "true_positives": 1263,
+        "false_positives": 10,
+        "false_negatives": 434,
+        "precision": 0.9921445404556166,
+        "recall": 0.7442545668827343,
+        "multi_rows": 150,
+        "multi_exact": 99,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8505050505050505,
+        "compliant_records": 54,
+        "abstention_records": 56
+      },
+      "v4_consumption": {
+        "true_positives": 1247,
+        "false_positives": 10,
+        "false_negatives": 450,
+        "precision": 0.9920445505171042,
+        "recall": 0.7348261638185032,
+        "multi_rows": 150,
+        "multi_exact": 96,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8442789438050101,
+        "compliant_records": 54,
+        "abstention_records": 56
+      },
+      "revised_v4": {
+        "true_positives": 1263,
+        "false_positives": 10,
+        "false_negatives": 434,
+        "precision": 0.9921445404556166,
+        "recall": 0.7442545668827343,
+        "multi_rows": 150,
+        "multi_exact": 99,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8505050505050505,
+        "compliant_records": 54,
+        "abstention_records": 56
+      }
+    }
+  },
+  "broader_changes": {
+    "v4_age_time": {
+      "counts": {
+        "correct_added": 16,
+        "incorrect_added": 0,
+        "correct_removed": 0,
+        "incorrect_removed": 0
+      },
+      "records": [
+        {
+          "record": "SYN-13-TEST-01:en",
+          "description": "The seller sold a bottle of beer to a buyer whose school ID shows age 16 at Stall C-09; liquor may not be sold to anyone under 18.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-02:fil",
+          "description": "Habang nag-iikot, napansin sa Stall C-01 na nagbenta ang may-puwesto ng gin sa isang 15 taong gulang, ayon sa ID ng mamimili. Bawal magbenta ng alak sa sinumang wala pang 18 taong gulang.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-02:en",
+          "description": "At Stall C-01, the stallholder sold gin to a 15-year-old, per the buyer's ID. Liquor may not be sold to anyone under 18.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-04:en",
+          "description": "St. G-19. Req: liquor may not be sold to anyone under 18. Obs: the stallholder sold a bottle of rum to a boy whose barangay ID shows age 14.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-04:taglish",
+          "description": "St. G-19. Rule: bawal mag-sell ng alak sa under 18. Obs: nagbenta si stallholder ng bote ng rum sa batang 14 years old sa barangay ID niya.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-05:en",
+          "description": "The stallholder sold beer at 7:15 AM at Stall C-30; licensed stalls may sell liquor only from 10:00 AM to 8:00 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-06:fil",
+          "description": "Habang nag-iikot, napansin sa Stall D-17 na nagbenta ang tindero ng isang bote ng gin nang 9:40 PM. Puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10:00 AM hanggang 8:00 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-06:en",
+          "description": "It was noted at Stall D-17 that the seller sold a bottle of gin at 9:40 PM. The posted rule states that licensed stalls may sell liquor only from 10:00 AM to 8:00 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-07:fil",
+          "description": "Patakaran: puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10:00 AM hanggang 8:00 PM. Stall D-15: nagbenta ang may-puwesto ng de-latang beer nang 6:30 AM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-07:en",
+          "description": "Licensed stalls may sell liquor only from 10:00 AM to 8:00 PM. At Stall D-15, the stallholder sold canned beer at 6:30 AM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-08:fil",
+          "description": "St. C-23 — patakaran: puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10:00 AM hanggang 8:00 PM / naibenta ng tindero ang isang bote ng brandy nang 8:45 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-08:en",
+          "description": "St. C-23. Req: licensed stalls may sell liquor only from 10:00 AM to 8:00 PM. Obs: the seller rang up a bottle of brandy at 8:45 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-08:taglish",
+          "description": "St. C-23; na-ring up ni seller yung bote ng brandy ng 8:45 PM; req: pwede lang mag-sell ng alak ang licensed stalls from 10:00 AM to 8:00 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-12x13-TEST-01:fil",
+          "description": "St. D-18: (1) Naupo sa daanan ang isang grupo ng tindero habang nagsisigaw ng islogan, at tumigil ang bentahan sa hanay. (2) Nagbenta ang may-puwesto ng gin sa isang 15 taong gulang, ayon sa ID ng mamimili. Patakaran: bawal magbenta ng alak sa sinumang wala pang 18 taong gulang.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Public Order",
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-12x13-TEST-01:en",
+          "description": "St. D-18 — A group of vendors sat across the walkway chanting, and the row stopped trading. / The stallholder sold gin to a 15-year-old, per the buyer's ID. Rule: liquor may not be sold to anyone under 18.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Public Order",
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-12x13-TEST-01:taglish",
+          "description": "St. D-18 — Umupo across the walkway yung grupo ng vendors na nagcha-chant, huminto ang bentahan sa row. / Nagbenta si stallholder ng gin sa 15-year-old, ayon sa ID ng buyer. Rule: bawal mag-sell ng alak sa under 18.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Public Order",
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        }
+      ]
+    },
+    "v4_consumption": {
+      "counts": {
+        "correct_added": 0,
+        "incorrect_added": 0,
+        "correct_removed": 0,
+        "incorrect_removed": 0
+      },
+      "records": []
+    },
+    "revised_v4": {
+      "counts": {
+        "correct_added": 16,
+        "incorrect_added": 0,
+        "correct_removed": 0,
+        "incorrect_removed": 0
+      },
+      "records": [
+        {
+          "record": "SYN-13-TEST-01:en",
+          "description": "The seller sold a bottle of beer to a buyer whose school ID shows age 16 at Stall C-09; liquor may not be sold to anyone under 18.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-02:fil",
+          "description": "Habang nag-iikot, napansin sa Stall C-01 na nagbenta ang may-puwesto ng gin sa isang 15 taong gulang, ayon sa ID ng mamimili. Bawal magbenta ng alak sa sinumang wala pang 18 taong gulang.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-02:en",
+          "description": "At Stall C-01, the stallholder sold gin to a 15-year-old, per the buyer's ID. Liquor may not be sold to anyone under 18.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-04:en",
+          "description": "St. G-19. Req: liquor may not be sold to anyone under 18. Obs: the stallholder sold a bottle of rum to a boy whose barangay ID shows age 14.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-04:taglish",
+          "description": "St. G-19. Rule: bawal mag-sell ng alak sa under 18. Obs: nagbenta si stallholder ng bote ng rum sa batang 14 years old sa barangay ID niya.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-05:en",
+          "description": "The stallholder sold beer at 7:15 AM at Stall C-30; licensed stalls may sell liquor only from 10:00 AM to 8:00 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-06:fil",
+          "description": "Habang nag-iikot, napansin sa Stall D-17 na nagbenta ang tindero ng isang bote ng gin nang 9:40 PM. Puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10:00 AM hanggang 8:00 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-06:en",
+          "description": "It was noted at Stall D-17 that the seller sold a bottle of gin at 9:40 PM. The posted rule states that licensed stalls may sell liquor only from 10:00 AM to 8:00 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-07:fil",
+          "description": "Patakaran: puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10:00 AM hanggang 8:00 PM. Stall D-15: nagbenta ang may-puwesto ng de-latang beer nang 6:30 AM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-07:en",
+          "description": "Licensed stalls may sell liquor only from 10:00 AM to 8:00 PM. At Stall D-15, the stallholder sold canned beer at 6:30 AM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-08:fil",
+          "description": "St. C-23 — patakaran: puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10:00 AM hanggang 8:00 PM / naibenta ng tindero ang isang bote ng brandy nang 8:45 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-08:en",
+          "description": "St. C-23. Req: licensed stalls may sell liquor only from 10:00 AM to 8:00 PM. Obs: the seller rang up a bottle of brandy at 8:45 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-13-TEST-08:taglish",
+          "description": "St. C-23; na-ring up ni seller yung bote ng brandy ng 8:45 PM; req: pwede lang mag-sell ng alak ang licensed stalls from 10:00 AM to 8:00 PM.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "documented_liquor_sale_window"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-12x13-TEST-01:fil",
+          "description": "St. D-18: (1) Naupo sa daanan ang isang grupo ng tindero habang nagsisigaw ng islogan, at tumigil ang bentahan sa hanay. (2) Nagbenta ang may-puwesto ng gin sa isang 15 taong gulang, ayon sa ID ng mamimili. Patakaran: bawal magbenta ng alak sa sinumang wala pang 18 taong gulang.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Public Order",
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-12x13-TEST-01:en",
+          "description": "St. D-18 — A group of vendors sat across the walkway chanting, and the row stopped trading. / The stallholder sold gin to a 15-year-old, per the buyer's ID. Rule: liquor may not be sold to anyone under 18.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Public Order",
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        },
+        {
+          "record": "SYN-12x13-TEST-01:taglish",
+          "description": "St. D-18 — Umupo across the walkway yung grupo ng vendors na nagcha-chant, huminto ang bentahan sa row. / Nagbenta si stallholder ng gin sa 15-year-old, ayon sa ID ng buyer. Rule: bawal mag-sell ng alak sa under 18.",
+          "expected_decision": "accept",
+          "expected_codes": [
+            "Public Order",
+            "Liquor"
+          ],
+          "age_time_evidence": [
+            "verified_buyer_age"
+          ],
+          "consumption_evidence": [],
+          "consumption_veto": null,
+          "added": [
+            "Liquor"
+          ],
+          "removed": []
+        }
+      ]
+    }
+  },
+  "consumption_20_changes_vs_additive": {
+    "counts": {
+      "correct_added": 0,
+      "incorrect_added": 0,
+      "correct_removed": 0,
+      "incorrect_removed": 2
+    },
+    "records": [
+      {
+        "record": "F13",
+        "description": "Sa loob ng palengke, walang umiinom ng alak. Nakita lang ng inspector ang mga selyadong bote.",
+        "expected_decision": "clear",
+        "expected_codes": [],
+        "age_time_evidence": [],
+        "consumption_evidence": [],
+        "consumption_veto": "negated_consumption",
+        "added": [],
+        "removed": [
+          "Liquor"
+        ]
+      },
+      {
+        "record": "F16",
+        "description": "The vendor was drinking gin. The note gives no location or indication that the vendor was selling at the time.",
+        "expected_decision": "abstain",
+        "expected_codes": null,
+        "age_time_evidence": [],
+        "consumption_evidence": [],
+        "consumption_veto": "insufficient_consumption_evidence",
+        "added": [],
+        "removed": [
+          "Liquor"
+        ]
+      }
+    ]
+  },
+  "locked_consumption_records": [
+    {
+      "record": "R01",
+      "description": "umiinom ng alak sa pampublikong lugar",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "public_place"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "R02",
+      "description": "si vendor nagtitinda habang umiinom ng alak",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [
+        "Liquor"
+      ],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "actively_selling"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "R03",
+      "description": "umiinom ng alak sa loob ng palengke",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [
+        "Liquor"
+      ],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "public_place"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F01",
+      "description": "Nakita ng inspektor na humihigop ng beer ang isang mamimili sa pasilyo ng palengke.",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "public_place"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F02",
+      "description": "While taking payment from customers, the stallholder drank from a bottle of gin.",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "actively_selling"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F03",
+      "description": "Sa pampublikong plaza, nag-inom ng gin ang isang bisita habang naghihintay.",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "public_place"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F04",
+      "description": "Habang nagbebenta ng gulay, umiinom ng beer si ate sa likod ng counter.",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [
+        "Liquor"
+      ],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "actively_selling"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F05",
+      "description": "A shopper took several sips of wine on the public sidewalk outside the stalls.",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "public_place"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F06",
+      "description": "The cashier was drinking beer while ringing up purchases for customers.",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "actively_selling"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F07",
+      "description": "Alak ang iniinom ng isang mamimili sa loob ng palengke nang dumating ang inspektor.",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "public_place"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F08",
+      "description": "The inspector saw the vendor drink a shot of rum as she continued selling fruit.",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [],
+      "consumption_evidence": [
+        "actively_selling"
+      ],
+      "consumption_veto": null
+    },
+    {
+      "record": "F09",
+      "description": "The inspector saw a shopper carrying a sealed bottle of gin along the market aisle.",
+      "expected_decision": "clear",
+      "basis": "sealed_bottle",
+      "expected_codes": [],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F10",
+      "description": "Habang nagtitinda, umiinom ng tubig ang vendor. May saradong bote ng beer sa counter.",
+      "expected_decision": "clear",
+      "basis": "nonalcoholic_drink",
+      "expected_codes": [],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F11",
+      "description": "A shopper drank beer at home after the stall had closed for the day.",
+      "expected_decision": "clear",
+      "basis": "private_off_duty",
+      "expected_codes": [],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F12",
+      "description": "The vendor sold a bottle of beer to a customer. The inspector saw nobody drinking inside the market.",
+      "expected_decision": "clear",
+      "basis": "sale_without_consumption",
+      "expected_codes": [],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F13",
+      "description": "Sa loob ng palengke, walang umiinom ng alak. Nakita lang ng inspector ang mga selyadong bote.",
+      "expected_decision": "clear",
+      "basis": "explicit_no_consumption",
+      "expected_codes": [],
+      "v4": [
+        "Liquor"
+      ],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": "negated_consumption"
+    },
+    {
+      "record": "F14",
+      "description": "The customer sipped alcohol-free beer in the public plaza, as confirmed from the bottle label.",
+      "expected_decision": "clear",
+      "basis": "nonalcoholic_drink",
+      "expected_codes": [],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F15",
+      "description": "May nagreklamo na umiinom daw ng alak ang tindero sa palengke. Hindi pa kumpirmado ang ulat.",
+      "expected_decision": "abstain",
+      "basis": "unconfirmed_report",
+      "expected_codes": null,
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F16",
+      "description": "The vendor was drinking gin. The note gives no location or indication that the vendor was selling at the time.",
+      "expected_decision": "abstain",
+      "basis": "scope_missing",
+      "expected_codes": null,
+      "v4": [
+        "Liquor"
+      ],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [
+        "Liquor"
+      ],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": "insufficient_consumption_evidence"
+    },
+    {
+      "record": "F17",
+      "description": "A helper was drinking beer while the vendor sold vegetables. The location was not recorded.",
+      "expected_decision": "abstain",
+      "basis": "different_people",
+      "expected_codes": null,
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F18",
+      "description": "Nagtitinda ang vendor habang umiinom mula sa isang baso. Hindi matukoy kung may alak ang laman.",
+      "expected_decision": "abstain",
+      "basis": "beverage_unverified",
+      "expected_codes": null,
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F19",
+      "description": "Sa loob ng palengke, mukhang uminom ng alak ang customer. The inspector could not verify what was in the cup.",
+      "expected_decision": "abstain",
+      "basis": "beverage_unverified",
+      "expected_codes": null,
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": "F20",
+      "description": "The observer initially thought the vendor was drinking beer in the public plaza. This was not confirmed.",
+      "expected_decision": "abstain",
+      "basis": "unconfirmed_followup",
+      "expected_codes": null,
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    }
+  ],
+  "age_time_records": [
+    {
+      "record": 1,
+      "description": "During inspection, the vendor sold one bottle of liquor to a 17-year-old customer. The buyer’s age was confirmed from a valid identification card.",
+      "v4_codes": [],
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "supported",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "insufficient",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ],
+      "v4": [],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [
+        "verified_buyer_age"
+      ],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 2,
+      "description": "A customer purchased two bottles of beer from the store at 7:45 PM. The recorded market restriction prohibits liquor sales after 8:00 PM.",
+      "v4_codes": [],
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "with_policy_codes": [],
+      "comparisons": [
+        {
+          "state": "insufficient",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "compliant",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 3,
+      "description": "At approximately 9:10 PM, an inspector observed the vendor completing a liquor sale. The applicable market rule states that liquor sales are prohibited after 8:00 PM.",
+      "v4_codes": [],
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "insufficient",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "supported",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ],
+      "v4": [],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [
+        "documented_liquor_sale_cutoff"
+      ],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 4,
+      "description": "Several bottles of liquor were displayed at the store. A young-looking customer was seen leaving with one bottle, but inspectors were unable to confirm the customer’s age or whether the bottle had actually been purchased from the vendor.",
+      "v4_codes": [],
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "with_policy_codes": [],
+      "comparisons": [],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 5,
+      "description": "The vendor sold liquor to a customer whose identification showed an age of 24 years. The transaction occurred at 6:30 PM, within the permitted selling hours.",
+      "v4_codes": [],
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "with_policy_codes": [],
+      "comparisons": [
+        {
+          "state": "compliant",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "compliant",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 6,
+      "description": "An inspection note states that liquor may have been sold sometime after closing hours. No transaction time, receipt, CCTV record, or direct observation was available to confirm when the alleged sale occurred.",
+      "v4_codes": [],
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "with_policy_codes": [],
+      "comparisons": [],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 7,
+      "description": "At 7:20 PM, the vendor sold beer to a customer whose identification confirmed that the customer was 19 years old. The market restriction prohibits sales to persons below 18 and prohibits liquor sales after 8:00 PM.",
+      "v4_codes": [],
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "with_policy_codes": [],
+      "comparisons": [
+        {
+          "state": "compliant",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "compliant",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 8,
+      "description": "A liquor transaction was recorded at 8:35 PM. The vendor’s receipt and the inspector’s timestamp both confirmed the time of sale, while the market rule prohibits liquor sales after 8:00 PM.",
+      "v4_codes": [],
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "insufficient",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "supported",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ],
+      "v4": [],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [
+        "documented_liquor_sale_cutoff"
+      ],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 9,
+      "description": "A customer stated that they had purchased liquor from the vendor earlier that evening. The customer did not provide identification, and the inspector could not verify the customer’s age or the exact time of the transaction.",
+      "v4_codes": [],
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "with_policy_codes": [],
+      "comparisons": [],
+      "v4": [],
+      "v4_age_time": [],
+      "v4_consumption": [],
+      "revised_v4": [],
+      "age_time_evidence": [],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    },
+    {
+      "record": 10,
+      "description": "The vendor sold a bottle of liquor to a customer whose identification showed that the customer was 16 years old. The transaction occurred at 5:40 PM, during otherwise permitted selling hours.",
+      "v4_codes": [],
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "supported",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "compliant",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ],
+      "v4": [],
+      "v4_age_time": [
+        "Liquor"
+      ],
+      "v4_consumption": [],
+      "revised_v4": [
+        "Liquor"
+      ],
+      "age_time_evidence": [
+        "verified_buyer_age"
+      ],
+      "consumption_evidence": [],
+      "consumption_veto": null
+    }
+  ]
+}

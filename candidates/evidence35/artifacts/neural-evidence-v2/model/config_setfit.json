@@ -1,0 +1,8 @@
+{
+  "labels": [
+    "supported",
+    "compliant",
+    "insufficient"
+  ],
+  "normalize_embeddings": true
+}

@@ -1,0 +1,2 @@
+# Optional local semantic-verifier experiment; original SetFit weights stay frozen.
+onnxruntime==1.23.2

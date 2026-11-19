@@ -1,0 +1,6 @@
+{
+  "policy_id": "synthetic-liquor-consumption-v1",
+  "scope": "synthetic_evaluation",
+  "source": "User-supplied Liquor consumption rules for the offline pilot.",
+  "qualifying_contexts": ["public_place", "actively_selling"]
+}

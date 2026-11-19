@@ -1,0 +1,879 @@
+{
+  "purpose": "Offline synthetic development replay of the Stall Occupancy operating-days check.",
+  "verifier_cutoff": 0.9999997615814209,
+  "original_v4_reproduced_rows": 35,
+  "sources": {
+    "validation_verified": {
+      "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+      "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+      "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+    },
+    "test_regression_verified": {
+      "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+      "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+      "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+    },
+    "challenge_verified": {
+      "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+      "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+      "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+    }
+  },
+  "addon_sha256": {
+    "scripts/evaluate_stall_operating_days.py": "27bb67bede6f0d4f07d7712e648d3eb381ec88c55a05c4688b3fae19824c8809",
+    "src/stall_operating_days.py": "b4be72b96d96cd64fdc22eb05a03cb825b22b37bd968d5a73a75b171c0555c60",
+    "src/vendor_id_stall.py": "48882ae56054f91567a343583f0938bd61db586d88401756ce77f55c87b9b508",
+    "evaluation/stall-operating-days/fresh-cases.json": "10f1ac88feec9a5a49b343603e212a747722b370d4c36cb3d5ee3d30eb0b03cc"
+  },
+  "gates": {
+    "no_new_false_positives": true,
+    "all_original_v4_findings_preserved": true,
+    "other_categories_unchanged": true,
+    "all_fresh_evidence_states_correct": true
+  },
+  "metrics": {
+    "validation_verified": {
+      "stall_occupancy": {
+        "v4": {
+          "true_positives": 20,
+          "false_positives": 0,
+          "false_negatives": 7,
+          "precision": 1.0,
+          "recall": 0.7407407407407407
+        },
+        "with_operating_days": {
+          "true_positives": 20,
+          "false_positives": 0,
+          "false_negatives": 7,
+          "precision": 1.0,
+          "recall": 0.7407407407407407
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_operating_days": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "corroborated_existing_findings": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "test_regression_verified": {
+      "stall_occupancy": {
+        "v4": {
+          "true_positives": 15,
+          "false_positives": 0,
+          "false_negatives": 12,
+          "precision": 1.0,
+          "recall": 0.5555555555555556
+        },
+        "with_operating_days": {
+          "true_positives": 15,
+          "false_positives": 0,
+          "false_negatives": 12,
+          "precision": 1.0,
+          "recall": 0.5555555555555556
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_operating_days": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "corroborated_existing_findings": [
+        "SYN-06-TEST-05:fil",
+        "SYN-06-TEST-05:en",
+        "SYN-06-TEST-05:taglish",
+        "SYN-06-TEST-06:fil",
+        "SYN-06-TEST-06:en",
+        "SYN-06-TEST-06:taglish",
+        "SYN-06-TEST-07:fil",
+        "SYN-06-TEST-07:en",
+        "SYN-06-TEST-07:taglish",
+        "SYN-06-TEST-08:fil",
+        "SYN-06-TEST-08:en",
+        "SYN-06-TEST-08:taglish",
+        "SYN-06x10-TEST-01:fil",
+        "SYN-06x10-TEST-01:en",
+        "SYN-06x10-TEST-01:taglish"
+      ],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "challenge_verified": {
+      "stall_occupancy": {
+        "v4": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "with_operating_days": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": null,
+          "recall": 0.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_operating_days": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "corroborated_existing_findings": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "fresh_matched": {
+      "stall_occupancy": {
+        "v4": {
+          "true_positives": 2,
+          "false_positives": 6,
+          "false_negatives": 7,
+          "precision": 0.25,
+          "recall": 0.2222222222222222
+        },
+        "with_operating_days": {
+          "true_positives": 9,
+          "false_positives": 6,
+          "false_negatives": 0,
+          "precision": 0.6,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 2,
+          "false_positives": 6,
+          "false_negatives": 7,
+          "precision": 0.25,
+          "recall": 0.2222222222222222,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 3,
+          "unclear_false_actions": 3
+        },
+        "with_operating_days": {
+          "true_positives": 9,
+          "false_positives": 6,
+          "false_negatives": 0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 3,
+          "unclear_false_actions": 3
+        }
+      },
+      "recovered_misses": [
+        "en-weekly:supported",
+        "en-monthly:supported",
+        "fil-weekly:supported",
+        "fil-awardee:supported",
+        "fil-monthly:supported",
+        "taglish-weekly:supported",
+        "taglish-monthly:supported"
+      ],
+      "new_false_positives": [],
+      "corroborated_existing_findings": [
+        "en-awardee:supported",
+        "taglish-awardee:supported"
+      ],
+      "removed_findings": [],
+      "other_category_changes": []
+    }
+  },
+  "fresh_state_counts": {
+    "en:compliant": 3,
+    "en:insufficient": 3,
+    "en:supported": 3,
+    "fil:compliant": 3,
+    "fil:insufficient": 3,
+    "fil:supported": 3,
+    "taglish:compliant": 3,
+    "taglish:insufficient": 3,
+    "taglish:supported": 3
+  },
+  "fresh_decisions": [
+    {
+      "group": "en-weekly",
+      "language": "en",
+      "state": "supported",
+      "description": "Opening log: stall opened 2 days last week. Stall must open at least 4 days per week.",
+      "record": "en-weekly:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "opening log stall opened 2 days last week. stall must open at least 4 days per week.",
+        "recorded_days": 2,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "en-weekly",
+      "language": "en",
+      "state": "compliant",
+      "description": "Opening log: stall opened 4 days last week. Stall must open at least 4 days per week.",
+      "record": "en-weekly:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "opening log stall opened 4 days last week. stall must open at least 4 days per week.",
+        "recorded_days": 4,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "en-weekly",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Opening log: 2 open days last week, 3 pages missing. Stall must open at least 4 days per week.",
+      "record": "en-weekly:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "minimum_or_record_unverified",
+        "evidence": "opening log 2 open days last week, 3 pages missing.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    },
+    {
+      "group": "en-awardee",
+      "language": "en",
+      "state": "supported",
+      "description": "Attendance log: awardee worked 2 days last week. Awardee must personally operate at least 4 days a week.",
+      "record": "en-awardee:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Stall Occupancy"
+      ],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "attendance log awardee worked 2 days last week. awardee must personally operate at least 4 days a week.",
+        "recorded_days": 2,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "personal_operation"
+      }
+    },
+    {
+      "group": "en-awardee",
+      "language": "en",
+      "state": "compliant",
+      "description": "Attendance log: awardee worked 5 days last week. Awardee must personally operate at least 4 days a week.",
+      "record": "en-awardee:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Stall Occupancy"
+      ],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "attendance log awardee worked 5 days last week. awardee must personally operate at least 4 days a week.",
+        "recorded_days": 5,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "personal_operation"
+      }
+    },
+    {
+      "group": "en-awardee",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Attendance log: helpers worked 5 days last week. Awardee must personally operate at least 4 days a week.",
+      "record": "en-awardee:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [
+        "Stall Occupancy"
+      ],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "awardee_days_unverified",
+        "evidence": "attendance log helpers worked 5 days last week. awardee must personally operate at least 4 days a week.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    },
+    {
+      "group": "en-monthly",
+      "language": "en",
+      "state": "supported",
+      "description": "Store opened 14 days last month per opening log. Lease minimum: 18 operating days per month.",
+      "record": "en-monthly:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "store opened 14 days last month per opening log. lease minimum 18 operating days per month.",
+        "recorded_days": 14,
+        "minimum_days": 18,
+        "period": "month",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "en-monthly",
+      "language": "en",
+      "state": "compliant",
+      "description": "Store opened 19 days last month per opening log. Lease minimum: 18 operating days per month.",
+      "record": "en-monthly:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "store opened 19 days last month per opening log. lease minimum 18 operating days per month.",
+        "recorded_days": 19,
+        "minimum_days": 18,
+        "period": "month",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "en-monthly",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Store opened 14 days so far this month per opening log. Lease minimum: 18 operating days per month.",
+      "record": "en-monthly:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "minimum_or_record_unverified",
+        "evidence": "store opened 14 days so far this month per opening log.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    },
+    {
+      "group": "fil-weekly",
+      "language": "fil",
+      "state": "supported",
+      "description": "Sa log, 2 araw bukas ang puwesto nakaraang linggo. Dapat bukas nang di bababa sa 4 na araw kada linggo.",
+      "record": "fil-weekly:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "sa log, 2 araw bukas ang puwesto nakaraang linggo. dapat bukas nang di bababa sa 4 na araw kada linggo.",
+        "recorded_days": 2,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "fil-weekly",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Sa log, 4 na araw bukas ang puwesto nakaraang linggo. Dapat bukas nang di bababa sa 4 na araw kada linggo.",
+      "record": "fil-weekly:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "sa log, 4 na araw bukas ang puwesto nakaraang linggo. dapat bukas nang di bababa sa 4 na araw kada linggo.",
+        "recorded_days": 4,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "fil-weekly",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Sa log, 2 araw bukas ang puwesto pero kulang ang talaan. Dapat bukas nang di bababa sa 4 na araw kada linggo.",
+      "record": "fil-weekly:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "minimum_or_record_unverified",
+        "evidence": "sa log, 2 araw bukas ang puwesto pero kulang ang talaan.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    },
+    {
+      "group": "fil-awardee",
+      "language": "fil",
+      "state": "supported",
+      "description": "Sa log, dalawang araw nagtrabaho ang awardee nakaraang linggo. Dapat siya mismo, di bababa sa apat na araw kada linggo.",
+      "record": "fil-awardee:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "sa log, dalawang araw nagtrabaho ang awardee nakaraang linggo. dapat siya mismo, di bababa sa apat na araw kada linggo.",
+        "recorded_days": 2,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "personal_operation"
+      }
+    },
+    {
+      "group": "fil-awardee",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Sa log, apat na araw nagtrabaho ang awardee nakaraang linggo. Dapat siya mismo, di bababa sa apat na araw kada linggo.",
+      "record": "fil-awardee:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Stall Occupancy"
+      ],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "sa log, apat na araw nagtrabaho ang awardee nakaraang linggo. dapat siya mismo, di bababa sa apat na araw kada linggo.",
+        "recorded_days": 4,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "personal_operation"
+      }
+    },
+    {
+      "group": "fil-awardee",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Sa log, 4 na araw ang katulong. Dapat personal na patakbuhin ng awardee nang di bababa sa apat na araw kada linggo.",
+      "record": "fil-awardee:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [
+        "Stall Occupancy"
+      ],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "incomplete_or_incomparable_operating_record",
+        "evidence": "sa log, 4 na araw ang katulong. dapat personal na patakbuhin ng awardee nang di bababa sa apat na araw kada linggo.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    },
+    {
+      "group": "fil-monthly",
+      "language": "fil",
+      "state": "supported",
+      "description": "Sa log, 14 na araw bukas ang tindahan nakaraang buwan. Dapat bukas nang di bababa sa 20 araw kada buwan.",
+      "record": "fil-monthly:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "sa log, 14 na araw bukas ang tindahan nakaraang buwan. dapat bukas nang di bababa sa 20 araw kada buwan.",
+        "recorded_days": 14,
+        "minimum_days": 20,
+        "period": "month",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "fil-monthly",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Sa log, 20 araw bukas ang tindahan nakaraang buwan. Dapat bukas nang di bababa sa 20 araw kada buwan.",
+      "record": "fil-monthly:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "sa log, 20 araw bukas ang tindahan nakaraang buwan. dapat bukas nang di bababa sa 20 araw kada buwan.",
+        "recorded_days": 20,
+        "minimum_days": 20,
+        "period": "month",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "fil-monthly",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Sa log, 14 na araw bukas ang tindahan ngayong buwan. Dapat bukas nang di bababa sa 20 araw kada buwan.",
+      "record": "fil-monthly:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "minimum_or_record_unverified",
+        "evidence": "sa log, 14 na araw bukas ang tindahan ngayong buwan.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    },
+    {
+      "group": "taglish-weekly",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Sa opening log, 3 days open last week yung stall. Dapat open at least 5 days per week.",
+      "record": "taglish-weekly:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "sa opening log, 3 days open last week yung stall. dapat open at least 5 days per week.",
+        "recorded_days": 3,
+        "minimum_days": 5,
+        "period": "week",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "taglish-weekly",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Sa opening log, 6 days open last week yung stall. Dapat open at least 5 days per week.",
+      "record": "taglish-weekly:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "sa opening log, 6 days open last week yung stall. dapat open at least 5 days per week.",
+        "recorded_days": 6,
+        "minimum_days": 5,
+        "period": "week",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "taglish-weekly",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Sa opening log, 3 days open last week pero may missing entries. Dapat open at least 5 days per week.",
+      "record": "taglish-weekly:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "minimum_or_record_unverified",
+        "evidence": "sa opening log, 3 days open last week pero may missing entries.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    },
+    {
+      "group": "taglish-awardee",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Sa attendance log, awardee worked 2 days last week. Dapat personal na patakbuhin ang stall at least 4 days per week.",
+      "record": "taglish-awardee:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Stall Occupancy"
+      ],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "sa attendance log, awardee worked 2 days last week. dapat personal na patakbuhin ang stall at least 4 days per week.",
+        "recorded_days": 2,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "personal_operation"
+      }
+    },
+    {
+      "group": "taglish-awardee",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Sa attendance log, awardee worked 4 days last week. Dapat personal na patakbuhin ang stall at least 4 days per week.",
+      "record": "taglish-awardee:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Stall Occupancy"
+      ],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "sa attendance log, awardee worked 4 days last week. dapat personal na patakbuhin ang stall at least 4 days per week.",
+        "recorded_days": 4,
+        "minimum_days": 4,
+        "period": "week",
+        "basis": "personal_operation"
+      }
+    },
+    {
+      "group": "taglish-awardee",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Sa attendance log, 4 days present ang awardee. Dapat personal na patakbuhin ang stall at least 4 days per week.",
+      "record": "taglish-awardee:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [
+        "Stall Occupancy"
+      ],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "incomplete_or_incomparable_operating_record",
+        "evidence": "sa attendance log, 4 days present ang awardee. dapat personal na patakbuhin ang stall at least 4 days per week.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    },
+    {
+      "group": "taglish-monthly",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Log shows 12 days lang open last month yung stall. Minimum 18 operating days per month per lease.",
+      "record": "taglish-monthly:supported",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_operating_days": [
+        "Stall Occupancy"
+      ],
+      "operating_days_evidence": {
+        "state": "supported",
+        "reason": "below_stated_minimum",
+        "evidence": "log shows 12 days lang open last month yung stall. minimum 18 operating days per month per lease.",
+        "recorded_days": 12,
+        "minimum_days": 18,
+        "period": "month",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "taglish-monthly",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Log shows 18 days open last month yung stall. Minimum 18 operating days per month per lease.",
+      "record": "taglish-monthly:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "compliant",
+        "reason": "meets_stated_minimum",
+        "evidence": "log shows 18 days open last month yung stall. minimum 18 operating days per month per lease.",
+        "recorded_days": 18,
+        "minimum_days": 18,
+        "period": "month",
+        "basis": "stall_operation"
+      }
+    },
+    {
+      "group": "taglish-monthly",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Log shows 12 days open last month pero di kumpleto yung log. Minimum 18 operating days per month per lease.",
+      "record": "taglish-monthly:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_operating_days": [],
+      "operating_days_evidence": {
+        "state": "insufficient",
+        "reason": "minimum_or_record_unverified",
+        "evidence": "log shows 12 days open last month pero di kumpleto yung log.",
+        "recorded_days": null,
+        "minimum_days": null,
+        "period": null,
+        "basis": null
+      }
+    }
+  ],
+  "archived_decision_changes": {
+    "validation_verified": [],
+    "test_regression_verified": [],
+    "challenge_verified": []
+  }
+}

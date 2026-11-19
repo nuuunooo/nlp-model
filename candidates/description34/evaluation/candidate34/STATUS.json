@@ -1,0 +1,15 @@
+{
+  "default_runtime": "3.3.0-description-only",
+  "candidate_runtime": "3.4.0-candidate",
+  "candidate_snapshot": "C:\\Users\\admin\\OneDrive\\Desktop\\New Training Model\\candidates\\description34",
+  "candidate_status": "rejected_by_broader_recall_regressions",
+  "release_qualified": false,
+  "original_classifier_weights_and_thresholds_unchanged": true,
+  "baseline_restored_exactly": true,
+  "candidate_tests_passed": 42,
+  "baseline_tests_passed": 25,
+  "candidate_db_fixtures_passed": 7,
+  "fresh_final_test_status": "not_run_no_eligible_untouched_set_found",
+  "new_user_workflow_steps": 0,
+  "next_required_work": "Train or replace a generalizing evidence verifier and pass broader regression gates; then obtain independent current-catalog labels and evaluate a frozen passing candidate once."
+}

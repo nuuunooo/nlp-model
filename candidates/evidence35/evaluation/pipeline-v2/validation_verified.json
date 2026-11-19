@@ -1,0 +1,7462 @@
+{
+  "purpose": "previously_inspected_development_regression_not_fresh_test",
+  "method": "Frozen strict-34 findings plus original thresholded category nominations accepted by a trained three-state verifier. Scope/uncertainty/numeric vetoes remain mandatory. No gold enters inference.",
+  "verifier_metadata_sha256": "d829073cf448b06f4b3ff5c20145c01e191aa9847c57bb64b13694cfd5aea6be",
+  "supported_cutoff": 0.9792906045913696,
+  "score_cache_sha256": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+  "base_report_sha256": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+  "scoring_code_sha256": "ae551633cd7ec77dd349a213ddec0b15c067133b76d34dda9af71c03483fdf30",
+  "unique_incident_category_pairs_scored": 153,
+  "metrics": {
+    "true_positives": 531,
+    "false_positives": 0,
+    "false_negatives": 285,
+    "precision": 1.0,
+    "recall": 0.6507352941176471,
+    "multi_rows": 60,
+    "multi_exact": 30,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "strict_base_metrics": {
+    "true_positives": 531,
+    "false_positives": 0,
+    "false_negatives": 285,
+    "precision": 1.0,
+    "recall": 0.6507352941176471,
+    "multi_rows": 60,
+    "multi_exact": 30,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "decisions": [
+    {
+      "scenario_id": "SYN-01-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-02",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-02",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-02",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-03",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-03",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-03",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-04",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-04",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-04",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-05",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-05",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-05",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-06",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-06",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-06",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-07",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-07",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-07",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-08",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-08",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01-VALIDATION-08",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-01",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-01",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-01",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-02",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-02",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-02",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-03",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-03",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-03",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-04",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-04",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-04",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-05",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-05",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-05",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-06",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-06",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-06",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-07",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-07",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-07",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-08",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-08",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02-VALIDATION-08",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-02",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-02",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-02",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-03",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-03",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-03",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-04",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-04",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-04",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-05",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-05",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-05",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-06",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-06",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-06",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-07",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-07",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-07",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-08",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-08",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03-VALIDATION-08",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-01",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-01",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-01",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-02",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-02",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-02",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-03",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-03",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-03",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-04",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-04",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-04",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-05",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-05",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-05",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-06",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-06",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-06",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-07",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-07",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-07",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-08",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-08",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-08",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-02",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-02",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-02",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-03",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-03",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-03",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-04",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-04",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-04",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-05",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-05",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-05",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-06",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-06",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-06",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-07",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-07",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-07",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-08",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-08",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05-VALIDATION-08",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-01",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-01",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-01",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-02",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-02",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-02",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-03",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-03",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-03",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-04",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-04",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-04",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-05",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-05",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-05",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-06",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-06",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-06",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-07",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-07",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-07",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-08",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-08",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-08",
+      "expected_codes": [
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-01",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-01",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-01",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-02",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-02",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-02",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-03",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-03",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-03",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-04",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-04",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-04",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-05",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-05",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-05",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-06",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-06",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-06",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-07",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-07",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-07",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-08",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-08",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07-VALIDATION-08",
+      "expected_codes": [
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-01",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-01",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-01",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-02",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-02",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-02",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-03",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-03",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-03",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-04",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-04",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-04",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-05",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-05",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-05",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-06",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-06",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-06",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-07",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-07",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-07",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-08",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-08",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-08",
+      "expected_codes": [
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-01",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-01",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-01",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-02",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-02",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-02",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-03",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-03",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-03",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-04",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-04",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-04",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-05",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-05",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-05",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-06",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-06",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-06",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-07",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-07",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-07",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-08",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-08",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-09-VALIDATION-08",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-01",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-01",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-01",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-02",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-02",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-02",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-03",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-03",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-03",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-04",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-04",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-04",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-05",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-05",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-05",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-06",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-06",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-06",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-07",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-07",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-07",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-08",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-08",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-10-VALIDATION-08",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-01",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-01",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-01",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-02",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-02",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-02",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-03",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-03",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-03",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-04",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-04",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-04",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-05",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-05",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-05",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-06",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-06",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-06",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-07",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-07",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-07",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-08",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-08",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11-VALIDATION-08",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-01",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-01",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-01",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-02",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-02",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-02",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-03",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-03",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-03",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-04",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-04",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-04",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-05",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-05",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-05",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-06",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-06",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-06",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-07",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-07",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-07",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-08",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-08",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-08",
+      "expected_codes": [
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-01",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-01",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-01",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-02",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-02",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-02",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-03",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-03",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-03",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-04",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-04",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-04",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-05",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-05",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-05",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-06",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-06",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-06",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-07",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-07",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-07",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-08",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-08",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-13-VALIDATION-08",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-01",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-01",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-01",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-02",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-02",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-02",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-03",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-03",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-03",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-04",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-04",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-04",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-05",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-05",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-05",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-06",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-06",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-06",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-07",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-07",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-07",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-08",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-08",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14-VALIDATION-08",
+      "expected_codes": [
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-01",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-01",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-01",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-02",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-02",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-02",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-03",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-03",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-03",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-04",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-04",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-04",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-05",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-05",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-05",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-06",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-06",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-06",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-07",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-07",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-07",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-08",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-08",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-08",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-01",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-01",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-01",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-02",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-02",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-02",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-03",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-03",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-03",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-04",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-04",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-04",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-05",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-05",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-05",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-06",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-06",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-06",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-07",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-07",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-07",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-08",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-08",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16-VALIDATION-08",
+      "expected_codes": [
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-01",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-01",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-01",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-02",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-02",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-02",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-03",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-03",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-03",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-04",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-04",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-04",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-05",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-05",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-05",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-06",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-06",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-06",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-07",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-07",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-07",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-08",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-08",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17-VALIDATION-08",
+      "expected_codes": [
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-01",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-01",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-01",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-02",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-02",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-02",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-03",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-03",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-03",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-04",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-04",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-04",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-05",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-05",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-05",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-06",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-06",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-06",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-07",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-07",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-07",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-08",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-08",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-08",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-01",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-01",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-01",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-02",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-02",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-02",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-03",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-03",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-03",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-04",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-04",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-04",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-05",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-05",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-05",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-06",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-06",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-06",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-07",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-07",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-07",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-08",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-08",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-19-VALIDATION-08",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-01",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-01",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-01",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-02",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-02",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-02",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-03",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-03",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-03",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-04",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-04",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-04",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-05",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-05",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-05",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-06",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-06",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-06",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-07",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-07",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-07",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-08",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-08",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-20-VALIDATION-08",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-01",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-01",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-01",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-02",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-02",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-02",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-03",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-03",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-03",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-04",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-04",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-04",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-05",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-05",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-05",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-06",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-06",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-06",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-07",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-07",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-07",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-08",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-08",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-21-VALIDATION-08",
+      "expected_codes": [
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-01",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-01",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-01",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-02",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-02",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-02",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-03",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-03",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-03",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-04",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-04",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-04",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-05",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-05",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-05",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-06",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-06",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-06",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-07",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-07",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-07",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-08",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-08",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22-VALIDATION-08",
+      "expected_codes": [
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-01",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-01",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-01",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-02",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-02",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-02",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-03",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-03",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-03",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-04",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-04",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-04",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-05",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-05",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-05",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-06",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-06",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-06",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-07",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-07",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-07",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-08",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-08",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-23-VALIDATION-08",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-01",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-01",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-01",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-02",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-02",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-02",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-03",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-03",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-03",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-04",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-04",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-04",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-05",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-05",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-05",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-06",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-06",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-06",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-07",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-07",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-07",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-08",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-08",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-24-VALIDATION-08",
+      "expected_codes": [
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-01",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-01",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-01",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-02",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-02",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-02",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-03",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-03",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-03",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-04",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-04",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-04",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-05",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-05",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-05",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-06",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-06",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-06",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-07",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-07",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-07",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-08",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-08",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-25-VALIDATION-08",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-01",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-01",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-01",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-02",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-02",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-02",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-03",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-03",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-03",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-04",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-04",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-04",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-05",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-05",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-05",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-06",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-06",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-06",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-07",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-07",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-07",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-08",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-08",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-26-VALIDATION-08",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-01",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-01",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-01",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-02",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-02",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-02",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-03",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-03",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-03",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-04",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-04",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-04",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-05",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-05",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-05",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-06",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-06",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-06",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-07",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-07",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-07",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-08",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-08",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-27-VALIDATION-08",
+      "expected_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-01",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-01",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-01",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-02",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-02",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-02",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-03",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-03",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-03",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-04",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-04",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-04",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-05",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-05",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-05",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-06",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-06",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-06",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-07",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-07",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-07",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-08",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-08",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-08",
+      "expected_codes": [
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-01",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-01",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-01",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-02",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-02",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-02",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-03",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-03",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-03",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-04",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-04",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-04",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-05",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-05",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-05",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-06",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-06",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-06",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-07",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-07",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-07",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-08",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties"
+      ]
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-08",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-29-VALIDATION-08",
+      "expected_codes": [
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01x02-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x02-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x02-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-01x03-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x03-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-01x03-VALIDATION-01",
+      "expected_codes": [
+        "Vendor Identification",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "Vendor Identification"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02x26-VALIDATION-01",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02x26-VALIDATION-01",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-02x26-VALIDATION-01",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-03x04-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x04-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x04-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x15-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x15-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-03x15-VALIDATION-01",
+      "expected_codes": [
+        "Sanitation",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x24-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x24-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x24-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x09-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x09-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-05x09-VALIDATION-01",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06x10-VALIDATION-01",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06x10-VALIDATION-01",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-06x10-VALIDATION-01",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07x15-VALIDATION-01",
+      "expected_codes": [
+        "Stall Management",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-07x15-VALIDATION-01",
+      "expected_codes": [
+        "Stall Management",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Stall Management"
+      ]
+    },
+    {
+      "scenario_id": "SYN-07x15-VALIDATION-01",
+      "expected_codes": [
+        "Stall Management",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-08x22-VALIDATION-01",
+      "expected_codes": [
+        "Stall Construction",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08x22-VALIDATION-01",
+      "expected_codes": [
+        "Stall Construction",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers",
+        "Stall Construction"
+      ]
+    },
+    {
+      "scenario_id": "SYN-08x22-VALIDATION-01",
+      "expected_codes": [
+        "Stall Construction",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11x18-VALIDATION-01",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11x18-VALIDATION-01",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-11x18-VALIDATION-01",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-12x13-VALIDATION-01",
+      "expected_codes": [
+        "Public Order",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x13-VALIDATION-01",
+      "expected_codes": [
+        "Public Order",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor",
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x13-VALIDATION-01",
+      "expected_codes": [
+        "Public Order",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x28-VALIDATION-01",
+      "expected_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x28-VALIDATION-01",
+      "expected_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-12x28-VALIDATION-01",
+      "expected_codes": [
+        "Public Order",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14x26-VALIDATION-01",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14x26-VALIDATION-01",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ]
+    },
+    {
+      "scenario_id": "SYN-14x26-VALIDATION-01",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15x18-VALIDATION-01",
+      "expected_codes": [
+        "Obstruction",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-15x18-VALIDATION-01",
+      "expected_codes": [
+        "Obstruction",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Traffic"
+      ]
+    },
+    {
+      "scenario_id": "SYN-15x18-VALIDATION-01",
+      "expected_codes": [
+        "Obstruction",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-16x19-VALIDATION-01",
+      "expected_codes": [
+        "DressCode",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16x19-VALIDATION-01",
+      "expected_codes": [
+        "DressCode",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-16x19-VALIDATION-01",
+      "expected_codes": [
+        "DressCode",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Porter Regulation"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17x28-VALIDATION-01",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17x28-VALIDATION-01",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Resisting Authority"
+      ]
+    },
+    {
+      "scenario_id": "SYN-17x28-VALIDATION-01",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20x21-VALIDATION-01",
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20x21-VALIDATION-01",
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-20x21-VALIDATION-01",
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Promotions"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21x22-VALIDATION-01",
+      "expected_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21x22-VALIDATION-01",
+      "expected_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-21x22-VALIDATION-01",
+      "expected_codes": [
+        "Advertising",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22x23-VALIDATION-01",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22x23-VALIDATION-01",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Signage & Streamers"
+      ]
+    },
+    {
+      "scenario_id": "SYN-22x23-VALIDATION-01",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ]
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-COMPLY-VALIDATION-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-01",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-02",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-03",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-ADMIN-VALIDATION-04",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-REQUEST-VALIDATION-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-01",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-02",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-03",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    },
+    {
+      "scenario_id": "SYN-EC-VAGUE-VALIDATION-04",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": []
+    }
+  ]
+}

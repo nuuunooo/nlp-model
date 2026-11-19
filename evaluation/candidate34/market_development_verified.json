@@ -1,0 +1,3599 @@
+{
+  "dataset": "C:\\Users\\admin\\Downloads\\market_inspection_eval_multilabel.csv",
+  "split": "test",
+  "model": "C:\\Users\\admin\\OneDrive\\Desktop\\New Training Model\\models\\setfit-e5-synthetic-v2",
+  "purpose": "development_regression",
+  "method": "Only description is passed to inference. Labels, language and scenarios are evaluation metadata. Frozen model probabilities and thresholds are reused through the normal classifier and ticket analysis.",
+  "interpretation": "Standalone labeled benchmark. Dataset provenance must be assessed separately.",
+  "provenance": {
+    "split_sha256": "4bf50b0f84d132e54e223bcb54e4dd99c8f8aa0d00be39ad0e5cb5bf8a7684b4",
+    "thresholds_sha256": "8e29338f303826dda10a23528a0a9587ee09d80fb91da6fa11554c56d6d88a14",
+    "model_sha256": "7ce3f8628c4aa33220265b1ae2c2d58d3d2e2f4fe8b5dd655677b1358c3bf7fc",
+    "head_sha256": "3089627b6f882a10970db3a09a2ffaf3e66c0aee7314a376e7eef3a37ba3daa4",
+    "codes": [
+      "Vendor Identification",
+      "Permit & Licensing",
+      "Sanitation",
+      "WeightMeasures",
+      "Lighting & Energy",
+      "Stall Occupancy",
+      "Stall Management",
+      "Stall Construction",
+      "Utilities",
+      "Stall Rental",
+      "Illegal Vendor",
+      "Public Order",
+      "Liquor",
+      "Market Conduct",
+      "Obstruction",
+      "DressCode",
+      "Bladed Instruments",
+      "Traffic",
+      "Porter Regulation",
+      "Promotions",
+      "Advertising",
+      "Signage & Streamers",
+      "Entertainment Activities",
+      "Lighting Facilities",
+      "Market Rules",
+      "Price Monitoring",
+      "Market Fees & Surcharges",
+      "Resisting Authority",
+      "General Penalties"
+    ],
+    "inference_artifacts_sha256": {
+      "config.json": "533ccc63e3d75f47f9c9beb603286bcb686cb9faeb870063f6398af7b2878f43",
+      "config_sentence_transformers.json": "ff6ee575ab642e4d633fb9f50ec9419598bc0e24c904c9ac25684685d0050ac7",
+      "config_setfit.json": "262ac77a490cbd2d6a89ac11a4a2c20d43c5e74069dd7762c77cc363af35715e",
+      "modules.json": "e7989e94b5b809d895a9521b708312c1ccd333e183effebaf3838908da2acd53",
+      "sentence_bert_config.json": "0d36864e76a49566363ccbe0eca352b0d532868fa3892de8d78270bc6e652615",
+      "special_tokens_map.json": "edd71739099fe63dc2f70815facad5253c70ded0e0d4df49ef883ce4511af365",
+      "tokenizer.json": "ef04f2b385d1514f500e779207ace0f53e30895ce37563179e29f4022d28ca38",
+      "tokenizer_config.json": "df5ad8bcc8e0dbc840a54817cf051af86c7bb108d9e35c4ccdcdebbccfdd11d9",
+      "1_Pooling\\config.json": "64230a97629225324725c35e1a1cbd15025a9f656eafaaeb86cf8ec6a4ecb4d8"
+    },
+    "scorer_sha256": "d5266515148839a9ac7de27eaf38d4aec1cf0fc5f67939dd68b27e11ae7dca69",
+    "inference_layout_sha256": "3c100c360dcf2fab8b7ebca70fe46ac84b9c11f71784cbe8cc28857f257bcf27"
+  },
+  "source_sha256": {
+    "src/engine.py": "1a833a5cec5d80d3bd1dfffa43f26cf8fed353aebd58585130b9062ee65e180f",
+    "src/description_evidence.py": "0cda2375d721a10685cb61bc45bf64f0671176cb708ce51016c89b5493714855",
+    "src/incidents.py": "c9a292449dfde5647e2f81e13163e48bddc7af2fa4f644a0bd142cdea58419d7",
+    "src/breach_evidence.py": "f5cb966907db83c3d00a72eba12f67d548b309a86fa7829bd7f74f94005b5938",
+    "src/setfit_classifier.py": "d5266515148839a9ac7de27eaf38d4aec1cf0fc5f67939dd68b27e11ae7dca69",
+    "src/reweigh.py": "f3f8aa20ae3ed438a1385da6ca1b70a03f37af034a117e62b4d5f5f7d08bfb34",
+    "src/llm.py": "52cc8b95504f7a6730701263aa012a0e72acfc1a60c35dfc599c2187a525d558",
+    "config/evidence_policy.json": "180dc1dd2fbf9b65115f2e5ed3543861a31774af6ec1c1e439b166ecb98463c0",
+    "config/lexicon.csv": "f6f9d1d1d9b311e31596c55a31a46743039a6957e0327e3eec50189dba530ac9",
+    "config/taxonomy.csv": "247009eb8fdd983f0c23f7ce42defc0d5864b792880a7494d1c0610b7d983f51"
+  },
+  "metrics": {
+    "rows": 150,
+    "known_rows": 135,
+    "micro_precision": 1.0,
+    "micro_recall": 0.9877049180327869,
+    "micro_f1": 0.9938144329896907,
+    "macro_f1": 0.9920424403183025,
+    "exact_label_set_matches": 132,
+    "clear_rows": 20,
+    "clear_rows_with_actions": 0,
+    "unclear_rows": 15,
+    "unclear_rows_with_actions": 0,
+    "pair_rows": 100,
+    "pair_rows_both_correct": 97,
+    "per_category": {
+      "Vendor Identification": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Permit & Licensing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Sanitation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "WeightMeasures": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Lighting & Energy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Stall Occupancy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Stall Management": {
+        "precision": 1.0,
+        "recall": 0.625,
+        "f1": 0.7692307692307693,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "Stall Construction": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Utilities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Stall Rental": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Illegal Vendor": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Public Order": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Liquor": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Market Conduct": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Obstruction": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "DressCode": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Bladed Instruments": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Traffic": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Porter Regulation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Promotions": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Advertising": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Signage & Streamers": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Entertainment Activities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Lighting Facilities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Market Rules": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Price Monitoring": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Market Fees & Surcharges": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Resisting Authority": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "General Penalties": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    }
+  },
+  "by_language": {
+    "unspecified": {
+      "rows": 150,
+      "known_rows": 135,
+      "micro_precision": 1.0,
+      "micro_recall": 0.9877049180327869,
+      "micro_f1": 0.9938144329896907,
+      "macro_f1": 0.9920424403183025,
+      "exact_label_set_matches": 132,
+      "clear_rows": 20,
+      "clear_rows_with_actions": 0,
+      "unclear_rows": 15,
+      "unclear_rows_with_actions": 0,
+      "pair_rows": 100,
+      "pair_rows_both_correct": 97,
+      "per_category": {
+        "Vendor Identification": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Permit & Licensing": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Sanitation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "WeightMeasures": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Lighting & Energy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Occupancy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Management": {
+          "precision": 1.0,
+          "recall": 0.625,
+          "f1": 0.7692307692307693,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 3
+        },
+        "Stall Construction": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Utilities": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Rental": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Illegal Vendor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Public Order": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Liquor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Conduct": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Obstruction": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "DressCode": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Bladed Instruments": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Traffic": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Porter Regulation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Promotions": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Advertising": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Signage & Streamers": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Entertainment Activities": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Lighting Facilities": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Rules": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Price Monitoring": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Fees & Surcharges": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Resisting Authority": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "General Penalties": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 8,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    }
+  },
+  "decisions": [
+    {
+      "scenario_id": "SYN-MI-001",
+      "language": "unspecified",
+      "description": "Stall G-16: stall still selling while a closure order from last week is in force; occupying an extra 2 m without paying the double rate, ledger confirms.",
+      "expected_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "General Penalties": "rule",
+        "Market Fees & Surcharges": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-002",
+      "language": "unspecified",
+      "description": "Pwesto M-45: Vendor grabbed a shopper's arm and would not let go until she bought. Free-taste sampling booth set up with no promotion approval.",
+      "expected_codes": [
+        "Market Conduct",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Promotions"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Conduct": "rule",
+        "Promotions": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-003",
+      "language": "unspecified",
+      "description": "Someone helping at the stall, unclear if selling (V-09).",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-004",
+      "language": "unspecified",
+      "description": "Stall V-11: smell of alcohol near the stall, no one seen drinking or selling; stall light working.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-005",
+      "language": "unspecified",
+      "description": "The stall is occupied by the awardee, tapos business permit current, posted (F-11).",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-006",
+      "language": "unspecified",
+      "description": "Pwesto D-08: stall's own light fixture has been dead for a week; stallholder must maintain it (Sec 68), tapos kargador working for the stall has no porter ID, not on the roster.",
+      "expected_codes": [
+        "Lighting Facilities",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities",
+        "Porter Regulation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting Facilities": "rule",
+        "Porter Regulation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-007",
+      "language": "unspecified",
+      "description": "F-35 – rent may be behind per neighbor, ledger not checked, tapos fire extinguisher present and in date.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-008",
+      "language": "unspecified",
+      "description": "Stall V-33: liempo binayaran 1 kilo, 880 g lang sa calibrated na Timbangan Bayan, tapos two vendors in a fistfight, shoppers moved away and nearby stalls stopped selling.",
+      "expected_codes": [
+        "WeightMeasures",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule",
+        "Public Order": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-009",
+      "language": "unspecified",
+      "description": "Inspection at M-40: the stall is occupied by the awardee, tapos nagtatapon ng kaliskis at lamang-loob sa sahig sa harap ng pwesto.",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-010",
+      "language": "unspecified",
+      "description": "Stall D-56: buyer said the scale felt off but no reweigh was done.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-011",
+      "language": "unspecified",
+      "description": "Stall D-39: ibang tao ang nagtitinda sa pwesto, hindi ang awardee o rehistradong helper; also vendor-run karaoke event at the stall with no event approval.",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "rule",
+        "Entertainment Activities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-012",
+      "language": "unspecified",
+      "description": "Stall V-55: aisle in front of the stall is clear; also knives in a locked steel box.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-013",
+      "language": "unspecified",
+      "description": "Stall M-09: naka-apron at maayos ang suot; vendor drinking gin at the stall during selling hours.",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Liquor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-014",
+      "language": "unspecified",
+      "description": "F-28 – vendor carried an uncovered bolo walking to the parking area; illegal jumper from the market water line to the stall sink; raffle sa pwesto pero hindi ibinigay ang premyo na nakasulat sa approval.",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Utilities",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Promotions",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Bladed Instruments": "rule",
+        "Utilities": "rule",
+        "Promotions": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-015",
+      "language": "unspecified",
+      "description": "Streamer on the stall column still up three weeks after its approved display period. Vendor carried an uncovered bolo walking to the parking area (G-27).",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Signage & Streamers"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Signage & Streamers": "rule",
+        "Bladed Instruments": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-016",
+      "language": "unspecified",
+      "description": "May tsismis na walang permit ang pwesto, hindi na-verify (M-28).",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-017",
+      "language": "unspecified",
+      "description": "Inspection at G-10: knives in a locked steel box; naka-apron at maayos ang suot; aisle in front of the stall is clear.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-018",
+      "language": "unspecified",
+      "description": "Pwesto V-52: crates near the aisle, passage width not checked.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-019",
+      "language": "unspecified",
+      "description": "F-13 – free-taste sampling booth set up with no promotion approval; new shelf at the stall, approval status not checked.",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Promotions": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-020",
+      "language": "unspecified",
+      "description": "Pwesto V-20: Daily market fee unpaid for 6 days per collection ledger. Nakasaksak ang electric stove sa ilaw na linya ng stall, bawal ang cooking appliance sa linyang iyon.",
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Market Fees & Surcharges"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Fees & Surcharges": "rule",
+        "Lighting & Energy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-021",
+      "language": "unspecified",
+      "description": "Stall M-20: streamer on the stall column still up three weeks after its approved display period; also ibang tao ang nagtitinda sa pwesto, hindi ang awardee o rehistradong helper.",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Signage & Streamers",
+        "Stall Occupancy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Signage & Streamers": "rule",
+        "Stall Occupancy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-022",
+      "language": "unspecified",
+      "description": "Minura ng tindero ang mamimili na tumawad, may dalawang saksi, tapos nagbebenta ng beer per bote sa pwesto, tapos uncovered fish on the counter with flies on it, no ice (M-11).",
+      "expected_codes": [
+        "Market Conduct",
+        "Liquor",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor",
+        "Market Conduct",
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Conduct": "rule",
+        "Liquor": "rule",
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-023",
+      "language": "unspecified",
+      "description": "Inspection at M-35: Brand ad posters on stall with no advertising approval record. No fire extinguisher at the stall although the stallholder duty requires one.",
+      "expected_codes": [
+        "Advertising",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Stall Management"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Advertising": "rule",
+        "Stall Management": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-024",
+      "language": "unspecified",
+      "description": "Stall D-36: Walang grease trap ang lababo ng carinderia. Vendor is also selling from the adjacent vacant stall, which is not in their award.",
+      "expected_codes": [
+        "Utilities",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Utilities": "rule",
+        "Stall Occupancy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-025",
+      "language": "unspecified",
+      "description": "Pwesto F-46: namimigay ng flyers ng ibang negosyo sa aisle, walang approval; also stacked crates of the stall fully block the fire exit beside the stall; also two vendors in a fistfight, shoppers moved away and nearby stalls stopped selling.",
+      "expected_codes": [
+        "Advertising",
+        "Obstruction",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Obstruction",
+        "Public Order"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Advertising": "rule",
+        "Obstruction": "rule",
+        "Public Order": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-026",
+      "language": "unspecified",
+      "description": "Inspection at F-34: uncovered fish on the counter with flies on it, no ice, tapos nakasaksak ang electric stove sa ilaw na linya ng stall, bawal ang cooking appliance sa linyang iyon.",
+      "expected_codes": [
+        "Sanitation",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "rule",
+        "Lighting & Energy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-027",
+      "language": "unspecified",
+      "description": "Pwesto G-08: porter charged P150 for one sack, posted rate is P50; also nagbebenta ng beer per bote sa pwesto; also butcher knives left on the counter after closing, no locked box.",
+      "expected_codes": [
+        "Porter Regulation",
+        "Liquor",
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Liquor",
+        "Porter Regulation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Porter Regulation": "rule",
+        "Liquor": "rule",
+        "Bladed Instruments": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-028",
+      "language": "unspecified",
+      "description": "Stall V-20: nagtitinda ng gulay sa sidewalk ng M. Cruz St., walang sidewalk permit ayon sa opisina, tapos no fire extinguisher at the stall although the stallholder duty requires one.",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Stall Management"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Illegal Vendor": "rule",
+        "Stall Management": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-029",
+      "language": "unspecified",
+      "description": "Occupying an extra 2 m without paying the double rate, ledger confirms; ibang tao ang nagtitinda sa pwesto, hindi ang awardee o rehistradong helper; illegal jumper from the market water line to the stall sink (D-19).",
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges",
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Fees & Surcharges": "rule",
+        "Stall Occupancy": "rule",
+        "Utilities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-030",
+      "language": "unspecified",
+      "description": "Pwesto V-29: cooked food left uncovered and cold, cockroaches seen on the tray, tapos vendor drinking gin at the stall during selling hours.",
+      "expected_codes": [
+        "Sanitation",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor",
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "rule",
+        "Liquor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-031",
+      "language": "unspecified",
+      "description": "F-25 – tarpaulin sign mas malaki sa approved na sukat; suspendido ang lisensya hanggang Disyembre pero bukas pa rin ang pwesto.",
+      "expected_codes": [
+        "Signage & Streamers",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties",
+        "Signage & Streamers"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Signage & Streamers": "rule",
+        "General Penalties": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-032",
+      "language": "unspecified",
+      "description": "Pwesto V-05: daily fee paid, resibo ipinakita, tapos health certificate on file for the cook, tapos knives in a locked steel box.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-033",
+      "language": "unspecified",
+      "description": "D-03 – stacked crates of the stall fully block the fire exit beside the stall; also brand ad posters on stall with no advertising approval record.",
+      "expected_codes": [
+        "Obstruction",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Obstruction"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "rule",
+        "Advertising": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-034",
+      "language": "unspecified",
+      "description": "F-47 – daily fee paid, resibo ipinakita, tapos stall light working, tapos aisle in front of the stall is clear.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-035",
+      "language": "unspecified",
+      "description": "Pwesto M-08: sirang ilaw ng pwesto, ayon sa kontrata responsibilidad ng stallholder; also new concrete counter extension built without a permit from the Market Administrator.",
+      "expected_codes": [
+        "Lighting Facilities",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities",
+        "Stall Construction"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting Facilities": "rule",
+        "Stall Construction": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-036",
+      "language": "unspecified",
+      "description": "Stall V-41: kargador working for the stall has no porter ID, not on the roster, tapos chopping table placed in the aisle, narrowing it to about half a meter.",
+      "expected_codes": [
+        "Porter Regulation",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Porter Regulation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Porter Regulation": "rule",
+        "Obstruction": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-037",
+      "language": "unspecified",
+      "description": "Stall V-41: Light in the stall flickering, maintenance duty unknown. Approved mini concert ran two hours past its approved end time.",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-038",
+      "language": "unspecified",
+      "description": "Inspection at D-45: Vendor ID in a drawer instead of displayed, posted rule requires it worn while selling. Liempo binayaran 1 kilo, 880 g lang sa calibrated na Timbangan Bayan. Stall still selling while a closure order from last week is in force.",
+      "expected_codes": [
+        "Vendor Identification",
+        "WeightMeasures",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties",
+        "Vendor Identification",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule",
+        "WeightMeasures": "rule",
+        "General Penalties": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-039",
+      "language": "unspecified",
+      "description": "Hawker selling fruit in the market zone with no mobile vendor ID on record; business permit current, posted (M-50).",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Illegal Vendor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-040",
+      "language": "unspecified",
+      "description": "Inspection at V-39: three 200 W halogen lamps in use where the posted rule allows energy-efficient bulbs only, tapos smell of alcohol near the stall, no one seen drinking or selling.",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting & Energy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-041",
+      "language": "unspecified",
+      "description": "Pwesto D-34: tindero naka-sando at shorts habang nagbebenta ng karne; also bangus sold as 1000 g reweighed at Timbangan Bayan 950 g.",
+      "expected_codes": [
+        "DressCode",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "DressCode": "rule",
+        "WeightMeasures": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-042",
+      "language": "unspecified",
+      "description": "Stall G-06: kargador may valid ID at tama ang singil; also delivery used the designated loading area; also knives in a locked steel box.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-043",
+      "language": "unspecified",
+      "description": "Stall G-34: Vendor and buyer argued briefly, no one else affected. Stallholder is subleasing the stall for P3,000 a month, lease forbids it.",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-044",
+      "language": "unspecified",
+      "description": "G-20 – Vendor sleeping in the stall overnight, using it as a dwelling. Nagbebenta ng beer per bote sa pwesto. Porter charged P150 for one sack, posted rate is P50.",
+      "expected_codes": [
+        "Market Rules",
+        "Liquor",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor",
+        "Market Rules",
+        "Porter Regulation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Rules": "rule",
+        "Liquor": "rule",
+        "Porter Regulation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-045",
+      "language": "unspecified",
+      "description": "Inspection at F-43: walang health certificate ang nagluluto ng ulam na binebenta; also tinulak ng tindero ang enforcer habang nag-iisyu ng ticket; also free-taste sampling booth set up with no promotion approval.",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Resisting Authority",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Promotions",
+        "Resisting Authority"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "rule",
+        "Resisting Authority": "rule",
+        "Promotions": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-046",
+      "language": "unspecified",
+      "description": "Inspection at D-49: walang health certificate ang nagluluto ng ulam na binebenta; also stallholder is subleasing the stall for P3,000 a month, lease forbids it; also uncovered fish on the counter with flies on it, no ice.",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Stall Rental",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Sanitation",
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "rule",
+        "Stall Rental": "rule",
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-047",
+      "language": "unspecified",
+      "description": "F-13 – fire extinguisher expired 2024, hindi pinalitan; also tindero naka-sando at shorts habang nagbebenta ng karne; also free-taste sampling booth set up with no promotion approval.",
+      "expected_codes": [
+        "Stall Management",
+        "DressCode",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Promotions"
+      ],
+      "missing_codes": [
+        "Stall Management"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "DressCode": "rule",
+        "Promotions": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-048",
+      "language": "unspecified",
+      "description": "Stall D-45: Fire extinguisher present and in date. The stall is occupied by the awardee.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-049",
+      "language": "unspecified",
+      "description": "Vendor handling fish without an apron. No fire extinguisher at the stall although the stallholder duty requires one (F-01).",
+      "expected_codes": [
+        "DressCode",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Stall Management"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "DressCode": "rule",
+        "Stall Management": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-050",
+      "language": "unspecified",
+      "description": "Pwesto G-49: garbage in sealed bags inside the stall; also health certificate on file for the cook; also the stall is occupied by the awardee.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-051",
+      "language": "unspecified",
+      "description": "V-02 – tindera na nagbebenta walang suot na vendor ID at wala ring maipakita; stall's own light fixture has been dead for a week; stallholder must maintain it (Sec 68).",
+      "expected_codes": [
+        "Vendor Identification",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities",
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule",
+        "Lighting Facilities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-052",
+      "language": "unspecified",
+      "description": "Pwesto G-21: walang price tag kahit required ang presyo na nakadisplay; also nagtitinda ng gulay sa sidewalk ng M. Cruz St., walang sidewalk permit ayon sa opisina; also loud sigawan between vendors for 20 minutes, buyers left the aisle.",
+      "expected_codes": [
+        "Price Monitoring",
+        "Illegal Vendor",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Price Monitoring",
+        "Public Order"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "rule",
+        "Illegal Vendor": "rule",
+        "Public Order": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-053",
+      "language": "unspecified",
+      "description": "Inspection at G-07: vendor handling fish without an apron; streamer on the stall column still up three weeks after its approved display period.",
+      "expected_codes": [
+        "DressCode",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Signage & Streamers"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "DressCode": "rule",
+        "Signage & Streamers": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-054",
+      "language": "unspecified",
+      "description": "Stall F-11: garbage in sealed bags inside the stall, tapos streamer within approved display period, tapos business permit current, posted.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-055",
+      "language": "unspecified",
+      "description": "Stall G-44: Fish on ice and covered. Daily fee paid, resibo ipinakita.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-056",
+      "language": "unspecified",
+      "description": "G-38 – vendor-run karaoke event at the stall with no event approval, tapos sirang ilaw ng pwesto, ayon sa kontrata responsibilidad ng stallholder.",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Lighting Facilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "rule",
+        "Lighting Facilities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-057",
+      "language": "unspecified",
+      "description": "Stall D-48: vendor's tricycle delivering inside the tricycle-ban zone on W. Paz St.; also walang health certificate ang nagluluto ng ulam na binebenta.",
+      "expected_codes": [
+        "Traffic",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Traffic"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "rule",
+        "Traffic": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-058",
+      "language": "unspecified",
+      "description": "Pwesto M-01: new concrete counter extension built without a permit from the Market Administrator, tapos illegal jumper from the market water line to the stall sink.",
+      "expected_codes": [
+        "Stall Construction",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Construction": "rule",
+        "Utilities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-059",
+      "language": "unspecified",
+      "description": "Inspection at V-26: three 200 W halogen lamps in use where the posted rule allows energy-efficient bulbs only, tapos delivery van ng tindahan nakaparada sa loading-prohibited marked zone.",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Traffic"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting & Energy": "rule",
+        "Traffic": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-060",
+      "language": "unspecified",
+      "description": "Crates near the aisle, passage width not checked, tapos vendor sleeping in the stall overnight, using it as a dwelling (G-47).",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Rules"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Rules": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-061",
+      "language": "unspecified",
+      "description": "Pwesto V-50: porter charged P150 for one sack, posted rate is P50; tindera na nagbebenta walang suot na vendor ID at wala ring maipakita.",
+      "expected_codes": [
+        "Porter Regulation",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation",
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Porter Regulation": "rule",
+        "Vendor Identification": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-062",
+      "language": "unspecified",
+      "description": "Hawker selling fruit in the market zone with no mobile vendor ID on record. Vendor ID in a drawer instead of displayed, posted rule requires it worn while selling. Bangus sold as 1000 g reweighed at Timbangan Bayan 930 g (D-33).",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Vendor Identification",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Vendor Identification",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Illegal Vendor": "rule",
+        "Vendor Identification": "rule",
+        "WeightMeasures": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-063",
+      "language": "unspecified",
+      "description": "Vendor's tricycle delivering inside the tricycle-ban zone on W. Paz St.; also approved mini concert ran two hours past its approved end time; also daily market fee unpaid for 6 days per collection ledger (F-27).",
+      "expected_codes": [
+        "Traffic",
+        "Entertainment Activities",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Market Fees & Surcharges",
+        "Traffic"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Traffic": "rule",
+        "Entertainment Activities": "rule",
+        "Market Fees & Surcharges": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-064",
+      "language": "unspecified",
+      "description": "Stall D-37: Loud music from the area, source stall not identified. Vendor ID in a drawer instead of displayed, posted rule requires it worn while selling.",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-065",
+      "language": "unspecified",
+      "description": "D-26 – tindero naka-sando at shorts habang nagbebenta ng karne; two vendors in a fistfight, shoppers moved away and nearby stalls stopped selling.",
+      "expected_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "DressCode": "rule",
+        "Public Order": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-066",
+      "language": "unspecified",
+      "description": "10 kg scale in use has no City Treasury registration seal; health certificate on file for the cook (D-26).",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-067",
+      "language": "unspecified",
+      "description": "Pwesto V-19: sirang ilaw ng pwesto, ayon sa kontrata responsibilidad ng stallholder, tapos minura ng tindero ang mamimili na tumawad, may dalawang saksi.",
+      "expected_codes": [
+        "Lighting Facilities",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities",
+        "Market Conduct"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting Facilities": "rule",
+        "Market Conduct": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-068",
+      "language": "unspecified",
+      "description": "Pwesto V-49: Bangus sold as 500 g reweighed at Timbangan Bayan 420 g. Walang price tag kahit required ang presyo na nakadisplay.",
+      "expected_codes": [
+        "WeightMeasures",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule",
+        "Price Monitoring": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-069",
+      "language": "unspecified",
+      "description": "Stall F-38: free-taste sampling booth set up with no promotion approval; may flyers sa sahig, hindi alam kung kanino galing.",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Promotions": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-070",
+      "language": "unspecified",
+      "description": "Pwesto D-52: vendor ID in a drawer instead of displayed, posted rule requires it worn while selling, tapos raffle sa pwesto pero hindi ibinigay ang premyo na nakasulat sa approval.",
+      "expected_codes": [
+        "Vendor Identification",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions",
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule",
+        "Promotions": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-071",
+      "language": "unspecified",
+      "description": "F-21 – daily fee paid, resibo ipinakita; fish on ice and covered.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-072",
+      "language": "unspecified",
+      "description": "Knife on the counter while the vendor was cutting; also reweigh of 1 kg tilapia came to 1,010 g (D-31).",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-073",
+      "language": "unspecified",
+      "description": "D-33 – streamer on the stall column still up three weeks after its approved display period; also porter charged P150 for one sack, posted rate is P50.",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation",
+        "Signage & Streamers"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Signage & Streamers": "rule",
+        "Porter Regulation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-074",
+      "language": "unspecified",
+      "description": "M-60 – buyer said the scale felt off but no reweigh was done; also rent paid up to date per ledger.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-075",
+      "language": "unspecified",
+      "description": "Pwesto M-23: Aso ng tindero nakakawala sa paligid ng pwesto. Fire extinguisher expired 2024, hindi pinalitan. Sirang ilaw ng pwesto, ayon sa kontrata responsibilidad ng stallholder.",
+      "expected_codes": [
+        "Market Rules",
+        "Stall Management",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities",
+        "Market Rules"
+      ],
+      "missing_codes": [
+        "Stall Management"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Rules": "rule",
+        "Lighting Facilities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-076",
+      "language": "unspecified",
+      "description": "Light in the stall flickering, maintenance duty unknown; kargador working for the stall has no porter ID, not on the roster (M-60).",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Porter Regulation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-077",
+      "language": "unspecified",
+      "description": "Stall V-14: kargador working for the stall has no porter ID, not on the roster, tapos hawker selling fruit in the market zone with no mobile vendor ID on record.",
+      "expected_codes": [
+        "Porter Regulation",
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Porter Regulation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Porter Regulation": "rule",
+        "Illegal Vendor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-078",
+      "language": "unspecified",
+      "description": "D-01 – Butcher knives left on the counter after closing, no locked box. Three 200 W halogen lamps in use where the posted rule allows energy-efficient bulbs only.",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Lighting & Energy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Bladed Instruments": "rule",
+        "Lighting & Energy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-079",
+      "language": "unspecified",
+      "description": "Pwesto D-27: suspendido ang lisensya hanggang Disyembre pero bukas pa rin ang pwesto; also ibang tao ang nagtitinda sa pwesto, hindi ang awardee o rehistradong helper.",
+      "expected_codes": [
+        "General Penalties",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties",
+        "Stall Occupancy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "General Penalties": "rule",
+        "Stall Occupancy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-080",
+      "language": "unspecified",
+      "description": "Inspection at M-17: smell of alcohol near the stall, no one seen drinking or selling.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-081",
+      "language": "unspecified",
+      "description": "Inspection at G-04: rent ledger shows 4 consecutive months unpaid; liempo binayaran 1 kilo, 880 g lang sa calibrated na Timbangan Bayan; vendor grabbed a shopper's arm and would not let go until she bought.",
+      "expected_codes": [
+        "Stall Rental",
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Stall Rental",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "rule",
+        "WeightMeasures": "rule",
+        "Market Conduct": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-082",
+      "language": "unspecified",
+      "description": "Inspection at V-57: nagbebenta ng beer per bote sa pwesto; namimigay ng flyers ng ibang negosyo sa aisle, walang approval.",
+      "expected_codes": [
+        "Liquor",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Liquor"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Liquor": "rule",
+        "Advertising": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-083",
+      "language": "unspecified",
+      "description": "Pwesto D-16: Fish on ice and covered. May grease trap at malinis ang lababo.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-084",
+      "language": "unspecified",
+      "description": "V-31 – brand ad posters on stall with no advertising approval record; loud sigawan between vendors for 20 minutes, buyers left the aisle.",
+      "expected_codes": [
+        "Advertising",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Public Order"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Advertising": "rule",
+        "Public Order": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-085",
+      "language": "unspecified",
+      "description": "Walang price tag kahit required ang presyo na nakadisplay; also approved mini concert ran two hours past its approved end time (D-16).",
+      "expected_codes": [
+        "Price Monitoring",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Price Monitoring"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "rule",
+        "Entertainment Activities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-086",
+      "language": "unspecified",
+      "description": "Aso ng tindero nakakawala sa paligid ng pwesto. Illegal jumper from the market water line to the stall sink. Tindero naka-sando at shorts habang nagbebenta ng karne (F-30).",
+      "expected_codes": [
+        "Market Rules",
+        "Utilities",
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Market Rules",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Rules": "rule",
+        "Utilities": "rule",
+        "DressCode": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-087",
+      "language": "unspecified",
+      "description": "Stall G-57: vendor drinking gin at the stall during selling hours, tapos nagtitinda ng gulay sa sidewalk ng M. Cruz St., walang sidewalk permit ayon sa opisina.",
+      "expected_codes": [
+        "Liquor",
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Liquor"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Liquor": "rule",
+        "Illegal Vendor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-088",
+      "language": "unspecified",
+      "description": "D-58 – two vendors in a fistfight, shoppers moved away and nearby stalls stopped selling; tindero naka-sando at shorts habang nagbebenta ng karne.",
+      "expected_codes": [
+        "Public Order",
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Public Order": "rule",
+        "DressCode": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-089",
+      "language": "unspecified",
+      "description": "Stall M-39: illegal jumper from the market water line to the stall sink, tapos reweigh of 1 kg tilapia came to 1,010 g.",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Utilities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-090",
+      "language": "unspecified",
+      "description": "Stall light working, tapos naka-apron at maayos ang suot (M-43).",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-091",
+      "language": "unspecified",
+      "description": "Inspection at M-56: streamer on the stall column still up three weeks after its approved display period; also vendor grabbed a shopper's arm and would not let go until she bought.",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Signage & Streamers"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Signage & Streamers": "rule",
+        "Market Conduct": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-092",
+      "language": "unspecified",
+      "description": "G-43 – may magnet sa ilalim ng pinggan ng timbangan, +60 g ang basa kahit walang laman; also rent ledger shows 3 consecutive months unpaid; also ibang tao ang nagtitinda sa pwesto, hindi ang awardee o rehistradong helper.",
+      "expected_codes": [
+        "WeightMeasures",
+        "Stall Rental",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy",
+        "Stall Rental",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule",
+        "Stall Rental": "rule",
+        "Stall Occupancy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-093",
+      "language": "unspecified",
+      "description": "Vendor sleeping in the stall overnight, using it as a dwelling; also stacked crates of the stall fully block the fire exit beside the stall; also hawker selling fruit in the market zone with no mobile vendor ID on record (G-31).",
+      "expected_codes": [
+        "Market Rules",
+        "Obstruction",
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Market Rules",
+        "Obstruction"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Rules": "rule",
+        "Obstruction": "rule",
+        "Illegal Vendor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-094",
+      "language": "unspecified",
+      "description": "D-30 – Occupying an extra 2 m without paying the double rate, ledger confirms. Walang grease trap ang lababo ng carinderia. Rent ledger shows 4 consecutive months unpaid.",
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Utilities",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges",
+        "Stall Rental",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Fees & Surcharges": "rule",
+        "Utilities": "rule",
+        "Stall Rental": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-095",
+      "language": "unspecified",
+      "description": "Pwesto M-36: no fire extinguisher at the stall although the stallholder duty requires one, tapos vendor-run karaoke event at the stall with no event approval, tapos vendor carried an uncovered bolo walking to the parking area.",
+      "expected_codes": [
+        "Stall Management",
+        "Entertainment Activities",
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Entertainment Activities",
+        "Stall Management"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Management": "rule",
+        "Entertainment Activities": "rule",
+        "Bladed Instruments": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-096",
+      "language": "unspecified",
+      "description": "Inspection at F-14: Vendor-run karaoke event at the stall with no event approval. Vendor sleeping in the stall overnight, using it as a dwelling.",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Market Rules"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "rule",
+        "Market Rules": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-097",
+      "language": "unspecified",
+      "description": "Stall M-32: rent may be behind per neighbor, ledger not checked; also garbage in sealed bags inside the stall.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-098",
+      "language": "unspecified",
+      "description": "Pwesto D-03: delivery used the designated loading area, tapos the stall is occupied by the awardee.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-099",
+      "language": "unspecified",
+      "description": "Garbage in sealed bags inside the stall; stall light working; naka-apron at maayos ang suot (M-02).",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-100",
+      "language": "unspecified",
+      "description": "Stall F-31: chopping table placed in the aisle, narrowing it to about half a meter; also tinulak ng tindero ang enforcer habang nag-iisyu ng ticket.",
+      "expected_codes": [
+        "Obstruction",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Resisting Authority"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "rule",
+        "Resisting Authority": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-101",
+      "language": "unspecified",
+      "description": "Stall M-31: fire extinguisher expired 2024, hindi pinalitan, tapos delivery van ng tindahan nakaparada sa loading-prohibited marked zone.",
+      "expected_codes": [
+        "Stall Management",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Traffic"
+      ],
+      "missing_codes": [
+        "Stall Management"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Traffic": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-102",
+      "language": "unspecified",
+      "description": "Inspection at G-34: vendor carried an uncovered bolo walking to the parking area, tapos new concrete counter extension built without a permit from the Market Administrator.",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Stall Construction"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Bladed Instruments": "rule",
+        "Stall Construction": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-103",
+      "language": "unspecified",
+      "description": "M-47 – May tsismis na walang permit ang pwesto, hindi na-verify. Delivery used the designated loading area.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-104",
+      "language": "unspecified",
+      "description": "Stall G-03: Three 200 W halogen lamps in use where the posted rule allows energy-efficient bulbs only. Nagtatapon ng kaliskis at lamang-loob sa sahig sa harap ng pwesto.",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting & Energy": "rule",
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-105",
+      "language": "unspecified",
+      "description": "Inspection at G-49: Kargador may valid ID at tama ang singil. Daily fee paid, resibo ipinakita.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-106",
+      "language": "unspecified",
+      "description": "Stall G-49: Vendor took back the confiscated scale from the inspector by force. Vendor drinking gin at the stall during selling hours.",
+      "expected_codes": [
+        "Resisting Authority",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor",
+        "Resisting Authority"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Resisting Authority": "rule",
+        "Liquor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-107",
+      "language": "unspecified",
+      "description": "Pwesto D-23: vendor ID worn and valid; also fish on ice and covered; also knives in a locked steel box.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-108",
+      "language": "unspecified",
+      "description": "Inspection at D-45: garbage in sealed bags inside the stall; also walang price tag kahit required ang presyo na nakadisplay.",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-109",
+      "language": "unspecified",
+      "description": "Inspection at D-14: Walang grease trap ang lababo ng carinderia. Stacked crates of the stall fully block the fire exit beside the stall.",
+      "expected_codes": [
+        "Utilities",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Utilities": "rule",
+        "Obstruction": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-110",
+      "language": "unspecified",
+      "description": "Inspection at D-59: vendor's tricycle delivering inside the tricycle-ban zone on W. Paz St., tapos walang price tag kahit required ang presyo na nakadisplay, tapos new concrete counter extension built without a permit from the Market Administrator.",
+      "expected_codes": [
+        "Traffic",
+        "Price Monitoring",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Stall Construction",
+        "Traffic"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Traffic": "rule",
+        "Price Monitoring": "rule",
+        "Stall Construction": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-111",
+      "language": "unspecified",
+      "description": "Inspection at F-60: Walang health certificate ang nagluluto ng ulam na binebenta. Uncovered fish on the counter with flies on it, no ice. Brand ad posters on stall with no advertising approval record.",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Sanitation",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Permit & Licensing",
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "rule",
+        "Sanitation": "rule",
+        "Advertising": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-112",
+      "language": "unspecified",
+      "description": "Inspection at M-36: vendor carried an uncovered bolo walking to the parking area; also uncovered fish on the counter with flies on it, no ice.",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Bladed Instruments": "rule",
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-113",
+      "language": "unspecified",
+      "description": "D-20 – raffle sa pwesto pero hindi ibinigay ang premyo na nakasulat sa approval, tapos stallholder is subleasing the stall for P3,000 a month, lease forbids it.",
+      "expected_codes": [
+        "Promotions",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Promotions",
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Promotions": "rule",
+        "Stall Rental": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-114",
+      "language": "unspecified",
+      "description": "Loud sigawan between vendors for 20 minutes, buyers left the aisle; vendor's tricycle delivering inside the tricycle-ban zone on W. Paz St.; chopping table placed in the aisle, narrowing it to about half a meter (M-25).",
+      "expected_codes": [
+        "Public Order",
+        "Traffic",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Public Order",
+        "Traffic"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Public Order": "rule",
+        "Obstruction": "rule",
+        "Traffic": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-115",
+      "language": "unspecified",
+      "description": "M-05 – kargador working for the stall has no porter ID, not on the roster; nagtitinda ng gulay sa sidewalk ng M. Cruz St., walang sidewalk permit ayon sa opisina.",
+      "expected_codes": [
+        "Porter Regulation",
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Porter Regulation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Porter Regulation": "rule",
+        "Illegal Vendor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-116",
+      "language": "unspecified",
+      "description": "V-40 – raffle sa pwesto pero hindi ibinigay ang premyo na nakasulat sa approval; brand ad posters on stall with no advertising approval record.",
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Promotions"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Promotions": "rule",
+        "Advertising": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-117",
+      "language": "unspecified",
+      "description": "Fire extinguisher present and in date, tapos reweigh of 1 kg tilapia came to 1,010 g, tapos garbage in sealed bags inside the stall (M-29).",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-118",
+      "language": "unspecified",
+      "description": "Pwesto D-18: rent paid up to date per ledger; stall light working.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-119",
+      "language": "unspecified",
+      "description": "Stall M-08: vendor took back the confiscated scale from the inspector by force, tapos permit is for dry goods but stall is selling cooked food.",
+      "expected_codes": [
+        "Resisting Authority",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Resisting Authority"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Resisting Authority": "rule",
+        "Permit & Licensing": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-120",
+      "language": "unspecified",
+      "description": "V-58 – nagtitinda ng gulay sa sidewalk ng M. Cruz St., walang sidewalk permit ayon sa opisina; also vendor took back the confiscated scale from the inspector by force.",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor",
+        "Resisting Authority"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Illegal Vendor": "rule",
+        "Resisting Authority": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-121",
+      "language": "unspecified",
+      "description": "Stall F-57: loud sigawan between vendors for 20 minutes, buyers left the aisle, tapos suspendido ang lisensya hanggang Disyembre pero bukas pa rin ang pwesto.",
+      "expected_codes": [
+        "Public Order",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties",
+        "Public Order"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Public Order": "rule",
+        "General Penalties": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-122",
+      "language": "unspecified",
+      "description": "Pwesto D-20: Closure order mentioned by a neighbor, not confirmed with the office.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-123",
+      "language": "unspecified",
+      "description": "Inspection at G-49: crates near the aisle, passage width not checked; streamer within approved display period.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-124",
+      "language": "unspecified",
+      "description": "Inspection at G-11: Walang grease trap ang lababo ng carinderia. Three 200 W halogen lamps in use where the posted rule allows energy-efficient bulbs only.",
+      "expected_codes": [
+        "Utilities",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Utilities": "rule",
+        "Lighting & Energy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-125",
+      "language": "unspecified",
+      "description": "Occupying an extra 2 m without paying the double rate, ledger confirms; also nagdagdag ng second-level na shelf na wala sa approved plan; also nagbebenta ng beer per bote sa pwesto (F-56).",
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Stall Construction",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Liquor",
+        "Market Fees & Surcharges",
+        "Stall Construction"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Fees & Surcharges": "rule",
+        "Stall Construction": "rule",
+        "Liquor": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-126",
+      "language": "unspecified",
+      "description": "Nagtatapon ng kaliskis at lamang-loob sa sahig sa harap ng pwesto, tapos tarpaulin sign mas malaki sa approved na sukat, tapos rent ledger shows 3 consecutive months unpaid (F-30).",
+      "expected_codes": [
+        "Sanitation",
+        "Signage & Streamers",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "Signage & Streamers",
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "rule",
+        "Signage & Streamers": "rule",
+        "Stall Rental": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-127",
+      "language": "unspecified",
+      "description": "Pwesto D-30: brand ad posters on stall with no advertising approval record; also tindera na nagbebenta walang suot na vendor ID at wala ring maipakita.",
+      "expected_codes": [
+        "Advertising",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Advertising": "rule",
+        "Vendor Identification": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-128",
+      "language": "unspecified",
+      "description": "Vendor's tricycle delivering inside the tricycle-ban zone on W. Paz St.; vendor took back the confiscated scale from the inspector by force (M-57).",
+      "expected_codes": [
+        "Traffic",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority",
+        "Traffic"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Traffic": "rule",
+        "Resisting Authority": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-129",
+      "language": "unspecified",
+      "description": "V-42 – anonymous complaint the vendor was rude, no details; streamer within approved display period.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-130",
+      "language": "unspecified",
+      "description": "F-09 – Vendor's kids playing around the stalls during trading. Vendor grabbed a shopper's arm and would not let go until she bought.",
+      "expected_codes": [
+        "Market Rules",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Market Rules"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Rules": "rule",
+        "Market Conduct": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-131",
+      "language": "unspecified",
+      "description": "Pwesto F-56: tindero naka-sando at shorts habang nagbebenta ng karne, tapos suspendido ang lisensya hanggang Disyembre pero bukas pa rin ang pwesto, tapos delivery van ng tindahan nakaparada sa loading-prohibited marked zone.",
+      "expected_codes": [
+        "DressCode",
+        "General Penalties",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "General Penalties",
+        "Traffic"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "DressCode": "rule",
+        "General Penalties": "rule",
+        "Traffic": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-132",
+      "language": "unspecified",
+      "description": "Pwesto F-52: nagdagdag ng second-level na shelf na wala sa approved plan; also stallholder is subleasing the stall for P3,000 a month, lease forbids it.",
+      "expected_codes": [
+        "Stall Construction",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction",
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Construction": "rule",
+        "Stall Rental": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-133",
+      "language": "unspecified",
+      "description": "Pwesto D-01: walang price tag kahit required ang presyo na nakadisplay, tapos occupying an extra 2 m without paying the double rate, ledger confirms.",
+      "expected_codes": [
+        "Price Monitoring",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Fees & Surcharges",
+        "Price Monitoring"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "rule",
+        "Market Fees & Surcharges": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-134",
+      "language": "unspecified",
+      "description": "Stall D-35: ibang tao ang nagtitinda sa pwesto, hindi ang awardee o rehistradong helper, tapos minura ng tindero ang mamimili na tumawad, may dalawang saksi, tapos tinulak ng tindero ang enforcer habang nag-iisyu ng ticket.",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Market Conduct",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Resisting Authority",
+        "Stall Occupancy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "rule",
+        "Market Conduct": "rule",
+        "Resisting Authority": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-135",
+      "language": "unspecified",
+      "description": "Pwesto M-31: vendor's kids playing around the stalls during trading; also vendor grabbed a shopper's arm and would not let go until she bought.",
+      "expected_codes": [
+        "Market Rules",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Market Rules"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Rules": "rule",
+        "Market Conduct": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-136",
+      "language": "unspecified",
+      "description": "M-17 – The stall is occupied by the awardee. Permit is for dry goods but stall is selling cooked food.",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-137",
+      "language": "unspecified",
+      "description": "Inspection at D-55: butcher knives left on the counter after closing, no locked box; also stallholder is subleasing the stall for P3,000 a month, lease forbids it.",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Bladed Instruments",
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Bladed Instruments": "rule",
+        "Stall Rental": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-138",
+      "language": "unspecified",
+      "description": "Pwesto M-47: sirang ilaw ng pwesto, ayon sa kontrata responsibilidad ng stallholder; also permit is for dry goods but stall is selling cooked food.",
+      "expected_codes": [
+        "Lighting Facilities",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities",
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting Facilities": "rule",
+        "Permit & Licensing": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-139",
+      "language": "unspecified",
+      "description": "Pwesto G-06: no fire extinguisher at the stall although the stallholder duty requires one, tapos stall still selling while a closure order from last week is in force.",
+      "expected_codes": [
+        "Stall Management",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties",
+        "Stall Management"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Management": "rule",
+        "General Penalties": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-140",
+      "language": "unspecified",
+      "description": "Pwesto F-44: Streamer on the stall column still up three weeks after its approved display period. Posted price P180/kg but charged P210/kg for the same item, receipt shown. 30 kg scale in use has no City Treasury registration seal.",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Signage & Streamers",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Signage & Streamers": "rule",
+        "Price Monitoring": "rule",
+        "WeightMeasures": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-141",
+      "language": "unspecified",
+      "description": "Vendor took back the confiscated scale from the inspector by force, tapos posted price P180/kg but charged P210/kg for the same item, receipt shown (V-51).",
+      "expected_codes": [
+        "Resisting Authority",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Resisting Authority"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Resisting Authority": "rule",
+        "Price Monitoring": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-142",
+      "language": "unspecified",
+      "description": "Inspection at G-05: light in the stall flickering, maintenance duty unknown; also aisle in front of the stall is clear.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-143",
+      "language": "unspecified",
+      "description": "V-54 – stacked crates of the stall fully block the fire exit beside the stall; permit is for dry goods but stall is selling cooked food; approved mini concert ran two hours past its approved end time.",
+      "expected_codes": [
+        "Obstruction",
+        "Permit & Licensing",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Obstruction",
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "rule",
+        "Permit & Licensing": "rule",
+        "Entertainment Activities": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-144",
+      "language": "unspecified",
+      "description": "Nakasaksak ang electric stove sa ilaw na linya ng stall, bawal ang cooking appliance sa linyang iyon. Vendor ID in a drawer instead of displayed, posted rule requires it worn while selling (V-42).",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting & Energy": "rule",
+        "Vendor Identification": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-145",
+      "language": "unspecified",
+      "description": "Inspection at G-03: price board updated, prices match charges; stall light working.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "SYN-MI-146",
+      "language": "unspecified",
+      "description": "Inspection at M-19: tindera na nagbebenta walang suot na vendor ID at wala ring maipakita; nakasaksak ang electric stove sa ilaw na linya ng stall, bawal ang cooking appliance sa linyang iyon.",
+      "expected_codes": [
+        "Vendor Identification",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy",
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule",
+        "Lighting & Energy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-147",
+      "language": "unspecified",
+      "description": "Stall still selling while a closure order from last week is in force, tapos occupying an extra 2 m without paying the double rate, ledger confirms (D-36).",
+      "expected_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "General Penalties": "rule",
+        "Market Fees & Surcharges": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-148",
+      "language": "unspecified",
+      "description": "Approved mini concert ran two hours past its approved end time; vendor is also selling from the adjacent vacant stall, which is not in their award (M-07).",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "rule",
+        "Stall Occupancy": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-149",
+      "language": "unspecified",
+      "description": "Inspection at M-23: Walang price tag kahit required ang presyo na nakadisplay. Nagdagdag ng second-level na shelf na wala sa approved plan.",
+      "expected_codes": [
+        "Price Monitoring",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Stall Construction"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "rule",
+        "Stall Construction": "rule"
+      }
+    },
+    {
+      "scenario_id": "SYN-MI-150",
+      "language": "unspecified",
+      "description": "New concrete counter extension built without a permit from the Market Administrator; sirang ilaw ng pwesto, ayon sa kontrata responsibilidad ng stallholder (V-33).",
+      "expected_codes": [
+        "Stall Construction",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities",
+        "Stall Construction"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Construction": "rule",
+        "Lighting Facilities": "rule"
+      }
+    }
+  ]
+}

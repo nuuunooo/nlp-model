@@ -1,0 +1,1082 @@
+{
+  "source": "C:\\Users\\admin\\Downloads\\weightmeasures_eval_v2.csv",
+  "source_sha256": "ea6df32f269d448c6ddf93ebd9c6b6139ea52021e10aa917c05a6b1d5e2153ca",
+  "evaluation_kind": "Regression check on the already evaluated V2 CSV",
+  "method": "Replay the frozen WeightMeasures scores from the baseline through the current worker analysis. Gold outcomes are used only for reporting. Reliability fields missing from the CSV remain unknown.",
+  "rows": 132,
+  "required_fields_missing_from_csv": [
+    "scale_check_reference",
+    "transaction_verified",
+    "conditions_verified"
+  ],
+  "automatic_acceptances": 0,
+  "previously_accepted_unclear_cases_now_withheld": 7,
+  "documented_issue_counts": {
+    "reference_scale_unreliable": 3,
+    "transaction_disputed": 4,
+    "weighing_conditions_unresolved": 4
+  },
+  "limitations": [
+    "The CSV lacks the explicit reliability fields required by the revised gate. It cannot establish post-change recall or release performance.",
+    "The reused records informed this change and are a regression set. Fresh evidence is required for independent evaluation.",
+    "The reference scale, transaction and weighing conditions must be verified from source records by an authorized reviewer."
+  ],
+  "records": [
+    {
+      "record_id": "SYN2-WM-001",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-002",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-003",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-004",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-005",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-006",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-007",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-008",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-009",
+      "gold_outcome": "unclear",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "reference_scale_unreliable",
+      "review_reason": "unmatched_clause;reference_scale_unreliable;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-010",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-011",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-012",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-013",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-014",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-015",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-016",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-017",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-018",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-019",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-020",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-021",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-022",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-023",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-024",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-025",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-026",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-027",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-028",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-029",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-030",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-031",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-032",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-033",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-034",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-035",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-036",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-037",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-038",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-039",
+      "gold_outcome": "unclear",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "transaction_disputed",
+      "review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-040",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-041",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-042",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-043",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-044",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-045",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-046",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-047",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-048",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-049",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-050",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-051",
+      "gold_outcome": "unclear",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "reference_scale_unreliable",
+      "review_reason": "unmatched_clause;reference_scale_unreliable;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-052",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-053",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-054",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-055",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-056",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-057",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-058",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-059",
+      "gold_outcome": "unclear",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "transaction_disputed",
+      "review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-060",
+      "gold_outcome": "unclear",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "transaction_disputed",
+      "review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-061",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-062",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-063",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-064",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-065",
+      "gold_outcome": "unclear",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "transaction_disputed",
+      "review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-066",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-067",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-068",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-069",
+      "gold_outcome": "unclear",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "weighing_conditions_unresolved",
+      "review_reason": "unmatched_clause;weighing_conditions_unresolved;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-070",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-071",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-072",
+      "gold_outcome": "unclear",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "weighing_conditions_unresolved",
+      "review_reason": "unmatched_clause;weighing_conditions_unresolved;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-073",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-074",
+      "gold_outcome": "unclear",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "weighing_conditions_unresolved",
+      "review_reason": "unmatched_clause;weighing_conditions_unresolved;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-075",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-076",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-077",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-078",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-079",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-080",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-081",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-082",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-083",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-084",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-085",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-086",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-087",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-088",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-089",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-090",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-091",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-092",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-093",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-094",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-095",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-096",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-097",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-098",
+      "gold_outcome": "unclear",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "weighing_conditions_unresolved",
+      "review_reason": "unmatched_clause;weighing_conditions_unresolved;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-099",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-100",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-101",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-102",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-103",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-104",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-105",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-106",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-107",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-108",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-109",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-110",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-111",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-112",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-113",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-114",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-115",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-116",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-117",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-118",
+      "gold_outcome": "unclear",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-119",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-120",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-121",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-122",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-123",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-124",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-125",
+      "gold_outcome": "unclear",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": "reference_scale_unreliable",
+      "review_reason": "unmatched_clause;reference_scale_unreliable;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-126",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-127",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence"
+    },
+    {
+      "record_id": "SYN2-WM-128",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-129",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-130",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-131",
+      "gold_outcome": "compliant",
+      "previously_accepted": false,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    },
+    {
+      "record_id": "SYN2-WM-132",
+      "gold_outcome": "violation",
+      "previously_accepted": true,
+      "accepted_after_reliability_checks": false,
+      "documented_evidence_issue": null,
+      "review_reason": "unmatched_clause;reference_scale_check_missing;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation"
+    }
+  ]
+}

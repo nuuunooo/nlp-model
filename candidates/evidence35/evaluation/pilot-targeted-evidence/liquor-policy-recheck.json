@@ -1,0 +1,204 @@
+{
+  "purpose": "Synthetic development retest. These descriptions informed the parser change.",
+  "policy_id": "synthetic-liquor-10",
+  "policy_sha256": "973e30015619aa2b10498c4564f7f759405623711729998eec654fbf569a795b",
+  "baseline_source": "Recorded v4 decisions from the exact ten descriptions before the policy change.",
+  "scorer_sha256": {
+    "evaluate_pilot_liquor.py": "b350fbca6c523329036ac6d272ac6ded67edfed184b8a08adcb7333c58b0a094",
+    "liquor_evidence.py": "cdfc93f55869253e3f89035bf3125e65debf6c12efe8e0f01e3256f1fdfe31f7",
+    "pilot_evidence.py": "3e96d4cef5fcdc11fd4aac1f78dc9911145132c61bb218560c824454c0fed192"
+  },
+  "v4_metrics": {
+    "true_positives": 0,
+    "false_positives": 0,
+    "false_negatives": 4,
+    "precision": null,
+    "recall": 0.0,
+    "multi_rows": 0,
+    "multi_exact": 0,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "with_policy_metrics": {
+    "true_positives": 4,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "multi_rows": 0,
+    "multi_exact": 0,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "records": [
+    {
+      "record": 1,
+      "description": "During inspection, the vendor sold one bottle of liquor to a 17-year-old customer. The buyer’s age was confirmed from a valid identification card.",
+      "v4_codes": [],
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "supported",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "insufficient",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ]
+    },
+    {
+      "record": 2,
+      "description": "A customer purchased two bottles of beer from the store at 7:45 PM. The recorded market restriction prohibits liquor sales after 8:00 PM.",
+      "v4_codes": [],
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "with_policy_codes": [],
+      "comparisons": [
+        {
+          "state": "insufficient",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "compliant",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ]
+    },
+    {
+      "record": 3,
+      "description": "At approximately 9:10 PM, an inspector observed the vendor completing a liquor sale. The applicable market rule states that liquor sales are prohibited after 8:00 PM.",
+      "v4_codes": [],
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "insufficient",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "supported",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ]
+    },
+    {
+      "record": 4,
+      "description": "Several bottles of liquor were displayed at the store. A young-looking customer was seen leaving with one bottle, but inspectors were unable to confirm the customer’s age or whether the bottle had actually been purchased from the vendor.",
+      "v4_codes": [],
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "with_policy_codes": [],
+      "comparisons": []
+    },
+    {
+      "record": 5,
+      "description": "The vendor sold liquor to a customer whose identification showed an age of 24 years. The transaction occurred at 6:30 PM, within the permitted selling hours.",
+      "v4_codes": [],
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "with_policy_codes": [],
+      "comparisons": [
+        {
+          "state": "compliant",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "compliant",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ]
+    },
+    {
+      "record": 6,
+      "description": "An inspection note states that liquor may have been sold sometime after closing hours. No transaction time, receipt, CCTV record, or direct observation was available to confirm when the alleged sale occurred.",
+      "v4_codes": [],
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "with_policy_codes": [],
+      "comparisons": []
+    },
+    {
+      "record": 7,
+      "description": "At 7:20 PM, the vendor sold beer to a customer whose identification confirmed that the customer was 19 years old. The market restriction prohibits sales to persons below 18 and prohibits liquor sales after 8:00 PM.",
+      "v4_codes": [],
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "with_policy_codes": [],
+      "comparisons": [
+        {
+          "state": "compliant",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "compliant",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ]
+    },
+    {
+      "record": 8,
+      "description": "A liquor transaction was recorded at 8:35 PM. The vendor’s receipt and the inspector’s timestamp both confirmed the time of sale, while the market rule prohibits liquor sales after 8:00 PM.",
+      "v4_codes": [],
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "insufficient",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "supported",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ]
+    },
+    {
+      "record": 9,
+      "description": "A customer stated that they had purchased liquor from the vendor earlier that evening. The customer did not provide identification, and the inspector could not verify the customer’s age or the exact time of the transaction.",
+      "v4_codes": [],
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "with_policy_codes": [],
+      "comparisons": []
+    },
+    {
+      "record": 10,
+      "description": "The vendor sold a bottle of liquor to a customer whose identification showed that the customer was 16 years old. The transaction occurred at 5:40 PM, during otherwise permitted selling hours.",
+      "v4_codes": [],
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "with_policy_codes": [
+        "Liquor"
+      ],
+      "comparisons": [
+        {
+          "state": "supported",
+          "fact": "verified_buyer_age"
+        },
+        {
+          "state": "compliant",
+          "fact": "documented_liquor_sale_cutoff"
+        }
+      ]
+    }
+  ]
+}

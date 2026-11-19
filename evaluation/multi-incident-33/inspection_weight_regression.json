@@ -1,0 +1,12 @@
+{
+  "source": "C:\\Users\\admin\\Downloads\\weightmeasures_eval_v3.csv",
+  "source_sha256": "5b6b91755f05c64f4896c1d31f6fbfd65b8816f49f83bf1124f6544b15e47065",
+  "scope": "Retrospective WeightMeasures-only check. The previously evaluated CSV lacks gold labels for additional categories. Runtime weight proposals require description evidence and do not depend on model probabilities.",
+  "rows": 141,
+  "true_positives": 60,
+  "false_negatives": 0,
+  "false_positives": 0,
+  "true_negatives": 60,
+  "unclear_with_weight_action": 0,
+  "unclear_without_weight_action": 21
+}

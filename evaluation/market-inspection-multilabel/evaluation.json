@@ -1,0 +1,3033 @@
+{
+  "dataset": "C:\\Users\\admin\\Downloads\\market_inspection_eval_multilabel.csv",
+  "split": "test",
+  "model": "C:\\Users\\admin\\OneDrive\\Desktop\\New Training Model\\models\\setfit-e5-synthetic-v2",
+  "method": "Only description is passed to inference. Labels, language and scenarios are evaluation metadata. Frozen model probabilities and thresholds are reused through the normal classifier and ticket analysis.",
+  "interpretation": "User-supplied inspection evaluation. Source records and labeling independence were not independently verified.",
+  "provenance": {
+    "split_sha256": "aa3872502b8b5fc2577761f1a6febf33197b7aa905ef17eb50cd6c0811267ae4",
+    "thresholds_sha256": "8e29338f303826dda10a23528a0a9587ee09d80fb91da6fa11554c56d6d88a14",
+    "model_sha256": "7ce3f8628c4aa33220265b1ae2c2d58d3d2e2f4fe8b5dd655677b1358c3bf7fc",
+    "head_sha256": "3089627b6f882a10970db3a09a2ffaf3e66c0aee7314a376e7eef3a37ba3daa4",
+    "codes": [
+      "Vendor Identification",
+      "Permit & Licensing",
+      "Sanitation",
+      "WeightMeasures",
+      "Lighting & Energy",
+      "Stall Occupancy",
+      "Stall Management",
+      "Stall Construction",
+      "Utilities",
+      "Stall Rental",
+      "Illegal Vendor",
+      "Public Order",
+      "Liquor",
+      "Market Conduct",
+      "Obstruction",
+      "DressCode",
+      "Bladed Instruments",
+      "Traffic",
+      "Porter Regulation",
+      "Promotions",
+      "Advertising",
+      "Signage & Streamers",
+      "Entertainment Activities",
+      "Lighting Facilities",
+      "Market Rules",
+      "Price Monitoring",
+      "Market Fees & Surcharges",
+      "Resisting Authority",
+      "General Penalties"
+    ]
+  },
+  "source_sha256": {
+    "src/engine.py": "cf9c25abe762673dfbdb7b8327cf1e0079b1ad9e8c02a88ae15c2a2faa841274",
+    "src/description_evidence.py": "0cda2375d721a10685cb61bc45bf64f0671176cb708ce51016c89b5493714855",
+    "config/lexicon.csv": "f6f9d1d1d9b311e31596c55a31a46743039a6957e0327e3eec50189dba530ac9",
+    "config/taxonomy.csv": "247009eb8fdd983f0c23f7ce42defc0d5864b792880a7494d1c0610b7d983f51"
+  },
+  "metrics": {
+    "rows": 150,
+    "known_rows": 135,
+    "micro_precision": 0.6933333333333334,
+    "micro_recall": 0.21311475409836064,
+    "micro_f1": 0.32601880877742945,
+    "macro_f1": 0.269359376255928,
+    "exact_label_set_matches": 18,
+    "clear_rows": 20,
+    "clear_rows_with_actions": 11,
+    "unclear_rows": 15,
+    "unclear_rows_with_actions": 4,
+    "pair_rows": 100,
+    "pair_rows_both_correct": 4,
+    "per_category": {
+      "Vendor Identification": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 9
+      },
+      "Permit & Licensing": {
+        "precision": 0.4166666666666667,
+        "recall": 0.625,
+        "f1": 0.5,
+        "support": 8,
+        "false_positives": 7,
+        "false_negatives": 3
+      },
+      "Sanitation": {
+        "precision": 0.25,
+        "recall": 0.1111111111111111,
+        "f1": 0.15384615384615385,
+        "support": 9,
+        "false_positives": 3,
+        "false_negatives": 8
+      },
+      "WeightMeasures": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "Lighting & Energy": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 6
+      },
+      "Stall Occupancy": {
+        "precision": 0.25,
+        "recall": 0.25,
+        "f1": 0.25,
+        "support": 8,
+        "false_positives": 6,
+        "false_negatives": 6
+      },
+      "Stall Management": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 6
+      },
+      "Stall Construction": {
+        "precision": 1.0,
+        "recall": 0.375,
+        "f1": 0.5454545454545454,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 5
+      },
+      "Utilities": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 9
+      },
+      "Stall Rental": {
+        "precision": 0.8571428571428571,
+        "recall": 0.6666666666666666,
+        "f1": 0.75,
+        "support": 9,
+        "false_positives": 1,
+        "false_negatives": 3
+      },
+      "Illegal Vendor": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9,
+        "false_positives": 1,
+        "false_negatives": 9
+      },
+      "Public Order": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 8
+      },
+      "Liquor": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 9
+      },
+      "Market Conduct": {
+        "precision": 1.0,
+        "recall": 0.125,
+        "f1": 0.2222222222222222,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 7
+      },
+      "Obstruction": {
+        "precision": 1.0,
+        "recall": 0.375,
+        "f1": 0.5454545454545454,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 5
+      },
+      "DressCode": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 8
+      },
+      "Bladed Instruments": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8,
+        "false_positives": 1,
+        "false_negatives": 8
+      },
+      "Traffic": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 8
+      },
+      "Porter Regulation": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 6
+      },
+      "Promotions": {
+        "precision": 1.0,
+        "recall": 0.1111111111111111,
+        "f1": 0.2,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 8
+      },
+      "Advertising": {
+        "precision": 1.0,
+        "recall": 0.125,
+        "f1": 0.2222222222222222,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 7
+      },
+      "Signage & Streamers": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 8
+      },
+      "Entertainment Activities": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "Lighting Facilities": {
+        "precision": 1.0,
+        "recall": 0.125,
+        "f1": 0.2222222222222222,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 7
+      },
+      "Market Rules": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8,
+        "false_positives": 1,
+        "false_negatives": 8
+      },
+      "Price Monitoring": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "support": 9,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "Market Fees & Surcharges": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8,
+        "false_positives": 3,
+        "false_negatives": 8
+      },
+      "Resisting Authority": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 6
+      },
+      "General Penalties": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8,
+        "false_positives": 0,
+        "false_negatives": 8
+      }
+    }
+  },
+  "decisions": [
+    {
+      "expected_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-001"
+    },
+    {
+      "expected_codes": [
+        "Market Conduct",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Market Conduct",
+        "Promotions"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-002"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-003"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-004"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-005"
+    },
+    {
+      "expected_codes": [
+        "Lighting Facilities",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting Facilities",
+        "Porter Regulation"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-006"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-007"
+    },
+    {
+      "expected_codes": [
+        "WeightMeasures",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ],
+      "missing_codes": [
+        "Public Order"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule"
+      },
+      "record_id": "SYN-MI-008"
+    },
+    {
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ],
+      "missing_codes": [
+        "Sanitation"
+      ],
+      "unrelated_codes": [
+        "Stall Occupancy"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "model"
+      },
+      "record_id": "SYN-MI-009"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-010"
+    },
+    {
+      "expected_codes": [
+        "Stall Occupancy",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "model",
+        "Entertainment Activities": "model"
+      },
+      "record_id": "SYN-MI-011"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Bladed Instruments"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Bladed Instruments"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Bladed Instruments": "model"
+      },
+      "record_id": "SYN-MI-012"
+    },
+    {
+      "expected_codes": [
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Liquor"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-013"
+    },
+    {
+      "expected_codes": [
+        "Bladed Instruments",
+        "Utilities",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ],
+      "missing_codes": [
+        "Bladed Instruments",
+        "Promotions",
+        "Utilities"
+      ],
+      "unrelated_codes": [
+        "Illegal Vendor"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Illegal Vendor": "model"
+      },
+      "record_id": "SYN-MI-014"
+    },
+    {
+      "expected_codes": [
+        "Signage & Streamers",
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Bladed Instruments",
+        "Signage & Streamers"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-015"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-016"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-017"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-018"
+    },
+    {
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Promotions"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-019"
+    },
+    {
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting & Energy",
+        "Market Fees & Surcharges"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-020"
+    },
+    {
+      "expected_codes": [
+        "Signage & Streamers",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ],
+      "missing_codes": [
+        "Signage & Streamers"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "model"
+      },
+      "record_id": "SYN-MI-021"
+    },
+    {
+      "expected_codes": [
+        "Market Conduct",
+        "Liquor",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct"
+      ],
+      "missing_codes": [
+        "Liquor",
+        "Sanitation"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Conduct": "model"
+      },
+      "record_id": "SYN-MI-022"
+    },
+    {
+      "expected_codes": [
+        "Advertising",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Advertising",
+        "Stall Management"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-023"
+    },
+    {
+      "expected_codes": [
+        "Utilities",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-024"
+    },
+    {
+      "expected_codes": [
+        "Advertising",
+        "Obstruction",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Advertising",
+        "Obstruction",
+        "Public Order"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-025"
+    },
+    {
+      "expected_codes": [
+        "Sanitation",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ],
+      "missing_codes": [
+        "Sanitation"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting & Energy": "model"
+      },
+      "record_id": "SYN-MI-026"
+    },
+    {
+      "expected_codes": [
+        "Porter Regulation",
+        "Liquor",
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Bladed Instruments",
+        "Liquor",
+        "Porter Regulation"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-027"
+    },
+    {
+      "expected_codes": [
+        "Illegal Vendor",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Illegal Vendor",
+        "Stall Management"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-028"
+    },
+    {
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Market Fees & Surcharges",
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-029"
+    },
+    {
+      "expected_codes": [
+        "Sanitation",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ],
+      "missing_codes": [
+        "Liquor"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "rule"
+      },
+      "record_id": "SYN-MI-030"
+    },
+    {
+      "expected_codes": [
+        "Signage & Streamers",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "General Penalties",
+        "Signage & Streamers"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-031"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-032"
+    },
+    {
+      "expected_codes": [
+        "Obstruction",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Advertising",
+        "Obstruction"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-033"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-034"
+    },
+    {
+      "expected_codes": [
+        "Lighting Facilities",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Stall Construction"
+      ],
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model",
+        "Stall Construction": "model"
+      },
+      "record_id": "SYN-MI-035"
+    },
+    {
+      "expected_codes": [
+        "Porter Regulation",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Obstruction",
+        "Porter Regulation"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-036"
+    },
+    {
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "model"
+      },
+      "record_id": "SYN-MI-037"
+    },
+    {
+      "expected_codes": [
+        "Vendor Identification",
+        "WeightMeasures",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ],
+      "missing_codes": [
+        "General Penalties",
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule"
+      },
+      "record_id": "SYN-MI-038"
+    },
+    {
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [
+        "Illegal Vendor"
+      ],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-039"
+    },
+    {
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting & Energy"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-040"
+    },
+    {
+      "expected_codes": [
+        "DressCode",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ],
+      "missing_codes": [
+        "DressCode"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule"
+      },
+      "record_id": "SYN-MI-041"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-042"
+    },
+    {
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "model"
+      },
+      "record_id": "SYN-MI-043"
+    },
+    {
+      "expected_codes": [
+        "Market Rules",
+        "Liquor",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Liquor",
+        "Market Rules",
+        "Porter Regulation"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-044"
+    },
+    {
+      "expected_codes": [
+        "Permit & Licensing",
+        "Resisting Authority",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Permit & Licensing",
+        "Promotions",
+        "Resisting Authority"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-045"
+    },
+    {
+      "expected_codes": [
+        "Permit & Licensing",
+        "Stall Rental",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [
+        "Sanitation",
+        "Stall Rental"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-046"
+    },
+    {
+      "expected_codes": [
+        "Stall Management",
+        "DressCode",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "DressCode",
+        "Promotions",
+        "Stall Management"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-047"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-048"
+    },
+    {
+      "expected_codes": [
+        "DressCode",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ],
+      "missing_codes": [
+        "DressCode"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Management": "model"
+      },
+      "record_id": "SYN-MI-049"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Sanitation",
+        "Stall Occupancy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Sanitation",
+        "Stall Occupancy"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "model",
+        "Stall Occupancy": "model"
+      },
+      "record_id": "SYN-MI-050"
+    },
+    {
+      "expected_codes": [
+        "Vendor Identification",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ],
+      "missing_codes": [
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting Facilities": "model"
+      },
+      "record_id": "SYN-MI-051"
+    },
+    {
+      "expected_codes": [
+        "Price Monitoring",
+        "Illegal Vendor",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Illegal Vendor",
+        "Price Monitoring",
+        "Public Order"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-052"
+    },
+    {
+      "expected_codes": [
+        "DressCode",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "DressCode",
+        "Signage & Streamers"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-053"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-054"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Fees & Surcharges": "model"
+      },
+      "record_id": "SYN-MI-055"
+    },
+    {
+      "expected_codes": [
+        "Entertainment Activities",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ],
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "model"
+      },
+      "record_id": "SYN-MI-056"
+    },
+    {
+      "expected_codes": [
+        "Traffic",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Permit & Licensing",
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-057"
+    },
+    {
+      "expected_codes": [
+        "Stall Construction",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ],
+      "missing_codes": [
+        "Utilities"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Construction": "model"
+      },
+      "record_id": "SYN-MI-058"
+    },
+    {
+      "expected_codes": [
+        "Lighting & Energy",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting & Energy",
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-059"
+    },
+    {
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ],
+      "missing_codes": [
+        "Market Rules"
+      ],
+      "unrelated_codes": [
+        "Stall Occupancy"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "model"
+      },
+      "record_id": "SYN-MI-060"
+    },
+    {
+      "expected_codes": [
+        "Porter Regulation",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Porter Regulation",
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-061"
+    },
+    {
+      "expected_codes": [
+        "Illegal Vendor",
+        "Vendor Identification",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ],
+      "missing_codes": [
+        "Illegal Vendor",
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule"
+      },
+      "record_id": "SYN-MI-062"
+    },
+    {
+      "expected_codes": [
+        "Traffic",
+        "Entertainment Activities",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Entertainment Activities",
+        "Market Fees & Surcharges",
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-063"
+    },
+    {
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-064"
+    },
+    {
+      "expected_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-065"
+    },
+    {
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [
+        "WeightMeasures"
+      ],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-066"
+    },
+    {
+      "expected_codes": [
+        "Lighting Facilities",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting Facilities",
+        "Market Conduct"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-067"
+    },
+    {
+      "expected_codes": [
+        "WeightMeasures",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule",
+        "Price Monitoring": "model"
+      },
+      "record_id": "SYN-MI-068"
+    },
+    {
+      "expected_codes": [
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Promotions"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-069"
+    },
+    {
+      "expected_codes": [
+        "Vendor Identification",
+        "Promotions"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Promotions",
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-070"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Fees & Surcharges": "model"
+      },
+      "record_id": "SYN-MI-071"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-072"
+    },
+    {
+      "expected_codes": [
+        "Signage & Streamers",
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Porter Regulation",
+        "Signage & Streamers"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-073"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Stall Rental"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "model"
+      },
+      "record_id": "SYN-MI-074"
+    },
+    {
+      "expected_codes": [
+        "Market Rules",
+        "Stall Management",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting Facilities",
+        "Market Rules",
+        "Stall Management"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-075"
+    },
+    {
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Porter Regulation": "model"
+      },
+      "record_id": "SYN-MI-076"
+    },
+    {
+      "expected_codes": [
+        "Porter Regulation",
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Porter Regulation"
+      ],
+      "missing_codes": [
+        "Illegal Vendor"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Porter Regulation": "model"
+      },
+      "record_id": "SYN-MI-077"
+    },
+    {
+      "expected_codes": [
+        "Bladed Instruments",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Bladed Instruments",
+        "Lighting & Energy"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-078"
+    },
+    {
+      "expected_codes": [
+        "General Penalties",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "General Penalties",
+        "Stall Occupancy"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-079"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-080"
+    },
+    {
+      "expected_codes": [
+        "Stall Rental",
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ],
+      "missing_codes": [
+        "Market Conduct",
+        "Stall Rental"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule"
+      },
+      "record_id": "SYN-MI-081"
+    },
+    {
+      "expected_codes": [
+        "Liquor",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Advertising",
+        "Liquor"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-082"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-083"
+    },
+    {
+      "expected_codes": [
+        "Advertising",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Advertising",
+        "Public Order"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-084"
+    },
+    {
+      "expected_codes": [
+        "Price Monitoring",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ],
+      "missing_codes": [
+        "Price Monitoring"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "model"
+      },
+      "record_id": "SYN-MI-085"
+    },
+    {
+      "expected_codes": [
+        "Market Rules",
+        "Utilities",
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "DressCode",
+        "Market Rules",
+        "Utilities"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-086"
+    },
+    {
+      "expected_codes": [
+        "Liquor",
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Illegal Vendor",
+        "Liquor"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-087"
+    },
+    {
+      "expected_codes": [
+        "Public Order",
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-088"
+    },
+    {
+      "expected_codes": [
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Utilities"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-089"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-090"
+    },
+    {
+      "expected_codes": [
+        "Signage & Streamers",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Market Conduct",
+        "Signage & Streamers"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-091"
+    },
+    {
+      "expected_codes": [
+        "WeightMeasures",
+        "Stall Rental",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [
+        "Stall Occupancy",
+        "WeightMeasures"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "model"
+      },
+      "record_id": "SYN-MI-092"
+    },
+    {
+      "expected_codes": [
+        "Market Rules",
+        "Obstruction",
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ],
+      "missing_codes": [
+        "Illegal Vendor",
+        "Market Rules",
+        "Obstruction"
+      ],
+      "unrelated_codes": [
+        "Stall Occupancy"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "model"
+      },
+      "record_id": "SYN-MI-093"
+    },
+    {
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Utilities",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [
+        "Market Fees & Surcharges",
+        "Utilities"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "model"
+      },
+      "record_id": "SYN-MI-094"
+    },
+    {
+      "expected_codes": [
+        "Stall Management",
+        "Entertainment Activities",
+        "Bladed Instruments"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Bladed Instruments",
+        "Entertainment Activities",
+        "Stall Management"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-095"
+    },
+    {
+      "expected_codes": [
+        "Entertainment Activities",
+        "Market Rules"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ],
+      "missing_codes": [
+        "Entertainment Activities",
+        "Market Rules"
+      ],
+      "unrelated_codes": [
+        "Stall Occupancy"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "model"
+      },
+      "record_id": "SYN-MI-096"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-097"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Stall Occupancy"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Stall Occupancy"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Occupancy": "model"
+      },
+      "record_id": "SYN-MI-098"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Sanitation"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "model"
+      },
+      "record_id": "SYN-MI-099"
+    },
+    {
+      "expected_codes": [
+        "Obstruction",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Resisting Authority"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "model",
+        "Resisting Authority": "model"
+      },
+      "record_id": "SYN-MI-100"
+    },
+    {
+      "expected_codes": [
+        "Stall Management",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Stall Management",
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-101"
+    },
+    {
+      "expected_codes": [
+        "Bladed Instruments",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Bladed Instruments",
+        "Stall Construction"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-102"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-103"
+    },
+    {
+      "expected_codes": [
+        "Lighting & Energy",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting & Energy",
+        "Sanitation"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-104"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Fees & Surcharges": "model"
+      },
+      "record_id": "SYN-MI-105"
+    },
+    {
+      "expected_codes": [
+        "Resisting Authority",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Liquor",
+        "Resisting Authority"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-106"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-107"
+    },
+    {
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "model"
+      },
+      "record_id": "SYN-MI-108"
+    },
+    {
+      "expected_codes": [
+        "Utilities",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ],
+      "missing_codes": [
+        "Utilities"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "model"
+      },
+      "record_id": "SYN-MI-109"
+    },
+    {
+      "expected_codes": [
+        "Traffic",
+        "Price Monitoring",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Price Monitoring",
+        "Stall Construction",
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-110"
+    },
+    {
+      "expected_codes": [
+        "Permit & Licensing",
+        "Sanitation",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Advertising",
+        "Permit & Licensing",
+        "Sanitation"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-111"
+    },
+    {
+      "expected_codes": [
+        "Bladed Instruments",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Bladed Instruments",
+        "Sanitation"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-112"
+    },
+    {
+      "expected_codes": [
+        "Promotions",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [
+        "Promotions"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "model"
+      },
+      "record_id": "SYN-MI-113"
+    },
+    {
+      "expected_codes": [
+        "Public Order",
+        "Traffic",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ],
+      "missing_codes": [
+        "Public Order",
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "model"
+      },
+      "record_id": "SYN-MI-114"
+    },
+    {
+      "expected_codes": [
+        "Porter Regulation",
+        "Illegal Vendor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Porter Regulation"
+      ],
+      "missing_codes": [
+        "Illegal Vendor"
+      ],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model",
+        "Porter Regulation": "model"
+      },
+      "record_id": "SYN-MI-115"
+    },
+    {
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Promotions"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Promotions": "model",
+        "Advertising": "model"
+      },
+      "record_id": "SYN-MI-116"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Sanitation"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "model"
+      },
+      "record_id": "SYN-MI-117"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Stall Rental"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "model"
+      },
+      "record_id": "SYN-MI-118"
+    },
+    {
+      "expected_codes": [
+        "Resisting Authority",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [
+        "Resisting Authority"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-119"
+    },
+    {
+      "expected_codes": [
+        "Illegal Vendor",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Illegal Vendor",
+        "Resisting Authority"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-120"
+    },
+    {
+      "expected_codes": [
+        "Public Order",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "General Penalties",
+        "Public Order"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-121"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-122"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-123"
+    },
+    {
+      "expected_codes": [
+        "Utilities",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-124"
+    },
+    {
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Stall Construction",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Liquor",
+        "Market Fees & Surcharges",
+        "Stall Construction"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-125"
+    },
+    {
+      "expected_codes": [
+        "Sanitation",
+        "Signage & Streamers",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [
+        "Sanitation",
+        "Signage & Streamers"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "model"
+      },
+      "record_id": "SYN-MI-126"
+    },
+    {
+      "expected_codes": [
+        "Advertising",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Advertising",
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-127"
+    },
+    {
+      "expected_codes": [
+        "Traffic",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Resisting Authority",
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-128"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-129"
+    },
+    {
+      "expected_codes": [
+        "Market Rules",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Market Conduct",
+        "Market Rules"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-130"
+    },
+    {
+      "expected_codes": [
+        "DressCode",
+        "General Penalties",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "DressCode",
+        "General Penalties",
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-131"
+    },
+    {
+      "expected_codes": [
+        "Stall Construction",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Rental"
+      ],
+      "missing_codes": [
+        "Stall Construction"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Rental": "model"
+      },
+      "record_id": "SYN-MI-132"
+    },
+    {
+      "expected_codes": [
+        "Price Monitoring",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ],
+      "missing_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "model"
+      },
+      "record_id": "SYN-MI-133"
+    },
+    {
+      "expected_codes": [
+        "Stall Occupancy",
+        "Market Conduct",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Resisting Authority"
+      ],
+      "missing_codes": [
+        "Market Conduct",
+        "Stall Occupancy"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Resisting Authority": "model"
+      },
+      "record_id": "SYN-MI-134"
+    },
+    {
+      "expected_codes": [
+        "Market Rules",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Market Conduct",
+        "Market Rules"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-135"
+    },
+    {
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-136"
+    },
+    {
+      "expected_codes": [
+        "Bladed Instruments",
+        "Stall Rental"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Bladed Instruments",
+        "Stall Rental"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-137"
+    },
+    {
+      "expected_codes": [
+        "Lighting Facilities",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing"
+      ],
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model"
+      },
+      "record_id": "SYN-MI-138"
+    },
+    {
+      "expected_codes": [
+        "Stall Management",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management"
+      ],
+      "missing_codes": [
+        "General Penalties"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Management": "model"
+      },
+      "record_id": "SYN-MI-139"
+    },
+    {
+      "expected_codes": [
+        "Signage & Streamers",
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ],
+      "missing_codes": [
+        "Signage & Streamers",
+        "WeightMeasures"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "model"
+      },
+      "record_id": "SYN-MI-140"
+    },
+    {
+      "expected_codes": [
+        "Resisting Authority",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ],
+      "missing_codes": [
+        "Resisting Authority"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "model"
+      },
+      "record_id": "SYN-MI-141"
+    },
+    {
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [
+        "Lighting Facilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [
+        "Lighting Facilities"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting Facilities": "model"
+      },
+      "record_id": "SYN-MI-142"
+    },
+    {
+      "expected_codes": [
+        "Obstruction",
+        "Permit & Licensing",
+        "Entertainment Activities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities",
+        "Market Rules",
+        "Permit & Licensing"
+      ],
+      "missing_codes": [
+        "Obstruction"
+      ],
+      "unrelated_codes": [
+        "Market Rules"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model",
+        "Entertainment Activities": "model",
+        "Market Rules": "model"
+      },
+      "record_id": "SYN-MI-143"
+    },
+    {
+      "expected_codes": [
+        "Lighting & Energy",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ],
+      "missing_codes": [
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting & Energy": "model"
+      },
+      "record_id": "SYN-MI-144"
+    },
+    {
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-145"
+    },
+    {
+      "expected_codes": [
+        "Vendor Identification",
+        "Lighting & Energy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Lighting & Energy"
+      ],
+      "missing_codes": [
+        "Vendor Identification"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Lighting & Energy": "model"
+      },
+      "record_id": "SYN-MI-146"
+    },
+    {
+      "expected_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_weight_evidence",
+      "sources": {},
+      "record_id": "SYN-MI-147"
+    },
+    {
+      "expected_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ],
+      "missing_codes": [
+        "Stall Occupancy"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "model"
+      },
+      "record_id": "SYN-MI-148"
+    },
+    {
+      "expected_codes": [
+        "Price Monitoring",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ],
+      "missing_codes": [
+        "Stall Construction"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "model"
+      },
+      "record_id": "SYN-MI-149"
+    },
+    {
+      "expected_codes": [
+        "Stall Construction",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Stall Construction"
+      ],
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "unrelated_codes": [
+        "Permit & Licensing"
+      ],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "model",
+        "Stall Construction": "model"
+      },
+      "record_id": "SYN-MI-150"
+    }
+  ],
+  "source_csv_sha256": "4bf50b0f84d132e54e223bcb54e4dd99c8f8aa0d00be39ad0e5cb5bf8a7684b4",
+  "workflow_version": "3.3.0-description-only",
+  "audit": {
+    "unique_records": 150,
+    "unique_normalized_descriptions": 150,
+    "supplied_vendor_ids": 76,
+    "exact_description_overlap": {
+      "weightmeasures_eval_120 real records descrpitions.csv": 0,
+      "weightmeasures_eval_v2.csv": 0,
+      "weightmeasures_eval_v3.csv": 0,
+      "challenge.jsonl": 0,
+      "V2 train_fit": 0,
+      "V2 validation": 0,
+      "V2 test": 0
+    },
+    "prior_csv_record_id_overlap": {
+      "weightmeasures_eval_120 real records descrpitions.csv": 0,
+      "weightmeasures_eval_v2.csv": 0,
+      "weightmeasures_eval_v3.csv": 0
+    },
+    "id_prefixes": {
+      "SYN-MI": 150
+    },
+    "issued_at_min": "2026-08-03T06:44:00+08:00",
+    "issued_at_max": "2026-11-06T08:49:00+08:00"
+  },
+  "by_label_count": {
+    "1": {
+      "rows": 15,
+      "exact_label_matches": 5,
+      "all_gold_labels_found": 5,
+      "any_label_found": 5,
+      "rows_with_extra_labels": 4,
+      "true_positives": 5,
+      "false_positives": 4,
+      "false_negatives": 10,
+      "precision": 0.5555555555555556,
+      "recall": 0.3333333333333333
+    },
+    "2": {
+      "rows": 71,
+      "exact_label_matches": 4,
+      "all_gold_labels_found": 4,
+      "any_label_found": 30,
+      "rows_with_extra_labels": 4,
+      "true_positives": 34,
+      "false_positives": 4,
+      "false_negatives": 108,
+      "precision": 0.8947368421052632,
+      "recall": 0.23943661971830985
+    },
+    "3": {
+      "rows": 29,
+      "exact_label_matches": 0,
+      "all_gold_labels_found": 0,
+      "any_label_found": 12,
+      "rows_with_extra_labels": 3,
+      "true_positives": 13,
+      "false_positives": 3,
+      "false_negatives": 74,
+      "precision": 0.8125,
+      "recall": 0.14942528735632185
+    }
+  },
+  "multi_label": {
+    "rows": 100,
+    "exact_label_matches": 4,
+    "all_gold_labels_found": 4,
+    "any_label_found": 42,
+    "rows_with_extra_labels": 7,
+    "true_positives": 47,
+    "false_positives": 7,
+    "false_negatives": 182,
+    "precision": 0.8703703703703703,
+    "recall": 0.2052401746724891
+  }
+}

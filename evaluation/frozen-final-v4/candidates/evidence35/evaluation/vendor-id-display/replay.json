@@ -1,0 +1,768 @@
+{
+  "purpose": "Offline synthetic development evaluation of the ID display placement and visibility check.",
+  "comparison": "Original v4 versus original v4 with the isolated display check.",
+  "verifier_cutoff": 0.9999997615814209,
+  "original_v4_reproduced_rows": 35,
+  "sources": {
+    "validation_verified": {
+      "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+      "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+      "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+    },
+    "test_regression_verified": {
+      "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+      "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+      "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+    },
+    "challenge_verified": {
+      "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+      "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+      "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+    }
+  },
+  "addon_sha256": {
+    "scripts/evaluate_vendor_id_display.py": "7b5017bea2fc9588c405e756f4c32012d0aa169bbd2bcc0d44e303f28c080744",
+    "src/vendor_id_display.py": "762012187d7a84e1071aa55b361ae5fc320e51323132309826754c0930a34aa1",
+    "src/vendor_id_stall.py": "48882ae56054f91567a343583f0938bd61db586d88401756ce77f55c87b9b508",
+    "scripts/evaluate_vendor_id_stall.py": "dd8f3153680c9cb84af7533192519bf4fd1fa55894b75a5e93a7056b24f09e65",
+    "evaluation/vendor-id-display/fresh-cases.json": "d6baa4e6221c31bdfb4451ef621a55654cec08c6d65f41443b6ba2baffd1a546"
+  },
+  "gates": {
+    "no_new_false_positives": true,
+    "all_original_v4_findings_preserved": true,
+    "other_categories_unchanged": true,
+    "all_fresh_evidence_states_correct": true
+  },
+  "metrics": {
+    "validation_verified": {
+      "vendor_identification": {
+        "v4": {
+          "true_positives": 30,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "with_stall_id_check": {
+          "true_positives": 30,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_stall_id_check": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "test_regression_verified": {
+      "vendor_identification": {
+        "v4": {
+          "true_positives": 28,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 1.0,
+          "recall": 0.9333333333333333
+        },
+        "with_stall_id_check": {
+          "true_positives": 30,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_stall_id_check": {
+          "true_positives": 557,
+          "false_positives": 8,
+          "false_negatives": 259,
+          "precision": 0.9858407079646018,
+          "recall": 0.6825980392156863,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [
+        "SYN-01-TEST-02:taglish",
+        "SYN-01-TEST-06:taglish"
+      ],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "challenge_verified": {
+      "vendor_identification": {
+        "v4": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "with_stall_id_check": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_stall_id_check": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "fresh_matched": {
+      "vendor_identification": {
+        "v4": {
+          "true_positives": 6,
+          "false_positives": 0,
+          "false_negatives": 3,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        },
+        "with_stall_id_check": {
+          "true_positives": 9,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 6,
+          "false_positives": 0,
+          "false_negatives": 3,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_stall_id_check": {
+          "true_positives": 9,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [
+        "en-height:supported",
+        "en-visibility:supported",
+        "taglish-height:supported"
+      ],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    }
+  },
+  "fresh_state_counts": {
+    "en:compliant": 3,
+    "en:insufficient": 3,
+    "en:supported": 3,
+    "fil:compliant": 3,
+    "fil:insufficient": 3,
+    "fil:supported": 3,
+    "taglish:compliant": 3,
+    "taglish:insufficient": 3,
+    "taglish:supported": 3
+  },
+  "fresh_decisions": [
+    {
+      "group": "en-height",
+      "language": "en",
+      "state": "supported",
+      "description": "Seller trading, ID hung above eye level. ID must be posted at eye level.",
+      "record": "en-height:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_placed_outside_required_eye_level",
+        "evidence": "seller trading, id hung above eye level. must be posted at eye level."
+      }
+    },
+    {
+      "group": "en-height",
+      "language": "en",
+      "state": "compliant",
+      "description": "Seller trading, ID hung at the stall front at eye level, clearly readable.",
+      "record": "en-height:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " id hung at the stall front at eye level, clearly readable."
+      }
+    },
+    {
+      "group": "en-height",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Seller trading, ID hung by the counter. Couldn't tell if it was at eye level.",
+      "record": "en-height:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "seller trading, id hung by the counter."
+      }
+    },
+    {
+      "group": "en-cart",
+      "language": "en",
+      "state": "supported",
+      "description": "Seller trading at Stall H-2, her ID left on her cart in parking. ID must be posted where currently trading.",
+      "record": "en-cart:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_left_on_cart_away_from_trading_stall",
+        "evidence": "seller trading at stall h 2, her id left on her cart in parking. must be posted where currently trading."
+      }
+    },
+    {
+      "group": "en-cart",
+      "language": "en",
+      "state": "compliant",
+      "description": "Seller trading at Stall H-2, her ID posted at the stall front at eye level, fully legible.",
+      "record": "en-cart:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " her id posted at the stall front at eye level, fully legible."
+      }
+    },
+    {
+      "group": "en-cart",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Seller trading at Stall H-2, her ID might be on the cart. We couldn't check the location.",
+      "record": "en-cart:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "seller trading at stall h 2, her id might be on the cart."
+      }
+    },
+    {
+      "group": "en-visibility",
+      "language": "en",
+      "state": "supported",
+      "description": "Seller selling, ID posted at eye level but the photo was covered. ID must be displayed with the photo legible.",
+      "record": "en-visibility:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_visibility_requirement_breached",
+        "evidence": "seller selling, id posted at eye level but the photo was covered. must be displayed with the photo legible."
+      }
+    },
+    {
+      "group": "en-visibility",
+      "language": "en",
+      "state": "compliant",
+      "description": "Seller selling, ID posted at the stall front at eye level, name and photo legible.",
+      "record": "en-visibility:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " id posted at the stall front at eye level, name and photo legible."
+      }
+    },
+    {
+      "group": "en-visibility",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Seller selling, ID posted at the stall front. Couldn't check if the photo was readable.",
+      "record": "en-visibility:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "seller selling, id posted at the stall front."
+      }
+    },
+    {
+      "group": "fil-height",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nagtitinda si kuya, nakasabit ang ID lampas sa kapantay ng mata. Dapat nakapaskil ang ID kapantay ng mata.",
+      "record": "fil-height:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_placed_outside_required_eye_level",
+        "evidence": "nagtitinda si kuya, nakasabit ang id lampas sa kapantay ng mata. dapat nakapaskil ang id kapantay ng mata."
+      }
+    },
+    {
+      "group": "fil-height",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nagtitinda si kuya, nakasabit ang ID sa harap ng puwesto, kapantay ng mata at malinaw.",
+      "record": "fil-height:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " nakasabit ang id sa harap ng puwesto, kapantay ng mata at malinaw."
+      }
+    },
+    {
+      "group": "fil-height",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nagtitinda si kuya, nakasabit ang ID sa poste. Di alam kung kapantay ng mata.",
+      "record": "fil-height:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "nagtitinda si kuya, nakasabit ang id sa poste."
+      }
+    },
+    {
+      "group": "fil-cart",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nagtitinda sa puwesto M-3, naiwan ang ID sa kariton niya sa paradahan. Dapat nakapaskil ang ID kung saan nagtitinda.",
+      "record": "fil-cart:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_left_on_cart_away_from_trading_stall",
+        "evidence": "nagtitinda sa puwesto m 3, naiwan ang id sa kariton niya sa paradahan. dapat nakapaskil ang id kung saan nagtitinda."
+      }
+    },
+    {
+      "group": "fil-cart",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nagtitinda sa puwesto M-3, nakapaskil ang ID niya sa harap ng puwesto, kapantay ng mata at mababasa.",
+      "record": "fil-cart:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " nakapaskil ang id niya sa harap ng puwesto, kapantay ng mata at mababasa."
+      }
+    },
+    {
+      "group": "fil-cart",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nagtitinda sa puwesto M-3, nasa kariton daw ang ID niya. Di pa nakita kung saan talaga.",
+      "record": "fil-cart:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "nagtitinda sa puwesto m 3, nasa kariton daw ang id niya."
+      }
+    },
+    {
+      "group": "fil-visibility",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nagbebenta si ate, natatakpan ang litrato sa ID. Dapat nakapaskil ang ID na kita ang litrato.",
+      "record": "fil-visibility:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_visibility_requirement_breached",
+        "evidence": "nagbebenta si ate, natatakpan ang litrato sa id. dapat nakapaskil ang id na kita ang litrato."
+      }
+    },
+    {
+      "group": "fil-visibility",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nagbebenta si ate, nakapaskil ang ID sa harap ng puwesto, kapantay ng mata at kita ang litrato.",
+      "record": "fil-visibility:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " nakapaskil ang id sa harap ng puwesto, kapantay ng mata at kita ang litrato."
+      }
+    },
+    {
+      "group": "fil-visibility",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nagbebenta si ate, nakapaskil ang ID. Di pa nakita kung kita ang litrato.",
+      "record": "fil-visibility:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "nagbebenta si ate, nakapaskil ang id."
+      }
+    },
+    {
+      "group": "taglish-height",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Nagtitinda si seller, ID naka-clip way above eye level. Dapat naka-display ang ID at eye level.",
+      "record": "taglish-height:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_placed_outside_required_eye_level",
+        "evidence": "nagtitinda si seller, id naka clip way above eye level. dapat naka display ang id at eye level."
+      }
+    },
+    {
+      "group": "taglish-height",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Nagtitinda si seller, ID naka-clip sa harap ng stall at eye level, clear at readable.",
+      "record": "taglish-height:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " id naka clip sa harap ng stall at eye level, clear at readable."
+      }
+    },
+    {
+      "group": "taglish-height",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Nagtitinda si seller, ID naka-clip sa beam daw. Di na-check kung above eye level.",
+      "record": "taglish-height:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "nagtitinda si seller, id naka clip sa beam daw."
+      }
+    },
+    {
+      "group": "taglish-cart",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Selling sa Stall P-4, naiwan yung ID sa cart niya sa parking. Dapat naka-display ang ID kung saan nagtitinda.",
+      "record": "taglish-cart:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_left_on_cart_away_from_trading_stall",
+        "evidence": "selling sa stall p 4, naiwan yung id sa cart niya sa parking. dapat naka display ang id kung saan nagtitinda."
+      }
+    },
+    {
+      "group": "taglish-cart",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Selling sa Stall P-4, naka-display yung ID sa harap ng stall at eye level, nabasa namin.",
+      "record": "taglish-cart:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " naka display yung id sa harap ng stall at eye level, nabasa namin."
+      }
+    },
+    {
+      "group": "taglish-cart",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Selling sa Stall P-4, nasa cart daw yung ID. Di sure kung nasa parking o tabi ng stall.",
+      "record": "taglish-cart:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "selling sa stall p 4, nasa cart daw yung id."
+      }
+    },
+    {
+      "group": "taglish-visibility",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Nagtitinda si vendor, ID folded at photo hidden. Dapat naka-display ang ID na kita ang photo.",
+      "record": "taglish-visibility:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "display_evidence": {
+        "state": "supported",
+        "reason": "id_visibility_requirement_breached",
+        "evidence": "nagtitinda si vendor, id folded at photo hidden. dapat naka display ang id na kita ang photo."
+      }
+    },
+    {
+      "group": "taglish-visibility",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Nagtitinda si vendor, ID naka-display sa harap ng stall, eye level at kita yung name at photo.",
+      "record": "taglish-visibility:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "compliant",
+        "reason": "id_visible_at_stall_front_and_eye_level",
+        "evidence": " id naka display sa harap ng stall, eye level at kita yung name at photo."
+      }
+    },
+    {
+      "group": "taglish-visibility",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Nagtitinda si vendor, ID naka-display pero di na-check kung visible yung name at photo.",
+      "record": "taglish-visibility:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "display_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_placement_or_visibility_unverified",
+        "evidence": "nagtitinda si vendor, id naka display pero di na check kung visible yung name at photo."
+      }
+    }
+  ],
+  "archived_decision_changes": {
+    "validation_verified": [],
+    "test_regression_verified": [
+      {
+        "description": "Nakita sa Stall G-02 na habang nagbebenta si seller, nakasabit yung ID sa beam, way above eye level. Nakasulat sa rules na dapat naka-display ang assigned ID sa harap ng stall, eye level.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "record": "SYN-01-TEST-02:taglish",
+        "v4": [],
+        "with_stall_id_check": [
+          "Vendor Identification"
+        ],
+        "display_evidence": {
+          "state": "supported",
+          "reason": "id_placed_outside_required_eye_level",
+          "evidence": "nakita sa stall g 02 na habang nagbebenta si seller, nakasabit yung id sa beam, way above eye level. dapat naka display ang assigned id sa harap ng stall, eye level."
+        }
+      },
+      {
+        "description": "Nakita sa Stall A-11 na nagtitinda si seller sa stall na ito habang naiwan yung ID sa cart niya sa parking. Nakasulat sa rules na dapat naka-display ang assigned ID sa mismong stall kung saan nagtitinda ngayon.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "record": "SYN-01-TEST-06:taglish",
+        "v4": [],
+        "with_stall_id_check": [
+          "Vendor Identification"
+        ],
+        "display_evidence": {
+          "state": "supported",
+          "reason": "id_left_on_cart_away_from_trading_stall",
+          "evidence": "nakita sa stall a 11 na nagtitinda si seller sa stall na ito habang naiwan yung id sa cart niya sa parking. dapat naka display ang assigned id sa mismong stall kung saan nagtitinda ngayon."
+        }
+      }
+    ],
+    "challenge_verified": []
+  }
+}

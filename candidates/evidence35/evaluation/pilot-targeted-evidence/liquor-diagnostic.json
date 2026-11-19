@@ -1,0 +1,235 @@
+{
+  "purpose": "Historical misses informed development. This is an in-sample diagnostic, not release evidence.",
+  "scorer_sha256": {
+    "evaluate_pilot_liquor.py": "9fd491384203a04b2922abf119af1443d11bc2610c439454c872c9cd3d17f056",
+    "liquor_evidence.py": "a830121121d2a38e733ea909d6cf4d72f00ddd7d6559a65ecc92a4a7ecc64cc2",
+    "pilot_evidence.py": "3e96d4cef5fcdc11fd4aac1f78dc9911145132c61bb218560c824454c0fed192"
+  },
+  "cohorts": {
+    "validation_verified": {
+      "source_artifacts_sha256": {
+        "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+        "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+        "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99"
+      },
+      "v4_sha256": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043",
+      "prior_metrics": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "metrics": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "additions": []
+    },
+    "test_regression_verified": {
+      "source_artifacts_sha256": {
+        "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+        "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+        "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631"
+      },
+      "v4_sha256": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8",
+      "prior_metrics": {
+        "true_positives": 555,
+        "false_positives": 8,
+        "false_negatives": 261,
+        "precision": 0.9857904085257548,
+        "recall": 0.6801470588235294,
+        "multi_rows": 60,
+        "multi_exact": 34,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "metrics": {
+        "true_positives": 571,
+        "false_positives": 8,
+        "false_negatives": 245,
+        "precision": 0.9861830742659758,
+        "recall": 0.6997549019607843,
+        "multi_rows": 60,
+        "multi_exact": 37,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "additions": [
+        {
+          "scenario_id": "SYN-13-TEST-01",
+          "language": "en",
+          "code": "Liquor",
+          "route": "verified_buyer_age",
+          "evidence": "the seller sold a bottle of beer to a buyer whose school id shows age 16 at stall c 09; liquor may not be sold to anyone under 18.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-02",
+          "language": "fil",
+          "code": "Liquor",
+          "route": "verified_buyer_age",
+          "evidence": "habang nag iikot, napansin sa stall c 01 na nagbenta ang may puwesto ng gin sa isang 15 taong gulang, ayon sa id ng mamimili. bawal magbenta ng alak sa sinumang wala pang 18 taong gulang.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-02",
+          "language": "en",
+          "code": "Liquor",
+          "route": "verified_buyer_age",
+          "evidence": "at stall c 01, the stallholder sold gin to a 15 year old, per the buyer s id. liquor may not be sold to anyone under 18.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-04",
+          "language": "en",
+          "code": "Liquor",
+          "route": "verified_buyer_age",
+          "evidence": "req liquor may not be sold to anyone under 18. obs the stallholder sold a bottle of rum to a boy whose barangay id shows age 14.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-04",
+          "language": "taglish",
+          "code": "Liquor",
+          "route": "verified_buyer_age",
+          "evidence": "rule bawal mag sell ng alak sa under 18. obs nagbenta si stallholder ng bote ng rum sa batang 14 years old sa barangay id niya.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-05",
+          "language": "en",
+          "code": "Liquor",
+          "route": "documented_liquor_sale_window",
+          "evidence": "the stallholder sold beer at 7 15 am at stall c 30; licensed stalls may sell liquor only from 10 00 am to 8 00 pm.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-06",
+          "language": "fil",
+          "code": "Liquor",
+          "route": "documented_liquor_sale_window",
+          "evidence": "habang nag iikot, napansin sa stall d 17 na nagbenta ang tindero ng isang bote ng gin nang 9 40 pm. puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10 00 am hanggang 8 00 pm.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-06",
+          "language": "en",
+          "code": "Liquor",
+          "route": "documented_liquor_sale_window",
+          "evidence": "it was noted at stall d 17 that the seller sold a bottle of gin at 9 40 pm. the posted rule states that licensed stalls may sell liquor only from 10 00 am to 8 00 pm.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-07",
+          "language": "fil",
+          "code": "Liquor",
+          "route": "documented_liquor_sale_window",
+          "evidence": "patakaran puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10 00 am hanggang 8 00 pm. stall d 15 nagbenta ang may puwesto ng de latang beer nang 6 30 am.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-07",
+          "language": "en",
+          "code": "Liquor",
+          "route": "documented_liquor_sale_window",
+          "evidence": "licensed stalls may sell liquor only from 10 00 am to 8 00 pm. at stall d 15, the stallholder sold canned beer at 6 30 am.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-08",
+          "language": "fil",
+          "code": "Liquor",
+          "route": "documented_liquor_sale_window",
+          "evidence": "st. c 23 patakaran puwede lamang magbenta ng alak ang lisensyadong puwesto mula 10 00 am hanggang 8 00 pm naibenta ng tindero ang isang bote ng brandy nang 8 45 pm.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-08",
+          "language": "en",
+          "code": "Liquor",
+          "route": "documented_liquor_sale_window",
+          "evidence": "req licensed stalls may sell liquor only from 10 00 am to 8 00 pm. obs the seller rang up a bottle of brandy at 8 45 pm.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-13-TEST-08",
+          "language": "taglish",
+          "code": "Liquor",
+          "route": "documented_liquor_sale_window",
+          "evidence": "na ring up ni seller yung bote ng brandy ng 8 45 pm; req pwede lang mag sell ng alak ang licensed stalls from 10 00 am to 8 00 pm.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-12x13-TEST-01",
+          "language": "fil",
+          "code": "Liquor",
+          "route": "verified_buyer_age",
+          "evidence": "nagbenta ang may puwesto ng gin sa isang 15 taong gulang, ayon sa id ng mamimili. patakaran bawal magbenta ng alak sa sinumang wala pang 18 taong gulang.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-12x13-TEST-01",
+          "language": "en",
+          "code": "Liquor",
+          "route": "verified_buyer_age",
+          "evidence": "the stallholder sold gin to a 15 year old, per the buyer s id. rule liquor may not be sold to anyone under 18.",
+          "supported_by_label": true
+        },
+        {
+          "scenario_id": "SYN-12x13-TEST-01",
+          "language": "taglish",
+          "code": "Liquor",
+          "route": "verified_buyer_age",
+          "evidence": "nagbenta si stallholder ng gin sa 15 year old, ayon sa id ng buyer. rule bawal mag sell ng alak sa under 18.",
+          "supported_by_label": true
+        }
+      ]
+    },
+    "challenge_verified": {
+      "source_artifacts_sha256": {
+        "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+        "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+        "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+        "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121"
+      },
+      "v4_sha256": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a",
+      "prior_metrics": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "metrics": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "additions": []
+    }
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "purpose": "Offline replay of original v4 and synthetic development examples.",
+  "verifier_cutoff": 0.9999997615814209,
+  "original_v4_reproduced_rows": 35,
+  "sources": {
+    "validation_verified": {
+      "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+      "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+      "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+    },
+    "test_regression_verified": {
+      "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+      "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+      "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+    },
+    "challenge_verified": {
+      "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+      "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+      "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+    }
+  },
+  "addon_sha256": {
+    "scripts/evaluate_vendor_id_stall.py": "dd8f3153680c9cb84af7533192519bf4fd1fa55894b75a5e93a7056b24f09e65",
+    "src/vendor_id_stall.py": "48882ae56054f91567a343583f0938bd61db586d88401756ce77f55c87b9b508",
+    "evaluation/vendor-id-stall/fresh-cases.json": "78af451ab3b5c25142feafa686dfd7b772202f045429d8f8e4e45f88056fe541"
+  },
+  "gates": {
+    "no_new_false_positives": true,
+    "all_original_v4_findings_preserved": true,
+    "other_categories_unchanged": true,
+    "all_fresh_evidence_states_correct": true
+  },
+  "metrics": {
+    "validation_verified": {
+      "vendor_identification": {
+        "v4": {
+          "true_positives": 30,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "with_stall_id_check": {
+          "true_positives": 30,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_stall_id_check": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "test_regression_verified": {
+      "vendor_identification": {
+        "v4": {
+          "true_positives": 28,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 1.0,
+          "recall": 0.9333333333333333
+        },
+        "with_stall_id_check": {
+          "true_positives": 28,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "precision": 1.0,
+          "recall": 0.9333333333333333
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_stall_id_check": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "challenge_verified": {
+      "vendor_identification": {
+        "v4": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "with_stall_id_check": {
+          "true_positives": 4,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_stall_id_check": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "fresh_matched": {
+      "vendor_identification": {
+        "v4": {
+          "true_positives": 3,
+          "false_positives": 5,
+          "false_negatives": 3,
+          "precision": 0.375,
+          "recall": 0.5
+        },
+        "with_stall_id_check": {
+          "true_positives": 6,
+          "false_positives": 5,
+          "false_negatives": 0,
+          "precision": 0.5454545454545454,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 3,
+          "false_positives": 5,
+          "false_negatives": 3,
+          "precision": 0.375,
+          "recall": 0.5,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 3,
+          "unclear_false_actions": 2
+        },
+        "with_stall_id_check": {
+          "true_positives": 6,
+          "false_positives": 5,
+          "false_negatives": 0,
+          "precision": 0.5454545454545454,
+          "recall": 1.0,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 3,
+          "unclear_false_actions": 2
+        }
+      },
+      "recovered_misses": [
+        "en-assignment:supported",
+        "en-display:supported",
+        "taglish-display:supported"
+      ],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    }
+  },
+  "fresh_state_counts": {
+    "en:compliant": 2,
+    "en:insufficient": 2,
+    "en:supported": 2,
+    "fil:compliant": 2,
+    "fil:insufficient": 2,
+    "fil:supported": 2,
+    "taglish:compliant": 2,
+    "taglish:insufficient": 2,
+    "taglish:supported": 2
+  },
+  "fresh_decisions": [
+    {
+      "group": "en-assignment",
+      "language": "en",
+      "state": "supported",
+      "description": "Vendor ID posted at Stall D-4, but it was assigned to Stall D-8.",
+      "record": "en-assignment:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "supported",
+        "reason": "displayed_id_assigned_to_different_stall",
+        "evidence": "vendor id posted at stall d 4, but it was assigned to stall d 8."
+      }
+    },
+    {
+      "group": "en-assignment",
+      "language": "en",
+      "state": "compliant",
+      "description": "Vendor ID posted at Stall D-4, and it was assigned to Stall D-4.",
+      "record": "en-assignment:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "stall_id_evidence": {
+        "state": "compliant",
+        "reason": "vendor_id_matches_display_stall",
+        "evidence": "vendor id posted at stall d 4, and it was assigned to stall d 4."
+      }
+    },
+    {
+      "group": "en-assignment",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Vendor ID posted at Stall D-4, but the assigned stall is unreadable.",
+      "record": "en-assignment:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_stall_match_unverified",
+        "evidence": "vendor id posted at stall d 4, but the assigned stall is unreadable."
+      }
+    },
+    {
+      "group": "en-display",
+      "language": "en",
+      "state": "supported",
+      "description": "Selling at Stall B-2, her ID posted at Stall B-7. ID must be posted where currently trading.",
+      "record": "en-display:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "supported",
+        "reason": "seller_id_displayed_away_from_trading_stall",
+        "evidence": "selling at stall b 2, her id posted at stall b 7. id must be posted where currently trading."
+      }
+    },
+    {
+      "group": "en-display",
+      "language": "en",
+      "state": "compliant",
+      "description": "Selling at Stall B-2, her ID posted at Stall B-2. ID must be posted where currently trading.",
+      "record": "en-display:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "stall_id_evidence": {
+        "state": "compliant",
+        "reason": "seller_id_displayed_at_trading_stall",
+        "evidence": "selling at stall b 2, her id posted at stall b 2."
+      }
+    },
+    {
+      "group": "en-display",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Selling at Stall B-2. Her ID was reportedly posted elsewhere, but we couldn't verify the location.",
+      "record": "en-display:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "stall_id_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_stall_match_unverified",
+        "evidence": "her id was reportedly posted elsewhere, but we couldn t verify the location."
+      }
+    },
+    {
+      "group": "fil-assignment",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nakapaskil sa puwesto G-12 ang vendor ID na para sa puwesto G-16.",
+      "record": "fil-assignment:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "supported",
+        "reason": "displayed_id_assigned_to_different_stall",
+        "evidence": "nakapaskil sa puwesto g 12 ang vendor id na para sa puwesto g 16."
+      }
+    },
+    {
+      "group": "fil-assignment",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nakapaskil sa puwesto G-12 ang vendor ID na para sa puwesto G-12.",
+      "record": "fil-assignment:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "compliant",
+        "reason": "vendor_id_matches_display_stall",
+        "evidence": "nakapaskil sa puwesto g 12 ang vendor id na para sa puwesto g 12."
+      }
+    },
+    {
+      "group": "fil-assignment",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nakapaskil sa puwesto G-12 ang vendor ID. Di mabasa kung saang puwesto ito nakatalaga.",
+      "record": "fil-assignment:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_stall_match_unverified",
+        "evidence": "nakapaskil sa puwesto g 12 ang vendor id."
+      }
+    },
+    {
+      "group": "fil-display",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nagtitinda sa puwesto M-4, nakapaskil ang ID niya sa katabing puwesto. Dapat nakapaskil ang ID kung saan nagtitinda.",
+      "record": "fil-display:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "supported",
+        "reason": "seller_id_displayed_away_from_trading_stall",
+        "evidence": "nagtitinda sa puwesto m 4, nakapaskil ang id niya sa katabing puwesto. dapat nakapaskil ang id kung saan nagtitinda."
+      }
+    },
+    {
+      "group": "fil-display",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nagtitinda sa puwesto M-4, nakapaskil ang ID niya sa puwesto M-4. Dapat nakapaskil ang ID kung saan nagtitinda.",
+      "record": "fil-display:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "compliant",
+        "reason": "seller_id_displayed_at_trading_stall",
+        "evidence": "nagtitinda sa puwesto m 4, nakapaskil ang id niya sa puwesto m 4."
+      }
+    },
+    {
+      "group": "fil-display",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nagtitinda sa puwesto M-4. Di alam kung sa M-4 o sa katabi nakapaskil ang ID niya.",
+      "record": "fil-display:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "stall_id_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_stall_match_unverified",
+        "evidence": "di alam kung sa m 4 o sa katabi nakapaskil ang id niya."
+      }
+    },
+    {
+      "group": "taglish-assignment",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Vendor ID says Stall F-8, naka-display yung ID sa Stall F-3.",
+      "record": "taglish-assignment:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "supported",
+        "reason": "displayed_id_assigned_to_different_stall",
+        "evidence": "vendor id says stall f 8, naka display yung id sa stall f 3."
+      }
+    },
+    {
+      "group": "taglish-assignment",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Vendor ID says Stall F-3, naka-display yung ID sa Stall F-3.",
+      "record": "taglish-assignment:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Vendor Identification"
+      ],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "compliant",
+        "reason": "vendor_id_matches_display_stall",
+        "evidence": "vendor id says stall f 3, naka display yung id sa stall f 3."
+      }
+    },
+    {
+      "group": "taglish-assignment",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Naka-display yung vendor ID sa Stall F-3, pero di sure kung F-3 o F-8 yung nasa card.",
+      "record": "taglish-assignment:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "stall_id_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_stall_match_unverified",
+        "evidence": "naka display yung vendor id sa stall f 3, pero di sure kung f 3 o f 8 yung nasa card."
+      }
+    },
+    {
+      "group": "taglish-display",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Vendor selling at Stall P-3. His ID posted here but it was assigned to Stall P-9.",
+      "record": "taglish-display:supported",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_stall_id_check": [
+        "Vendor Identification"
+      ],
+      "stall_id_evidence": {
+        "state": "supported",
+        "reason": "displayed_id_assigned_to_different_stall",
+        "evidence": "vendor selling at stall p 3. his id posted here but it was assigned to stall p 9."
+      }
+    },
+    {
+      "group": "taglish-display",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Vendor selling at Stall P-3. His ID posted here and it was assigned to Stall P-3.",
+      "record": "taglish-display:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_stall_id_check": [],
+      "stall_id_evidence": {
+        "state": "compliant",
+        "reason": "vendor_id_matches_display_stall",
+        "evidence": "vendor selling at stall p 3. his id posted here and it was assigned to stall p 3."
+      }
+    },
+    {
+      "group": "taglish-display",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Vendor selling at Stall P-3. His ID posted here but assigned stall di mabasa.",
+      "record": "taglish-display:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_stall_id_check": [],
+      "stall_id_evidence": {
+        "state": "insufficient",
+        "reason": "vendor_id_stall_match_unverified",
+        "evidence": "his id posted here but assigned stall di mabasa."
+      }
+    }
+  ],
+  "archived_decision_changes": {
+    "validation_verified": [],
+    "test_regression_verified": [],
+    "challenge_verified": []
+  }
+}

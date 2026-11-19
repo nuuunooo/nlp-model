@@ -1,0 +1,1083 @@
+{
+  "comparison": "Frozen strict findings, v2 recovery rules, v4 recovery rules and category model. Refit evidence head and recalibrate its first-stage cutoff on legacy validation only.",
+  "fit_pairs": 12103,
+  "supplement_fit_pairs": 1080,
+  "holdout_pairs": 267,
+  "holdout_is_author_labeled_synthetic": true,
+  "maximum_supplement_weight_per_state": 0.25,
+  "actual_supplement_weight_per_state": {
+    "supported": 0.25000000000000006,
+    "compliant": 0.24999999999999997,
+    "insufficient": 0.2500000000000001
+  },
+  "old_cutoff": 0.9999997615814209,
+  "new_cutoff": null,
+  "validation_evidence": {
+    "before": {
+      "rows": 2124,
+      "support_true_positives": 254,
+      "support_false_positives": 4,
+      "support_false_negatives": 430,
+      "support_precision": 0.9844961240310077,
+      "support_recall": 0.3713450292397661,
+      "compliant_rows_accepted": 0,
+      "insufficient_rows_accepted": 4,
+      "argmax_confusion_rows_actual_columns_predicted": [
+        [
+          560,
+          15,
+          109
+        ],
+        [
+          8,
+          2,
+          2
+        ],
+        [
+          78,
+          14,
+          1336
+        ]
+      ]
+    },
+    "after": {
+      "rows": 2124,
+      "support_true_positives": 0,
+      "support_false_positives": 0,
+      "support_false_negatives": 684,
+      "support_precision": 0,
+      "support_recall": 0.0,
+      "compliant_rows_accepted": 0,
+      "insufficient_rows_accepted": 0,
+      "argmax_confusion_rows_actual_columns_predicted": [
+        [
+          574,
+          20,
+          90
+        ],
+        [
+          8,
+          4,
+          0
+        ],
+        [
+          160,
+          11,
+          1257
+        ]
+      ]
+    }
+  },
+  "held_out_evidence": {
+    "before": {
+      "rows": 267,
+      "support_true_positives": 16,
+      "support_false_positives": 4,
+      "support_false_negatives": 74,
+      "support_precision": 0.8,
+      "support_recall": 0.17777777777777778,
+      "compliant_rows_accepted": 4,
+      "insufficient_rows_accepted": 0,
+      "argmax_confusion_rows_actual_columns_predicted": [
+        [
+          51,
+          8,
+          31
+        ],
+        [
+          28,
+          24,
+          35
+        ],
+        [
+          12,
+          11,
+          67
+        ]
+      ]
+    },
+    "after": {
+      "rows": 267,
+      "support_true_positives": 0,
+      "support_false_positives": 0,
+      "support_false_negatives": 90,
+      "support_precision": 0,
+      "support_recall": 0.0,
+      "compliant_rows_accepted": 0,
+      "insufficient_rows_accepted": 0,
+      "argmax_confusion_rows_actual_columns_predicted": [
+        [
+          60,
+          13,
+          17
+        ],
+        [
+          16,
+          62,
+          9
+        ],
+        [
+          11,
+          11,
+          68
+        ]
+      ]
+    }
+  },
+  "cohorts": {
+    "validation_verified": {
+      "before": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "after": {
+        "true_positives": 640,
+        "false_positives": 4,
+        "false_negatives": 176,
+        "precision": 0.9937888198757764,
+        "recall": 0.7843137254901961,
+        "multi_rows": 60,
+        "multi_exact": 42,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "before_by_category": {
+        "Vendor Identification": {
+          "expected": 30,
+          "correct": 30,
+          "extra": 0
+        },
+        "Permit & Licensing": {
+          "expected": 30,
+          "correct": 28,
+          "extra": 0
+        },
+        "Sanitation": {
+          "expected": 33,
+          "correct": 31,
+          "extra": 0
+        },
+        "WeightMeasures": {
+          "expected": 27,
+          "correct": 22,
+          "extra": 0
+        },
+        "Lighting & Energy": {
+          "expected": 30,
+          "correct": 20,
+          "extra": 0
+        },
+        "Stall Occupancy": {
+          "expected": 27,
+          "correct": 20,
+          "extra": 0
+        },
+        "Stall Management": {
+          "expected": 27,
+          "correct": 18,
+          "extra": 0
+        },
+        "Stall Construction": {
+          "expected": 27,
+          "correct": 21,
+          "extra": 0
+        },
+        "Utilities": {
+          "expected": 27,
+          "correct": 24,
+          "extra": 0
+        },
+        "Stall Rental": {
+          "expected": 27,
+          "correct": 23,
+          "extra": 0
+        },
+        "Illegal Vendor": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Public Order": {
+          "expected": 30,
+          "correct": 21,
+          "extra": 0
+        },
+        "Liquor": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Market Conduct": {
+          "expected": 27,
+          "correct": 16,
+          "extra": 0
+        },
+        "Obstruction": {
+          "expected": 33,
+          "correct": 14,
+          "extra": 0
+        },
+        "DressCode": {
+          "expected": 27,
+          "correct": 23,
+          "extra": 0
+        },
+        "Bladed Instruments": {
+          "expected": 27,
+          "correct": 26,
+          "extra": 0
+        },
+        "Traffic": {
+          "expected": 30,
+          "correct": 20,
+          "extra": 0
+        },
+        "Porter Regulation": {
+          "expected": 27,
+          "correct": 26,
+          "extra": 1
+        },
+        "Promotions": {
+          "expected": 27,
+          "correct": 25,
+          "extra": 0
+        },
+        "Advertising": {
+          "expected": 30,
+          "correct": 24,
+          "extra": 0
+        },
+        "Signage & Streamers": {
+          "expected": 33,
+          "correct": 32,
+          "extra": 0
+        },
+        "Entertainment Activities": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Lighting Facilities": {
+          "expected": 27,
+          "correct": 22,
+          "extra": 0
+        },
+        "Market Rules": {
+          "expected": 24,
+          "correct": 4,
+          "extra": 0
+        },
+        "Price Monitoring": {
+          "expected": 30,
+          "correct": 24,
+          "extra": 0
+        },
+        "Market Fees & Surcharges": {
+          "expected": 24,
+          "correct": 9,
+          "extra": 0
+        },
+        "Resisting Authority": {
+          "expected": 30,
+          "correct": 18,
+          "extra": 1
+        },
+        "General Penalties": {
+          "expected": 24,
+          "correct": 22,
+          "extra": 0
+        }
+      },
+      "after_by_category": {
+        "Vendor Identification": {
+          "expected": 30,
+          "correct": 29,
+          "extra": 0
+        },
+        "Permit & Licensing": {
+          "expected": 30,
+          "correct": 28,
+          "extra": 0
+        },
+        "Sanitation": {
+          "expected": 33,
+          "correct": 31,
+          "extra": 0
+        },
+        "WeightMeasures": {
+          "expected": 27,
+          "correct": 22,
+          "extra": 0
+        },
+        "Lighting & Energy": {
+          "expected": 30,
+          "correct": 20,
+          "extra": 0
+        },
+        "Stall Occupancy": {
+          "expected": 27,
+          "correct": 20,
+          "extra": 0
+        },
+        "Stall Management": {
+          "expected": 27,
+          "correct": 18,
+          "extra": 0
+        },
+        "Stall Construction": {
+          "expected": 27,
+          "correct": 21,
+          "extra": 0
+        },
+        "Utilities": {
+          "expected": 27,
+          "correct": 22,
+          "extra": 0
+        },
+        "Stall Rental": {
+          "expected": 27,
+          "correct": 23,
+          "extra": 0
+        },
+        "Illegal Vendor": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Public Order": {
+          "expected": 30,
+          "correct": 21,
+          "extra": 3
+        },
+        "Liquor": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Market Conduct": {
+          "expected": 27,
+          "correct": 16,
+          "extra": 0
+        },
+        "Obstruction": {
+          "expected": 33,
+          "correct": 14,
+          "extra": 0
+        },
+        "DressCode": {
+          "expected": 27,
+          "correct": 23,
+          "extra": 0
+        },
+        "Bladed Instruments": {
+          "expected": 27,
+          "correct": 23,
+          "extra": 0
+        },
+        "Traffic": {
+          "expected": 30,
+          "correct": 20,
+          "extra": 0
+        },
+        "Porter Regulation": {
+          "expected": 27,
+          "correct": 25,
+          "extra": 1
+        },
+        "Promotions": {
+          "expected": 27,
+          "correct": 25,
+          "extra": 0
+        },
+        "Advertising": {
+          "expected": 30,
+          "correct": 23,
+          "extra": 0
+        },
+        "Signage & Streamers": {
+          "expected": 33,
+          "correct": 31,
+          "extra": 0
+        },
+        "Entertainment Activities": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Lighting Facilities": {
+          "expected": 27,
+          "correct": 22,
+          "extra": 0
+        },
+        "Market Rules": {
+          "expected": 24,
+          "correct": 8,
+          "extra": 0
+        },
+        "Price Monitoring": {
+          "expected": 30,
+          "correct": 25,
+          "extra": 0
+        },
+        "Market Fees & Surcharges": {
+          "expected": 24,
+          "correct": 9,
+          "extra": 0
+        },
+        "Resisting Authority": {
+          "expected": 30,
+          "correct": 18,
+          "extra": 0
+        },
+        "General Penalties": {
+          "expected": 24,
+          "correct": 22,
+          "extra": 0
+        }
+      }
+    },
+    "test_regression_verified": {
+      "before": {
+        "true_positives": 555,
+        "false_positives": 8,
+        "false_negatives": 261,
+        "precision": 0.9857904085257548,
+        "recall": 0.6801470588235294,
+        "multi_rows": 60,
+        "multi_exact": 34,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "after": {
+        "true_positives": 536,
+        "false_positives": 3,
+        "false_negatives": 280,
+        "precision": 0.9944341372912802,
+        "recall": 0.6568627450980392,
+        "multi_rows": 60,
+        "multi_exact": 32,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "before_by_category": {
+        "Vendor Identification": {
+          "expected": 30,
+          "correct": 28,
+          "extra": 0
+        },
+        "Permit & Licensing": {
+          "expected": 30,
+          "correct": 22,
+          "extra": 2
+        },
+        "Sanitation": {
+          "expected": 33,
+          "correct": 20,
+          "extra": 0
+        },
+        "WeightMeasures": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Lighting & Energy": {
+          "expected": 30,
+          "correct": 6,
+          "extra": 1
+        },
+        "Stall Occupancy": {
+          "expected": 27,
+          "correct": 15,
+          "extra": 0
+        },
+        "Stall Management": {
+          "expected": 27,
+          "correct": 26,
+          "extra": 0
+        },
+        "Stall Construction": {
+          "expected": 27,
+          "correct": 18,
+          "extra": 0
+        },
+        "Utilities": {
+          "expected": 27,
+          "correct": 22,
+          "extra": 0
+        },
+        "Stall Rental": {
+          "expected": 27,
+          "correct": 20,
+          "extra": 0
+        },
+        "Illegal Vendor": {
+          "expected": 27,
+          "correct": 18,
+          "extra": 0
+        },
+        "Public Order": {
+          "expected": 30,
+          "correct": 30,
+          "extra": 0
+        },
+        "Liquor": {
+          "expected": 27,
+          "correct": 8,
+          "extra": 0
+        },
+        "Market Conduct": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Obstruction": {
+          "expected": 33,
+          "correct": 18,
+          "extra": 0
+        },
+        "DressCode": {
+          "expected": 27,
+          "correct": 15,
+          "extra": 0
+        },
+        "Bladed Instruments": {
+          "expected": 27,
+          "correct": 5,
+          "extra": 0
+        },
+        "Traffic": {
+          "expected": 30,
+          "correct": 18,
+          "extra": 0
+        },
+        "Porter Regulation": {
+          "expected": 27,
+          "correct": 15,
+          "extra": 0
+        },
+        "Promotions": {
+          "expected": 27,
+          "correct": 19,
+          "extra": 2
+        },
+        "Advertising": {
+          "expected": 30,
+          "correct": 29,
+          "extra": 1
+        },
+        "Signage & Streamers": {
+          "expected": 33,
+          "correct": 24,
+          "extra": 0
+        },
+        "Entertainment Activities": {
+          "expected": 27,
+          "correct": 26,
+          "extra": 0
+        },
+        "Lighting Facilities": {
+          "expected": 27,
+          "correct": 18,
+          "extra": 0
+        },
+        "Market Rules": {
+          "expected": 24,
+          "correct": 6,
+          "extra": 0
+        },
+        "Price Monitoring": {
+          "expected": 30,
+          "correct": 11,
+          "extra": 0
+        },
+        "Market Fees & Surcharges": {
+          "expected": 24,
+          "correct": 21,
+          "extra": 0
+        },
+        "Resisting Authority": {
+          "expected": 30,
+          "correct": 19,
+          "extra": 2
+        },
+        "General Penalties": {
+          "expected": 24,
+          "correct": 24,
+          "extra": 0
+        }
+      },
+      "after_by_category": {
+        "Vendor Identification": {
+          "expected": 30,
+          "correct": 27,
+          "extra": 0
+        },
+        "Permit & Licensing": {
+          "expected": 30,
+          "correct": 19,
+          "extra": 0
+        },
+        "Sanitation": {
+          "expected": 33,
+          "correct": 18,
+          "extra": 0
+        },
+        "WeightMeasures": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Lighting & Energy": {
+          "expected": 30,
+          "correct": 7,
+          "extra": 1
+        },
+        "Stall Occupancy": {
+          "expected": 27,
+          "correct": 13,
+          "extra": 0
+        },
+        "Stall Management": {
+          "expected": 27,
+          "correct": 26,
+          "extra": 0
+        },
+        "Stall Construction": {
+          "expected": 27,
+          "correct": 18,
+          "extra": 0
+        },
+        "Utilities": {
+          "expected": 27,
+          "correct": 20,
+          "extra": 0
+        },
+        "Stall Rental": {
+          "expected": 27,
+          "correct": 23,
+          "extra": 0
+        },
+        "Illegal Vendor": {
+          "expected": 27,
+          "correct": 18,
+          "extra": 0
+        },
+        "Public Order": {
+          "expected": 30,
+          "correct": 30,
+          "extra": 0
+        },
+        "Liquor": {
+          "expected": 27,
+          "correct": 13,
+          "extra": 0
+        },
+        "Market Conduct": {
+          "expected": 27,
+          "correct": 27,
+          "extra": 0
+        },
+        "Obstruction": {
+          "expected": 33,
+          "correct": 18,
+          "extra": 0
+        },
+        "DressCode": {
+          "expected": 27,
+          "correct": 15,
+          "extra": 0
+        },
+        "Bladed Instruments": {
+          "expected": 27,
+          "correct": 6,
+          "extra": 0
+        },
+        "Traffic": {
+          "expected": 30,
+          "correct": 15,
+          "extra": 0
+        },
+        "Porter Regulation": {
+          "expected": 27,
+          "correct": 15,
+          "extra": 0
+        },
+        "Promotions": {
+          "expected": 27,
+          "correct": 17,
+          "extra": 1
+        },
+        "Advertising": {
+          "expected": 30,
+          "correct": 29,
+          "extra": 1
+        },
+        "Signage & Streamers": {
+          "expected": 33,
+          "correct": 24,
+          "extra": 0
+        },
+        "Entertainment Activities": {
+          "expected": 27,
+          "correct": 14,
+          "extra": 0
+        },
+        "Lighting Facilities": {
+          "expected": 27,
+          "correct": 18,
+          "extra": 0
+        },
+        "Market Rules": {
+          "expected": 24,
+          "correct": 5,
+          "extra": 0
+        },
+        "Price Monitoring": {
+          "expected": 30,
+          "correct": 11,
+          "extra": 0
+        },
+        "Market Fees & Surcharges": {
+          "expected": 24,
+          "correct": 20,
+          "extra": 0
+        },
+        "Resisting Authority": {
+          "expected": 30,
+          "correct": 19,
+          "extra": 0
+        },
+        "General Penalties": {
+          "expected": 24,
+          "correct": 24,
+          "extra": 0
+        }
+      }
+    },
+    "challenge_verified": {
+      "before": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "after": {
+        "true_positives": 51,
+        "false_positives": 1,
+        "false_negatives": 14,
+        "precision": 0.9807692307692307,
+        "recall": 0.7846153846153846,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "before_by_category": {
+        "Vendor Identification": {
+          "expected": 4,
+          "correct": 4,
+          "extra": 0
+        },
+        "Permit & Licensing": {
+          "expected": 2,
+          "correct": 2,
+          "extra": 0
+        },
+        "Sanitation": {
+          "expected": 5,
+          "correct": 5,
+          "extra": 0
+        },
+        "WeightMeasures": {
+          "expected": 6,
+          "correct": 6,
+          "extra": 0
+        },
+        "Lighting & Energy": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Stall Occupancy": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Stall Management": {
+          "expected": 4,
+          "correct": 4,
+          "extra": 0
+        },
+        "Stall Construction": {
+          "expected": 2,
+          "correct": 1,
+          "extra": 0
+        },
+        "Utilities": {
+          "expected": 2,
+          "correct": 2,
+          "extra": 0
+        },
+        "Stall Rental": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Illegal Vendor": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Public Order": {
+          "expected": 3,
+          "correct": 2,
+          "extra": 0
+        },
+        "Liquor": {
+          "expected": 2,
+          "correct": 1,
+          "extra": 0
+        },
+        "Market Conduct": {
+          "expected": 5,
+          "correct": 4,
+          "extra": 0
+        },
+        "Obstruction": {
+          "expected": 5,
+          "correct": 5,
+          "extra": 0
+        },
+        "DressCode": {
+          "expected": 2,
+          "correct": 1,
+          "extra": 0
+        },
+        "Bladed Instruments": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Traffic": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Porter Regulation": {
+          "expected": 2,
+          "correct": 0,
+          "extra": 0
+        },
+        "Promotions": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Advertising": {
+          "expected": 2,
+          "correct": 2,
+          "extra": 0
+        },
+        "Signage & Streamers": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Entertainment Activities": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Lighting Facilities": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Market Rules": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Price Monitoring": {
+          "expected": 5,
+          "correct": 5,
+          "extra": 0
+        },
+        "Market Fees & Surcharges": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Resisting Authority": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "General Penalties": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        }
+      },
+      "after_by_category": {
+        "Vendor Identification": {
+          "expected": 4,
+          "correct": 4,
+          "extra": 0
+        },
+        "Permit & Licensing": {
+          "expected": 2,
+          "correct": 2,
+          "extra": 0
+        },
+        "Sanitation": {
+          "expected": 5,
+          "correct": 5,
+          "extra": 1
+        },
+        "WeightMeasures": {
+          "expected": 6,
+          "correct": 6,
+          "extra": 0
+        },
+        "Lighting & Energy": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Stall Occupancy": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Stall Management": {
+          "expected": 4,
+          "correct": 4,
+          "extra": 0
+        },
+        "Stall Construction": {
+          "expected": 2,
+          "correct": 1,
+          "extra": 0
+        },
+        "Utilities": {
+          "expected": 2,
+          "correct": 2,
+          "extra": 0
+        },
+        "Stall Rental": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Illegal Vendor": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Public Order": {
+          "expected": 3,
+          "correct": 2,
+          "extra": 0
+        },
+        "Liquor": {
+          "expected": 2,
+          "correct": 1,
+          "extra": 0
+        },
+        "Market Conduct": {
+          "expected": 5,
+          "correct": 4,
+          "extra": 0
+        },
+        "Obstruction": {
+          "expected": 5,
+          "correct": 5,
+          "extra": 0
+        },
+        "DressCode": {
+          "expected": 2,
+          "correct": 1,
+          "extra": 0
+        },
+        "Bladed Instruments": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Traffic": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Porter Regulation": {
+          "expected": 2,
+          "correct": 0,
+          "extra": 0
+        },
+        "Promotions": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Advertising": {
+          "expected": 2,
+          "correct": 2,
+          "extra": 0
+        },
+        "Signage & Streamers": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Entertainment Activities": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Lighting Facilities": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Market Rules": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        },
+        "Price Monitoring": {
+          "expected": 5,
+          "correct": 5,
+          "extra": 0
+        },
+        "Market Fees & Surcharges": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "Resisting Authority": {
+          "expected": 1,
+          "correct": 1,
+          "extra": 0
+        },
+        "General Penalties": {
+          "expected": 1,
+          "correct": 0,
+          "extra": 0
+        }
+      }
+    }
+  }
+}

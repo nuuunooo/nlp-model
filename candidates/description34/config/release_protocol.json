@@ -1,0 +1,21 @@
+{
+  "version": "3.4.0-candidate",
+  "purpose": "Developer evaluation protocol only; no user-facing switch or verification step.",
+  "minimum_rows": 300,
+  "minimum_multi_label_rows": 120,
+  "minimum_clear_rows": 60,
+  "minimum_abstain_rows": 60,
+  "minimum_positive_labels_per_category": 10,
+  "targets": {
+    "micro_precision": 0.95,
+    "micro_recall": 0.75,
+    "multi_label_exact_match_rate": 0.70,
+    "maximum_clear_rows_with_actions": 0,
+    "maximum_abstain_rows_with_actions": 0
+  },
+  "rationale": "With zero errors in 60 independent negative records, the one-sided 95% binomial upper bound is approximately 4.9%. Ten positives per category support coverage checks, not a precise per-category accuracy claim.",
+  "independence": "Independently labeled after the catalog contract is fixed; no model proposals shown to labelers; no training/development/evaluation duplicates or near duplicates; preserve source/vendor grouping and reserve records before tuning.",
+  "test_once": "Freeze all candidate runtime, catalog, tokenizer, model and threshold files before predictions. Register one evaluation attempt per dataset hash. Report every category and all abstention/compliance errors, including failures of targets.",
+  "threshold_policy": "Existing weights and validation-selected thresholds remain unchanged. Any later training requires a designated fit split and separate validation split; never fit or select thresholds using the final test.",
+  "release_policy": "A passing fresh test is required before treating this candidate as release-qualified. Development regression metrics are insufficient. Current policy source is the supplied 2014 code; later amendments are not exhaustively certified."
+}

@@ -1,0 +1,913 @@
+{
+  "purpose": "Offline synthetic development replay for loading locations and engine-off rules.",
+  "verifier_cutoff": 0.9999997615814209,
+  "original_v4_reproduced_rows": 35,
+  "sources": {
+    "validation_verified": {
+      "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+      "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+      "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+    },
+    "test_regression_verified": {
+      "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+      "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+      "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+    },
+    "challenge_verified": {
+      "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+      "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+      "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+    }
+  },
+  "addon_sha256": {
+    "scripts/evaluate_traffic_loading.py": "31775bea1e13b8d345210a076106cbc234933f7a63b60335d9791a71b5cbc18f",
+    "src/traffic_loading.py": "db8a5692db0097730deafd18dd391ee2d66372f3c9452551f36b0da780537755",
+    "evaluation/traffic-loading/fresh-cases.json": "a917f8a629aa0b80b117588753346cb24098fb29c59232e9e2736c77a6e760e8"
+  },
+  "gates": {
+    "no_new_false_positives": true,
+    "all_original_v4_findings_preserved": true,
+    "other_categories_unchanged": true,
+    "all_fresh_evidence_states_correct": true
+  },
+  "metrics": {
+    "validation_verified": {
+      "traffic": {
+        "v4": {
+          "true_positives": 20,
+          "false_positives": 0,
+          "false_negatives": 10,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        },
+        "with_traffic_check": {
+          "true_positives": 20,
+          "false_positives": 0,
+          "false_negatives": 10,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_traffic_check": {
+          "true_positives": 644,
+          "false_positives": 2,
+          "false_negatives": 172,
+          "precision": 0.9969040247678018,
+          "recall": 0.7892156862745098,
+          "multi_rows": 60,
+          "multi_exact": 44,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "test_regression_verified": {
+      "traffic": {
+        "v4": {
+          "true_positives": 18,
+          "false_positives": 0,
+          "false_negatives": 12,
+          "precision": 1.0,
+          "recall": 0.6
+        },
+        "with_traffic_check": {
+          "true_positives": 27,
+          "false_positives": 0,
+          "false_negatives": 3,
+          "precision": 1.0,
+          "recall": 0.9
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 555,
+          "false_positives": 8,
+          "false_negatives": 261,
+          "precision": 0.9857904085257548,
+          "recall": 0.6801470588235294,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_traffic_check": {
+          "true_positives": 564,
+          "false_positives": 8,
+          "false_negatives": 252,
+          "precision": 0.986013986013986,
+          "recall": 0.6911764705882353,
+          "multi_rows": 60,
+          "multi_exact": 34,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [
+        "SYN-18-TEST-02:fil",
+        "SYN-18-TEST-02:taglish",
+        "SYN-18-TEST-06:fil",
+        "SYN-18-TEST-06:en",
+        "SYN-18-TEST-06:taglish",
+        "SYN-18-TEST-07:fil",
+        "SYN-18-TEST-07:taglish",
+        "SYN-18-TEST-08:fil",
+        "SYN-18-TEST-08:en"
+      ],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "challenge_verified": {
+      "traffic": {
+        "v4": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "with_traffic_check": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1,
+          "precision": null,
+          "recall": 0.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        },
+        "with_traffic_check": {
+          "true_positives": 48,
+          "false_positives": 0,
+          "false_negatives": 17,
+          "precision": 1.0,
+          "recall": 0.7384615384615385,
+          "multi_rows": 30,
+          "multi_exact": 18,
+          "clear_false_actions": 0,
+          "unclear_false_actions": 0
+        }
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    },
+    "fresh_matched": {
+      "traffic": {
+        "v4": {
+          "true_positives": 4,
+          "false_positives": 6,
+          "false_negatives": 5,
+          "precision": 0.4,
+          "recall": 0.4444444444444444
+        },
+        "with_traffic_check": {
+          "true_positives": 9,
+          "false_positives": 6,
+          "false_negatives": 0,
+          "precision": 0.6,
+          "recall": 1.0
+        }
+      },
+      "all_categories": {
+        "v4": {
+          "true_positives": 4,
+          "false_positives": 6,
+          "false_negatives": 5,
+          "precision": 0.4,
+          "recall": 0.4444444444444444,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 4,
+          "unclear_false_actions": 2
+        },
+        "with_traffic_check": {
+          "true_positives": 9,
+          "false_positives": 6,
+          "false_negatives": 0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "multi_rows": 0,
+          "multi_exact": 0,
+          "clear_false_actions": 4,
+          "unclear_false_actions": 2
+        }
+      },
+      "recovered_misses": [
+        "en-lane:supported",
+        "fil-sign:supported",
+        "fil-engine:supported",
+        "taglish-exception:supported",
+        "taglish-fire-lane:supported"
+      ],
+      "new_false_positives": [],
+      "removed_findings": [],
+      "other_category_changes": []
+    }
+  },
+  "fresh_state_counts": {
+    "en:compliant": 3,
+    "en:insufficient": 3,
+    "en:supported": 3,
+    "fil:compliant": 3,
+    "fil:insufficient": 3,
+    "fil:supported": 3,
+    "taglish:compliant": 3,
+    "taglish:insufficient": 3,
+    "taglish:supported": 3
+  },
+  "fresh_decisions": [
+    {
+      "group": "en-curb",
+      "language": "en",
+      "state": "supported",
+      "description": "Truck unloaded at the street curb. Deliveries must be unloaded at the designated loading bay.",
+      "record": "en-curb:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "loading_outside_required_bay",
+        "evidence": "truck unloaded at the street curb. deliveries must be unloaded at the designated loading bay."
+      }
+    },
+    {
+      "group": "en-curb",
+      "language": "en",
+      "state": "compliant",
+      "description": "Truck unloaded in the designated loading bay. Deliveries must be unloaded at the designated loading bay.",
+      "record": "en-curb:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "loading_at_allowed_location",
+        "evidence": "truck unloaded in the designated loading bay."
+      }
+    },
+    {
+      "group": "en-curb",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Truck unloaded, but we couldn't see the location. Deliveries must be unloaded at the designated loading bay.",
+      "record": "en-curb:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "truck unloaded, but we couldn t see the location."
+      }
+    },
+    {
+      "group": "en-lane",
+      "language": "en",
+      "state": "supported",
+      "description": "Delivery van loaded boxes in the bike lane. No loading in the bike lane.",
+      "record": "en-lane:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "loading_in_prohibited_location",
+        "evidence": "delivery van loaded boxes in the bike lane. no loading in the bike lane."
+      }
+    },
+    {
+      "group": "en-lane",
+      "language": "en",
+      "state": "compliant",
+      "description": "Delivery van loaded boxes in the marked loading bay. No loading in the bike lane.",
+      "record": "en-lane:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "loading_at_allowed_location",
+        "evidence": "delivery van loaded boxes in the marked loading bay."
+      }
+    },
+    {
+      "group": "en-lane",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Delivery van loaded boxes in the bike lane. Sign unreadable, couldn't verify the loading ban.",
+      "record": "en-lane:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "delivery van loaded boxes in the bike lane."
+      }
+    },
+    {
+      "group": "en-engine",
+      "language": "en",
+      "state": "supported",
+      "description": "Truck waited in the loading bay with its engine running. Engines must be off in the loading bay.",
+      "record": "en-engine:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "engine_running_in_engine_off_zone",
+        "evidence": "truck waited in the loading bay with its engine running. engines must be off in the loading bay."
+      }
+    },
+    {
+      "group": "en-engine",
+      "language": "en",
+      "state": "compliant",
+      "description": "Truck waited in the loading bay with its engine off. Engines must be off in the loading bay.",
+      "record": "en-engine:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "engine_off_while_waiting",
+        "evidence": "truck waited in the loading bay with its engine off. engines must be off in the loading bay."
+      }
+    },
+    {
+      "group": "en-engine",
+      "language": "en",
+      "state": "insufficient",
+      "description": "Truck waited in the loading bay. Couldn't tell if its engine was running.",
+      "record": "en-engine:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "truck waited in the loading bay."
+      }
+    },
+    {
+      "group": "fil-curb",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nagbaba ang trak sa gilid ng kalsada. Kailangang sa itinakdang loading bay ibaba ang delivery.",
+      "record": "fil-curb:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "loading_outside_required_bay",
+        "evidence": "nagbaba ang trak sa gilid ng kalsada. kailangang sa itinakdang loading bay ibaba ang delivery."
+      }
+    },
+    {
+      "group": "fil-curb",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nagbaba ang trak sa itinakdang loading bay. Kailangang doon ibaba ang delivery.",
+      "record": "fil-curb:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "loading_at_allowed_location",
+        "evidence": "nagbaba ang trak sa itinakdang loading bay."
+      }
+    },
+    {
+      "group": "fil-curb",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nagbaba ang trak pero di alam kung sa gilid ng kalsada o sa loading bay.",
+      "record": "fil-curb:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "nagbaba ang trak pero di alam kung sa gilid ng kalsada o sa loading bay."
+      }
+    },
+    {
+      "group": "fil-sign",
+      "language": "fil",
+      "state": "supported",
+      "description": "Nagkarga ang trak sa bangketa. Bawal magkarga sa bangketa.",
+      "record": "fil-sign:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "loading_in_prohibited_location",
+        "evidence": "nagkarga ang trak sa bangketa. bawal magkarga sa bangketa."
+      }
+    },
+    {
+      "group": "fil-sign",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Nagkarga ang trak sa tamang loading bay. Bawal magkarga sa bangketa.",
+      "record": "fil-sign:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "loading_at_allowed_location",
+        "evidence": "nagkarga ang trak sa tamang loading bay."
+      }
+    },
+    {
+      "group": "fil-sign",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Nagkarga ang trak sa bangketa. Di mabasa ang karatula kung bawal doon.",
+      "record": "fil-sign:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "nagkarga ang trak sa bangketa."
+      }
+    },
+    {
+      "group": "fil-engine",
+      "language": "fil",
+      "state": "supported",
+      "description": "Tumatakbo ang makina ng trak habang naghihintay sa loading bay. Kailangang patayin ang makina sa loading bay.",
+      "record": "fil-engine:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "engine_running_in_engine_off_zone",
+        "evidence": "tumatakbo ang makina ng trak habang naghihintay sa loading bay. kailangang patayin ang makina sa loading bay."
+      }
+    },
+    {
+      "group": "fil-engine",
+      "language": "fil",
+      "state": "compliant",
+      "description": "Patay ang makina ng trak habang naghihintay sa loading bay. Kailangang patayin ang makina sa loading bay.",
+      "record": "fil-engine:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "engine_off_while_waiting",
+        "evidence": "patay ang makina ng trak habang naghihintay sa loading bay. kailangang patayin ang makina sa loading bay."
+      }
+    },
+    {
+      "group": "fil-engine",
+      "language": "fil",
+      "state": "insufficient",
+      "description": "Naghihintay ang trak sa loading bay. Di alam kung tumatakbo ang makina.",
+      "record": "fil-engine:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "naghihintay ang trak sa loading bay."
+      }
+    },
+    {
+      "group": "taglish-bay",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Nag-unload ang van sa Bay 7. Deliveries must be unloaded in Bay 2.",
+      "record": "taglish-bay:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "loading_outside_required_bay",
+        "evidence": "nag unload ang van sa bay 7. deliveries must be unloaded in bay 2."
+      }
+    },
+    {
+      "group": "taglish-bay",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Nag-unload ang van sa Bay 2. Deliveries must be unloaded in Bay 2.",
+      "record": "taglish-bay:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "loading_at_allowed_location",
+        "evidence": "nag unload ang van sa bay 2."
+      }
+    },
+    {
+      "group": "taglish-bay",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Nag-unload ang van sa bay pero di nabasa ang bay number. Deliveries must be unloaded in Bay 2.",
+      "record": "taglish-bay:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [
+        "Traffic"
+      ],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "nag unload ang van sa bay pero di nabasa ang bay number."
+      }
+    },
+    {
+      "group": "taglish-exception",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Truck naka-idle sa bay, walang clearance. No idling sa bay except with clearance.",
+      "record": "taglish-exception:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "engine_running_in_engine_off_zone",
+        "evidence": "truck naka idle sa bay, walang clearance. no idling sa bay except with clearance."
+      }
+    },
+    {
+      "group": "taglish-exception",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Truck naka-idle sa bay with written clearance to keep its engine on. No idling sa bay except with clearance.",
+      "record": "taglish-exception:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "observed_engine_use_explicitly_permitted",
+        "evidence": "truck naka idle sa bay with written clearance to keep its engine on."
+      }
+    },
+    {
+      "group": "taglish-exception",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Truck naka-idle sa bay. No idling sa bay except with clearance. Di na-check kung may clearance.",
+      "record": "taglish-exception:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "truck naka idle sa bay."
+      }
+    },
+    {
+      "group": "taglish-fire-lane",
+      "language": "taglish",
+      "state": "supported",
+      "description": "Van nag-unload sa fire lane. No loading or unloading sa fire lane.",
+      "record": "taglish-fire-lane:supported",
+      "expected_codes": [
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "v4": [],
+      "with_traffic_check": [
+        "Traffic"
+      ],
+      "traffic_evidence": {
+        "state": "supported",
+        "reason": "loading_in_prohibited_location",
+        "evidence": "van nag unload sa fire lane. no loading or unloading sa fire lane."
+      }
+    },
+    {
+      "group": "taglish-fire-lane",
+      "language": "taglish",
+      "state": "compliant",
+      "description": "Van nag-unload sa approved unloading bay. No loading or unloading sa fire lane.",
+      "record": "taglish-fire-lane:compliant",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "compliant",
+        "reason": "loading_at_allowed_location",
+        "evidence": "van nag unload sa approved unloading bay."
+      }
+    },
+    {
+      "group": "taglish-fire-lane",
+      "language": "taglish",
+      "state": "insufficient",
+      "description": "Van nag-unload daw sa fire lane, di na-check yung location. No loading or unloading sa fire lane.",
+      "record": "taglish-fire-lane:insufficient",
+      "expected_codes": [],
+      "expected_decision": "abstain",
+      "v4": [],
+      "with_traffic_check": [],
+      "traffic_evidence": {
+        "state": "insufficient",
+        "reason": "loading_location_rule_or_engine_status_unverified",
+        "evidence": "van nag unload daw sa fire lane, di na check yung location."
+      }
+    }
+  ],
+  "archived_decision_changes": {
+    "validation_verified": [],
+    "test_regression_verified": [
+      {
+        "description": "Habang nag-iikot, napansin sa Seksyon C na nagbaba ang isang tindera ng mga kahon ng prutas mula sa kanyang van sa gilid ng kalsada. Kailangang sa itinakdang loading bay ibaba ang delivery ng tindero at hindi sa gilid ng kalsada.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-02:fil",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "loading_outside_required_bay",
+          "evidence": "habang nag iikot, napansin sa seksyon c na nagbaba ang isang tindera ng mga kahon ng prutas mula sa kanyang van sa gilid ng kalsada. kailangang sa itinakdang loading bay ibaba ang delivery ng tindero at hindi sa gilid ng kalsada."
+        }
+      },
+      {
+        "description": "During ikot, napansin sa Section C na nag-unload yung vendor ng crates ng prutas from van niya sa street curb. Dapat sa designated loading bay i-unload ang vendor deliveries, hindi sa street curb.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-02:taglish",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "loading_outside_required_bay",
+          "evidence": "during ikot, napansin sa section c na nag unload yung vendor ng crates ng prutas from van niya sa street curb. dapat sa designated loading bay i unload ang vendor deliveries, hindi sa street curb."
+        }
+      },
+      {
+        "description": "Nakita sa Seksyon C na naka-idle sa bay ang refrigerated van ng isang tindero na bukas ang makina. Nakasaad sa patakaran na kailangang patayin ang makina ng sasakyang naghihintay sa loading bay.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-06:fil",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "engine_running_in_engine_off_zone",
+          "evidence": "nakita sa seksyon c na naka idle sa bay ang refrigerated van ng isang tindero na bukas ang makina. nakasaad sa patakaran na kailangang patayin ang makina ng sasakyang naghihintay sa loading bay."
+        }
+      },
+      {
+        "description": "At Section C, a vendor's refrigerated van idled at the bay with its engine on. Vehicles waiting at the loading bay must switch off their engines.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-06:en",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "engine_running_in_engine_off_zone",
+          "evidence": "at section c, a vendor s refrigerated van idled at the bay with its engine on. vehicles waiting at the loading bay must switch off their engines."
+        }
+      },
+      {
+        "description": "Nakita sa Section C na naka-idle sa bay yung ref van ng vendor na naka-on ang engine. Nakasulat sa rules na dapat naka-off ang engine ng vehicles na naghihintay sa loading bay.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-06:taglish",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "engine_running_in_engine_off_zone",
+          "evidence": "nakita sa section c na naka idle sa bay yung ref van ng vendor na naka on ang engine. nakasulat sa rules na dapat naka off ang engine ng vehicles na naghihintay sa loading bay."
+        }
+      },
+      {
+        "description": "Nakapaskil na patakaran: kailangang patayin ang makina ng sasakyang naghihintay sa loading bay. Sa inspeksyon sa Seksyon C, naghintay sa loading bay ang mga trak ng dalawang tindero na tumatakbo ang makina.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-07:fil",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "engine_running_in_engine_off_zone",
+          "evidence": "sa inspeksyon sa seksyon c, naghintay sa loading bay ang mga trak ng dalawang tindero na tumatakbo ang makina. nakapaskil na patakaran kailangang patayin ang makina ng sasakyang naghihintay sa loading bay."
+        }
+      },
+      {
+        "description": "Posted rule: dapat naka-off ang engine ng vehicles na naghihintay sa loading bay. Pag-inspect sa Section C, nag-antay sa loading bay yung trucks ng dalawang vendors na naka-on ang engine.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-07:taglish",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "engine_running_in_engine_off_zone",
+          "evidence": "pag inspect sa section c, nag antay sa loading bay yung trucks ng dalawang vendors na naka on ang engine. posted rule dapat naka off ang engine ng vehicles na naghihintay sa loading bay."
+        }
+      },
+      {
+        "description": "Seksyon B. Patakaran: kailangang patayin ang makina ng sasakyang naghihintay sa loading bay. Obs: pinaandar nang naka-idle ng may-puwesto ang kanyang pickup sa bay habang kumakain.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-08:fil",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "engine_running_in_engine_off_zone",
+          "evidence": "obs pinaandar nang naka idle ng may puwesto ang kanyang pickup sa bay habang kumakain. patakaran kailangang patayin ang makina ng sasakyang naghihintay sa loading bay."
+        }
+      },
+      {
+        "description": "Section B — rule: vehicles waiting at the loading bay must switch off their engines / the stallholder idled his pickup at the bay while eating.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-08:en",
+        "v4": [],
+        "with_traffic_check": [
+          "Traffic"
+        ],
+        "traffic_evidence": {
+          "state": "supported",
+          "reason": "engine_running_in_engine_off_zone",
+          "evidence": "the stallholder idled his pickup at the bay while eating. section b rule vehicles waiting at the loading bay must switch off their engines"
+        }
+      }
+    ],
+    "challenge_verified": []
+  }
+}

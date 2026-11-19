@@ -1,0 +1,168 @@
+{
+  "states": [
+    "supported",
+    "compliant",
+    "insufficient"
+  ],
+  "supported_cutoff": 0.9792906045913696,
+  "selection_feasible": true,
+  "release_qualified": false,
+  "recipe": {
+    "encoder": "separate copy of original multilingual E5; original classifier unchanged",
+    "steps": 100,
+    "batch_size": 8,
+    "seed": 42,
+    "contrastive_iterations": 10,
+    "head_C": 1,
+    "head_class_weight": "balanced"
+  },
+  "fit_rows": 2669,
+  "fit_states": {
+    "supported": 2076,
+    "compliant": 65,
+    "insufficient": 528
+  },
+  "fit_kinds": {
+    "original": 2292,
+    "unrelated_target": 174,
+    "unconfirmed_counterfactual": 174,
+    "checked_compliance_counterfactual": 29
+  },
+  "oversized_fit_rows_excluded": 0,
+  "source_classifier_identity": {
+    "config.json": "533ccc63e3d75f47f9c9beb603286bcb686cb9faeb870063f6398af7b2878f43",
+    "config_sentence_transformers.json": "ff6ee575ab642e4d633fb9f50ec9419598bc0e24c904c9ac25684685d0050ac7",
+    "config_setfit.json": "262ac77a490cbd2d6a89ac11a4a2c20d43c5e74069dd7762c77cc363af35715e",
+    "model.safetensors": "7ce3f8628c4aa33220265b1ae2c2d58d3d2e2f4fe8b5dd655677b1358c3bf7fc",
+    "model_head.pkl": "3089627b6f882a10970db3a09a2ffaf3e66c0aee7314a376e7eef3a37ba3daa4",
+    "modules.json": "e7989e94b5b809d895a9521b708312c1ccd333e183effebaf3838908da2acd53",
+    "sentence_bert_config.json": "0d36864e76a49566363ccbe0eca352b0d532868fa3892de8d78270bc6e652615",
+    "special_tokens_map.json": "edd71739099fe63dc2f70815facad5253c70ded0e0d4df49ef883ce4511af365",
+    "thresholds.json": "8e29338f303826dda10a23528a0a9587ee09d80fb91da6fa11554c56d6d88a14",
+    "tokenizer.json": "ef04f2b385d1514f500e779207ace0f53e30895ce37563179e29f4022d28ca38",
+    "tokenizer_config.json": "df5ad8bcc8e0dbc840a54817cf051af86c7bb108d9e35c4ccdcdebbccfdd11d9",
+    "1_Pooling\\config.json": "64230a97629225324725c35e1a1cbd15025a9f656eafaaeb86cf8ec6a4ecb4d8"
+  },
+  "training_code_sha256": {
+    "scripts\\train_neural_evidence.py": "9fa81bd6c344156081406f6e8fef6283f25b9a5527f5b58b20b3feaee0ba5ea9",
+    "scripts\\train_evidence_verifier.py": "2fa4862cb6499cd648fd5a9ed0101d526b3b28f99cb7e56f34989e2e46e2eb25",
+    "src\\engine.py": "cf9c25abe762673dfbdb7b8327cf1e0079b1ad9e8c02a88ae15c2a2faa841274"
+  },
+  "data_sha256": {
+    "fit.jsonl": "a42f4277b678325daa2422f9fe102eb2239bdde6840ec847d8579bee5c7b8e29",
+    "validation.jsonl": "dc19a076e94521a5081e15c57939e83dade7ed297c1361ce3301732a2025ecce",
+    "audit.json": "b8523603cd326f50ea9cdd5753406e99a336804d8e42f3af26c166d17e966542"
+  },
+  "input_format": "query: Category: <predicted category>. Incident: <normalized description context>",
+  "selection": "Validation only: maximize support recall with >=98% support precision and zero compliant validation cases accepted; higher cutoff on ties.",
+  "validation": {
+    "rows": 2124,
+    "support_true_positives": 1,
+    "support_false_positives": 0,
+    "support_false_negatives": 683,
+    "support_precision": 1.0,
+    "support_recall": 0.0014619883040935672,
+    "compliant_rows_accepted": 0,
+    "insufficient_rows_accepted": 0,
+    "argmax_confusion_rows_actual_columns_predicted": [
+      [
+        610,
+        31,
+        43
+      ],
+      [
+        6,
+        3,
+        3
+      ],
+      [
+        1216,
+        64,
+        148
+      ]
+    ]
+  },
+  "validation_by_language": {
+    "fil": {
+      "rows": 708,
+      "support_true_positives": 0,
+      "support_false_positives": 0,
+      "support_false_negatives": 228,
+      "support_precision": 0,
+      "support_recall": 0.0,
+      "compliant_rows_accepted": 0,
+      "insufficient_rows_accepted": 0,
+      "argmax_confusion_rows_actual_columns_predicted": [
+        [
+          201,
+          12,
+          15
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          404,
+          24,
+          48
+        ]
+      ]
+    },
+    "en": {
+      "rows": 708,
+      "support_true_positives": 1,
+      "support_false_positives": 0,
+      "support_false_negatives": 227,
+      "support_precision": 1.0,
+      "support_recall": 0.0043859649122807015,
+      "compliant_rows_accepted": 0,
+      "insufficient_rows_accepted": 0,
+      "argmax_confusion_rows_actual_columns_predicted": [
+        [
+          199,
+          13,
+          16
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          400,
+          24,
+          52
+        ]
+      ]
+    },
+    "taglish": {
+      "rows": 708,
+      "support_true_positives": 0,
+      "support_false_positives": 0,
+      "support_false_negatives": 228,
+      "support_precision": 0,
+      "support_recall": 0.0,
+      "compliant_rows_accepted": 0,
+      "insufficient_rows_accepted": 0,
+      "argmax_confusion_rows_actual_columns_predicted": [
+        [
+          210,
+          6,
+          12
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          412,
+          16,
+          48
+        ]
+      ]
+    }
+  }
+}

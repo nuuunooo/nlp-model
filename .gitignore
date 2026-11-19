@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+New Training Model - handoff.zip
+
+# Oversized model weights are distributed separately from the source repository.
+evaluation/frozen-final-v4/models/setfit-e5-synthetic-v2/model.safetensors
+candidates/evidence35/artifacts/neural-evidence-v2/model/model.safetensors
+models/semantic-evidence/onnx/model_quantized.onnx

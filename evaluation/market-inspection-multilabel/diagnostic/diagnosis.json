@@ -1,0 +1,7518 @@
+{
+  "method": "Exact frozen baseline replay, per-label model/gate tracing, and one exploratory whole-note-plus-fragment union. Only descriptions enter inference; gold labels and label_evidence never do.",
+  "limitations": [
+    "Score/gate traces identify mechanical failure paths, not independent adjudication of gold labels.",
+    "The segmentation experiment uses this already inspected dataset and is development evidence only.",
+    "Fragmentation can remove context or qualifiers; this experiment is not a deployable replacement.",
+    "No thresholds, weights, rules, or gold labels were changed."
+  ],
+  "provenance": {
+    "source_sha256": "4bf50b0f84d132e54e223bcb54e4dd99c8f8aa0d00be39ad0e5cb5bf8a7684b4",
+    "baseline_sha256": "b74060d1d57be743e62cd540c31e13db86e070283ccfb9a4b6904baaca2df791",
+    "runtime_sha256": {
+      "src/engine.py": "cf9c25abe762673dfbdb7b8327cf1e0079b1ad9e8c02a88ae15c2a2faa841274",
+      "src/description_evidence.py": "0cda2375d721a10685cb61bc45bf64f0671176cb708ce51016c89b5493714855",
+      "config/lexicon.csv": "f6f9d1d1d9b311e31596c55a31a46743039a6957e0327e3eec50189dba530ac9",
+      "config/taxonomy.csv": "247009eb8fdd983f0c23f7ce42defc0d5864b792880a7494d1c0610b7d983f51"
+    },
+    "scorer_sha256": "edd26b2052f640c019de3c27435630e109b7fed5ea3ed5cd42376de4b66e91a7",
+    "model": {
+      "split_sha256": "aa3872502b8b5fc2577761f1a6febf33197b7aa905ef17eb50cd6c0811267ae4",
+      "thresholds_sha256": "8e29338f303826dda10a23528a0a9587ee09d80fb91da6fa11554c56d6d88a14",
+      "model_sha256": "7ce3f8628c4aa33220265b1ae2c2d58d3d2e2f4fe8b5dd655677b1358c3bf7fc",
+      "head_sha256": "3089627b6f882a10970db3a09a2ffaf3e66c0aee7314a376e7eef3a37ba3daa4",
+      "codes": [
+        "Vendor Identification",
+        "Permit & Licensing",
+        "Sanitation",
+        "WeightMeasures",
+        "Lighting & Energy",
+        "Stall Occupancy",
+        "Stall Management",
+        "Stall Construction",
+        "Utilities",
+        "Stall Rental",
+        "Illegal Vendor",
+        "Public Order",
+        "Liquor",
+        "Market Conduct",
+        "Obstruction",
+        "DressCode",
+        "Bladed Instruments",
+        "Traffic",
+        "Porter Regulation",
+        "Promotions",
+        "Advertising",
+        "Signage & Streamers",
+        "Entertainment Activities",
+        "Lighting Facilities",
+        "Market Rules",
+        "Price Monitoring",
+        "Market Fees & Surcharges",
+        "Resisting Authority",
+        "General Penalties"
+      ]
+    },
+    "input_sha256": "cf4d1807ce185e075e44553b5b253792a8b6028929f773907f68daa98fc9bbec",
+    "script_sha256": "52e0b13047dc328a99de0e50ce96d199831f0253035f616146d0a29763c413f6"
+  },
+  "baseline_replayed_exactly": true,
+  "frozen_artifacts_unchanged": true,
+  "baseline_metrics": {
+    "known_rows": 135,
+    "true_positives": 52,
+    "false_positives": 23,
+    "false_negatives": 192,
+    "micro_precision": 0.6933333333333334,
+    "micro_recall": 0.21311475409836064,
+    "micro_f1": 0.32601880877742945,
+    "exact_label_set_matches": 18,
+    "multi_label_rows": 100,
+    "multi_label_exact_matches": 4,
+    "clear_rows_with_actions": 11,
+    "abstain_rows_with_actions": 4
+  },
+  "baseline_finding_sources_all_150": {
+    "model": 72,
+    "rule": 7
+  },
+  "missing_gold_labels_by_path": {
+    "below_threshold_only": 147,
+    "below_threshold_and_evidence_gate": 26,
+    "evidence_gate_only": 16,
+    "weight_parser_did_not_establish_violation": 3
+  },
+  "missing_gold_labels_below_threshold": 176,
+  "false_actions_by_source_including_abstain": {
+    "model": 27
+  },
+  "experimental_union_metrics": {
+    "known_rows": 135,
+    "true_positives": 134,
+    "false_positives": 55,
+    "false_negatives": 110,
+    "micro_precision": 0.708994708994709,
+    "micro_recall": 0.5491803278688525,
+    "micro_f1": 0.6189376443418014,
+    "exact_label_set_matches": 30,
+    "multi_label_rows": 100,
+    "multi_label_exact_matches": 25,
+    "clear_rows_with_actions": 19,
+    "abstain_rows_with_actions": 6
+  },
+  "experimental_rescues_by_baseline_path": {
+    "below_threshold_only": 82
+  },
+  "missing_gold_labels": [
+    {
+      "record_id": "SYN-MI-001",
+      "code": "General Penalties",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.028954999521374702,
+      "threshold": 0.9687105417251587,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.0220080204308033,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-001",
+      "code": "Market Fees & Surcharges",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.4815613627433777,
+      "threshold": 0.7049328684806824,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.6065930724143982,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-002",
+      "code": "Market Conduct",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.6659867763519287,
+      "threshold": 0.8999161720275879,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9474870562553406,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-002",
+      "code": "Promotions",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.4371260106563568,
+      "threshold": 0.7290403246879578,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8313148617744446,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-006",
+      "code": "Lighting Facilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.26276323199272156,
+      "threshold": 0.6555172204971313,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.5109895467758179,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-006",
+      "code": "Porter Regulation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.20895777642726898,
+      "threshold": 0.6860471963882446,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9685408473014832,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-008",
+      "code": "Public Order",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.5522719621658325,
+      "threshold": 0.4817184805870056,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9934858679771423,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-009",
+      "code": "Sanitation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3801228106021881,
+      "threshold": 0.716667890548706,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.4157000780105591,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-013",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.2336694300174713,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6415073275566101,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-014",
+      "code": "Bladed Instruments",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.0006734606577083468,
+      "threshold": 0.680914044380188,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.011972079984843731,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-014",
+      "code": "Promotions",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.039039935916662216,
+      "threshold": 0.7290403246879578,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9154939651489258,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-014",
+      "code": "Utilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.01683020032942295,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.48609355092048645,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-015",
+      "code": "Bladed Instruments",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.001294026616960764,
+      "threshold": 0.680914044380188,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.0030168520752340555,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-015",
+      "code": "Signage & Streamers",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.02659916691482067,
+      "threshold": 0.7913007140159607,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.1513207107782364,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-019",
+      "code": "Promotions",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5777570009231567,
+      "threshold": 0.7290403246879578,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8663418292999268,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-020",
+      "code": "Lighting & Energy",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.7080860137939453,
+      "threshold": 0.8771631121635437,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9832882285118103,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-020",
+      "code": "Market Fees & Surcharges",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.6357918381690979,
+      "threshold": 0.7049328684806824,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9334351420402527,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-021",
+      "code": "Signage & Streamers",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.04061773419380188,
+      "threshold": 0.7913007140159607,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.09591954201459885,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-022",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.1666036993265152,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.5693372488021851,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-022",
+      "code": "Sanitation",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.7776266932487488,
+      "threshold": 0.716667890548706,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9955809712409973,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-023",
+      "code": "Advertising",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.19105854630470276,
+      "threshold": 0.8680356740951538,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.7996839880943298,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-023",
+      "code": "Stall Management",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5096979141235352,
+      "threshold": 0.5989110469818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.716467022895813,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-024",
+      "code": "Stall Occupancy",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.4622633457183838,
+      "threshold": 0.5420389771461487,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.5078142285346985,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-024",
+      "code": "Utilities",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.0018180133774876595,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.05219016596674919,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-025",
+      "code": "Advertising",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.004834840074181557,
+      "threshold": 0.8680356740951538,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7221294641494751,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-025",
+      "code": "Obstruction",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5314598083496094,
+      "threshold": 0.5678455829620361,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9092699289321899,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-025",
+      "code": "Public Order",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.97024005651474,
+      "threshold": 0.4817184805870056,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9928758144378662,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-026",
+      "code": "Sanitation",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.5123724937438965,
+      "threshold": 0.716667890548706,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9953877329826355,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-027",
+      "code": "Bladed Instruments",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.018983568996191025,
+      "threshold": 0.680914044380188,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9126523733139038,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-027",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.061719976365566254,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8040605783462524,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-027",
+      "code": "Porter Regulation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3781464099884033,
+      "threshold": 0.6860471963882446,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7898521423339844,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-028",
+      "code": "Illegal Vendor",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.13477958738803864,
+      "threshold": 0.7264159917831421,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.21356652677059174,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-028",
+      "code": "Stall Management",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.41203010082244873,
+      "threshold": 0.5989110469818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.716467022895813,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-029",
+      "code": "Market Fees & Surcharges",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.2863093316555023,
+      "threshold": 0.7049328684806824,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.6027861833572388,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-029",
+      "code": "Stall Occupancy",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.35503512620925903,
+      "threshold": 0.5420389771461487,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8885180354118347,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-029",
+      "code": "Utilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.0017071999609470367,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6186428070068359,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-030",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.34986481070518494,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6415073275566101,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-031",
+      "code": "General Penalties",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.2673484683036804,
+      "threshold": 0.9687105417251587,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6251963376998901,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-031",
+      "code": "Signage & Streamers",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.241707906126976,
+      "threshold": 0.7913007140159607,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.27023857831954956,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-033",
+      "code": "Advertising",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3516847491264343,
+      "threshold": 0.8680356740951538,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9091071486473083,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-033",
+      "code": "Obstruction",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.10999985039234161,
+      "threshold": 0.5678455829620361,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9224361181259155,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-035",
+      "code": "Lighting Facilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.009107756428420544,
+      "threshold": 0.6555172204971313,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.060556620359420776,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-036",
+      "code": "Obstruction",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.24402235448360443,
+      "threshold": 0.5678455829620361,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9538360238075256,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-036",
+      "code": "Porter Regulation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5529049038887024,
+      "threshold": 0.6860471963882446,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9173803925514221,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-038",
+      "code": "General Penalties",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.0037672100588679314,
+      "threshold": 0.9687105417251587,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.06320936977863312,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-038",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.1798439919948578,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.7653359174728394,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-039",
+      "code": "Illegal Vendor",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.5369603037834167,
+      "threshold": 0.7264159917831421,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.18842917680740356,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-040",
+      "code": "Lighting & Energy",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.9345118403434753,
+      "threshold": 0.8771631121635437,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9669420123100281,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-041",
+      "code": "DressCode",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.06165233626961708,
+      "threshold": 0.6898316740989685,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.5781566500663757,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-044",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.21933089196681976,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.7801356911659241,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-044",
+      "code": "Market Rules",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.04770589992403984,
+      "threshold": 0.4926668107509613,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.11000213772058487,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-044",
+      "code": "Porter Regulation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.38537248969078064,
+      "threshold": 0.6860471963882446,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7780574560165405,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-045",
+      "code": "Permit & Licensing",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3181137144565582,
+      "threshold": 0.5795474648475647,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6500633955001831,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-045",
+      "code": "Promotions",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.056797001510858536,
+      "threshold": 0.7290403246879578,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7940587401390076,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-045",
+      "code": "Resisting Authority",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.1059621050953865,
+      "threshold": 0.7287938594818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9419286251068115,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-046",
+      "code": "Sanitation",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.04835692420601845,
+      "threshold": 0.716667890548706,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9948177933692932,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-046",
+      "code": "Stall Rental",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.35248154401779175,
+      "threshold": 0.7116404175758362,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9343357086181641,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-047",
+      "code": "DressCode",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.008686392568051815,
+      "threshold": 0.6898316740989685,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.654538631439209,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-047",
+      "code": "Promotions",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.07131823152303696,
+      "threshold": 0.7290403246879578,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7940587401390076,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-047",
+      "code": "Stall Management",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.011634720489382744,
+      "threshold": 0.5989110469818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.02501598931849003,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-049",
+      "code": "DressCode",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.38732096552848816,
+      "threshold": 0.6898316740989685,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.8981346487998962,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-051",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.04620147496461868,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8195251822471619,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-052",
+      "code": "Illegal Vendor",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.8329746127128601,
+      "threshold": 0.7264159917831421,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.4089515209197998,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-052",
+      "code": "Price Monitoring",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5902634263038635,
+      "threshold": 0.7416107654571533,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.8251025676727295,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-052",
+      "code": "Public Order",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.04219181463122368,
+      "threshold": 0.4817184805870056,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9590450525283813,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-053",
+      "code": "DressCode",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.24663181602954865,
+      "threshold": 0.6898316740989685,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8090007305145264,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-053",
+      "code": "Signage & Streamers",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.006432864814996719,
+      "threshold": 0.7913007140159607,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.1513207107782364,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-056",
+      "code": "Lighting Facilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.005041645374149084,
+      "threshold": 0.6555172204971313,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.0690542608499527,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-057",
+      "code": "Permit & Licensing",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.25286000967025757,
+      "threshold": 0.5795474648475647,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.30088087916374207,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-057",
+      "code": "Traffic",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.4535526633262634,
+      "threshold": 0.7774062156677246,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9246099591255188,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-058",
+      "code": "Utilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.28163573145866394,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.5131927132606506,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-059",
+      "code": "Lighting & Energy",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.9606149792671204,
+      "threshold": 0.8771631121635437,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9659600853919983,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-059",
+      "code": "Traffic",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.31521543860435486,
+      "threshold": 0.7774062156677246,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9391819834709167,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-060",
+      "code": "Market Rules",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.1428023725748062,
+      "threshold": 0.4926668107509613,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.0652836263179779,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-061",
+      "code": "Porter Regulation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5792710781097412,
+      "threshold": 0.6860471963882446,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.682927131652832,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-061",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3357851505279541,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7440906763076782,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-062",
+      "code": "Illegal Vendor",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.025967324152588844,
+      "threshold": 0.7264159917831421,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.2532733976840973,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-062",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.7355712652206421,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.8452079892158508,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-063",
+      "code": "Entertainment Activities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.24912331998348236,
+      "threshold": 0.5896990299224854,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9289188385009766,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-063",
+      "code": "Market Fees & Surcharges",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5209822654724121,
+      "threshold": 0.7049328684806824,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9609630703926086,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-063",
+      "code": "Traffic",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.35722070932388306,
+      "threshold": 0.7774062156677246,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9042503833770752,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-064",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.4117952585220337,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8452079892158508,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-065",
+      "code": "DressCode",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.14322277903556824,
+      "threshold": 0.6898316740989685,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6170392632484436,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-065",
+      "code": "Public Order",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.9853439927101135,
+      "threshold": 0.4817184805870056,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9934858679771423,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-066",
+      "code": "WeightMeasures",
+      "cause": "weight_parser_did_not_establish_violation",
+      "whole_note_score": 0.1694018542766571,
+      "threshold": 0.7298892140388489,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "weight_outcome": "unknown",
+        "weight_reason": "insufficient_weight_evidence"
+      },
+      "best_fragment_score": 0.35906657576560974,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-067",
+      "code": "Lighting Facilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.00604157755151391,
+      "threshold": 0.6555172204971313,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.04526882618665695,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-067",
+      "code": "Market Conduct",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5349869132041931,
+      "threshold": 0.8999161720275879,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9125237464904785,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-069",
+      "code": "Promotions",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.6758531928062439,
+      "threshold": 0.7290403246879578,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8619515299797058,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-070",
+      "code": "Promotions",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.40417543053627014,
+      "threshold": 0.7290403246879578,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9154939651489258,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-070",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.7541752457618713,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8733080625534058,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-073",
+      "code": "Porter Regulation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.22275763750076294,
+      "threshold": 0.6860471963882446,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7957512140274048,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-073",
+      "code": "Signage & Streamers",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.002907355548813939,
+      "threshold": 0.7913007140159607,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.09242605417966843,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-075",
+      "code": "Lighting Facilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.09745962172746658,
+      "threshold": 0.6555172204971313,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.0690542608499527,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-075",
+      "code": "Market Rules",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.07026369124650955,
+      "threshold": 0.4926668107509613,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.04468304663896561,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-075",
+      "code": "Stall Management",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.0690348744392395,
+      "threshold": 0.5989110469818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.01912040077149868,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-077",
+      "code": "Illegal Vendor",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.18279270827770233,
+      "threshold": 0.7264159917831421,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.2532733976840973,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-078",
+      "code": "Bladed Instruments",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.13277919590473175,
+      "threshold": 0.680914044380188,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9207645654678345,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-078",
+      "code": "Lighting & Energy",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.9550690054893494,
+      "threshold": 0.8771631121635437,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9733228087425232,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-079",
+      "code": "General Penalties",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.39468997716903687,
+      "threshold": 0.9687105417251587,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6152734160423279,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-079",
+      "code": "Stall Occupancy",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.2679503262042999,
+      "threshold": 0.5420389771461487,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8737186789512634,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-081",
+      "code": "Market Conduct",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.7737584710121155,
+      "threshold": 0.8999161720275879,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9372842907905579,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-081",
+      "code": "Stall Rental",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.42823123931884766,
+      "threshold": 0.7116404175758362,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.91078782081604,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-082",
+      "code": "Advertising",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.4732098877429962,
+      "threshold": 0.8680356740951538,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7519129514694214,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-082",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3250109553337097,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6150643229484558,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-084",
+      "code": "Advertising",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.7825955748558044,
+      "threshold": 0.8680356740951538,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9204197525978088,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-084",
+      "code": "Public Order",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.23109976947307587,
+      "threshold": 0.4817184805870056,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9648109674453735,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-085",
+      "code": "Price Monitoring",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3203420042991638,
+      "threshold": 0.7416107654571533,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8309499025344849,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-086",
+      "code": "DressCode",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3679361641407013,
+      "threshold": 0.6898316740989685,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6192428469657898,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-086",
+      "code": "Market Rules",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.01451825350522995,
+      "threshold": 0.4926668107509613,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.00815450120717287,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-086",
+      "code": "Utilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.012616036459803581,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.5131927132606506,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-087",
+      "code": "Illegal Vendor",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.6437949538230896,
+      "threshold": 0.7264159917831421,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.4641623795032501,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-087",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.21949614584445953,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.485289067029953,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-088",
+      "code": "DressCode",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.19386863708496094,
+      "threshold": 0.6898316740989685,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.5998554825782776,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-088",
+      "code": "Public Order",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.9814644455909729,
+      "threshold": 0.4817184805870056,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9920654892921448,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-089",
+      "code": "Utilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.1345585137605667,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7489011883735657,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-091",
+      "code": "Market Conduct",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5435833930969238,
+      "threshold": 0.8999161720275879,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9351012110710144,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-091",
+      "code": "Signage & Streamers",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.00524333119392395,
+      "threshold": 0.7913007140159607,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.07721727341413498,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-092",
+      "code": "Stall Occupancy",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.2444056272506714,
+      "threshold": 0.5420389771461487,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8737186789512634,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-092",
+      "code": "WeightMeasures",
+      "cause": "weight_parser_did_not_establish_violation",
+      "whole_note_score": 0.3209204375743866,
+      "threshold": 0.7298892140388489,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "weight_outcome": "unknown",
+        "weight_reason": "insufficient_weight_evidence"
+      },
+      "best_fragment_score": 0.9803647994995117,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-093",
+      "code": "Illegal Vendor",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.42405369877815247,
+      "threshold": 0.7264159917831421,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.22912411391735077,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-093",
+      "code": "Market Rules",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.3668198585510254,
+      "threshold": 0.4926668107509613,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.16058625280857086,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-093",
+      "code": "Obstruction",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.38790032267570496,
+      "threshold": 0.5678455829620361,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9092699289321899,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-094",
+      "code": "Market Fees & Surcharges",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.727938711643219,
+      "threshold": 0.7049328684806824,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.7816039323806763,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-094",
+      "code": "Utilities",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.00014555593952536583,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.03568746894598007,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-095",
+      "code": "Bladed Instruments",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.01508415024727583,
+      "threshold": 0.680914044380188,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.052637048065662384,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-095",
+      "code": "Entertainment Activities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.36034560203552246,
+      "threshold": 0.5896990299224854,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9191575646400452,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-095",
+      "code": "Stall Management",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.2070598304271698,
+      "threshold": 0.5989110469818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7497231960296631,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-096",
+      "code": "Entertainment Activities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.4659958779811859,
+      "threshold": 0.5896990299224854,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9649757742881775,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-096",
+      "code": "Market Rules",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.09209974110126495,
+      "threshold": 0.4926668107509613,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.08480281382799149,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-101",
+      "code": "Stall Management",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.14426150918006897,
+      "threshold": 0.5989110469818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.06760313361883163,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-101",
+      "code": "Traffic",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.7253134846687317,
+      "threshold": 0.7774062156677246,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9391819834709167,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-102",
+      "code": "Bladed Instruments",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.0013940590433776379,
+      "threshold": 0.680914044380188,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.004030666779726744,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-102",
+      "code": "Stall Construction",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.7595674395561218,
+      "threshold": 0.7748440504074097,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8793685436248779,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-104",
+      "code": "Lighting & Energy",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.9601104855537415,
+      "threshold": 0.8771631121635437,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9772834181785583,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-104",
+      "code": "Sanitation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.01473196316510439,
+      "threshold": 0.716667890548706,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.4157000780105591,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-106",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.22323113679885864,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6415073275566101,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-106",
+      "code": "Resisting Authority",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.4088234603404999,
+      "threshold": 0.7287938594818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9684640765190125,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-109",
+      "code": "Utilities",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.3226916790008545,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.47831642627716064,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-110",
+      "code": "Price Monitoring",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.13472987711429596,
+      "threshold": 0.7416107654571533,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7932218909263611,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-110",
+      "code": "Stall Construction",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5973567366600037,
+      "threshold": 0.7748440504074097,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8793685436248779,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-110",
+      "code": "Traffic",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5912660360336304,
+      "threshold": 0.7774062156677246,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.8345755934715271,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-111",
+      "code": "Advertising",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5414771437644958,
+      "threshold": 0.8680356740951538,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.882759153842926,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-111",
+      "code": "Permit & Licensing",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.1762988567352295,
+      "threshold": 0.5795474648475647,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.5852680802345276,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-111",
+      "code": "Sanitation",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.803014874458313,
+      "threshold": 0.716667890548706,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9953832030296326,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-112",
+      "code": "Bladed Instruments",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.0049592251889407635,
+      "threshold": 0.680914044380188,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.012298881076276302,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-112",
+      "code": "Sanitation",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.953600287437439,
+      "threshold": 0.716667890548706,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9948177933692932,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-113",
+      "code": "Promotions",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.05475166067481041,
+      "threshold": 0.7290403246879578,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8791152238845825,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-114",
+      "code": "Public Order",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.42080920934677124,
+      "threshold": 0.4817184805870056,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9632698893547058,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-114",
+      "code": "Traffic",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.28243133425712585,
+      "threshold": 0.7774062156677246,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9042503833770752,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-115",
+      "code": "Illegal Vendor",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.6555311679840088,
+      "threshold": 0.7264159917831421,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.4641623795032501,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-119",
+      "code": "Resisting Authority",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.013594402000308037,
+      "threshold": 0.7287938594818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9498167634010315,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-120",
+      "code": "Illegal Vendor",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.7325121164321899,
+      "threshold": 0.7264159917831421,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.4089515209197998,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-120",
+      "code": "Resisting Authority",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.1815146952867508,
+      "threshold": 0.7287938594818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9514142274856567,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-121",
+      "code": "General Penalties",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.02228228934109211,
+      "threshold": 0.9687105417251587,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.6251963376998901,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-121",
+      "code": "Public Order",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.3089892864227295,
+      "threshold": 0.4817184805870056,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9409528970718384,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-124",
+      "code": "Lighting & Energy",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.966242253780365,
+      "threshold": 0.8771631121635437,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9733228087425232,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-124",
+      "code": "Utilities",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.45940345525741577,
+      "threshold": 0.8704731464385986,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.3176308572292328,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-125",
+      "code": "Liquor",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.03638378530740738,
+      "threshold": 0.7217040061950684,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7480462789535522,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-125",
+      "code": "Market Fees & Surcharges",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.40285730361938477,
+      "threshold": 0.7049328684806824,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.6027861833572388,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-125",
+      "code": "Stall Construction",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.005489977076649666,
+      "threshold": 0.7748440504074097,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.7189934849739075,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-126",
+      "code": "Sanitation",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.027141965925693512,
+      "threshold": 0.716667890548706,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.44225993752479553,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-126",
+      "code": "Signage & Streamers",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.01142222061753273,
+      "threshold": 0.7913007140159607,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.34128883481025696,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-127",
+      "code": "Advertising",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.6125751733779907,
+      "threshold": 0.8680356740951538,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9124965071678162,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-127",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.2800203859806061,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8210287094116211,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-128",
+      "code": "Resisting Authority",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.443654328584671,
+      "threshold": 0.7287938594818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9528716206550598,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-128",
+      "code": "Traffic",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.5404886603355408,
+      "threshold": 0.7774062156677246,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.9042503833770752,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-130",
+      "code": "Market Conduct",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.8044050931930542,
+      "threshold": 0.8999161720275879,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9372842907905579,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-130",
+      "code": "Market Rules",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.05500436946749687,
+      "threshold": 0.4926668107509613,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.1453978270292282,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-131",
+      "code": "DressCode",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.029554465785622597,
+      "threshold": 0.6898316740989685,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.49157387018203735,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-131",
+      "code": "General Penalties",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.02854420430958271,
+      "threshold": 0.9687105417251587,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.583951473236084,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-131",
+      "code": "Traffic",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.49247485399246216,
+      "threshold": 0.7774062156677246,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9391819834709167,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-132",
+      "code": "Stall Construction",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.5330336093902588,
+      "threshold": 0.7748440504074097,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.8454819321632385,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-133",
+      "code": "Market Fees & Surcharges",
+      "cause": "evidence_gate_only",
+      "whole_note_score": 0.8442695140838623,
+      "threshold": 0.7049328684806824,
+      "below_threshold": false,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.6065930724143982,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-134",
+      "code": "Market Conduct",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.6554057002067566,
+      "threshold": 0.8999161720275879,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8645969033241272,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-134",
+      "code": "Stall Occupancy",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.06632763147354126,
+      "threshold": 0.5420389771461487,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9521501064300537,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-135",
+      "code": "Market Conduct",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.8077660799026489,
+      "threshold": 0.8999161720275879,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9351012110710144,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-135",
+      "code": "Market Rules",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.05260276794433594,
+      "threshold": 0.4926668107509613,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.14940862357616425,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-137",
+      "code": "Bladed Instruments",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.07205229252576828,
+      "threshold": 0.680914044380188,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8416135311126709,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-137",
+      "code": "Stall Rental",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.6539723873138428,
+      "threshold": 0.7116404175758362,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9287512898445129,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-138",
+      "code": "Lighting Facilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.0014538178220391273,
+      "threshold": 0.6555172204971313,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.09715244919061661,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-139",
+      "code": "General Penalties",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.04283597320318222,
+      "threshold": 0.9687105417251587,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.06320936977863312,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-140",
+      "code": "Signage & Streamers",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.007619468495249748,
+      "threshold": 0.7913007140159607,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 2,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.06150639429688454,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-140",
+      "code": "WeightMeasures",
+      "cause": "weight_parser_did_not_establish_violation",
+      "whole_note_score": 0.5954694747924805,
+      "threshold": 0.7298892140388489,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "weight_outcome": "unknown",
+        "weight_reason": "insufficient_weight_evidence"
+      },
+      "best_fragment_score": 0.6280147433280945,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-141",
+      "code": "Resisting Authority",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.02658161148428917,
+      "threshold": 0.7287938594818115,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8968957662582397,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-143",
+      "code": "Obstruction",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.06459365040063858,
+      "threshold": 0.5678455829620361,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.9224869012832642,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-144",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.025761917233467102,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.8668860793113708,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-146",
+      "code": "Vendor Identification",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.002248746808618307,
+      "threshold": 0.8324691653251648,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.7196685075759888,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-147",
+      "code": "General Penalties",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.057605937123298645,
+      "threshold": 0.9687105417251587,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.06821736693382263,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-147",
+      "code": "Market Fees & Surcharges",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.5459933280944824,
+      "threshold": 0.7049328684806824,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.7576225399971008,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-148",
+      "code": "Stall Occupancy",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.1732586920261383,
+      "threshold": 0.5420389771461487,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.5503085851669312,
+      "recovered_by_experimental_union": true
+    },
+    {
+      "record_id": "SYN-MI-149",
+      "code": "Stall Construction",
+      "cause": "below_threshold_and_evidence_gate",
+      "whole_note_score": 0.3112926185131073,
+      "threshold": 0.7748440504074097,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": false,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      },
+      "best_fragment_score": 0.8029435873031616,
+      "recovered_by_experimental_union": false
+    },
+    {
+      "record_id": "SYN-MI-150",
+      "code": "Lighting Facilities",
+      "cause": "below_threshold_only",
+      "whole_note_score": 0.007837728597223759,
+      "threshold": 0.6555172204971313,
+      "below_threshold": true,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      },
+      "best_fragment_score": 0.047850579023361206,
+      "recovered_by_experimental_union": false
+    }
+  ],
+  "false_actions": [
+    {
+      "record_id": "SYN-MI-005",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.963435709476471,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-009",
+      "code": "Stall Occupancy",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.7456937432289124,
+      "threshold": 0.5420389771461487,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-012",
+      "code": "Bladed Instruments",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.822568416595459,
+      "threshold": 0.680914044380188,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-014",
+      "code": "Illegal Vendor",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.7659239768981934,
+      "threshold": 0.7264159917831421,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-016",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "abstain",
+      "whole_note_score": 0.9419378042221069,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-035",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.8627046346664429,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-039",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.8800804018974304,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-050",
+      "code": "Sanitation",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.8319016098976135,
+      "threshold": 0.716667890548706,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-050",
+      "code": "Stall Occupancy",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.6047790050506592,
+      "threshold": 0.5420389771461487,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-054",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.6509411334991455,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-055",
+      "code": "Market Fees & Surcharges",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.8898425698280334,
+      "threshold": 0.7049328684806824,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-060",
+      "code": "Stall Occupancy",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.551249086856842,
+      "threshold": 0.5420389771461487,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-066",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.65472012758255,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-071",
+      "code": "Market Fees & Surcharges",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.747963011264801,
+      "threshold": 0.7049328684806824,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-074",
+      "code": "Stall Rental",
+      "source": "model",
+      "expected_decision": "abstain",
+      "whole_note_score": 0.9720402359962463,
+      "threshold": 0.7116404175758362,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-093",
+      "code": "Stall Occupancy",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.6938220262527466,
+      "threshold": 0.5420389771461487,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-096",
+      "code": "Stall Occupancy",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.8925586342811584,
+      "threshold": 0.5420389771461487,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-098",
+      "code": "Stall Occupancy",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.8474442362785339,
+      "threshold": 0.5420389771461487,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-099",
+      "code": "Sanitation",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.884627640247345,
+      "threshold": 0.716667890548706,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-103",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "abstain",
+      "whole_note_score": 0.911932110786438,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          },
+          {
+            "statement_index": 1,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-105",
+      "code": "Market Fees & Surcharges",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.7805043458938599,
+      "threshold": 0.7049328684806824,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-115",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.6612259745597839,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": [
+              "category_support_rejected"
+            ]
+          },
+          {
+            "statement_index": 1,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-117",
+      "code": "Sanitation",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.9108170866966248,
+      "threshold": 0.716667890548706,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-118",
+      "code": "Stall Rental",
+      "source": "model",
+      "expected_decision": "clear",
+      "whole_note_score": 0.9506763219833374,
+      "threshold": 0.7116404175758362,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-142",
+      "code": "Lighting Facilities",
+      "source": "model",
+      "expected_decision": "abstain",
+      "whole_note_score": 0.7674300074577332,
+      "threshold": 0.6555172204971313,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-143",
+      "code": "Market Rules",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.5620344877243042,
+      "threshold": 0.4926668107509613,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "SYN-MI-150",
+      "code": "Permit & Licensing",
+      "source": "model",
+      "expected_decision": "accept",
+      "whole_note_score": 0.8552113175392151,
+      "threshold": 0.5795474648475647,
+      "evidence_gate": {
+        "supported": true,
+        "statements": [
+          {
+            "statement_index": 0,
+            "blockers": []
+          }
+        ]
+      }
+    }
+  ],
+  "records": [
+    {
+      "record_id": "SYN-MI-001",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-002",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Conduct",
+        "Promotions"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Market Conduct",
+        "Promotions"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Market Conduct",
+        "Promotions"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-003",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 1,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-004",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Lighting Facilities"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-005",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-006",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Lighting Facilities",
+        "Porter Regulation"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Porter Regulation"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Lighting Facilities",
+        "Porter Regulation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-007",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-008",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "WeightMeasures",
+        "Public Order"
+      ],
+      "baseline_codes": [
+        "WeightMeasures"
+      ],
+      "experimental_union_codes": [
+        "WeightMeasures"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Public Order"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-009",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "baseline_codes": [
+        "Stall Occupancy"
+      ],
+      "experimental_union_codes": [
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Sanitation"
+      ],
+      "false_action_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-010",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 1,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-011",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Entertainment Activities"
+      ],
+      "baseline_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "experimental_union_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-012",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Bladed Instruments"
+      ],
+      "experimental_union_codes": [
+        "Bladed Instruments"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Bladed Instruments"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-013",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "DressCode"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Liquor"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-014",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Utilities",
+        "Promotions"
+      ],
+      "baseline_codes": [
+        "Illegal Vendor"
+      ],
+      "experimental_union_codes": [
+        "Illegal Vendor",
+        "Promotions"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Bladed Instruments",
+        "Promotions",
+        "Utilities"
+      ],
+      "false_action_codes": [
+        "Illegal Vendor"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-015",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Bladed Instruments"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Bladed Instruments",
+        "Signage & Streamers"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-016",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing"
+      ],
+      "segment_count": 1,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-017",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Bladed Instruments",
+        "DressCode"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-018",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 1,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-019",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Promotions"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Promotions"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-020",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Lighting & Energy"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Lighting & Energy",
+        "Market Fees & Surcharges"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting & Energy",
+        "Market Fees & Surcharges"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-021",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Stall Occupancy"
+      ],
+      "baseline_codes": [
+        "Stall Occupancy"
+      ],
+      "experimental_union_codes": [
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Signage & Streamers"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-022",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Conduct",
+        "Liquor",
+        "Sanitation"
+      ],
+      "baseline_codes": [
+        "Market Conduct"
+      ],
+      "experimental_union_codes": [
+        "Market Conduct"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Liquor",
+        "Sanitation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-023",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Advertising",
+        "Stall Management"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Stall Management"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Advertising",
+        "Stall Management"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-024",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Utilities",
+        "Stall Occupancy"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-025",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Advertising",
+        "Obstruction",
+        "Public Order"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Obstruction"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Advertising",
+        "Obstruction",
+        "Public Order"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-026",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Sanitation",
+        "Lighting & Energy"
+      ],
+      "baseline_codes": [
+        "Lighting & Energy"
+      ],
+      "experimental_union_codes": [
+        "Lighting & Energy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Sanitation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-027",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Porter Regulation",
+        "Liquor",
+        "Bladed Instruments"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Bladed Instruments",
+        "Liquor",
+        "Porter Regulation"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Bladed Instruments",
+        "Liquor",
+        "Porter Regulation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-028",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Stall Management"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Stall Management"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Illegal Vendor",
+        "Stall Management"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-029",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Stall Occupancy"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Market Fees & Surcharges",
+        "Stall Occupancy",
+        "Utilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-030",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Sanitation",
+        "Liquor"
+      ],
+      "baseline_codes": [
+        "Sanitation"
+      ],
+      "experimental_union_codes": [
+        "Sanitation"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Liquor"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-031",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Signage & Streamers",
+        "General Penalties"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "General Penalties",
+        "Signage & Streamers"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-032",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Bladed Instruments",
+        "Market Fees & Surcharges"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-033",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Obstruction",
+        "Advertising"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Advertising",
+        "Obstruction"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Advertising",
+        "Obstruction"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-034",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Lighting Facilities",
+        "Market Fees & Surcharges"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-035",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Lighting Facilities",
+        "Stall Construction"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing",
+        "Stall Construction"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Stall Construction"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-036",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Porter Regulation",
+        "Obstruction"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Obstruction",
+        "Porter Regulation"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Obstruction",
+        "Porter Regulation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-037",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities"
+      ],
+      "baseline_codes": [
+        "Entertainment Activities"
+      ],
+      "experimental_union_codes": [
+        "Entertainment Activities",
+        "Lighting Facilities"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-038",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Vendor Identification",
+        "WeightMeasures",
+        "General Penalties"
+      ],
+      "baseline_codes": [
+        "WeightMeasures"
+      ],
+      "experimental_union_codes": [
+        "WeightMeasures"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "General Penalties",
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-039",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Illegal Vendor"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Illegal Vendor"
+      ],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-040",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Lighting & Energy"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting & Energy"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-041",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "DressCode",
+        "WeightMeasures"
+      ],
+      "baseline_codes": [
+        "WeightMeasures"
+      ],
+      "experimental_union_codes": [
+        "WeightMeasures"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "DressCode"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-042",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Bladed Instruments",
+        "Porter Regulation",
+        "Vendor Identification"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-043",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Rental"
+      ],
+      "baseline_codes": [
+        "Stall Rental"
+      ],
+      "experimental_union_codes": [
+        "Stall Rental"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-044",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Rules",
+        "Liquor",
+        "Porter Regulation"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Liquor",
+        "Porter Regulation",
+        "Stall Occupancy"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Liquor",
+        "Market Rules",
+        "Porter Regulation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-045",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Resisting Authority",
+        "Promotions"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Promotions",
+        "Resisting Authority"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Permit & Licensing",
+        "Promotions",
+        "Resisting Authority"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-046",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Stall Rental",
+        "Sanitation"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Stall Rental"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Sanitation",
+        "Stall Rental"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-047",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Management",
+        "DressCode",
+        "Promotions"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Promotions"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "DressCode",
+        "Promotions",
+        "Stall Management"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-048",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-049",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "DressCode",
+        "Stall Management"
+      ],
+      "baseline_codes": [
+        "Stall Management"
+      ],
+      "experimental_union_codes": [
+        "DressCode",
+        "Stall Management"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "DressCode"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-050",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Sanitation",
+        "Stall Occupancy"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Sanitation",
+        "Stall Occupancy"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Sanitation",
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-051",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Vendor Identification",
+        "Lighting Facilities"
+      ],
+      "baseline_codes": [
+        "Lighting Facilities"
+      ],
+      "experimental_union_codes": [
+        "Lighting Facilities"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-052",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Price Monitoring",
+        "Illegal Vendor",
+        "Public Order"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Price Monitoring",
+        "Public Order"
+      ],
+      "segment_count": 4,
+      "missing_codes": [
+        "Illegal Vendor",
+        "Price Monitoring",
+        "Public Order"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-053",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "DressCode",
+        "Signage & Streamers"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "DressCode"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "DressCode",
+        "Signage & Streamers"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-054",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Sanitation"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-055",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "experimental_union_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-056",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Lighting Facilities"
+      ],
+      "baseline_codes": [
+        "Entertainment Activities"
+      ],
+      "experimental_union_codes": [
+        "Entertainment Activities"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-057",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Traffic",
+        "Permit & Licensing"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Traffic"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Permit & Licensing",
+        "Traffic"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-058",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Construction",
+        "Utilities"
+      ],
+      "baseline_codes": [
+        "Stall Construction"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Stall Construction"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Utilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-059",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Traffic"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Traffic"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting & Energy",
+        "Traffic"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-060",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Rules"
+      ],
+      "baseline_codes": [
+        "Stall Occupancy"
+      ],
+      "experimental_union_codes": [
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Market Rules"
+      ],
+      "false_action_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-061",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Porter Regulation",
+        "Vendor Identification"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Porter Regulation",
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-062",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Vendor Identification",
+        "WeightMeasures"
+      ],
+      "baseline_codes": [
+        "WeightMeasures"
+      ],
+      "experimental_union_codes": [
+        "Vendor Identification",
+        "WeightMeasures"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Illegal Vendor",
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-063",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Traffic",
+        "Entertainment Activities",
+        "Market Fees & Surcharges"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Entertainment Activities",
+        "Market Fees & Surcharges",
+        "Traffic"
+      ],
+      "segment_count": 4,
+      "missing_codes": [
+        "Entertainment Activities",
+        "Market Fees & Surcharges",
+        "Traffic"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-064",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Vendor Identification"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-065",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-066",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "WeightMeasures"
+      ],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-067",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Lighting Facilities",
+        "Market Conduct"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Market Conduct"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting Facilities",
+        "Market Conduct"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-068",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "WeightMeasures",
+        "Price Monitoring"
+      ],
+      "baseline_codes": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "experimental_union_codes": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-069",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Promotions"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Promotions"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Promotions"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-070",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Vendor Identification",
+        "Promotions"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Promotions",
+        "Vendor Identification"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Promotions",
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-071",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "experimental_union_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-072",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-073",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Porter Regulation"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Porter Regulation"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Porter Regulation",
+        "Signage & Streamers"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-074",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [
+        "Stall Rental"
+      ],
+      "experimental_union_codes": [
+        "Stall Rental"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-075",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Rules",
+        "Stall Management",
+        "Lighting Facilities"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 3,
+      "missing_codes": [
+        "Lighting Facilities",
+        "Market Rules",
+        "Stall Management"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-076",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Porter Regulation"
+      ],
+      "baseline_codes": [
+        "Porter Regulation"
+      ],
+      "experimental_union_codes": [
+        "Lighting Facilities",
+        "Porter Regulation"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-077",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Porter Regulation",
+        "Illegal Vendor"
+      ],
+      "baseline_codes": [
+        "Porter Regulation"
+      ],
+      "experimental_union_codes": [
+        "Porter Regulation"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Illegal Vendor"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-078",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Lighting & Energy"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Bladed Instruments"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Bladed Instruments",
+        "Lighting & Energy"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-079",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "General Penalties",
+        "Stall Occupancy"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "General Penalties",
+        "Stall Occupancy"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-080",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 1,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-081",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Rental",
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "baseline_codes": [
+        "WeightMeasures"
+      ],
+      "experimental_union_codes": [
+        "Market Conduct",
+        "Stall Rental",
+        "WeightMeasures"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Market Conduct",
+        "Stall Rental"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-082",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor",
+        "Advertising"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Advertising",
+        "Liquor"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-083",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-084",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Advertising",
+        "Public Order"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Advertising",
+        "Public Order"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Advertising",
+        "Public Order"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-085",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Price Monitoring",
+        "Entertainment Activities"
+      ],
+      "baseline_codes": [
+        "Entertainment Activities"
+      ],
+      "experimental_union_codes": [
+        "Entertainment Activities",
+        "Price Monitoring"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Price Monitoring"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-086",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Rules",
+        "Utilities",
+        "DressCode"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 3,
+      "missing_codes": [
+        "DressCode",
+        "Market Rules",
+        "Utilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-087",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Liquor",
+        "Illegal Vendor"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Permit & Licensing"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Illegal Vendor",
+        "Liquor"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-088",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Public Order",
+        "DressCode"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "DressCode",
+        "Public Order"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-089",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Utilities"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Utilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-090",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "DressCode",
+        "Lighting Facilities"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-091",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Market Conduct"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Market Conduct"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Market Conduct",
+        "Signage & Streamers"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-092",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "WeightMeasures",
+        "Stall Rental",
+        "Stall Occupancy"
+      ],
+      "baseline_codes": [
+        "Stall Rental"
+      ],
+      "experimental_union_codes": [
+        "Stall Occupancy",
+        "Stall Rental"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Stall Occupancy",
+        "WeightMeasures"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-093",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Rules",
+        "Obstruction",
+        "Illegal Vendor"
+      ],
+      "baseline_codes": [
+        "Stall Occupancy"
+      ],
+      "experimental_union_codes": [
+        "Obstruction",
+        "Stall Occupancy"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Illegal Vendor",
+        "Market Rules",
+        "Obstruction"
+      ],
+      "false_action_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-094",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Utilities",
+        "Stall Rental"
+      ],
+      "baseline_codes": [
+        "Stall Rental"
+      ],
+      "experimental_union_codes": [
+        "Stall Rental"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Market Fees & Surcharges",
+        "Utilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-095",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Management",
+        "Entertainment Activities",
+        "Bladed Instruments"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Entertainment Activities",
+        "Stall Management"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Bladed Instruments",
+        "Entertainment Activities",
+        "Stall Management"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-096",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Market Rules"
+      ],
+      "baseline_codes": [
+        "Stall Occupancy"
+      ],
+      "experimental_union_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Entertainment Activities",
+        "Market Rules"
+      ],
+      "false_action_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-097",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Sanitation"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-098",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Stall Occupancy"
+      ],
+      "experimental_union_codes": [
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Stall Occupancy"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-099",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Sanitation"
+      ],
+      "experimental_union_codes": [
+        "DressCode",
+        "Lighting Facilities",
+        "Sanitation"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-100",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Obstruction",
+        "Resisting Authority"
+      ],
+      "baseline_codes": [
+        "Obstruction",
+        "Resisting Authority"
+      ],
+      "experimental_union_codes": [
+        "Obstruction",
+        "Resisting Authority"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-101",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Management",
+        "Traffic"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Traffic"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Stall Management",
+        "Traffic"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-102",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Stall Construction"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Stall Construction"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Bladed Instruments",
+        "Stall Construction"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-103",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-104",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Sanitation"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting & Energy",
+        "Sanitation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-105",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "experimental_union_codes": [
+        "Market Fees & Surcharges",
+        "Vendor Identification"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Market Fees & Surcharges"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-106",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Resisting Authority",
+        "Liquor"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Resisting Authority"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Liquor",
+        "Resisting Authority"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-107",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Bladed Instruments"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-108",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "baseline_codes": [
+        "Price Monitoring"
+      ],
+      "experimental_union_codes": [
+        "Price Monitoring",
+        "Sanitation"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-109",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Utilities",
+        "Obstruction"
+      ],
+      "baseline_codes": [
+        "Obstruction"
+      ],
+      "experimental_union_codes": [
+        "Obstruction"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Utilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-110",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Traffic",
+        "Price Monitoring",
+        "Stall Construction"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Price Monitoring",
+        "Stall Construction",
+        "Traffic"
+      ],
+      "segment_count": 4,
+      "missing_codes": [
+        "Price Monitoring",
+        "Stall Construction",
+        "Traffic"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-111",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Sanitation",
+        "Advertising"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Advertising",
+        "Permit & Licensing"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Advertising",
+        "Permit & Licensing",
+        "Sanitation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-112",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Sanitation"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Bladed Instruments",
+        "Sanitation"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-113",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Promotions",
+        "Stall Rental"
+      ],
+      "baseline_codes": [
+        "Stall Rental"
+      ],
+      "experimental_union_codes": [
+        "Promotions",
+        "Stall Rental"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Promotions"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-114",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Public Order",
+        "Traffic",
+        "Obstruction"
+      ],
+      "baseline_codes": [
+        "Obstruction"
+      ],
+      "experimental_union_codes": [
+        "Obstruction",
+        "Public Order",
+        "Traffic"
+      ],
+      "segment_count": 4,
+      "missing_codes": [
+        "Public Order",
+        "Traffic"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-115",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Porter Regulation",
+        "Illegal Vendor"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing",
+        "Porter Regulation"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Porter Regulation"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Illegal Vendor"
+      ],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-116",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Promotions",
+        "Advertising"
+      ],
+      "baseline_codes": [
+        "Advertising",
+        "Promotions"
+      ],
+      "experimental_union_codes": [
+        "Advertising",
+        "Promotions"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-117",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Sanitation"
+      ],
+      "experimental_union_codes": [
+        "Sanitation"
+      ],
+      "segment_count": 3,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Sanitation"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-118",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [
+        "Stall Rental"
+      ],
+      "experimental_union_codes": [
+        "Lighting Facilities",
+        "Stall Rental"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Stall Rental"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-119",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Resisting Authority",
+        "Permit & Licensing"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Resisting Authority"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Resisting Authority"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-120",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Resisting Authority"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Resisting Authority"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Illegal Vendor",
+        "Resisting Authority"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-121",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Public Order",
+        "General Penalties"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Public Order"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "General Penalties",
+        "Public Order"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-122",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 1,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-123",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-124",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Utilities",
+        "Lighting & Energy"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting & Energy",
+        "Utilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-125",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Fees & Surcharges",
+        "Stall Construction",
+        "Liquor"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Liquor"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Liquor",
+        "Market Fees & Surcharges",
+        "Stall Construction"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-126",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Sanitation",
+        "Signage & Streamers",
+        "Stall Rental"
+      ],
+      "baseline_codes": [
+        "Stall Rental"
+      ],
+      "experimental_union_codes": [
+        "Stall Rental"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Sanitation",
+        "Signage & Streamers"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-127",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Advertising",
+        "Vendor Identification"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Advertising"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Advertising",
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-128",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Traffic",
+        "Resisting Authority"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Resisting Authority",
+        "Traffic"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Resisting Authority",
+        "Traffic"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-129",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-130",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Rules",
+        "Market Conduct"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Market Conduct"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Market Conduct",
+        "Market Rules"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-131",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "DressCode",
+        "General Penalties",
+        "Traffic"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Traffic"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "DressCode",
+        "General Penalties",
+        "Traffic"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-132",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Construction",
+        "Stall Rental"
+      ],
+      "baseline_codes": [
+        "Stall Rental"
+      ],
+      "experimental_union_codes": [
+        "Stall Rental"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Stall Construction"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-133",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Price Monitoring",
+        "Market Fees & Surcharges"
+      ],
+      "baseline_codes": [
+        "Price Monitoring"
+      ],
+      "experimental_union_codes": [
+        "Price Monitoring"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Market Fees & Surcharges"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-134",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Occupancy",
+        "Market Conduct",
+        "Resisting Authority"
+      ],
+      "baseline_codes": [
+        "Resisting Authority"
+      ],
+      "experimental_union_codes": [
+        "Resisting Authority",
+        "Stall Occupancy"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Market Conduct",
+        "Stall Occupancy"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-135",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Market Rules",
+        "Market Conduct"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Market Conduct"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Market Conduct",
+        "Market Rules"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-136",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Permit & Licensing"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-137",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Stall Rental"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Bladed Instruments",
+        "Stall Rental"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Bladed Instruments",
+        "Stall Rental"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-138",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Lighting Facilities",
+        "Permit & Licensing"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-139",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Management",
+        "General Penalties"
+      ],
+      "baseline_codes": [
+        "Stall Management"
+      ],
+      "experimental_union_codes": [
+        "Stall Management"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "General Penalties"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-140",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Signage & Streamers",
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "baseline_codes": [
+        "Price Monitoring"
+      ],
+      "experimental_union_codes": [
+        "Price Monitoring"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Signage & Streamers",
+        "WeightMeasures"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-141",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Resisting Authority",
+        "Price Monitoring"
+      ],
+      "baseline_codes": [
+        "Price Monitoring"
+      ],
+      "experimental_union_codes": [
+        "Price Monitoring",
+        "Resisting Authority"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Resisting Authority"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-142",
+      "expected_decision": "abstain",
+      "expected_codes": null,
+      "baseline_codes": [
+        "Lighting Facilities"
+      ],
+      "experimental_union_codes": [
+        "Lighting Facilities"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": [
+        "Lighting Facilities"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-143",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Obstruction",
+        "Permit & Licensing",
+        "Entertainment Activities"
+      ],
+      "baseline_codes": [
+        "Entertainment Activities",
+        "Market Rules",
+        "Permit & Licensing"
+      ],
+      "experimental_union_codes": [
+        "Entertainment Activities",
+        "Market Rules",
+        "Obstruction",
+        "Permit & Licensing"
+      ],
+      "segment_count": 3,
+      "missing_codes": [
+        "Obstruction"
+      ],
+      "false_action_codes": [
+        "Market Rules"
+      ]
+    },
+    {
+      "record_id": "SYN-MI-144",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Vendor Identification"
+      ],
+      "baseline_codes": [
+        "Lighting & Energy"
+      ],
+      "experimental_union_codes": [
+        "Lighting & Energy",
+        "Vendor Identification"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-145",
+      "expected_decision": "clear",
+      "expected_codes": [],
+      "baseline_codes": [],
+      "experimental_union_codes": [
+        "Lighting Facilities",
+        "Price Monitoring"
+      ],
+      "segment_count": 2,
+      "missing_codes": [],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-146",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Vendor Identification",
+        "Lighting & Energy"
+      ],
+      "baseline_codes": [
+        "Lighting & Energy"
+      ],
+      "experimental_union_codes": [
+        "Lighting & Energy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Vendor Identification"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-147",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "baseline_codes": [],
+      "experimental_union_codes": [],
+      "segment_count": 2,
+      "missing_codes": [
+        "General Penalties",
+        "Market Fees & Surcharges"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-148",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "baseline_codes": [
+        "Entertainment Activities"
+      ],
+      "experimental_union_codes": [
+        "Entertainment Activities",
+        "Stall Occupancy"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Stall Occupancy"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-149",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Price Monitoring",
+        "Stall Construction"
+      ],
+      "baseline_codes": [
+        "Price Monitoring"
+      ],
+      "experimental_union_codes": [
+        "Price Monitoring"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Stall Construction"
+      ],
+      "false_action_codes": []
+    },
+    {
+      "record_id": "SYN-MI-150",
+      "expected_decision": "accept",
+      "expected_codes": [
+        "Stall Construction",
+        "Lighting Facilities"
+      ],
+      "baseline_codes": [
+        "Permit & Licensing",
+        "Stall Construction"
+      ],
+      "experimental_union_codes": [
+        "Permit & Licensing",
+        "Stall Construction"
+      ],
+      "segment_count": 2,
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "false_action_codes": [
+        "Permit & Licensing"
+      ]
+    }
+  ]
+}

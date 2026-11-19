@@ -1,0 +1,269 @@
+{
+  "method": "Analyst review of every baseline false action and selected gold-label prerequisites against the supplied description, offline label_evidence and working catalog. These notes do not adjudicate legal correctness or modify gold labels.",
+  "false_action_groups": [
+    {
+      "cause": "compliant_statement_accepted_as_violation",
+      "cases": [
+        {
+          "record_id": "SYN-MI-005",
+          "code": "Permit & Licensing",
+          "note": "Business permit is current and posted."
+        },
+        {
+          "record_id": "SYN-MI-009",
+          "code": "Stall Occupancy",
+          "note": "Occupant is the awardee; the described waste incident is a separate category."
+        },
+        {
+          "record_id": "SYN-MI-012",
+          "code": "Bladed Instruments",
+          "note": "Knives are in a locked steel box."
+        },
+        {
+          "record_id": "SYN-MI-039",
+          "code": "Permit & Licensing",
+          "note": "Business permit is current and posted; mobile vending authorization is a separate issue."
+        },
+        {
+          "record_id": "SYN-MI-050",
+          "code": "Sanitation",
+          "note": "Garbage is sealed in bags; health certificate is on file."
+        },
+        {
+          "record_id": "SYN-MI-050",
+          "code": "Stall Occupancy",
+          "note": "Occupant is the awardee."
+        },
+        {
+          "record_id": "SYN-MI-054",
+          "code": "Permit & Licensing",
+          "note": "Business permit is current and posted."
+        },
+        {
+          "record_id": "SYN-MI-055",
+          "code": "Market Fees & Surcharges",
+          "note": "Daily fee is paid and receipt shown."
+        },
+        {
+          "record_id": "SYN-MI-066",
+          "code": "Permit & Licensing",
+          "note": "Cook's health certificate is on file; the missing scale registration seal belongs to WeightMeasures."
+        },
+        {
+          "record_id": "SYN-MI-071",
+          "code": "Market Fees & Surcharges",
+          "note": "Daily fee is paid and receipt shown."
+        },
+        {
+          "record_id": "SYN-MI-074",
+          "code": "Stall Rental",
+          "note": "Rent is paid up to date per ledger; uncertainty about a scale must not create a rent action."
+        },
+        {
+          "record_id": "SYN-MI-098",
+          "code": "Stall Occupancy",
+          "note": "Occupant is the awardee."
+        },
+        {
+          "record_id": "SYN-MI-099",
+          "code": "Sanitation",
+          "note": "Garbage is in sealed bags inside the stall."
+        },
+        {
+          "record_id": "SYN-MI-105",
+          "code": "Market Fees & Surcharges",
+          "note": "Daily fee is paid and receipt shown."
+        },
+        {
+          "record_id": "SYN-MI-117",
+          "code": "Sanitation",
+          "note": "Garbage is in sealed bags; no sanitation breach is described."
+        },
+        {
+          "record_id": "SYN-MI-118",
+          "code": "Stall Rental",
+          "note": "Rent is paid up to date per ledger."
+        }
+      ]
+    },
+    {
+      "cause": "incident_mapped_to_wrong_category",
+      "cases": [
+        {
+          "record_id": "SYN-MI-014",
+          "code": "Illegal Vendor",
+          "note": "Illegal refers to a water jumper, not vending authorization."
+        },
+        {
+          "record_id": "SYN-MI-035",
+          "code": "Permit & Licensing",
+          "note": "Missing approval is for construction; no business licensing breach is described."
+        },
+        {
+          "record_id": "SYN-MI-060",
+          "code": "Stall Occupancy",
+          "note": "Gold maps sleeping/dwelling to Market Rules; no mismatch with award or occupancy contract is stated."
+        },
+        {
+          "record_id": "SYN-MI-093",
+          "code": "Stall Occupancy",
+          "note": "Gold maps sleeping/dwelling to Market Rules; category overlap needs an explicit catalog policy."
+        },
+        {
+          "record_id": "SYN-MI-096",
+          "code": "Stall Occupancy",
+          "note": "Gold maps sleeping/dwelling to Market Rules; category overlap needs an explicit catalog policy."
+        },
+        {
+          "record_id": "SYN-MI-115",
+          "code": "Permit & Licensing",
+          "note": "Missing sidewalk authorization maps to Illegal Vendor in supplied gold; overlapping permit categories need an explicit policy."
+        },
+        {
+          "record_id": "SYN-MI-143",
+          "code": "Market Rules",
+          "note": "The event overrun maps to Entertainment Activities, not a second general-rule label."
+        },
+        {
+          "record_id": "SYN-MI-150",
+          "code": "Permit & Licensing",
+          "note": "Missing approval is for construction; no business licensing breach is described."
+        }
+      ]
+    },
+    {
+      "cause": "unverified_rumor_accepted_as_fact",
+      "cases": [
+        {
+          "record_id": "SYN-MI-016",
+          "code": "Permit & Licensing",
+          "note": "Tsismis and hindi na-verify explicitly mark an unverified rumor; the current uncertainty patterns miss this phrasing."
+        },
+        {
+          "record_id": "SYN-MI-103",
+          "code": "Permit & Licensing",
+          "note": "Tsismis and hindi na-verify explicitly mark an unverified rumor; the current uncertainty patterns miss this phrasing."
+        }
+      ]
+    },
+    {
+      "cause": "required_vendor_duty_not_established",
+      "cases": [
+        {
+          "record_id": "SYN-MI-142",
+          "code": "Lighting Facilities",
+          "note": "Fixture flickers, but maintenance duty is explicitly unknown."
+        }
+      ]
+    }
+  ],
+  "policy_context_checks": [
+    {
+      "code": "Liquor",
+      "record_ids": [
+        "SYN-MI-013",
+        "SYN-MI-022",
+        "SYN-MI-027",
+        "SYN-MI-030",
+        "SYN-MI-044",
+        "SYN-MI-082",
+        "SYN-MI-087",
+        "SYN-MI-106",
+        "SYN-MI-125"
+      ],
+      "question": "Descriptions establish sale or consumption; the prohibition and its applicability are supplied by offline labels citing Sec 44, rather than stated in the description. Confirm that fixed policy is represented internally."
+    },
+    {
+      "code": "DressCode",
+      "record_ids": [
+        "SYN-MI-041",
+        "SYN-MI-047",
+        "SYN-MI-049",
+        "SYN-MI-053",
+        "SYN-MI-065",
+        "SYN-MI-086",
+        "SYN-MI-088",
+        "SYN-MI-131"
+      ],
+      "question": "Descriptions establish attire; the applicable apron or clothing requirement is supplied by offline labels citing Sec 49. Confirm the internal policy and covered activities."
+    },
+    {
+      "code": "Bladed Instruments",
+      "record_ids": [
+        "SYN-MI-014",
+        "SYN-MI-015",
+        "SYN-MI-027",
+        "SYN-MI-078",
+        "SYN-MI-095",
+        "SYN-MI-102",
+        "SYN-MI-112",
+        "SYN-MI-137"
+      ],
+      "question": "Descriptions establish carrying or storage; offline labels supply the uncovered-carrying or locked-storage requirement citing Sec 55. Confirm the internal policy and relevant exceptions."
+    },
+    {
+      "code": "Market Rules",
+      "record_ids": [
+        "SYN-MI-044",
+        "SYN-MI-060",
+        "SYN-MI-075",
+        "SYN-MI-086",
+        "SYN-MI-093",
+        "SYN-MI-096",
+        "SYN-MI-130",
+        "SYN-MI-135"
+      ],
+      "question": "Offline labels supply specific dwelling, animal or children rules citing Sec 43, 45 and 46b. Confirm those internal policies and the boundary with Stall Occupancy."
+    },
+    {
+      "code": "Utilities",
+      "record_ids": [
+        "SYN-MI-024",
+        "SYN-MI-094",
+        "SYN-MI-109",
+        "SYN-MI-124"
+      ],
+      "question": "Descriptions establish absence of a grease trap; offline labels supply its requirement citing Sec 50. Confirm applicability and category mapping internally."
+    },
+    {
+      "code": "Stall Management",
+      "record_ids": [
+        "SYN-MI-047",
+        "SYN-MI-075",
+        "SYN-MI-101"
+      ],
+      "question": "Descriptions establish an expired extinguisher; unlike the other extinguisher examples, these do not explicitly state the vendor duty. Confirm the fixed safety duty internally."
+    },
+    {
+      "code": "Illegal Vendor",
+      "record_ids": [
+        "SYN-MI-039",
+        "SYN-MI-062",
+        "SYN-MI-077",
+        "SYN-MI-093"
+      ],
+      "question": "Descriptions establish hawking with no mobile vendor ID on record; offline labels infer lack of vending authorization citing Sec 42 and 61. Confirm that equivalence and the boundary with Vendor Identification internally."
+    }
+  ],
+  "interpretation": "These 44 label occurrences are policy-context checks, not 44 proven annotation errors. Offline section citations have not been independently verified. Gold remains unchanged in every metric. Policy context should be maintained internally; no additional runtime user fields or approval steps are proposed.",
+  "provenance": {
+    "source_sha256": "4bf50b0f84d132e54e223bcb54e4dd99c8f8aa0d00be39ad0e5cb5bf8a7684b4",
+    "baseline_sha256": "b74060d1d57be743e62cd540c31e13db86e070283ccfb9a4b6904baaca2df791",
+    "runtime_sha256": {
+      "src/engine.py": "cf9c25abe762673dfbdb7b8327cf1e0079b1ad9e8c02a88ae15c2a2faa841274",
+      "src/description_evidence.py": "0cda2375d721a10685cb61bc45bf64f0671176cb708ce51016c89b5493714855",
+      "config/lexicon.csv": "f6f9d1d1d9b311e31596c55a31a46743039a6957e0327e3eec50189dba530ac9",
+      "config/taxonomy.csv": "247009eb8fdd983f0c23f7ce42defc0d5864b792880a7494d1c0610b7d983f51"
+    },
+    "diagnosis_sha256": "b6697450d62702ca49291c8bc9673d1142d1b43ee1255590381986950c2b12c8"
+  },
+  "reviewed_false_actions": 27,
+  "false_action_counts": {
+    "compliant_statement_accepted_as_violation": 16,
+    "incident_mapped_to_wrong_category": 8,
+    "unverified_rumor_accepted_as_fact": 2,
+    "required_vendor_duty_not_established": 1
+  },
+  "policy_context_label_occurrences": 44,
+  "policy_context_distinct_records": 38
+}

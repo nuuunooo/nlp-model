@@ -1,0 +1,382 @@
+{
+  "purpose": "Additive development regression over the unchanged v4 pilot.",
+  "identity": {
+    "candidates/evidence35/scripts/evaluate_pilot_evidence.py": "58aa1411b7a149ac5068276caf937d80f3064e65660151249edca914ad92bc52",
+    "candidates/evidence35/src/pilot_evidence.py": "3e96d4cef5fcdc11fd4aac1f78dc9911145132c61bb218560c824454c0fed192",
+    "candidates/evidence35/src/structured_evidence.py": "914bdad67236cc94ea7e8126611c75f17cc059d1870d1aa77f944a899ff5594f",
+    "candidates/evidence35/src/description_evidence.py": "0cda2375d721a10685cb61bc45bf64f0671176cb708ce51016c89b5493714855",
+    "candidates/evidence35/scripts/observed_breach_recovery.py": "b8574ecfd230d83b87a01e5b9a75bb092b2b8f1ca06b1d074d106d74c67fe06d"
+  },
+  "source_artifacts_sha256": {
+    "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+    "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+    "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+    "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+    "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+  },
+  "selected_routes": [
+    [
+      "Obstruction",
+      "observed_passage_impact"
+    ],
+    [
+      "Public Order",
+      "grounded_observed_breach"
+    ],
+    [
+      "Resisting Authority",
+      "observed_inspection_interference"
+    ],
+    [
+      "Stall Construction",
+      "grounded_observed_breach"
+    ],
+    [
+      "Stall Occupancy",
+      "grounded_observed_breach"
+    ],
+    [
+      "Traffic",
+      "grounded_observed_breach"
+    ],
+    [
+      "WeightMeasures",
+      "grounded_observed_breach"
+    ]
+  ],
+  "routes_observed": {
+    "Market Rules / grounded_observed_breach": {
+      "correct": 1,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 1
+    },
+    "Obstruction / observed_passage_impact": {
+      "correct": 7,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 6
+    },
+    "Public Order / grounded_observed_breach": {
+      "correct": 4,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 3
+    },
+    "Resisting Authority / observed_inspection_interference": {
+      "correct": 5,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 5
+    },
+    "Stall Construction / grounded_observed_breach": {
+      "correct": 5,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 5
+    },
+    "Stall Occupancy / grounded_observed_breach": {
+      "correct": 2,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 2
+    },
+    "Traffic / grounded_observed_breach": {
+      "correct": 6,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 4
+    },
+    "Utilities / grounded_observed_breach": {
+      "correct": 1,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 1
+    },
+    "WeightMeasures / grounded_observed_breach": {
+      "correct": 4,
+      "incorrect": 0,
+      "distinct_correct_scenarios": 3
+    }
+  },
+  "prior_metrics": {
+    "true_positives": 644,
+    "false_positives": 2,
+    "false_negatives": 172,
+    "precision": 0.9969040247678018,
+    "recall": 0.7892156862745098,
+    "multi_rows": 60,
+    "multi_exact": 44,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "metrics": {
+    "true_positives": 677,
+    "false_positives": 2,
+    "false_negatives": 139,
+    "precision": 0.9970544918998527,
+    "recall": 0.8296568627450981,
+    "multi_rows": 60,
+    "multi_exact": 48,
+    "clear_false_actions": 0,
+    "unclear_false_actions": 0
+  },
+  "additions": [
+    {
+      "scenario_id": "SYN-04-VALIDATION-06",
+      "language": "fil",
+      "code": "WeightMeasures",
+      "route": "grounded_observed_breach",
+      "evidence": "sa stall d 09, nang buksan ang timbangan ng tindero, nakitang pinalitan ng mas mahina at hindi pamantayang spring ang spring nito.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-07",
+      "language": "taglish",
+      "code": "WeightMeasures",
+      "route": "grounded_observed_breach",
+      "evidence": "pagdaan sa stall f 07, nakita ng inspector na hinollow out yung counterweight ng beam balance ni seller.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-08",
+      "language": "fil",
+      "code": "WeightMeasures",
+      "route": "grounded_observed_breach",
+      "evidence": "obs st. f 22 kinikil ang panloob na lever ng timbangan ng tindero.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-04-VALIDATION-08",
+      "language": "taglish",
+      "code": "WeightMeasures",
+      "route": "grounded_observed_breach",
+      "evidence": "st. f 22 kinikil yung internal lever ng scale ni seller.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-01",
+      "language": "en",
+      "code": "Stall Occupancy",
+      "route": "grounded_observed_breach",
+      "evidence": "the stallholder was using the stall as a parking spot for a motorcycle at stall d 12; stalls must be used only for selling.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-06-VALIDATION-03",
+      "language": "fil",
+      "code": "Stall Occupancy",
+      "route": "grounded_observed_breach",
+      "evidence": "nakapaskil na patakaran para sa pagtitinda lamang dapat gamitin ang puwesto. sa inspeksyon sa stall f 11, ginagamit ng may puwesto ang puwesto na imbakan ng construction materials ng isang contractor mula sa labas.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-01",
+      "language": "fil",
+      "code": "Stall Construction",
+      "route": "grounded_observed_breach",
+      "evidence": "stall g 17 kinumpirma ng may puwesto na itinayo niya ang imbakan sa likod nang walang permit mula sa market administrator.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-02",
+      "language": "fil",
+      "code": "Stall Construction",
+      "route": "grounded_observed_breach",
+      "evidence": "habang nag iikot sa stall a 18, nakita na kinumpirma ng may puwesto na itinayo niya ang nakataas na sahig nang walang permit mula sa market administrator.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-04",
+      "language": "fil",
+      "code": "Stall Construction",
+      "route": "grounded_observed_breach",
+      "evidence": "st. d 24 kinumpirma ng may puwesto na itinayo niya ang nakapirming hagdan papunta sa loft nang walang permit mula sa market administrator.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-08-VALIDATION-06",
+      "language": "fil",
+      "code": "Stall Construction",
+      "route": "grounded_observed_breach",
+      "evidence": "habang nag iikot sa stall d 22, nakita na ipinakabit na ng may puwesto ang bagong permanenteng kabinet, ngunit resibo lamang ng nakabinbing aplikasyon sa approval ang naipakita niya.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-05",
+      "language": "fil",
+      "code": "Public Order",
+      "route": "grounded_observed_breach",
+      "evidence": "nagdulot ng siksikan ang 1 na bentahan ng bigas ng isang may puwesto kaya tumigil ang bentahan sa bulwagan sa seksyon e.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-05",
+      "language": "taglish",
+      "code": "Public Order",
+      "route": "grounded_observed_breach",
+      "evidence": "yung 1 rice sale ni stallholder nagdulot ng siksikan, huminto ang bentahan sa hall sa section e.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-06",
+      "language": "fil",
+      "code": "Public Order",
+      "route": "grounded_observed_breach",
+      "evidence": "habang nag iikot sa seksyon b, nakita na nagdulot ng pagdagsa sa puwesto ang anunsyo ng libreng pamimigay ng isang tindero, at nagsara ang mga kalapit na puwesto.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-12-VALIDATION-07",
+      "language": "fil",
+      "code": "Public Order",
+      "route": "grounded_observed_breach",
+      "evidence": "pagdaan sa seksyon a, nakita ng inspektor na umani ng nagtutulakang kumpol ang flash sale ng isang tindero at natumba ang mga display.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-05",
+      "language": "fil",
+      "code": "Obstruction",
+      "route": "observed_passage_impact",
+      "evidence": "stall g 16 nagsabit ang tindero ng mga bag sa lubid sa daanan na kasingtaas ng ulo kaya napapayuko ang mga mamimili.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-05",
+      "language": "taglish",
+      "code": "Obstruction",
+      "route": "observed_passage_impact",
+      "evidence": "nagsabit si seller ng bags sa lubid across the walkway, head height, napapayuko yung shoppers sa stall g 16.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-06",
+      "language": "fil",
+      "code": "Obstruction",
+      "route": "observed_passage_impact",
+      "evidence": "habang nag iikot sa stall d 16, nakita na nagtali ang may puwesto ng tarp sa pasilyo na kasingtaas ng baywang kaya hindi makadaan ang mga tao.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-07",
+      "language": "fil",
+      "code": "Obstruction",
+      "route": "observed_passage_impact",
+      "evidence": "sa pag iikot ng inspeksyon sa stall b 10, nagsabit ang tindero ng tuyong isda sa mga tali sa daanan kaya nahaharangan ito.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-15-VALIDATION-08",
+      "language": "fil",
+      "code": "Obstruction",
+      "route": "observed_passage_impact",
+      "evidence": "st. f 36 nagsabit ang may puwesto ng hanay ng walis nang mababa sa pasilyo kaya kailangang yumuko ng mga tao.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-02",
+      "language": "fil",
+      "code": "Traffic",
+      "route": "grounded_observed_breach",
+      "evidence": "habang nag iikot, napansin sa seksyon b na inatras ng isang tindera ang kanyang kotse sa maling direksyon sa service road. one way pahilaga lamang ang service road ng palengke.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-02",
+      "language": "en",
+      "code": "Traffic",
+      "route": "grounded_observed_breach",
+      "evidence": "during the round, a vendor reversed her car the wrong way down the service road at section b. under the posted rule, the market service road is one way, northbound only.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-03",
+      "language": "fil",
+      "code": "Traffic",
+      "route": "grounded_observed_breach",
+      "evidence": "one way pahilaga lamang ang service road ng palengke. sa seksyon c, nagmaneho pa timog ng motorsiklo ang isang tindero sa service road.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-06",
+      "language": "fil",
+      "code": "Traffic",
+      "route": "grounded_observed_breach",
+      "evidence": "nakita sa seksyon c na ginamit sa paghahatid ang access road ng 12 toneladang tanker ng isang tindero. nakasaad sa patakaran na bawal sa access road ng palengke ang sasakyang lampas 10 tonelada.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-06",
+      "language": "taglish",
+      "code": "Traffic",
+      "route": "grounded_observed_breach",
+      "evidence": "sa section c, ginamit ng 12 ton tanker ng vendor yung access road para mag deliver. based sa rule, bawal sa market access road ang vehicles over 10 tons.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-18-VALIDATION-07",
+      "language": "fil",
+      "code": "Traffic",
+      "route": "grounded_observed_breach",
+      "evidence": "patakaran bawal sa access road ng palengke ang sasakyang lampas 10 tonelada. seksyon b ipinarada ng may puwesto ang 16 toneladang trailer sa access road.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-06",
+      "language": "fil",
+      "code": "Resisting Authority",
+      "route": "observed_inspection_interference",
+      "evidence": "sa stall d 37, inagaw ng may puwesto ang mga test weight ng inspektor at itinago.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-07",
+      "language": "fil",
+      "code": "Resisting Authority",
+      "route": "observed_inspection_interference",
+      "evidence": "sa pag iikot ng inspeksyon sa stall c 34, hinablot ng tindero ang medida ng inspektor at itinapon ito.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-28-VALIDATION-08",
+      "language": "fil",
+      "code": "Resisting Authority",
+      "route": "observed_inspection_interference",
+      "evidence": "obs st. f 13 hinablot ng tindero ang thermometer probe mula sa kamay ng inspektor.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-03x15-VALIDATION-01",
+      "language": "fil",
+      "code": "Obstruction",
+      "route": "observed_passage_impact",
+      "evidence": "nagsabit ang tindero ng tuyong isda sa mga tali sa daanan kaya nahaharangan ito.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-07x15-VALIDATION-01",
+      "language": "fil",
+      "code": "Obstruction",
+      "route": "observed_passage_impact",
+      "evidence": "patakaran kailangang iulat ng may puwesto sa market office ang sira sa puwesto sa loob ng 24 oras. nagsabit ang tindero ng tuyong isda sa mga tali sa daanan kaya nahaharangan ito.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-08x22-VALIDATION-01",
+      "language": "fil",
+      "code": "Stall Construction",
+      "route": "grounded_observed_breach",
+      "evidence": "stall e 35 ipinakabit na ng may puwesto ang bagong permanenteng kabinet, ngunit resibo lamang ng nakabinbing aplikasyon sa approval ang naipakita niya.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-12x28-VALIDATION-01",
+      "language": "fil",
+      "code": "Resisting Authority",
+      "route": "observed_inspection_interference",
+      "evidence": "hinablot ng tindero ang medida ng inspektor at itinapon ito.",
+      "supported_by_label": true
+    },
+    {
+      "scenario_id": "SYN-17x28-VALIDATION-01",
+      "language": "fil",
+      "code": "Resisting Authority",
+      "route": "observed_inspection_interference",
+      "evidence": "patakaran sa itinakdang sharpening station lamang puwedeng maghasa ng kutsilyo. 2 hinablot ng tindero ang medida ng inspektor at itinapon ito.",
+      "supported_by_label": true
+    }
+  ]
+}

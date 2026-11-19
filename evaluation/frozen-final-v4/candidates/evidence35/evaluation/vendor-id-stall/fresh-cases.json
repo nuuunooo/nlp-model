@@ -1,0 +1,20 @@
+[
+  {"group":"en-assignment","language":"en","state":"supported","description":"Vendor ID posted at Stall D-4, but it was assigned to Stall D-8."},
+  {"group":"en-assignment","language":"en","state":"compliant","description":"Vendor ID posted at Stall D-4, and it was assigned to Stall D-4."},
+  {"group":"en-assignment","language":"en","state":"insufficient","description":"Vendor ID posted at Stall D-4, but the assigned stall is unreadable."},
+  {"group":"en-display","language":"en","state":"supported","description":"Selling at Stall B-2, her ID posted at Stall B-7. ID must be posted where currently trading."},
+  {"group":"en-display","language":"en","state":"compliant","description":"Selling at Stall B-2, her ID posted at Stall B-2. ID must be posted where currently trading."},
+  {"group":"en-display","language":"en","state":"insufficient","description":"Selling at Stall B-2. Her ID was reportedly posted elsewhere, but we couldn't verify the location."},
+  {"group":"fil-assignment","language":"fil","state":"supported","description":"Nakapaskil sa puwesto G-12 ang vendor ID na para sa puwesto G-16."},
+  {"group":"fil-assignment","language":"fil","state":"compliant","description":"Nakapaskil sa puwesto G-12 ang vendor ID na para sa puwesto G-12."},
+  {"group":"fil-assignment","language":"fil","state":"insufficient","description":"Nakapaskil sa puwesto G-12 ang vendor ID. Di mabasa kung saang puwesto ito nakatalaga."},
+  {"group":"fil-display","language":"fil","state":"supported","description":"Nagtitinda sa puwesto M-4, nakapaskil ang ID niya sa katabing puwesto. Dapat nakapaskil ang ID kung saan nagtitinda."},
+  {"group":"fil-display","language":"fil","state":"compliant","description":"Nagtitinda sa puwesto M-4, nakapaskil ang ID niya sa puwesto M-4. Dapat nakapaskil ang ID kung saan nagtitinda."},
+  {"group":"fil-display","language":"fil","state":"insufficient","description":"Nagtitinda sa puwesto M-4. Di alam kung sa M-4 o sa katabi nakapaskil ang ID niya."},
+  {"group":"taglish-assignment","language":"taglish","state":"supported","description":"Vendor ID says Stall F-8, naka-display yung ID sa Stall F-3."},
+  {"group":"taglish-assignment","language":"taglish","state":"compliant","description":"Vendor ID says Stall F-3, naka-display yung ID sa Stall F-3."},
+  {"group":"taglish-assignment","language":"taglish","state":"insufficient","description":"Naka-display yung vendor ID sa Stall F-3, pero di sure kung F-3 o F-8 yung nasa card."},
+  {"group":"taglish-display","language":"taglish","state":"supported","description":"Vendor selling at Stall P-3. His ID posted here but it was assigned to Stall P-9."},
+  {"group":"taglish-display","language":"taglish","state":"compliant","description":"Vendor selling at Stall P-3. His ID posted here and it was assigned to Stall P-3."},
+  {"group":"taglish-display","language":"taglish","state":"insufficient","description":"Vendor selling at Stall P-3. His ID posted here but assigned stall di mabasa."}
+]

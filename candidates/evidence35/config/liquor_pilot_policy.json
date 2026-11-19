@@ -1,0 +1,7 @@
+{
+  "policy_id": "synthetic-liquor-10",
+  "scope": "synthetic_evaluation",
+  "source": "Age and time restrictions supplied for the ten-record synthetic pilot.",
+  "minimum_buyer_age": 18,
+  "latest_sale_time": "20:00"
+}

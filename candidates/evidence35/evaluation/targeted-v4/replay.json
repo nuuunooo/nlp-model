@@ -1,0 +1,2950 @@
+{
+  "purpose": "Combined offline development replay of the six individually verified add-ons.",
+  "verifier_cutoff": 0.9999997615814209,
+  "verifier_metadata_sha256": "e4bde09bb46b67d7de78444047049747e482a84d6c88bdb351f69cbe1d204ce9",
+  "original_v4_reproduced_rows": 35,
+  "sources": {
+    "validation_verified": {
+      "evaluation/candidate34/validation_verified.json": "eba688fe5224c3fd3e968a5675dc4b8fd29715d7122692da95fd80d3cce187e5",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/validation_verified.json": "a1602b63289f0fa93a943a4fe40e890f659319ed6c1e387399cd5cc2bb6f6211",
+      "evaluation/multi-incident-33/validation_regression.json": "43491230caa5f14818efc3b03a6bf4e7895ee43b9ed99f473ffd756ad63cf76b",
+      "evaluation/candidate34/validation_final_scores.npz": "b9f235578b755b26872cfce306711f4573cded552e8f8d3837f2a1f495cccb99",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/validation_verified.json": "f96eed83d1b4faad6bb8c68e6492b3f2d9d0da9ea37b14954effdaf25e39c043"
+    },
+    "test_regression_verified": {
+      "evaluation/candidate34/test_regression_verified.json": "af52b93de71ee17251328f4b61fa9751728c7a23ea7ff42660ac0436b3d44b29",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/test_regression_verified.json": "9de8c7d6a0f3a111b7baa9f0fb827a6e72c69744c7a74595931390df6666c36c",
+      "evaluation/multi-incident-33/test_regression.json": "be28f850068483b73514ede40c87520a20c62780b3044e5e7b76e96b86579af1",
+      "evaluation/candidate34/test_regression_final_scores.npz": "03c18312eac7580b081871fc091bdfd854496d2a0b027103de278c1fe89ac631",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/test_regression_verified.json": "c124781419dd50c826ab375afc1f0bbe602e16d16f19e1ec313c96c558197de8"
+    },
+    "challenge_verified": {
+      "evaluation/candidate34/challenge_verified.json": "c2a03ca0d38e78e3ab5633d33bcdde814b0d5069597f8afe5ab2ca02fbdd06ac",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v2/challenge_verified.json": "6b66341d19c87600015e605b3f12f32c1fe731e2e86ff1b83c95a6383f18ed24",
+      "evaluation/multi-incident-33/challenge_report.json": "45b50197f0904f13ff93f3f9998472d71d8507adee6e7621b41488b7841edd15",
+      "evaluation/candidate34/challenge_regression_scores.npz": "950194a2008e2cd8da2facd4ac6b115405d357adc581564703ebfc71de2f9121",
+      "candidates/evidence35/evaluation/operational-evidence-recall-v4/challenge_verified.json": "67a5124aa9c509e8b93426749d264f7b3c70464bc07b65e802ce893b994a740a"
+    }
+  },
+  "accepted_add_ons": {
+    "event-approval": {
+      "category": "Entertainment Activities",
+      "replay_sha256": "d763e24061f0dd696ba2b25841c21aa9ef16cd224e3ff8b3514a6ef67353154d",
+      "gates": {
+        "historical_at_least_26_correct_zero_incorrect": true,
+        "no_added_false_positives": true,
+        "all_correct_baseline_findings_preserved": true,
+        "other_categories_unchanged": true,
+        "all_fresh_evidence_states_correct": true,
+        "zero_fresh_incorrect_event_findings": true
+      },
+      "source_sha256": {
+        "scripts/evaluate_event_approval.py": "610dfc847db1c9f397225ef0fe4a4f9cfb37d9a0375427bccf1d362201ad83fb",
+        "src/event_approval.py": "85b5509407c9fcf202a1991a1048c9b08d7a8f5499a471a7314079e0ef057317",
+        "evaluation/event-approval/fresh-cases.json": "70240f0d8797fbc57497324e766a2847e4c92c7ff13724d299573cd0858c330d"
+      }
+    },
+    "vendor-id-stall": {
+      "category": "Vendor Identification",
+      "replay_sha256": "01649f670b1d446a7cbae4a445c96495b620a743b4951b44f38f7623f0b97e74",
+      "gates": {
+        "no_new_false_positives": true,
+        "all_original_v4_findings_preserved": true,
+        "other_categories_unchanged": true,
+        "all_fresh_evidence_states_correct": true
+      },
+      "source_sha256": {
+        "scripts/evaluate_vendor_id_stall.py": "dd8f3153680c9cb84af7533192519bf4fd1fa55894b75a5e93a7056b24f09e65",
+        "src/vendor_id_stall.py": "48882ae56054f91567a343583f0938bd61db586d88401756ce77f55c87b9b508",
+        "evaluation/vendor-id-stall/fresh-cases.json": "78af451ab3b5c25142feafa686dfd7b772202f045429d8f8e4e45f88056fe541"
+      }
+    },
+    "vendor-id-display": {
+      "category": "Vendor Identification",
+      "replay_sha256": "9beabdf2324e03278f77c84d1a0ff46c4eba156233f916493e7578921c52bc83",
+      "gates": {
+        "no_new_false_positives": true,
+        "all_original_v4_findings_preserved": true,
+        "other_categories_unchanged": true,
+        "all_fresh_evidence_states_correct": true
+      },
+      "source_sha256": {
+        "scripts/evaluate_vendor_id_display.py": "7b5017bea2fc9588c405e756f4c32012d0aa169bbd2bcc0d44e303f28c080744",
+        "src/vendor_id_display.py": "762012187d7a84e1071aa55b361ae5fc320e51323132309826754c0930a34aa1",
+        "src/vendor_id_stall.py": "48882ae56054f91567a343583f0938bd61db586d88401756ce77f55c87b9b508",
+        "scripts/evaluate_vendor_id_stall.py": "dd8f3153680c9cb84af7533192519bf4fd1fa55894b75a5e93a7056b24f09e65",
+        "evaluation/vendor-id-display/fresh-cases.json": "d6baa4e6221c31bdfb4451ef621a55654cec08c6d65f41443b6ba2baffd1a546"
+      }
+    },
+    "stall-operating-days": {
+      "category": "Stall Occupancy",
+      "replay_sha256": "c39f71723f3cc44a5f280a232486a67e20430acedeeb561e717069f35ba57262",
+      "gates": {
+        "no_new_false_positives": true,
+        "all_original_v4_findings_preserved": true,
+        "other_categories_unchanged": true,
+        "all_fresh_evidence_states_correct": true
+      },
+      "source_sha256": {
+        "scripts/evaluate_stall_operating_days.py": "27bb67bede6f0d4f07d7712e648d3eb381ec88c55a05c4688b3fae19824c8809",
+        "src/stall_operating_days.py": "b4be72b96d96cd64fdc22eb05a03cb825b22b37bd968d5a73a75b171c0555c60",
+        "src/vendor_id_stall.py": "48882ae56054f91567a343583f0938bd61db586d88401756ce77f55c87b9b508",
+        "evaluation/stall-operating-days/fresh-cases.json": "10f1ac88feec9a5a49b343603e212a747722b370d4c36cb3d5ee3d30eb0b03cc"
+      }
+    },
+    "stall-repair-closure": {
+      "category": "Stall Occupancy",
+      "replay_sha256": "3944a6ae1e3479c4554b9812165a2cb2bfd63691d88e75da267abf183dab70e9",
+      "gates": {
+        "no_new_false_positives": true,
+        "all_original_v4_findings_preserved": true,
+        "other_categories_unchanged": true,
+        "all_fresh_evidence_states_correct": true
+      },
+      "source_sha256": {
+        "scripts/evaluate_stall_repair_closure.py": "82a7d93ecc6d1e6b200dacef2152e79ef08fd747689ed4fa01d9e2d8c9b8e758",
+        "src/stall_repair_closure.py": "d8e2b8bd8c48249af92c7af42c93cf238144d4ce26e9c364f3a8fa1196ff295e",
+        "src/event_approval.py": "85b5509407c9fcf202a1991a1048c9b08d7a8f5499a471a7314079e0ef057317",
+        "src/stall_operating_days.py": "b4be72b96d96cd64fdc22eb05a03cb825b22b37bd968d5a73a75b171c0555c60",
+        "src/vendor_id_stall.py": "48882ae56054f91567a343583f0938bd61db586d88401756ce77f55c87b9b508",
+        "scripts/evaluate_stall_operating_days.py": "27bb67bede6f0d4f07d7712e648d3eb381ec88c55a05c4688b3fae19824c8809",
+        "evaluation/stall-repair-closure/fresh-cases.json": "624af3ad20b020d361a329dd7c44d92eb3f2e1e0ec1f2ae9650d2e824917abc7"
+      }
+    },
+    "traffic-loading": {
+      "category": "Traffic",
+      "replay_sha256": "fa48ff6eea89c151352197104aa4aea7050fbd3176199128391290f579622833",
+      "gates": {
+        "no_new_false_positives": true,
+        "all_original_v4_findings_preserved": true,
+        "other_categories_unchanged": true,
+        "all_fresh_evidence_states_correct": true
+      },
+      "source_sha256": {
+        "scripts/evaluate_traffic_loading.py": "31775bea1e13b8d345210a076106cbc234933f7a63b60335d9791a71b5cbc18f",
+        "src/traffic_loading.py": "db8a5692db0097730deafd18dd391ee2d66372f3c9452551f36b0da780537755",
+        "evaluation/traffic-loading/fresh-cases.json": "a917f8a629aa0b80b117588753346cb24098fb29c59232e9e2736c77a6e760e8"
+      }
+    }
+  },
+  "combined_code_sha256": {
+    "scripts/evaluate_targeted_v4.py": "dec6db27c7232894463661c40a14c4dfde93bbf4631c8b791ff5d5045b11bb61",
+    "src/targeted_v4.py": "0c8150d8973c9f638bf01874ce451607e7ab79b387ce865ed2e2dc3ee22272ab"
+  },
+  "gates": {
+    "original_historical_and_verifier_archives_preserved": true,
+    "no_new_false_positives": true,
+    "no_lost_correct_findings": true,
+    "no_lost_fully_correct_multi_violation_notes": true,
+    "no_order_conflicts": true
+  },
+  "metrics": {
+    "validation_verified": {
+      "descriptions": 804,
+      "v4": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8809849521203831
+      },
+      "combined": {
+        "true_positives": 644,
+        "false_positives": 2,
+        "false_negatives": 172,
+        "precision": 0.9969040247678018,
+        "recall": 0.7892156862745098,
+        "multi_rows": 60,
+        "multi_exact": 44,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8809849521203831
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_correct_findings": [],
+      "cleared_baseline_false_positives": [],
+      "lost_fully_correct_multi_violation_notes": [],
+      "order_conflicts": [],
+      "opposite_evidence_states": [],
+      "deduplicated_additions": [],
+      "add_on_effects": {
+        "event-approval": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "vendor-id-stall": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "vendor-id-display": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "stall-operating-days": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "stall-repair-closure": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "traffic-loading": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        }
+      }
+    },
+    "test_regression_verified": {
+      "descriptions": 804,
+      "v4": {
+        "true_positives": 555,
+        "false_positives": 8,
+        "false_negatives": 261,
+        "precision": 0.9857904085257548,
+        "recall": 0.6801470588235294,
+        "multi_rows": 60,
+        "multi_exact": 34,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8049311094996374
+      },
+      "combined": {
+        "true_positives": 575,
+        "false_positives": 8,
+        "false_negatives": 241,
+        "precision": 0.9862778730703259,
+        "recall": 0.7046568627450981,
+        "multi_rows": 60,
+        "multi_exact": 34,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8220157255182273
+      },
+      "recovered_misses": [
+        {
+          "record": "SYN-01-TEST-02:taglish",
+          "codes": [
+            "Vendor Identification"
+          ]
+        },
+        {
+          "record": "SYN-01-TEST-06:taglish",
+          "codes": [
+            "Vendor Identification"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-02:fil",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-02:en",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-02:taglish",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-03:fil",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-03:en",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-03:taglish",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-04:fil",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-04:en",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-06-TEST-04:taglish",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-02:fil",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-02:taglish",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-06:fil",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-06:en",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-06:taglish",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-07:fil",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-07:taglish",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-08:fil",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "SYN-18-TEST-08:en",
+          "codes": [
+            "Traffic"
+          ]
+        }
+      ],
+      "new_false_positives": [],
+      "removed_correct_findings": [],
+      "cleared_baseline_false_positives": [],
+      "lost_fully_correct_multi_violation_notes": [],
+      "order_conflicts": [],
+      "opposite_evidence_states": [],
+      "deduplicated_additions": [],
+      "add_on_effects": {
+        "event-approval": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "vendor-id-stall": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "vendor-id-display": {
+          "correct_added": 2,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "stall-operating-days": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "stall-repair-closure": {
+          "correct_added": 9,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "traffic-loading": {
+          "correct_added": 9,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        }
+      }
+    },
+    "challenge_verified": {
+      "descriptions": 49,
+      "v4": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8495575221238938
+      },
+      "combined": {
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 17,
+        "precision": 1.0,
+        "recall": 0.7384615384615385,
+        "multi_rows": 30,
+        "multi_exact": 18,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0,
+        "f1": 0.8495575221238938
+      },
+      "recovered_misses": [],
+      "new_false_positives": [],
+      "removed_correct_findings": [],
+      "cleared_baseline_false_positives": [],
+      "lost_fully_correct_multi_violation_notes": [],
+      "order_conflicts": [],
+      "opposite_evidence_states": [],
+      "deduplicated_additions": [],
+      "add_on_effects": {
+        "event-approval": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "vendor-id-stall": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "vendor-id-display": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "stall-operating-days": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "stall-repair-closure": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "traffic-loading": {
+          "correct_added": 0,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        }
+      }
+    },
+    "fresh_matched": {
+      "descriptions": 153,
+      "v4": {
+        "true_positives": 17,
+        "false_positives": 23,
+        "false_negatives": 34,
+        "precision": 0.425,
+        "recall": 0.3333333333333333,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 13,
+        "unclear_false_actions": 9,
+        "f1": 0.37362637362637363
+      },
+      "combined": {
+        "true_positives": 51,
+        "false_positives": 18,
+        "false_negatives": 0,
+        "precision": 0.7391304347826086,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 10,
+        "unclear_false_actions": 7,
+        "f1": 0.85
+      },
+      "recovered_misses": [
+        {
+          "record": "event-approval:en-scope:supported",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:en-dates:supported",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:en-standing:supported",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:fil-scope:supported",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:fil-dates:supported",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:fil-standing:supported",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:taglish-standing:supported",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "vendor-id-stall:en-assignment:supported",
+          "codes": [
+            "Vendor Identification"
+          ]
+        },
+        {
+          "record": "vendor-id-stall:en-display:supported",
+          "codes": [
+            "Vendor Identification"
+          ]
+        },
+        {
+          "record": "vendor-id-stall:taglish-display:supported",
+          "codes": [
+            "Vendor Identification"
+          ]
+        },
+        {
+          "record": "vendor-id-display:en-height:supported",
+          "codes": [
+            "Vendor Identification"
+          ]
+        },
+        {
+          "record": "vendor-id-display:en-visibility:supported",
+          "codes": [
+            "Vendor Identification"
+          ]
+        },
+        {
+          "record": "vendor-id-display:taglish-height:supported",
+          "codes": [
+            "Vendor Identification"
+          ]
+        },
+        {
+          "record": "stall-operating-days:en-weekly:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-operating-days:en-monthly:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-operating-days:fil-weekly:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-operating-days:fil-awardee:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-operating-days:fil-monthly:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-operating-days:taglish-weekly:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-operating-days:taglish-monthly:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:en-active:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:en-dates:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:en-row:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:fil-active:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:fil-dates:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:fil-row:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:taglish-active:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:taglish-dates:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "stall-repair-closure:taglish-row:supported",
+          "codes": [
+            "Stall Occupancy"
+          ]
+        },
+        {
+          "record": "traffic-loading:en-lane:supported",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "traffic-loading:fil-sign:supported",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "traffic-loading:fil-engine:supported",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "traffic-loading:taglish-exception:supported",
+          "codes": [
+            "Traffic"
+          ]
+        },
+        {
+          "record": "traffic-loading:taglish-fire-lane:supported",
+          "codes": [
+            "Traffic"
+          ]
+        }
+      ],
+      "new_false_positives": [],
+      "removed_correct_findings": [],
+      "cleared_baseline_false_positives": [
+        {
+          "record": "event-approval:en-scope:compliant",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:taglish-scope:compliant",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:taglish-scope:insufficient",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:taglish-dates:compliant",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        },
+        {
+          "record": "event-approval:taglish-dates:insufficient",
+          "codes": [
+            "Entertainment Activities"
+          ]
+        }
+      ],
+      "lost_fully_correct_multi_violation_notes": [],
+      "order_conflicts": [],
+      "opposite_evidence_states": [],
+      "deduplicated_additions": [],
+      "add_on_effects": {
+        "event-approval": {
+          "correct_added": 7,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 5
+        },
+        "vendor-id-stall": {
+          "correct_added": 3,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "vendor-id-display": {
+          "correct_added": 3,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "stall-operating-days": {
+          "correct_added": 7,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "stall-repair-closure": {
+          "correct_added": 9,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        },
+        "traffic-loading": {
+          "correct_added": 5,
+          "incorrect_added": 0,
+          "correct_removed": 0,
+          "incorrect_removed": 0
+        }
+      }
+    }
+  },
+  "historical_per_category": {
+    "Vendor Identification": {
+      "expected": 30,
+      "v4": {
+        "correct": 28,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.9333333333333333
+      },
+      "combined": {
+        "correct": 30,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "Permit & Licensing": {
+      "expected": 30,
+      "v4": {
+        "correct": 22,
+        "false_positives": 2,
+        "precision": 0.9166666666666666,
+        "recall": 0.7333333333333333
+      },
+      "combined": {
+        "correct": 22,
+        "false_positives": 2,
+        "precision": 0.9166666666666666,
+        "recall": 0.7333333333333333
+      }
+    },
+    "Sanitation": {
+      "expected": 33,
+      "v4": {
+        "correct": 20,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6060606060606061
+      },
+      "combined": {
+        "correct": 20,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6060606060606061
+      }
+    },
+    "WeightMeasures": {
+      "expected": 27,
+      "v4": {
+        "correct": 27,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "combined": {
+        "correct": 27,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "Lighting & Energy": {
+      "expected": 30,
+      "v4": {
+        "correct": 6,
+        "false_positives": 1,
+        "precision": 0.8571428571428571,
+        "recall": 0.2
+      },
+      "combined": {
+        "correct": 6,
+        "false_positives": 1,
+        "precision": 0.8571428571428571,
+        "recall": 0.2
+      }
+    },
+    "Stall Occupancy": {
+      "expected": 27,
+      "v4": {
+        "correct": 15,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5555555555555556
+      },
+      "combined": {
+        "correct": 24,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.8888888888888888
+      }
+    },
+    "Stall Management": {
+      "expected": 27,
+      "v4": {
+        "correct": 26,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.9629629629629629
+      },
+      "combined": {
+        "correct": 26,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.9629629629629629
+      }
+    },
+    "Stall Construction": {
+      "expected": 27,
+      "v4": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6666666666666666
+      },
+      "combined": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6666666666666666
+      }
+    },
+    "Utilities": {
+      "expected": 27,
+      "v4": {
+        "correct": 22,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.8148148148148148
+      },
+      "combined": {
+        "correct": 22,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.8148148148148148
+      }
+    },
+    "Stall Rental": {
+      "expected": 27,
+      "v4": {
+        "correct": 20,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.7407407407407407
+      },
+      "combined": {
+        "correct": 20,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.7407407407407407
+      }
+    },
+    "Illegal Vendor": {
+      "expected": 27,
+      "v4": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6666666666666666
+      },
+      "combined": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6666666666666666
+      }
+    },
+    "Public Order": {
+      "expected": 30,
+      "v4": {
+        "correct": 30,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "combined": {
+        "correct": 30,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "Liquor": {
+      "expected": 27,
+      "v4": {
+        "correct": 8,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.2962962962962963
+      },
+      "combined": {
+        "correct": 8,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.2962962962962963
+      }
+    },
+    "Market Conduct": {
+      "expected": 27,
+      "v4": {
+        "correct": 27,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "combined": {
+        "correct": 27,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "Obstruction": {
+      "expected": 33,
+      "v4": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5454545454545454
+      },
+      "combined": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5454545454545454
+      }
+    },
+    "DressCode": {
+      "expected": 27,
+      "v4": {
+        "correct": 15,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5555555555555556
+      },
+      "combined": {
+        "correct": 15,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5555555555555556
+      }
+    },
+    "Bladed Instruments": {
+      "expected": 27,
+      "v4": {
+        "correct": 5,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.18518518518518517
+      },
+      "combined": {
+        "correct": 5,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.18518518518518517
+      }
+    },
+    "Traffic": {
+      "expected": 30,
+      "v4": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6
+      },
+      "combined": {
+        "correct": 27,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.9
+      }
+    },
+    "Porter Regulation": {
+      "expected": 27,
+      "v4": {
+        "correct": 15,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5555555555555556
+      },
+      "combined": {
+        "correct": 15,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5555555555555556
+      }
+    },
+    "Promotions": {
+      "expected": 27,
+      "v4": {
+        "correct": 19,
+        "false_positives": 2,
+        "precision": 0.9047619047619048,
+        "recall": 0.7037037037037037
+      },
+      "combined": {
+        "correct": 19,
+        "false_positives": 2,
+        "precision": 0.9047619047619048,
+        "recall": 0.7037037037037037
+      }
+    },
+    "Advertising": {
+      "expected": 30,
+      "v4": {
+        "correct": 29,
+        "false_positives": 1,
+        "precision": 0.9666666666666667,
+        "recall": 0.9666666666666667
+      },
+      "combined": {
+        "correct": 29,
+        "false_positives": 1,
+        "precision": 0.9666666666666667,
+        "recall": 0.9666666666666667
+      }
+    },
+    "Signage & Streamers": {
+      "expected": 33,
+      "v4": {
+        "correct": 24,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.7272727272727273
+      },
+      "combined": {
+        "correct": 24,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.7272727272727273
+      }
+    },
+    "Entertainment Activities": {
+      "expected": 27,
+      "v4": {
+        "correct": 26,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.9629629629629629
+      },
+      "combined": {
+        "correct": 26,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.9629629629629629
+      }
+    },
+    "Lighting Facilities": {
+      "expected": 27,
+      "v4": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6666666666666666
+      },
+      "combined": {
+        "correct": 18,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.6666666666666666
+      }
+    },
+    "Market Rules": {
+      "expected": 24,
+      "v4": {
+        "correct": 6,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.25
+      },
+      "combined": {
+        "correct": 6,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.25
+      }
+    },
+    "Price Monitoring": {
+      "expected": 30,
+      "v4": {
+        "correct": 11,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.36666666666666664
+      },
+      "combined": {
+        "correct": 11,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.36666666666666664
+      }
+    },
+    "Market Fees & Surcharges": {
+      "expected": 24,
+      "v4": {
+        "correct": 21,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.875
+      },
+      "combined": {
+        "correct": 21,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.875
+      }
+    },
+    "Resisting Authority": {
+      "expected": 30,
+      "v4": {
+        "correct": 19,
+        "false_positives": 2,
+        "precision": 0.9047619047619048,
+        "recall": 0.6333333333333333
+      },
+      "combined": {
+        "correct": 19,
+        "false_positives": 2,
+        "precision": 0.9047619047619048,
+        "recall": 0.6333333333333333
+      }
+    },
+    "General Penalties": {
+      "expected": 24,
+      "v4": {
+        "correct": 24,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "combined": {
+        "correct": 24,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    }
+  },
+  "changed_decisions": {
+    "validation_verified": [],
+    "test_regression_verified": [
+      {
+        "description": "Nakita sa Stall G-02 na habang nagbebenta si seller, nakasabit yung ID sa beam, way above eye level. Nakasulat sa rules na dapat naka-display ang assigned ID sa harap ng stall, eye level.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "record": "SYN-01-TEST-02:taglish",
+        "v4": [],
+        "combined": [
+          "Vendor Identification"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "vendor-id-stall": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "vendor_id_stall_match_unverified",
+              "evidence": "nakasulat sa rules na dapat naka display ang assigned id sa harap ng stall, eye level."
+            },
+            "added": [],
+            "removed": []
+          },
+          "vendor-id-display": {
+            "evidence": {
+              "state": "supported",
+              "reason": "id_placed_outside_required_eye_level",
+              "evidence": "nakita sa stall g 02 na habang nagbebenta si seller, nakasabit yung id sa beam, way above eye level. dapat naka display ang assigned id sa harap ng stall, eye level."
+            },
+            "added": [
+              "Vendor Identification"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nakita sa Stall A-11 na nagtitinda si seller sa stall na ito habang naiwan yung ID sa cart niya sa parking. Nakasulat sa rules na dapat naka-display ang assigned ID sa mismong stall kung saan nagtitinda ngayon.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "record": "SYN-01-TEST-06:taglish",
+        "v4": [],
+        "combined": [
+          "Vendor Identification"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "vendor-id-stall": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "vendor_id_stall_match_unverified",
+              "evidence": "nakasulat sa rules na dapat naka display ang assigned id sa mismong stall kung saan nagtitinda ngayon."
+            },
+            "added": [],
+            "removed": []
+          },
+          "vendor-id-display": {
+            "evidence": {
+              "state": "supported",
+              "reason": "id_left_on_cart_away_from_trading_stall",
+              "evidence": "nakita sa stall a 11 na nagtitinda si seller sa stall na ito habang naiwan yung id sa cart niya sa parking. dapat naka display ang assigned id sa mismong stall kung saan nagtitinda ngayon."
+            },
+            "added": [
+              "Vendor Identification"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nakita sa Stall D-21 na ibinalik ng may-puwesto ang stock sa saradong puwesto at inookupahan ito. Nakasaad sa patakaran na bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-02:fil",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "nakita sa stall d 21 na ibinalik ng may puwesto ang stock sa saradong puwesto at inookupahan ito. nakasaad sa patakaran na bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "At Stall D-21, the stallholder moved stock back into the closed stall and was occupying it. Stalls in a row closed for structural repairs may not be occupied until the row reopens.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-02:en",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "at stall d 21, the stallholder moved stock back into the closed stall and was occupying it. stalls in a row closed for structural repairs may not be occupied until the row reopens."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "During ikot, napansin sa Stall D-21 na binalik ni stallholder yung stock sa saradong stall at ino-occupy. Bawal i-occupy ang stalls sa row na sarado for structural repairs hanggang mag-reopen.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-02:taglish",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "during ikot, napansin sa stall d 21 na binalik ni stallholder yung stock sa saradong stall at ino occupy. bawal i occupy ang stalls sa row na sarado for structural repairs hanggang mag reopen."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nakapaskil na patakaran: bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito. Sa inspeksyon sa Stall H-20, inookupahan ng may-puwesto ang puwesto sa saradong hanay habang may repair.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-03:fil",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "sa inspeksyon sa stall h 20, inookupahan ng may puwesto ang puwesto sa saradong hanay habang may repair. nakapaskil na patakaran bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Rule in force: stalls in a row closed for structural repairs may not be occupied until the row reopens. Stall H-20: the stallholder was occupying the stall in the closed row during the repairs.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-03:en",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "stall h 20 the stallholder was occupying the stall in the closed row during the repairs. rule in force stalls in a row closed for structural repairs may not be occupied until the row reopens."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Rule: bawal i-occupy ang stalls sa row na sarado for structural repairs hanggang mag-reopen. Stall H-20: ino-occupy ni stallholder yung stall sa closed row habang may repairs.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-03:taglish",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "stall h 20 ino occupy ni stallholder yung stall sa closed row habang may repairs. rule bawal i occupy ang stalls sa row na sarado for structural repairs hanggang mag reopen."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "St. F-37 — patakaran: bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito / nagtatrabaho ang tindero sa loob ng saradong puwesto sa tabi ng nakatukod na kisame.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-04:fil",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "nagtatrabaho ang tindero sa loob ng saradong puwesto sa tabi ng nakatukod na kisame. st. f 37 patakaran bawal okupahan ang mga puwesto sa hanay na isinara para sa structural repair hanggang muling buksan ito"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "St. F-37 — rule: stalls in a row closed for structural repairs may not be occupied until the row reopens / the seller was working inside the closed stall next to the propped ceiling.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-04:en",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "the seller was working inside the closed stall next to the propped ceiling. st. f 37 rule stalls in a row closed for structural repairs may not be occupied until the row reopens"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "St. F-37; nagwo-work si seller sa loob ng saradong stall katabi ng nakatukod na ceiling; req: bawal i-occupy ang stalls sa row na sarado for structural repairs hanggang mag-reopen.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "record": "SYN-06-TEST-04:taglish",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "nagwo work si seller sa loob ng saradong stall katabi ng nakatukod na ceiling req bawal i occupy ang stalls sa row na sarado for structural repairs hanggang mag reopen."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Habang nag-iikot, napansin sa Seksyon C na nagbaba ang isang tindera ng mga kahon ng prutas mula sa kanyang van sa gilid ng kalsada. Kailangang sa itinakdang loading bay ibaba ang delivery ng tindero at hindi sa gilid ng kalsada.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-02:fil",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "loading_outside_required_bay",
+              "evidence": "habang nag iikot, napansin sa seksyon c na nagbaba ang isang tindera ng mga kahon ng prutas mula sa kanyang van sa gilid ng kalsada. kailangang sa itinakdang loading bay ibaba ang delivery ng tindero at hindi sa gilid ng kalsada."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "During ikot, napansin sa Section C na nag-unload yung vendor ng crates ng prutas from van niya sa street curb. Dapat sa designated loading bay i-unload ang vendor deliveries, hindi sa street curb.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-02:taglish",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "loading_outside_required_bay",
+              "evidence": "during ikot, napansin sa section c na nag unload yung vendor ng crates ng prutas from van niya sa street curb. dapat sa designated loading bay i unload ang vendor deliveries, hindi sa street curb."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nakita sa Seksyon C na naka-idle sa bay ang refrigerated van ng isang tindero na bukas ang makina. Nakasaad sa patakaran na kailangang patayin ang makina ng sasakyang naghihintay sa loading bay.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-06:fil",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "nakita sa seksyon c na naka idle sa bay ang refrigerated van ng isang tindero na bukas ang makina. nakasaad sa patakaran na kailangang patayin ang makina ng sasakyang naghihintay sa loading bay."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "At Section C, a vendor's refrigerated van idled at the bay with its engine on. Vehicles waiting at the loading bay must switch off their engines.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-06:en",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "at section c, a vendor s refrigerated van idled at the bay with its engine on. vehicles waiting at the loading bay must switch off their engines."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nakita sa Section C na naka-idle sa bay yung ref van ng vendor na naka-on ang engine. Nakasulat sa rules na dapat naka-off ang engine ng vehicles na naghihintay sa loading bay.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-06:taglish",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "nakita sa section c na naka idle sa bay yung ref van ng vendor na naka on ang engine. nakasulat sa rules na dapat naka off ang engine ng vehicles na naghihintay sa loading bay."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nakapaskil na patakaran: kailangang patayin ang makina ng sasakyang naghihintay sa loading bay. Sa inspeksyon sa Seksyon C, naghintay sa loading bay ang mga trak ng dalawang tindero na tumatakbo ang makina.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-07:fil",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "sa inspeksyon sa seksyon c, naghintay sa loading bay ang mga trak ng dalawang tindero na tumatakbo ang makina. nakapaskil na patakaran kailangang patayin ang makina ng sasakyang naghihintay sa loading bay."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Posted rule: dapat naka-off ang engine ng vehicles na naghihintay sa loading bay. Pag-inspect sa Section C, nag-antay sa loading bay yung trucks ng dalawang vendors na naka-on ang engine.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-07:taglish",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "pag inspect sa section c, nag antay sa loading bay yung trucks ng dalawang vendors na naka on ang engine. posted rule dapat naka off ang engine ng vehicles na naghihintay sa loading bay."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Seksyon B. Patakaran: kailangang patayin ang makina ng sasakyang naghihintay sa loading bay. Obs: pinaandar nang naka-idle ng may-puwesto ang kanyang pickup sa bay habang kumakain.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-08:fil",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "obs pinaandar nang naka idle ng may puwesto ang kanyang pickup sa bay habang kumakain. patakaran kailangang patayin ang makina ng sasakyang naghihintay sa loading bay."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Section B — rule: vehicles waiting at the loading bay must switch off their engines / the stallholder idled his pickup at the bay while eating.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "record": "SYN-18-TEST-08:en",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "the stallholder idled his pickup at the bay while eating. section b rule vehicles waiting at the loading bay must switch off their engines"
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      }
+    ],
+    "challenge_verified": [],
+    "fresh_matched": [
+      {
+        "description": "The vendor hosted a magic show. The event permit was for a cooking demo only.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Entertainment Activities"
+        ],
+        "language": "en",
+        "record": "event-approval:en-scope:supported",
+        "v4": [],
+        "combined": [
+          "Entertainment Activities"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "supported",
+              "reason": "approval_for_different_event",
+              "evidence": "the vendor hosted a magic show.; the event permit was for a cooking demo only."
+            },
+            "added": [
+              "Entertainment Activities"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "The vendor hosted a magic show. The event permit was for that magic show.",
+        "expected_decision": "clear",
+        "expected_codes": [],
+        "language": "en",
+        "record": "event-approval:en-scope:compliant",
+        "v4": [
+          "Entertainment Activities"
+        ],
+        "combined": [],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "compliant",
+              "reason": "within_documented_approval",
+              "evidence": "the vendor hosted a magic show.; the event permit was for that magic show."
+            },
+            "added": [],
+            "removed": [
+              "Entertainment Activities"
+            ]
+          }
+        }
+      },
+      {
+        "description": "Vendor held a puppet show on Nov 18. Permit valid on Nov 12 and Nov 15 only.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Entertainment Activities"
+        ],
+        "language": "en",
+        "record": "event-approval:en-dates:supported",
+        "v4": [],
+        "combined": [
+          "Entertainment Activities"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "supported",
+              "reason": "outside_approved_dates",
+              "evidence": "vendor held a puppet show on nov 18.; permit valid on nov 12 and nov 15 only."
+            },
+            "added": [
+              "Entertainment Activities"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Vendor held a concert on Friday. Active standing permit covers concerts every Saturday.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Entertainment Activities"
+        ],
+        "language": "en",
+        "record": "event-approval:en-standing:supported",
+        "v4": [],
+        "combined": [
+          "Entertainment Activities"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "supported",
+              "reason": "outside_approved_dates",
+              "evidence": "vendor held a concert on friday.; active standing permit covers concerts every saturday."
+            },
+            "added": [
+              "Entertainment Activities"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nagdaos ng konsiyerto ang tindero. Pahintulot para sa demo sa pagluluto lamang.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Entertainment Activities"
+        ],
+        "language": "fil",
+        "record": "event-approval:fil-scope:supported",
+        "v4": [],
+        "combined": [
+          "Entertainment Activities"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "supported",
+              "reason": "approval_for_different_event",
+              "evidence": "nagdaos ng konsiyerto ang tindero.; pahintulot para sa demo sa pagluluto lamang."
+            },
+            "added": [
+              "Entertainment Activities"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Idinaos ng tindera ang palabas ng mahika noong Agosto 17. Para lamang sa Agosto 16 ang pahintulot.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Entertainment Activities"
+        ],
+        "language": "fil",
+        "record": "event-approval:fil-dates:supported",
+        "v4": [],
+        "combined": [
+          "Entertainment Activities"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "supported",
+              "reason": "outside_approved_dates",
+              "evidence": "idinaos ng tindera ang palabas ng mahika noong agosto 17.; para lamang sa agosto 16 ang pahintulot."
+            },
+            "added": [
+              "Entertainment Activities"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nagdaos ng palabas ng mahika ang tindera. Pahintulot na may bisa para lang sa bingo at bunutan.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Entertainment Activities"
+        ],
+        "language": "fil",
+        "record": "event-approval:fil-standing:supported",
+        "v4": [],
+        "combined": [
+          "Entertainment Activities"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "supported",
+              "reason": "approval_for_different_event",
+              "evidence": "nagdaos ng palabas ng mahika ang tindera.; pahintulot na may bisa para lang sa bingo at bunutan."
+            },
+            "added": [
+              "Entertainment Activities"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Ginamit ni vendor yung dance show approval para magdaos ng dance show.",
+        "expected_decision": "clear",
+        "expected_codes": [],
+        "language": "taglish",
+        "record": "event-approval:taglish-scope:compliant",
+        "v4": [
+          "Entertainment Activities"
+        ],
+        "combined": [],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "compliant",
+              "reason": "within_documented_approval",
+              "evidence": "ginamit ni vendor yung dance show approval para magdaos ng dance show."
+            },
+            "added": [],
+            "removed": [
+              "Entertainment Activities"
+            ]
+          }
+        }
+      },
+      {
+        "description": "Nagdaos si vendor ng dance show. May approval pero di na-check kung para saan.",
+        "expected_decision": "abstain",
+        "expected_codes": [],
+        "language": "taglish",
+        "record": "event-approval:taglish-scope:insufficient",
+        "v4": [
+          "Entertainment Activities"
+        ],
+        "combined": [],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "no_verified_event_approval_pair",
+              "evidence": "nagdaos si vendor ng dance show. may approval pero di na check kung para saan."
+            },
+            "added": [],
+            "removed": [
+              "Entertainment Activities"
+            ]
+          }
+        }
+      },
+      {
+        "description": "Vendor held a karaoke contest nung Nov 20. Permit valid from Nov 16 to Nov 20.",
+        "expected_decision": "clear",
+        "expected_codes": [],
+        "language": "taglish",
+        "record": "event-approval:taglish-dates:compliant",
+        "v4": [
+          "Entertainment Activities"
+        ],
+        "combined": [],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "compliant",
+              "reason": "within_documented_approval",
+              "evidence": "vendor held a karaoke contest nung nov 20.; permit valid from nov 16 to nov 20."
+            },
+            "added": [],
+            "removed": [
+              "Entertainment Activities"
+            ]
+          }
+        }
+      },
+      {
+        "description": "Vendor held a karaoke contest nung Nov 21. Permit di pa makita, walang verified dates.",
+        "expected_decision": "abstain",
+        "expected_codes": [],
+        "language": "taglish",
+        "record": "event-approval:taglish-dates:insufficient",
+        "v4": [
+          "Entertainment Activities"
+        ],
+        "combined": [],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "no_verified_event_approval_pair",
+              "evidence": "vendor held a karaoke contest nung nov 21. permit di pa makita, walang verified dates."
+            },
+            "added": [],
+            "removed": [
+              "Entertainment Activities"
+            ]
+          }
+        }
+      },
+      {
+        "description": "Nagdaos ng bingo si vendor nung Dis 2. Valid standing permit covers bingo from Nob 1 to Nob 30.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Entertainment Activities"
+        ],
+        "language": "taglish",
+        "record": "event-approval:taglish-standing:supported",
+        "v4": [],
+        "combined": [
+          "Entertainment Activities"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "event-approval": {
+            "evidence": {
+              "state": "supported",
+              "reason": "outside_approved_dates",
+              "evidence": "nagdaos ng bingo si vendor nung dis 2.; valid standing permit covers bingo from nob 1 to nob 30."
+            },
+            "added": [
+              "Entertainment Activities"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Vendor ID posted at Stall D-4, but it was assigned to Stall D-8.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "language": "en",
+        "record": "vendor-id-stall:en-assignment:supported",
+        "v4": [],
+        "combined": [
+          "Vendor Identification"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "vendor-id-stall": {
+            "evidence": {
+              "state": "supported",
+              "reason": "displayed_id_assigned_to_different_stall",
+              "evidence": "vendor id posted at stall d 4, but it was assigned to stall d 8."
+            },
+            "added": [
+              "Vendor Identification"
+            ],
+            "removed": []
+          },
+          "vendor-id-display": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "vendor_id_placement_or_visibility_unverified",
+              "evidence": "vendor id posted at stall d 4, but it was assigned to stall d 8."
+            },
+            "added": [],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Selling at Stall B-2, her ID posted at Stall B-7. ID must be posted where currently trading.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "language": "en",
+        "record": "vendor-id-stall:en-display:supported",
+        "v4": [],
+        "combined": [
+          "Vendor Identification"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "vendor-id-stall": {
+            "evidence": {
+              "state": "supported",
+              "reason": "seller_id_displayed_away_from_trading_stall",
+              "evidence": "selling at stall b 2, her id posted at stall b 7. id must be posted where currently trading."
+            },
+            "added": [
+              "Vendor Identification"
+            ],
+            "removed": []
+          },
+          "vendor-id-display": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "vendor_id_placement_or_visibility_unverified",
+              "evidence": "selling at stall b 2, her id posted at stall b 7."
+            },
+            "added": [],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Vendor selling at Stall P-3. His ID posted here but it was assigned to Stall P-9.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "language": "taglish",
+        "record": "vendor-id-stall:taglish-display:supported",
+        "v4": [],
+        "combined": [
+          "Vendor Identification"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "vendor-id-stall": {
+            "evidence": {
+              "state": "supported",
+              "reason": "displayed_id_assigned_to_different_stall",
+              "evidence": "vendor selling at stall p 3. his id posted here but it was assigned to stall p 9."
+            },
+            "added": [
+              "Vendor Identification"
+            ],
+            "removed": []
+          },
+          "vendor-id-display": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "vendor_id_placement_or_visibility_unverified",
+              "evidence": "his id posted here but it was assigned to stall p 9."
+            },
+            "added": [],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Seller trading, ID hung above eye level. ID must be posted at eye level.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "language": "en",
+        "record": "vendor-id-display:en-height:supported",
+        "v4": [],
+        "combined": [
+          "Vendor Identification"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "vendor-id-stall": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "vendor_id_stall_match_unverified",
+              "evidence": "seller trading, id hung above eye level."
+            },
+            "added": [],
+            "removed": []
+          },
+          "vendor-id-display": {
+            "evidence": {
+              "state": "supported",
+              "reason": "id_placed_outside_required_eye_level",
+              "evidence": "seller trading, id hung above eye level. must be posted at eye level."
+            },
+            "added": [
+              "Vendor Identification"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Seller selling, ID posted at eye level but the photo was covered. ID must be displayed with the photo legible.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "language": "en",
+        "record": "vendor-id-display:en-visibility:supported",
+        "v4": [],
+        "combined": [
+          "Vendor Identification"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "vendor-id-stall": {
+            "evidence": {
+              "state": "insufficient",
+              "reason": "vendor_id_stall_match_unverified",
+              "evidence": "seller selling, id posted at eye level but the photo was covered."
+            },
+            "added": [],
+            "removed": []
+          },
+          "vendor-id-display": {
+            "evidence": {
+              "state": "supported",
+              "reason": "id_visibility_requirement_breached",
+              "evidence": "seller selling, id posted at eye level but the photo was covered. must be displayed with the photo legible."
+            },
+            "added": [
+              "Vendor Identification"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nagtitinda si seller, ID naka-clip way above eye level. Dapat naka-display ang ID at eye level.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Vendor Identification"
+        ],
+        "language": "taglish",
+        "record": "vendor-id-display:taglish-height:supported",
+        "v4": [],
+        "combined": [
+          "Vendor Identification"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "vendor-id-display": {
+            "evidence": {
+              "state": "supported",
+              "reason": "id_placed_outside_required_eye_level",
+              "evidence": "nagtitinda si seller, id naka clip way above eye level. dapat naka display ang id at eye level."
+            },
+            "added": [
+              "Vendor Identification"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Opening log: stall opened 2 days last week. Stall must open at least 4 days per week.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "en",
+        "record": "stall-operating-days:en-weekly:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-operating-days": {
+            "evidence": {
+              "state": "supported",
+              "reason": "below_stated_minimum",
+              "evidence": "opening log stall opened 2 days last week. stall must open at least 4 days per week.",
+              "recorded_days": 2,
+              "minimum_days": 4,
+              "period": "week",
+              "basis": "stall_operation"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Store opened 14 days last month per opening log. Lease minimum: 18 operating days per month.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "en",
+        "record": "stall-operating-days:en-monthly:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-operating-days": {
+            "evidence": {
+              "state": "supported",
+              "reason": "below_stated_minimum",
+              "evidence": "store opened 14 days last month per opening log. lease minimum 18 operating days per month.",
+              "recorded_days": 14,
+              "minimum_days": 18,
+              "period": "month",
+              "basis": "stall_operation"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Sa log, 2 araw bukas ang puwesto nakaraang linggo. Dapat bukas nang di bababa sa 4 na araw kada linggo.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "fil",
+        "record": "stall-operating-days:fil-weekly:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-operating-days": {
+            "evidence": {
+              "state": "supported",
+              "reason": "below_stated_minimum",
+              "evidence": "sa log, 2 araw bukas ang puwesto nakaraang linggo. dapat bukas nang di bababa sa 4 na araw kada linggo.",
+              "recorded_days": 2,
+              "minimum_days": 4,
+              "period": "week",
+              "basis": "stall_operation"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Sa log, dalawang araw nagtrabaho ang awardee nakaraang linggo. Dapat siya mismo, di bababa sa apat na araw kada linggo.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "fil",
+        "record": "stall-operating-days:fil-awardee:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-operating-days": {
+            "evidence": {
+              "state": "supported",
+              "reason": "below_stated_minimum",
+              "evidence": "sa log, dalawang araw nagtrabaho ang awardee nakaraang linggo. dapat siya mismo, di bababa sa apat na araw kada linggo.",
+              "recorded_days": 2,
+              "minimum_days": 4,
+              "period": "week",
+              "basis": "personal_operation"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Sa log, 14 na araw bukas ang tindahan nakaraang buwan. Dapat bukas nang di bababa sa 20 araw kada buwan.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "fil",
+        "record": "stall-operating-days:fil-monthly:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-operating-days": {
+            "evidence": {
+              "state": "supported",
+              "reason": "below_stated_minimum",
+              "evidence": "sa log, 14 na araw bukas ang tindahan nakaraang buwan. dapat bukas nang di bababa sa 20 araw kada buwan.",
+              "recorded_days": 14,
+              "minimum_days": 20,
+              "period": "month",
+              "basis": "stall_operation"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Sa opening log, 3 days open last week yung stall. Dapat open at least 5 days per week.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "taglish",
+        "record": "stall-operating-days:taglish-weekly:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-operating-days": {
+            "evidence": {
+              "state": "supported",
+              "reason": "below_stated_minimum",
+              "evidence": "sa opening log, 3 days open last week yung stall. dapat open at least 5 days per week.",
+              "recorded_days": 3,
+              "minimum_days": 5,
+              "period": "week",
+              "basis": "stall_operation"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Log shows 12 days lang open last month yung stall. Minimum 18 operating days per month per lease.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "taglish",
+        "record": "stall-operating-days:taglish-monthly:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-operating-days": {
+            "evidence": {
+              "state": "supported",
+              "reason": "below_stated_minimum",
+              "evidence": "log shows 12 days lang open last month yung stall. minimum 18 operating days per month per lease.",
+              "recorded_days": 12,
+              "minimum_days": 18,
+              "period": "month",
+              "basis": "stall_operation"
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Market office closed Stall A-4 for repairs, no entry. Vendor entered Stall A-4.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "en",
+        "record": "stall-repair-closure:en-active:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "vendor entered stall a 4. market office closed stall a 4 for repairs, no entry."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Repair notice: Stall J-2 closed from May 2 through May 5, no selling. Vendor sold in Stall J-2 on May 4.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "en",
+        "record": "stall-repair-closure:en-dates:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "vendor sold in stall j 2 on may 4. repair notice stall j 2 closed from may 2 through may 5, no selling."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "No occupancy in the closed row during repairs. Vendor worked inside a closed stall.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "en",
+        "record": "stall-repair-closure:en-row:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "vendor worked inside a closed stall. no occupancy in the closed row during repairs."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Isinara ng admin ang puwesto B-2 para sa repair, bawal pumasok. Pumasok ang tindero sa loob ng puwesto B-2.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "fil",
+        "record": "stall-repair-closure:fil-active:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "pumasok ang tindero sa loob ng puwesto b 2. isinara ng admin ang puwesto b 2 para sa repair, bawal pumasok."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Utos ng admin: sarado ang puwesto Hun 5 hanggang Hun 9, bawal pasok. Hun 7 pumasok doon ang tindera.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "fil",
+        "record": "stall-repair-closure:fil-dates:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "hun 7 pumasok doon ang tindera. utos ng admin sarado ang puwesto hun 5 hanggang hun 9, bawal pasok."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Bawal okupahan ang saradong hanay habang may repair. Inookupahan ng tindero ang puwesto sa saradong hanay.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "fil",
+        "record": "stall-repair-closure:fil-row:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "inookupahan ng tindero ang puwesto sa saradong hanay. bawal okupahan ang saradong hanay habang may repair."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Market office: closed stall J-6 for repair, no selling. Nagbenta si vendor sa loob ng stall J-6.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "taglish",
+        "record": "stall-repair-closure:taglish-active:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "nagbenta si vendor sa loob ng stall j 6. market office closed stall j 6 for repair, no selling."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Repair notice: Stall F-8 closed from Nov 3 to Nov 5, no entry. Pumasok si vendor sa Stall F-8 Nov 4.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "taglish",
+        "record": "stall-repair-closure:taglish-dates:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "pumasok si vendor sa stall f 8 nov 4. repair notice stall f 8 closed from nov 3 to nov 5, no entry."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Bawal i-occupy ang closed row habang may repairs. Nagwo-work si seller sa loob ng closed stall.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Stall Occupancy"
+        ],
+        "language": "taglish",
+        "record": "stall-repair-closure:taglish-row:supported",
+        "v4": [],
+        "combined": [
+          "Stall Occupancy"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "stall-repair-closure": {
+            "evidence": {
+              "state": "supported",
+              "reason": "prohibited_use_during_official_closure",
+              "evidence": "nagwo work si seller sa loob ng closed stall. bawal i occupy ang closed row habang may repairs."
+            },
+            "added": [
+              "Stall Occupancy"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Delivery van loaded boxes in the bike lane. No loading in the bike lane.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "language": "en",
+        "record": "traffic-loading:en-lane:supported",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "loading_in_prohibited_location",
+              "evidence": "delivery van loaded boxes in the bike lane. no loading in the bike lane."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Nagkarga ang trak sa bangketa. Bawal magkarga sa bangketa.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "language": "fil",
+        "record": "traffic-loading:fil-sign:supported",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "loading_in_prohibited_location",
+              "evidence": "nagkarga ang trak sa bangketa. bawal magkarga sa bangketa."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Tumatakbo ang makina ng trak habang naghihintay sa loading bay. Kailangang patayin ang makina sa loading bay.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "language": "fil",
+        "record": "traffic-loading:fil-engine:supported",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "tumatakbo ang makina ng trak habang naghihintay sa loading bay. kailangang patayin ang makina sa loading bay."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Truck naka-idle sa bay, walang clearance. No idling sa bay except with clearance.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "language": "taglish",
+        "record": "traffic-loading:taglish-exception:supported",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "engine_running_in_engine_off_zone",
+              "evidence": "truck naka idle sa bay, walang clearance. no idling sa bay except with clearance."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      },
+      {
+        "description": "Van nag-unload sa fire lane. No loading or unloading sa fire lane.",
+        "expected_decision": "accept",
+        "expected_codes": [
+          "Traffic"
+        ],
+        "language": "taglish",
+        "record": "traffic-loading:taglish-fire-lane:supported",
+        "v4": [],
+        "combined": [
+          "Traffic"
+        ],
+        "order_conflict": false,
+        "opposite_evidence_states": [],
+        "checks": {
+          "traffic-loading": {
+            "evidence": {
+              "state": "supported",
+              "reason": "loading_in_prohibited_location",
+              "evidence": "van nag unload sa fire lane. no loading or unloading sa fire lane."
+            },
+            "added": [
+              "Traffic"
+            ],
+            "removed": []
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1992 @@
+{
+  "dataset": "evaluation\\multi-incident-33\\challenge.jsonl",
+  "split": "test",
+  "model": "C:\\Users\\admin\\OneDrive\\Desktop\\New Training Model\\models\\setfit-e5-synthetic-v2",
+  "purpose": "development_regression",
+  "method": "Only description is passed to inference. Labels, language and scenarios are evaluation metadata. Frozen model probabilities and thresholds are reused through the normal classifier and ticket analysis.",
+  "interpretation": "Standalone labeled benchmark. Dataset provenance must be assessed separately.",
+  "provenance": {
+    "split_sha256": "ab0e17c9dbd119a8a1eeacd316427789080a25596f57c0be30a2e4b3a5d5175d",
+    "thresholds_sha256": "8e29338f303826dda10a23528a0a9587ee09d80fb91da6fa11554c56d6d88a14",
+    "model_sha256": "7ce3f8628c4aa33220265b1ae2c2d58d3d2e2f4fe8b5dd655677b1358c3bf7fc",
+    "head_sha256": "3089627b6f882a10970db3a09a2ffaf3e66c0aee7314a376e7eef3a37ba3daa4",
+    "codes": [
+      "Vendor Identification",
+      "Permit & Licensing",
+      "Sanitation",
+      "WeightMeasures",
+      "Lighting & Energy",
+      "Stall Occupancy",
+      "Stall Management",
+      "Stall Construction",
+      "Utilities",
+      "Stall Rental",
+      "Illegal Vendor",
+      "Public Order",
+      "Liquor",
+      "Market Conduct",
+      "Obstruction",
+      "DressCode",
+      "Bladed Instruments",
+      "Traffic",
+      "Porter Regulation",
+      "Promotions",
+      "Advertising",
+      "Signage & Streamers",
+      "Entertainment Activities",
+      "Lighting Facilities",
+      "Market Rules",
+      "Price Monitoring",
+      "Market Fees & Surcharges",
+      "Resisting Authority",
+      "General Penalties"
+    ],
+    "inference_artifacts_sha256": {
+      "config.json": "533ccc63e3d75f47f9c9beb603286bcb686cb9faeb870063f6398af7b2878f43",
+      "config_sentence_transformers.json": "ff6ee575ab642e4d633fb9f50ec9419598bc0e24c904c9ac25684685d0050ac7",
+      "config_setfit.json": "262ac77a490cbd2d6a89ac11a4a2c20d43c5e74069dd7762c77cc363af35715e",
+      "modules.json": "e7989e94b5b809d895a9521b708312c1ccd333e183effebaf3838908da2acd53",
+      "sentence_bert_config.json": "0d36864e76a49566363ccbe0eca352b0d532868fa3892de8d78270bc6e652615",
+      "special_tokens_map.json": "edd71739099fe63dc2f70815facad5253c70ded0e0d4df49ef883ce4511af365",
+      "tokenizer.json": "ef04f2b385d1514f500e779207ace0f53e30895ce37563179e29f4022d28ca38",
+      "tokenizer_config.json": "df5ad8bcc8e0dbc840a54817cf051af86c7bb108d9e35c4ccdcdebbccfdd11d9",
+      "1_Pooling\\config.json": "64230a97629225324725c35e1a1cbd15025a9f656eafaaeb86cf8ec6a4ecb4d8"
+    },
+    "scorer_sha256": "d5266515148839a9ac7de27eaf38d4aec1cf0fc5f67939dd68b27e11ae7dca69",
+    "inference_layout_sha256": "927a7ad9885a88ec8e7d2617e20235777ac1c844b96a49e18cdff4d5078db0a1"
+  },
+  "source_sha256": {
+    "src/engine.py": "1a833a5cec5d80d3bd1dfffa43f26cf8fed353aebd58585130b9062ee65e180f",
+    "src/description_evidence.py": "0cda2375d721a10685cb61bc45bf64f0671176cb708ce51016c89b5493714855",
+    "src/incidents.py": "c9a292449dfde5647e2f81e13163e48bddc7af2fa4f644a0bd142cdea58419d7",
+    "src/breach_evidence.py": "9012f5077aed33e97a4cf572c90e27c2e3a0717329beb543fd405df7e0a1aa12",
+    "src/setfit_classifier.py": "d5266515148839a9ac7de27eaf38d4aec1cf0fc5f67939dd68b27e11ae7dca69",
+    "src/reweigh.py": "f3f8aa20ae3ed438a1385da6ca1b70a03f37af034a117e62b4d5f5f7d08bfb34",
+    "src/llm.py": "52cc8b95504f7a6730701263aa012a0e72acfc1a60c35dfc599c2187a525d558",
+    "config/evidence_policy.json": "180dc1dd2fbf9b65115f2e5ed3543861a31774af6ec1c1e439b166ecb98463c0",
+    "config/lexicon.csv": "f6f9d1d1d9b311e31596c55a31a46743039a6957e0327e3eec50189dba530ac9",
+    "config/taxonomy.csv": "247009eb8fdd983f0c23f7ce42defc0d5864b792880a7494d1c0610b7d983f51"
+  },
+  "metrics": {
+    "rows": 49,
+    "known_rows": 41,
+    "micro_precision": 1.0,
+    "micro_recall": 0.7230769230769231,
+    "micro_f1": 0.8392857142857143,
+    "macro_f1": 0.5409961685823754,
+    "exact_label_set_matches": 28,
+    "clear_rows": 6,
+    "clear_rows_with_actions": 0,
+    "unclear_rows": 8,
+    "unclear_rows_with_actions": 0,
+    "pair_rows": 30,
+    "pair_rows_both_correct": 17,
+    "per_category": {
+      "Vendor Identification": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Permit & Licensing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Sanitation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 5,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "WeightMeasures": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Lighting & Energy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Stall Occupancy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Stall Management": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Stall Construction": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 2,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Utilities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Stall Rental": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Illegal Vendor": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Public Order": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "support": 3,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Liquor": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 2,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Market Conduct": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "support": 5,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Obstruction": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 5,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "DressCode": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 2,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Bladed Instruments": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Traffic": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Porter Regulation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "Promotions": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Advertising": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Signage & Streamers": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Entertainment Activities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Lighting Facilities": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Market Rules": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Price Monitoring": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 5,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Market Fees & Surcharges": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Resisting Authority": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "General Penalties": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "false_positives": 0,
+        "false_negatives": 1
+      }
+    }
+  },
+  "by_language": {
+    "en": {
+      "rows": 33,
+      "known_rows": 28,
+      "micro_precision": 1.0,
+      "micro_recall": 0.6590909090909091,
+      "micro_f1": 0.7945205479452054,
+      "macro_f1": 0.5057471264367815,
+      "exact_label_set_matches": 18,
+      "clear_rows": 4,
+      "clear_rows_with_actions": 0,
+      "unclear_rows": 5,
+      "unclear_rows_with_actions": 0,
+      "pair_rows": 20,
+      "pair_rows_both_correct": 10,
+      "per_category": {
+        "Vendor Identification": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Permit & Licensing": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Sanitation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "WeightMeasures": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Lighting & Energy": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Stall Occupancy": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Stall Management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Construction": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Utilities": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Rental": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Illegal Vendor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Public Order": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Liquor": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Market Conduct": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Obstruction": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "DressCode": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Bladed Instruments": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Traffic": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Porter Regulation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2,
+          "false_positives": 0,
+          "false_negatives": 2
+        },
+        "Promotions": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Advertising": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Signage & Streamers": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Entertainment Activities": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Lighting Facilities": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Market Rules": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Price Monitoring": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Fees & Surcharges": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Resisting Authority": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "General Penalties": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        }
+      }
+    },
+    "fil": {
+      "rows": 8,
+      "known_rows": 6,
+      "micro_precision": 1.0,
+      "micro_recall": 0.7,
+      "micro_f1": 0.8235294117647058,
+      "macro_f1": 0.16091954022988503,
+      "exact_label_set_matches": 3,
+      "clear_rows": 1,
+      "clear_rows_with_actions": 0,
+      "unclear_rows": 2,
+      "unclear_rows_with_actions": 0,
+      "pair_rows": 5,
+      "pair_rows_both_correct": 2,
+      "per_category": {
+        "Vendor Identification": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Permit & Licensing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Sanitation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "WeightMeasures": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Lighting & Energy": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Occupancy": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Management": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Construction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Utilities": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Rental": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Illegal Vendor": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Public Order": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Liquor": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Conduct": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Obstruction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "DressCode": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Bladed Instruments": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 1
+        },
+        "Traffic": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Porter Regulation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Promotions": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Advertising": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Signage & Streamers": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Entertainment Activities": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Lighting Facilities": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Rules": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Price Monitoring": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Fees & Surcharges": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Resisting Authority": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "General Penalties": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    "taglish": {
+      "rows": 8,
+      "known_rows": 7,
+      "micro_precision": 1.0,
+      "micro_recall": 1.0,
+      "micro_f1": 1.0,
+      "macro_f1": 0.3103448275862069,
+      "exact_label_set_matches": 7,
+      "clear_rows": 1,
+      "clear_rows_with_actions": 0,
+      "unclear_rows": 1,
+      "unclear_rows_with_actions": 0,
+      "pair_rows": 5,
+      "pair_rows_both_correct": 5,
+      "per_category": {
+        "Vendor Identification": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Permit & Licensing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Sanitation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "WeightMeasures": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Lighting & Energy": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Occupancy": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Management": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Construction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Utilities": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Stall Rental": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Illegal Vendor": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Public Order": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Liquor": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Conduct": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Obstruction": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "DressCode": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Bladed Instruments": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Traffic": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Porter Regulation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Promotions": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Advertising": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Signage & Streamers": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Entertainment Activities": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Lighting Facilities": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Rules": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Price Monitoring": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Market Fees & Surcharges": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "Resisting Authority": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "General Penalties": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    }
+  },
+  "decisions": [
+    {
+      "scenario_id": "MULTI-NEW-001",
+      "language": "en",
+      "description": "At the vegetable row, the seller has no current vendor ID. Separately, the helper left boxes on the stairs leading to the upper level.",
+      "expected_codes": [
+        "Vendor Identification",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule",
+        "Obstruction": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-002",
+      "language": "fil",
+      "description": "Ibinenentang 2 kilo ang hipon pero tinimbang na 1840 gramo. Dumura ang katulong sa tabi ng pagkain na nakahanda sa mesa.",
+      "expected_codes": [
+        "WeightMeasures",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule",
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-003",
+      "language": "taglish",
+      "description": "Binunot ni seller yung freezer ng katabing vendor habang wala siya. Bukod dito, walang SRP card sa display ng bigas.",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Conduct": "rule",
+        "Price Monitoring": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-004",
+      "language": "en",
+      "description": "The operator had not reported a roof leak for three days. In addition, the operator tied the shared faucet open with wire and left it running.",
+      "expected_codes": [
+        "Stall Management",
+        "Utilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Management": "rule",
+        "Utilities": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-005",
+      "language": "en",
+      "description": "The poultry dealer's meat dealer license names a different stall. Separately, the seller's flyers told shoppers to avoid the named business across the aisle.",
+      "expected_codes": [
+        "Permit & Licensing",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "Permit & Licensing"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Permit & Licensing": "rule",
+        "Advertising": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-006",
+      "language": "en",
+      "description": "The lead seal on the merchant's scale was missing. The seller announced a buyer's overdue debt to the people in line.",
+      "expected_codes": [
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule",
+        "Market Conduct": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-007",
+      "language": "fil",
+      "description": "Lasing ang tindero at binasag niya ang isang bote. Natigil ang bentahan sa hanay. Walang vendor ID ang isa pang nagtitinda.",
+      "expected_codes": [
+        "Public Order",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ],
+      "missing_codes": [
+        "Public Order"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-008",
+      "language": "taglish",
+      "description": "Nag-stack si vendor ng crates sa rampa, kumitid kaya di makadaan yung wheelchair. May ipis sa counter na may nilutong ulam.",
+      "expected_codes": [
+        "Obstruction",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "rule",
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-009",
+      "language": "en",
+      "description": "Stallholders must remove stock from the shared cold room by 7 PM. The seller's tubs were still in the shared cold room at 8:20 PM. Also, the seller displayed no SRP card for corn.",
+      "expected_codes": [
+        "Stall Management",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Stall Management"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Management": "rule",
+        "Price Monitoring": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-010",
+      "language": "en",
+      "description": "The seller would not serve a buyer because of her religious attire. The seller also called the inspector posing as the administrator to cancel the inspection.",
+      "expected_codes": [
+        "Market Conduct",
+        "Resisting Authority"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Resisting Authority"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Conduct": "rule",
+        "Resisting Authority": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-011",
+      "language": "en",
+      "description": "The merchant used six bulbs despite the stall limit of two light points. Separately, the approved produce stall was being used as a private office despite the restriction to sales.",
+      "expected_codes": [
+        "Lighting & Energy",
+        "Stall Occupancy"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Lighting & Energy",
+        "Stall Occupancy"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-012",
+      "language": "en",
+      "description": "The stallholder failed to pay rent for four months despite a final demand. The stallholder also built a fixed storage wall without obtaining construction approval.",
+      "expected_codes": [
+        "Stall Rental",
+        "Stall Construction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Construction"
+      ],
+      "missing_codes": [
+        "Stall Rental"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Construction": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-013",
+      "language": "en",
+      "description": "A vendor sold eggs by the loading ramp with no vending authorization. A delivery truck drove the wrong way on the marked one-way service road.",
+      "expected_codes": [
+        "Illegal Vendor",
+        "Traffic"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Illegal Vendor"
+      ],
+      "missing_codes": [
+        "Traffic"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Illegal Vendor": "model"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-014",
+      "language": "en",
+      "description": "The vendor sold a glass of gin to a sixteen-year-old. During the same inspection, the food handler packed ready-to-eat meals with bare hands despite the disposable glove rule.",
+      "expected_codes": [
+        "Liquor",
+        "DressCode"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "DressCode",
+        "Liquor"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-015",
+      "language": "fil",
+      "description": "Nagbenta ng mga itak ang tindero kahit sa lisensiyadong hardware lang ito puwede. Bukod dito, naupo sa daanan ang mga tindero bilang protesta at tumigil ang bentahan.",
+      "expected_codes": [
+        "Bladed Instruments",
+        "Public Order"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Public Order"
+      ],
+      "missing_codes": [
+        "Bladed Instruments"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Public Order": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-016",
+      "language": "en",
+      "description": "A porter refused to show the required rate card before accepting the delivery. The stallholder has unpaid daily parking fees for five consecutive days.",
+      "expected_codes": [
+        "Porter Regulation",
+        "Market Fees & Surcharges"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Market Fees & Surcharges",
+        "Porter Regulation"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-017",
+      "language": "en",
+      "description": "The operator held the raffle a week ahead of the advertised date without notice. The operator fastened the sale banner to the handrail despite the ban on signs there.",
+      "expected_codes": [
+        "Promotions",
+        "Signage & Streamers"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "Promotions",
+        "Signage & Streamers"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-018",
+      "language": "en",
+      "description": "The event operator let 160 people into a performance approved for 60. The signboard backlight was burnt out and the lease requires the stallholder to maintain it.",
+      "expected_codes": [
+        "Entertainment Activities",
+        "Lighting Facilities"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Entertainment Activities"
+      ],
+      "missing_codes": [
+        "Lighting Facilities"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Entertainment Activities": "model"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-019",
+      "language": "en",
+      "description": "The vendor smoked behind the counter despite the posted ban. Separately, the market office record showed that the stall was trading while its suspension was in effect.",
+      "expected_codes": [
+        "Market Rules",
+        "General Penalties"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [],
+      "missing_codes": [
+        "General Penalties",
+        "Market Rules"
+      ],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-020",
+      "language": "taglish",
+      "description": "Sold as 3 m yung tela pero 265 cm ang measured sa tape. Separately, yung flyers ng seller told shoppers to avoid the named stall.",
+      "expected_codes": [
+        "WeightMeasures",
+        "Advertising"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Advertising",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule",
+        "Advertising": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-021",
+      "language": "en",
+      "description": "The vendor stacked crates against the ramp, narrowing it so a wheelchair could not pass. The operator had not reported a cracked partition as required.",
+      "expected_codes": [
+        "Obstruction",
+        "Stall Management"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Stall Management"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "rule",
+        "Stall Management": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-022",
+      "language": "fil",
+      "description": "Pinutol ang sealing wire ng timbangan ng tindero. Tinawag niyang kuripot ang mamimili sa post ng litrato nito.",
+      "expected_codes": [
+        "WeightMeasures",
+        "Market Conduct"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ],
+      "missing_codes": [
+        "Market Conduct"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-023",
+      "language": "en",
+      "description": "The cook sneezed over uncovered cooked food. The seller's business permit belongs to another owner.",
+      "expected_codes": [
+        "Sanitation",
+        "Permit & Licensing"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Permit & Licensing",
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "rule",
+        "Permit & Licensing": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-024",
+      "language": "taglish",
+      "description": "Tinali ni seller ang shared faucet para manatiling nakabukas. Hiwalay rito, walang SRP card sa tabi ng presyo ng asukal.",
+      "expected_codes": [
+        "Utilities",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring",
+        "Utilities"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Utilities": "rule",
+        "Price Monitoring": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-025",
+      "language": "en",
+      "description": "Intoxicated vendors threw bottles and nearby stalls closed. Separately, a helper left boxes on the stairs at the west end.",
+      "expected_codes": [
+        "Public Order",
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction",
+        "Public Order"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Public Order": "rule",
+        "Obstruction": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-026",
+      "language": "en",
+      "description": "The owner installed new fixed cabinets before approval was granted. The active vendor had no vendor ID.",
+      "expected_codes": [
+        "Stall Construction",
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ],
+      "missing_codes": [
+        "Stall Construction"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-027",
+      "language": "fil",
+      "description": "Naiwan sa shared cold room nang 9 PM ang kahon ng may-puwesto. Kailangang alisin ang stock mula sa shared cold room bago mag-8 PM. Binenta ang isda bilang 1 kilo pero tinimbang na 910 gramo.",
+      "expected_codes": [
+        "Stall Management",
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Stall Management",
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Stall Management": "rule",
+        "WeightMeasures": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-028",
+      "language": "taglish",
+      "description": "Walang gloves yung helper habang naglalagay ng lutong pagkain sa containers kahit required ito. Nagbenta rin ng beer by the glass yung stall kahit sealed take-out lang ang allowed.",
+      "expected_codes": [
+        "DressCode",
+        "Liquor"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "DressCode",
+        "Liquor"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "DressCode": "rule",
+        "Liquor": "model"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-029",
+      "language": "en",
+      "description": "The porter hid the required rate card and accepted a delivery. Separately, the seller kept an open can of kerosene on a shelf above the vegetables.",
+      "expected_codes": [
+        "Porter Regulation",
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ],
+      "missing_codes": [
+        "Porter Regulation"
+      ],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-030",
+      "language": "en",
+      "description": "The seller unplugged the neighboring vendor's freezer while the neighbor was away. At the seller's counter, no SRP card was displayed for basic goods.",
+      "expected_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Market Conduct",
+        "Price Monitoring"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Market Conduct": "rule",
+        "Price Monitoring": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-031",
+      "language": "en",
+      "description": "The seller has no vendor ID. The delivery van unloaded within the allowed window.",
+      "expected_codes": [
+        "Vendor Identification"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Vendor Identification"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Vendor Identification": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-032",
+      "language": "en",
+      "description": "The seller used a scale listed as condemned in the verification register. Someone said the helper left boxes on the stairs. This was not confirmed.",
+      "expected_codes": [
+        "WeightMeasures"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "WeightMeasures"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "WeightMeasures": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-033",
+      "language": "en",
+      "description": "The helper left boxes on the stairs at the market exit. The operator's renovation matched the approved plan.",
+      "expected_codes": [
+        "Obstruction"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Obstruction"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Obstruction": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-034",
+      "language": "en",
+      "description": "The cook spat beside the uncovered food display. The same stall's light was working.",
+      "expected_codes": [
+        "Sanitation"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Sanitation"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Sanitation": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-035",
+      "language": "taglish",
+      "description": "Walang SRP card sa display ng rice. Mukhang kulang daw yung timbang, pero wala pang reweigh.",
+      "expected_codes": [
+        "Price Monitoring"
+      ],
+      "expected_decision": "accept",
+      "predicted_codes": [
+        "Price Monitoring"
+      ],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "labeled",
+      "reason": "",
+      "sources": {
+        "Price Monitoring": "rule"
+      }
+    },
+    {
+      "scenario_id": "MULTI-NEW-036",
+      "language": "en",
+      "description": "The renovation matched the approved plan. The stall's light was working at the evening inspection.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-037",
+      "language": "en",
+      "description": "The vendor wore the required apron, cap and closed shoes. The delivery truck unloaded within the allowed window.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-038",
+      "language": "fil",
+      "description": "Gumagana ang sariling ilaw ng puwesto. Buong bayad ang nakasaad sa resibo ng market fee.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-039",
+      "language": "taglish",
+      "description": "Yung isda sold as 1 kg ay measured at 1000 g. Full payment ang nasa receipt ng market fee.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-040",
+      "language": "en",
+      "description": "No alcohol was seen at the eatery. The raffle had its approval number posted and the draw was public.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-041",
+      "language": "en",
+      "description": "Cloth sold as 2 m measured 200 cm on the reference tape. The renovation matched the approved plan.",
+      "expected_codes": [],
+      "expected_decision": "clear",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-042",
+      "language": "en",
+      "description": "A tip says the stall reopened during a suspension. No record has been checked.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "unconfirmed_followup",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-043",
+      "language": "en",
+      "description": "It is unclear whether the crates were left in the passage or picked up. The incident was not confirmed.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "unconfirmed_followup",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-044",
+      "language": "taglish",
+      "description": "Nagtanong si vendor kung overdue ang rent niya. Di na-check ang ledger.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "unconfirmed_followup",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-045",
+      "language": "fil",
+      "description": "Pakisuri ang timbangan. Hindi naitimbang muli ang isda at walang tiyak na binili.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-046",
+      "language": "en",
+      "description": "The fish weighed 920 g against a declared kilo, but the reference scale was faulty that morning.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "insufficient_description_evidence",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-047",
+      "language": "en",
+      "description": "A report said the cook spat beside the food display. This was not verified.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "unconfirmed_followup",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-048",
+      "language": "en",
+      "description": "An inspector asked whether a porter had a rate card and whether a delivery van blocked the aisle. Neither claim was confirmed.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "unconfirmed_followup",
+      "sources": {}
+    },
+    {
+      "scenario_id": "MULTI-NEW-049",
+      "language": "fil",
+      "description": "Baka lasing ang tindero at baka siya ang nagpatumba ng paninda. Hindi malinaw ang nangyari.",
+      "expected_codes": null,
+      "expected_decision": "abstain",
+      "predicted_codes": [],
+      "missing_codes": [],
+      "unrelated_codes": [],
+      "status": "no_signal",
+      "reason": "uncertain_incident",
+      "sources": {}
+    }
+  ]
+}

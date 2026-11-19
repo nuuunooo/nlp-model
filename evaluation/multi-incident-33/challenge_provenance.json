@@ -1,0 +1,13 @@
+{
+  "provenance": "New synthetic descriptions authored after runtime rules were frozen. No source inspection records were used. Labels were assigned before inference.",
+  "distinct_rows": 49,
+  "category_count": 29,
+  "exact_overlap_with_v2_training_validation_test": 0,
+  "runtime_sha256": {
+    "src/engine.py": "cf9c25abe762673dfbdb7b8327cf1e0079b1ad9e8c02a88ae15c2a2faa841274",
+    "src/description_evidence.py": "0cda2375d721a10685cb61bc45bf64f0671176cb708ce51016c89b5493714855",
+    "src/setfit_classifier.py": "edd26b2052f640c019de3c27435630e109b7fed5ea3ed5cd42376de4b66e91a7",
+    "config/lexicon.csv": "f6f9d1d1d9b311e31596c55a31a46743039a6957e0327e3eec50189dba530ac9",
+    "config/taxonomy.csv": "247009eb8fdd983f0c23f7ce42defc0d5864b792880a7494d1c0610b7d983f51"
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "purpose": "Offline synthetic consumption comparison, separate from the sale checks.",
+  "batch_sha256": "968ced47c0553a904de590f2a90a7aa1c55b721baf85d879c6bface402314b65",
+  "policy_sha256": "9baaffcceef37ed0d20ccd880cefe04d1b29dc1d280929a5bf12a5f18d7ebb52",
+  "source_sha256": {
+    "evaluate_pilot_consumption.py": "0be4f6ddfbc334b237d2b025d2b136464780a33a799ef4ab6884b6e09dfe6b16",
+    "liquor_consumption.py": "a7c9c18dc1dc783a4f57759e22300d2844470a2a2eb617d04cfd6172382b4da4"
+  },
+  "v4_archive_checks": 35,
+  "cohorts": {
+    "known": {
+      "v4_codes": {
+        "true_positives": 2,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      },
+      "with_consumption_codes": {
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 0,
+        "unclear_false_actions": 0
+      }
+    },
+    "fresh": {
+      "v4_codes": {
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 7,
+        "precision": 0.5,
+        "recall": 0.125,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 1,
+        "unclear_false_actions": 1
+      },
+      "with_consumption_codes": {
+        "true_positives": 8,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "precision": 0.8888888888888888,
+        "recall": 1.0,
+        "multi_rows": 0,
+        "multi_exact": 0,
+        "clear_false_actions": 1,
+        "unclear_false_actions": 1
+      }
+    }
+  },
+  "records": [
+    {
+      "record": "R01",
+      "description": "umiinom ng alak sa pampublikong lugar",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "v4_codes": [],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "public_place",
+          "umiinom ng alak sa pampublikong lugar"
+        ]
+      ]
+    },
+    {
+      "record": "R02",
+      "description": "si vendor nagtitinda habang umiinom ng alak",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "v4_codes": [
+        "Liquor"
+      ],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "actively_selling",
+          "si vendor nagtitinda habang umiinom ng alak"
+        ]
+      ]
+    },
+    {
+      "record": "R03",
+      "description": "umiinom ng alak sa loob ng palengke",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "v4_codes": [
+        "Liquor"
+      ],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "public_place",
+          "umiinom ng alak sa loob ng palengke"
+        ]
+      ]
+    },
+    {
+      "record": "F01",
+      "description": "Nakita ng inspektor na humihigop ng beer ang isang mamimili sa pasilyo ng palengke.",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "v4_codes": [],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "public_place",
+          "nakita ng inspektor na humihigop ng beer ang isang mamimili sa pasilyo ng palengke."
+        ]
+      ]
+    },
+    {
+      "record": "F02",
+      "description": "While taking payment from customers, the stallholder drank from a bottle of gin.",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "v4_codes": [],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "actively_selling",
+          "while taking payment from customers, the stallholder drank from a bottle of gin."
+        ]
+      ]
+    },
+    {
+      "record": "F03",
+      "description": "Sa pampublikong plaza, nag-inom ng gin ang isang bisita habang naghihintay.",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "v4_codes": [],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "public_place",
+          "sa pampublikong plaza, nag inom ng gin ang isang bisita habang naghihintay."
+        ]
+      ]
+    },
+    {
+      "record": "F04",
+      "description": "Habang nagbebenta ng gulay, umiinom ng beer si ate sa likod ng counter.",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "v4_codes": [
+        "Liquor"
+      ],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "actively_selling",
+          "habang nagbebenta ng gulay, umiinom ng beer si ate sa likod ng counter."
+        ]
+      ]
+    },
+    {
+      "record": "F05",
+      "description": "A shopper took several sips of wine on the public sidewalk outside the stalls.",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "v4_codes": [],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "public_place",
+          "a shopper took several sips of wine on the public sidewalk outside the stalls."
+        ]
+      ]
+    },
+    {
+      "record": "F06",
+      "description": "The cashier was drinking beer while ringing up purchases for customers.",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "v4_codes": [],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "actively_selling",
+          "the cashier was drinking beer while ringing up purchases for customers."
+        ]
+      ]
+    },
+    {
+      "record": "F07",
+      "description": "Alak ang iniinom ng isang mamimili sa loob ng palengke nang dumating ang inspektor.",
+      "expected_decision": "accept",
+      "basis": "public_place",
+      "v4_codes": [],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "public_place",
+          "alak ang iniinom ng isang mamimili sa loob ng palengke nang dumating ang inspektor."
+        ]
+      ]
+    },
+    {
+      "record": "F08",
+      "description": "The inspector saw the vendor drink a shot of rum as she continued selling fruit.",
+      "expected_decision": "accept",
+      "basis": "actively_selling",
+      "v4_codes": [],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": [
+        [
+          "actively_selling",
+          "the inspector saw the vendor drink a shot of rum as she continued selling fruit."
+        ]
+      ]
+    },
+    {
+      "record": "F09",
+      "description": "The inspector saw a shopper carrying a sealed bottle of gin along the market aisle.",
+      "expected_decision": "clear",
+      "basis": "sealed_bottle",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F10",
+      "description": "Habang nagtitinda, umiinom ng tubig ang vendor. May saradong bote ng beer sa counter.",
+      "expected_decision": "clear",
+      "basis": "nonalcoholic_drink",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F11",
+      "description": "A shopper drank beer at home after the stall had closed for the day.",
+      "expected_decision": "clear",
+      "basis": "private_off_duty",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F12",
+      "description": "The vendor sold a bottle of beer to a customer. The inspector saw nobody drinking inside the market.",
+      "expected_decision": "clear",
+      "basis": "sale_without_consumption",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F13",
+      "description": "Sa loob ng palengke, walang umiinom ng alak. Nakita lang ng inspector ang mga selyadong bote.",
+      "expected_decision": "clear",
+      "basis": "explicit_no_consumption",
+      "v4_codes": [
+        "Liquor"
+      ],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F14",
+      "description": "The customer sipped alcohol-free beer in the public plaza, as confirmed from the bottle label.",
+      "expected_decision": "clear",
+      "basis": "nonalcoholic_drink",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F15",
+      "description": "May nagreklamo na umiinom daw ng alak ang tindero sa palengke. Hindi pa kumpirmado ang ulat.",
+      "expected_decision": "abstain",
+      "basis": "unconfirmed_report",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F16",
+      "description": "The vendor was drinking gin. The note gives no location or indication that the vendor was selling at the time.",
+      "expected_decision": "abstain",
+      "basis": "scope_missing",
+      "v4_codes": [
+        "Liquor"
+      ],
+      "with_consumption_codes": [
+        "Liquor"
+      ],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F17",
+      "description": "A helper was drinking beer while the vendor sold vegetables. The location was not recorded.",
+      "expected_decision": "abstain",
+      "basis": "different_people",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F18",
+      "description": "Nagtitinda ang vendor habang umiinom mula sa isang baso. Hindi matukoy kung may alak ang laman.",
+      "expected_decision": "abstain",
+      "basis": "beverage_unverified",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F19",
+      "description": "Sa loob ng palengke, mukhang uminom ng alak ang customer. The inspector could not verify what was in the cup.",
+      "expected_decision": "abstain",
+      "basis": "beverage_unverified",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    },
+    {
+      "record": "F20",
+      "description": "The observer initially thought the vendor was drinking beer in the public plaza. This was not confirmed.",
+      "expected_decision": "abstain",
+      "basis": "unconfirmed_followup",
+      "v4_codes": [],
+      "with_consumption_codes": [],
+      "consumption_evidence": []
+    }
+  ]
+}

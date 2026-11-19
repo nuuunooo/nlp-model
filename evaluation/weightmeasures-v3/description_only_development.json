@@ -1,0 +1,1000 @@
+{
+  "method": "Development regression of the description evidence extractor using only description and record ID. Other CSV fields are used only as evaluation labels. This reuses inspected data and does not establish independent accuracy.",
+  "counts": {
+    "violation": 60,
+    "compliant": 60,
+    "unclear": 21
+  },
+  "true_positive": 60,
+  "false_positive": 0,
+  "unclear_predicted_positive": 0,
+  "decisions": [
+    {
+      "record_id": "SYN3-WM-001",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-002",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-003",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-004",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-005",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-006",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-007",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-008",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-009",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-010",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-011",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-012",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-013",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-014",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-015",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-016",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-017",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-018",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "reference_scale_unreliable",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-019",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-020",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-021",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-022",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-023",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-024",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-025",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-026",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-027",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-028",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-029",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-030",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-031",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-032",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-033",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-034",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-035",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-036",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-037",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-038",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-039",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_weight_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-040",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_weight_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-041",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-042",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-043",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-044",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-045",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-046",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-047",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-048",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-049",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-050",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-051",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_weight_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-052",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-053",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-054",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-055",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_weight_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-056",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-057",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-058",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-059",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-060",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "transaction_disputed",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-061",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-062",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-063",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-064",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-065",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-066",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-067",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-068",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-069",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_weight_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-070",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-071",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-072",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-073",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-074",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-075",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-076",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-077",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-078",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-079",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-080",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "transaction_disputed",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-081",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-082",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-083",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-084",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "transaction_disputed",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-085",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-086",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-087",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-088",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-089",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-090",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-091",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-092",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-093",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-094",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-095",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-096",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-097",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-098",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-099",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-100",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-101",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_weight_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-102",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-103",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-104",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "reference_scale_unreliable",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-105",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-106",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-107",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-108",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-109",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-110",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-111",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-112",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-113",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-114",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-115",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "reference_scale_unreliable",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-116",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-117",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-118",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-119",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-120",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_weight_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-121",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-122",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-123",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-124",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-125",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-126",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_weight_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-127",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-128",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-129",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-130",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-131",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-132",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-133",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-134",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-135",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-136",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-137",
+      "gold_outcome": "compliant",
+      "predicted_weight": false,
+      "reason": "insufficient_description_evidence",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-138",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-139",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    },
+    {
+      "record_id": "SYN3-WM-140",
+      "gold_outcome": "unclear",
+      "predicted_weight": false,
+      "reason": "weight_evidence_unresolved",
+      "status": "no_signal"
+    },
+    {
+      "record_id": "SYN3-WM-141",
+      "gold_outcome": "violation",
+      "predicted_weight": true,
+      "reason": "",
+      "status": "labeled"
+    }
+  ]
+}

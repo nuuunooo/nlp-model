@@ -1,0 +1,2275 @@
+{
+  "source": "C:\\Users\\admin\\Downloads\\weightmeasures_eval_v2.csv",
+  "source_sha256": "ea6df32f269d448c6ddf93ebd9c6b6139ea52021e10aa917c05a6b1d5e2153ca",
+  "rows": 132,
+  "distinct_descriptions": 132,
+  "vendors": 62,
+  "outcomes": {
+    "violation": 60,
+    "compliant": 60,
+    "unclear": 12
+  },
+  "exact_description_overlap_with_baseline": 0,
+  "exact_description_overlap_with_synthetic_splits": {
+    "train_fit": 0,
+    "validation": 0,
+    "test": 0
+  },
+  "model_dir": "C:\\Users\\admin\\OneDrive\\Desktop\\New Training Model\\models\\setfit-e5-synthetic-v2",
+  "threshold": 0.7298892140388489,
+  "threshold_sha256": "8e29338f303826dda10a23528a0a9587ee09d80fb91da6fa11554c56d6d88a14",
+  "evaluation_method": "Frozen model and thresholds. Complete measurement metadata is submitted to the gate without using gold_outcome. Incomplete records receive no verified measurement. Ordinary worker analysis determines acceptance.",
+  "limitations": [
+    "A complete evidence reference and verifier metadata are treated as verification for this evaluation. Their source records were not independently retrieved.",
+    "Unclear rows are evaluated for unsafe automatic acceptance separately from known-label metrics.",
+    "Dates overlap the baseline collection period. Distinct anonymized IDs do not establish vendor independence across exports.",
+    "No measurement tolerance is configured.",
+    "Known outcomes agree with the supplied quantity comparisons, so high gate agreement primarily checks the evidence comparison and ingestion behavior."
+  ],
+  "model_only_known_labels": {
+    "true_positives": 60,
+    "false_positives": 60,
+    "false_negatives": 0,
+    "true_negatives": 0,
+    "precision": 0.5,
+    "recall": 1.0,
+    "accuracy": 0.5
+  },
+  "gated_known_labels": {
+    "true_positives": 60,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "true_negatives": 60,
+    "precision": 1.0,
+    "recall": 1.0,
+    "accuracy": 1.0
+  },
+  "unclear_rows": 12,
+  "unclear_automatically_accepted": 7,
+  "unclear_without_automatic_acceptance": 5,
+  "unclear_accepted_record_ids": [
+    "SYN2-WM-009",
+    "SYN2-WM-051",
+    "SYN2-WM-069",
+    "SYN2-WM-072",
+    "SYN2-WM-074",
+    "SYN2-WM-098",
+    "SYN2-WM-125"
+  ],
+  "worker_review_rows": 109,
+  "worker_review_rate": 0.8257575757575758,
+  "automatic_weight_acceptances": 67,
+  "weight_acceptance_breakdown": {
+    "violation": 60,
+    "unclear": 7
+  },
+  "rows_with_complete_measurement_metadata": 127,
+  "records": [
+    {
+      "record_id": "SYN2-WM-001",
+      "vendor_id": "SV2-032",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8649066686630249,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "450"
+    },
+    {
+      "record_id": "SYN2-WM-002",
+      "vendor_id": "SV2-021",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9745984673500061,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1000"
+    },
+    {
+      "record_id": "SYN2-WM-003",
+      "vendor_id": "SV2-035",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9814762473106384,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1030"
+    },
+    {
+      "record_id": "SYN2-WM-004",
+      "vendor_id": "SV2-067",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9184491038322449,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "505"
+    },
+    {
+      "record_id": "SYN2-WM-005",
+      "vendor_id": "SV2-051",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.981214165687561,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1500",
+      "measured_grams": "1500.0"
+    },
+    {
+      "record_id": "SYN2-WM-006",
+      "vendor_id": "SV2-022",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9456315040588379,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "900"
+    },
+    {
+      "record_id": "SYN2-WM-007",
+      "vendor_id": "SV2-074",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9522473812103271,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "990"
+    },
+    {
+      "record_id": "SYN2-WM-008",
+      "vendor_id": "SV2-064",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9458351135253906,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "245"
+    },
+    {
+      "record_id": "SYN2-WM-009",
+      "vendor_id": "SV2-048",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9780305624008179,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "960"
+    },
+    {
+      "record_id": "SYN2-WM-010",
+      "vendor_id": "SV2-032",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9031009078025818,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-011",
+      "vendor_id": "SV2-063",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9693458080291748,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "1000"
+    },
+    {
+      "record_id": "SYN2-WM-012",
+      "vendor_id": "SV2-029",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9834965467453003,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "515"
+    },
+    {
+      "record_id": "SYN2-WM-013",
+      "vendor_id": "SV2-044",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9875116348266602,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "510"
+    },
+    {
+      "record_id": "SYN2-WM-014",
+      "vendor_id": "SV2-044",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9864793419837952,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "425"
+    },
+    {
+      "record_id": "SYN2-WM-015",
+      "vendor_id": "SV2-033",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8660581707954407,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "485"
+    },
+    {
+      "record_id": "SYN2-WM-016",
+      "vendor_id": "SV2-037",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9881470799446106,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1010"
+    },
+    {
+      "record_id": "SYN2-WM-017",
+      "vendor_id": "SV2-011",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.950090765953064,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "465"
+    },
+    {
+      "record_id": "SYN2-WM-018",
+      "vendor_id": "SV2-018",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9586793184280396,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "515"
+    },
+    {
+      "record_id": "SYN2-WM-019",
+      "vendor_id": "SV2-049",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8465370535850525,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "240"
+    },
+    {
+      "record_id": "SYN2-WM-020",
+      "vendor_id": "SV2-053",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9107345342636108,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "450"
+    },
+    {
+      "record_id": "SYN2-WM-021",
+      "vendor_id": "SV2-073",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9512045383453369,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "425"
+    },
+    {
+      "record_id": "SYN2-WM-022",
+      "vendor_id": "SV2-065",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9116935133934021,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "240"
+    },
+    {
+      "record_id": "SYN2-WM-023",
+      "vendor_id": "SV2-033",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8478052020072937,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "475"
+    },
+    {
+      "record_id": "SYN2-WM-024",
+      "vendor_id": "SV2-016",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9717267751693726,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1010"
+    },
+    {
+      "record_id": "SYN2-WM-025",
+      "vendor_id": "SV2-041",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.985501229763031,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "495"
+    },
+    {
+      "record_id": "SYN2-WM-026",
+      "vendor_id": "SV2-020",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.7529631853103638,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "465"
+    },
+    {
+      "record_id": "SYN2-WM-027",
+      "vendor_id": "SV2-035",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9755719900131226,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "515"
+    },
+    {
+      "record_id": "SYN2-WM-028",
+      "vendor_id": "SV2-050",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.979772686958313,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "2000",
+      "measured_grams": "2010"
+    },
+    {
+      "record_id": "SYN2-WM-029",
+      "vendor_id": "SV2-061",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.965547502040863,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-030",
+      "vendor_id": "SV2-030",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9561339616775513,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1010"
+    },
+    {
+      "record_id": "SYN2-WM-031",
+      "vendor_id": "SV2-059",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8912769556045532,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "425"
+    },
+    {
+      "record_id": "SYN2-WM-032",
+      "vendor_id": "SV2-035",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9795263409614563,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1000"
+    },
+    {
+      "record_id": "SYN2-WM-033",
+      "vendor_id": "SV2-043",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9537858963012695,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1030"
+    },
+    {
+      "record_id": "SYN2-WM-034",
+      "vendor_id": "SV2-075",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9838066101074219,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1000"
+    },
+    {
+      "record_id": "SYN2-WM-035",
+      "vendor_id": "SV2-014",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9664597511291504,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "525"
+    },
+    {
+      "record_id": "SYN2-WM-036",
+      "vendor_id": "SV2-024",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.8989412784576416,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "1030"
+    },
+    {
+      "record_id": "SYN2-WM-037",
+      "vendor_id": "SV2-050",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9894232153892517,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "440"
+    },
+    {
+      "record_id": "SYN2-WM-038",
+      "vendor_id": "SV2-030",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9876812696456909,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "800"
+    },
+    {
+      "record_id": "SYN2-WM-039",
+      "vendor_id": "SV2-070",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9615359902381897,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": false,
+      "gate_weight_decision": "pending",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": null,
+      "measured_grams": null
+    },
+    {
+      "record_id": "SYN2-WM-040",
+      "vendor_id": "SV2-056",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9875730276107788,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "990"
+    },
+    {
+      "record_id": "SYN2-WM-041",
+      "vendor_id": "SV2-071",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9845858216285706,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "505"
+    },
+    {
+      "record_id": "SYN2-WM-042",
+      "vendor_id": "SV2-048",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9868119359016418,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "1500.0",
+      "measured_grams": "1455"
+    },
+    {
+      "record_id": "SYN2-WM-043",
+      "vendor_id": "SV2-047",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9148075580596924,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "485"
+    },
+    {
+      "record_id": "SYN2-WM-044",
+      "vendor_id": "SV2-015",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.93604576587677,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-045",
+      "vendor_id": "SV2-003",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8453370928764343,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "440"
+    },
+    {
+      "record_id": "SYN2-WM-046",
+      "vendor_id": "SV2-041",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9883164763450623,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1005"
+    },
+    {
+      "record_id": "SYN2-WM-047",
+      "vendor_id": "SV2-043",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8900162577629089,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "425"
+    },
+    {
+      "record_id": "SYN2-WM-048",
+      "vendor_id": "SV2-030",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9420352578163147,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "1050"
+    },
+    {
+      "record_id": "SYN2-WM-049",
+      "vendor_id": "SV2-035",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9516069889068604,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-050",
+      "vendor_id": "SV2-002",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9789749383926392,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1030"
+    },
+    {
+      "record_id": "SYN2-WM-051",
+      "vendor_id": "SV2-010",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9722334146499634,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "960"
+    },
+    {
+      "record_id": "SYN2-WM-052",
+      "vendor_id": "SV2-023",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9780350923538208,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "980"
+    },
+    {
+      "record_id": "SYN2-WM-053",
+      "vendor_id": "SV2-032",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9385296702384949,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "1020"
+    },
+    {
+      "record_id": "SYN2-WM-054",
+      "vendor_id": "SV2-031",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9843806028366089,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1010"
+    },
+    {
+      "record_id": "SYN2-WM-055",
+      "vendor_id": "SV2-015",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9460933804512024,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1500",
+      "measured_grams": "1500.0"
+    },
+    {
+      "record_id": "SYN2-WM-056",
+      "vendor_id": "SV2-011",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9415525197982788,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "245"
+    },
+    {
+      "record_id": "SYN2-WM-057",
+      "vendor_id": "SV2-016",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9630685448646545,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1050"
+    },
+    {
+      "record_id": "SYN2-WM-058",
+      "vendor_id": "SV2-001",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9767485857009888,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-059",
+      "vendor_id": "SV2-071",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9750300645828247,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": false,
+      "gate_weight_decision": "pending",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": null,
+      "measured_grams": null
+    },
+    {
+      "record_id": "SYN2-WM-060",
+      "vendor_id": "SV2-067",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9857324957847595,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": false,
+      "gate_weight_decision": "pending",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": null,
+      "measured_grams": null
+    },
+    {
+      "record_id": "SYN2-WM-061",
+      "vendor_id": "SV2-061",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9896060228347778,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "440"
+    },
+    {
+      "record_id": "SYN2-WM-062",
+      "vendor_id": "SV2-030",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9615201950073242,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "525"
+    },
+    {
+      "record_id": "SYN2-WM-063",
+      "vendor_id": "SV2-058",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9042088985443115,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1500.0",
+      "measured_grams": "1425"
+    },
+    {
+      "record_id": "SYN2-WM-064",
+      "vendor_id": "SV2-025",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9848809242248535,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "900"
+    },
+    {
+      "record_id": "SYN2-WM-065",
+      "vendor_id": "SV2-017",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9779238104820251,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": false,
+      "gate_weight_decision": "pending",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": null,
+      "measured_grams": null
+    },
+    {
+      "record_id": "SYN2-WM-066",
+      "vendor_id": "SV2-011",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8823797702789307,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "495"
+    },
+    {
+      "record_id": "SYN2-WM-067",
+      "vendor_id": "SV2-066",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8386783599853516,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "220"
+    },
+    {
+      "record_id": "SYN2-WM-068",
+      "vendor_id": "SV2-004",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9805399179458618,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "980"
+    },
+    {
+      "record_id": "SYN2-WM-069",
+      "vendor_id": "SV2-064",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.958798885345459,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "930"
+    },
+    {
+      "record_id": "SYN2-WM-070",
+      "vendor_id": "SV2-043",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.7530655264854431,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "485"
+    },
+    {
+      "record_id": "SYN2-WM-071",
+      "vendor_id": "SV2-016",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9836208820343018,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1000"
+    },
+    {
+      "record_id": "SYN2-WM-072",
+      "vendor_id": "SV2-016",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9374403357505798,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "465"
+    },
+    {
+      "record_id": "SYN2-WM-073",
+      "vendor_id": "SV2-032",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9737038016319275,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "450"
+    },
+    {
+      "record_id": "SYN2-WM-074",
+      "vendor_id": "SV2-024",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.970255434513092,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "930"
+    },
+    {
+      "record_id": "SYN2-WM-075",
+      "vendor_id": "SV2-058",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9514689445495605,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "260"
+    },
+    {
+      "record_id": "SYN2-WM-076",
+      "vendor_id": "SV2-045",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9840758442878723,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "2000",
+      "measured_grams": "2060"
+    },
+    {
+      "record_id": "SYN2-WM-077",
+      "vendor_id": "SV2-022",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9415100812911987,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1030"
+    },
+    {
+      "record_id": "SYN2-WM-078",
+      "vendor_id": "SV2-067",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9765360951423645,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "240"
+    },
+    {
+      "record_id": "SYN2-WM-079",
+      "vendor_id": "SV2-056",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.958962619304657,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "2000",
+      "measured_grams": "1900"
+    },
+    {
+      "record_id": "SYN2-WM-080",
+      "vendor_id": "SV2-031",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9752001166343689,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "1050"
+    },
+    {
+      "record_id": "SYN2-WM-081",
+      "vendor_id": "SV2-021",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9732502102851868,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1500.0",
+      "measured_grams": "1545"
+    },
+    {
+      "record_id": "SYN2-WM-082",
+      "vendor_id": "SV2-066",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9561586976051331,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-083",
+      "vendor_id": "SV2-034",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9496504664421082,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "220"
+    },
+    {
+      "record_id": "SYN2-WM-084",
+      "vendor_id": "SV2-022",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8174482583999634,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "475"
+    },
+    {
+      "record_id": "SYN2-WM-085",
+      "vendor_id": "SV2-004",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8727875351905823,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "930"
+    },
+    {
+      "record_id": "SYN2-WM-086",
+      "vendor_id": "SV2-026",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8476462960243225,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "930"
+    },
+    {
+      "record_id": "SYN2-WM-087",
+      "vendor_id": "SV2-053",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9695891737937927,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-088",
+      "vendor_id": "SV2-048",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9501681327819824,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "930"
+    },
+    {
+      "record_id": "SYN2-WM-089",
+      "vendor_id": "SV2-073",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9657019972801208,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "2000",
+      "measured_grams": "1600"
+    },
+    {
+      "record_id": "SYN2-WM-090",
+      "vendor_id": "SV2-011",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9649389386177063,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1000"
+    },
+    {
+      "record_id": "SYN2-WM-091",
+      "vendor_id": "SV2-060",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9631421566009521,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "1000"
+    },
+    {
+      "record_id": "SYN2-WM-092",
+      "vendor_id": "SV2-049",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9831411838531494,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "2000",
+      "measured_grams": "1760"
+    },
+    {
+      "record_id": "SYN2-WM-093",
+      "vendor_id": "SV2-059",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9876056909561157,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "485"
+    },
+    {
+      "record_id": "SYN2-WM-094",
+      "vendor_id": "SV2-010",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9549036622047424,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "475"
+    },
+    {
+      "record_id": "SYN2-WM-095",
+      "vendor_id": "SV2-042",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.7768721580505371,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "475"
+    },
+    {
+      "record_id": "SYN2-WM-096",
+      "vendor_id": "SV2-038",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9706709384918213,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "240"
+    },
+    {
+      "record_id": "SYN2-WM-097",
+      "vendor_id": "SV2-052",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9614312648773193,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-098",
+      "vendor_id": "SV2-022",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9578438997268677,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Sanitation",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "465"
+    },
+    {
+      "record_id": "SYN2-WM-099",
+      "vendor_id": "SV2-004",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9714064002037048,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "880"
+    },
+    {
+      "record_id": "SYN2-WM-100",
+      "vendor_id": "SV2-050",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8750030398368835,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "970"
+    },
+    {
+      "record_id": "SYN2-WM-101",
+      "vendor_id": "SV2-027",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9267964363098145,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "850"
+    },
+    {
+      "record_id": "SYN2-WM-102",
+      "vendor_id": "SV2-073",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9800553321838379,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1500.0",
+      "measured_grams": "1505"
+    },
+    {
+      "record_id": "SYN2-WM-103",
+      "vendor_id": "SV2-012",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9741986393928528,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "980"
+    },
+    {
+      "record_id": "SYN2-WM-104",
+      "vendor_id": "SV2-045",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9552626013755798,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "525"
+    },
+    {
+      "record_id": "SYN2-WM-105",
+      "vendor_id": "SV2-038",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9752892255783081,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "1050"
+    },
+    {
+      "record_id": "SYN2-WM-106",
+      "vendor_id": "SV2-068",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9706475734710693,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "2000",
+      "measured_grams": "1960"
+    },
+    {
+      "record_id": "SYN2-WM-107",
+      "vendor_id": "SV2-037",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9864963889122009,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1000"
+    },
+    {
+      "record_id": "SYN2-WM-108",
+      "vendor_id": "SV2-029",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9737876653671265,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1500.0",
+      "measured_grams": "1485"
+    },
+    {
+      "record_id": "SYN2-WM-109",
+      "vendor_id": "SV2-049",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9405538439750671,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "255"
+    },
+    {
+      "record_id": "SYN2-WM-110",
+      "vendor_id": "SV2-038",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.7516502141952515,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "490"
+    },
+    {
+      "record_id": "SYN2-WM-111",
+      "vendor_id": "SV2-035",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9839997887611389,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "250",
+      "measured_grams": "250"
+    },
+    {
+      "record_id": "SYN2-WM-112",
+      "vendor_id": "SV2-054",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9316222667694092,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "2000",
+      "measured_grams": "2040"
+    },
+    {
+      "record_id": "SYN2-WM-113",
+      "vendor_id": "SV2-032",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8960210084915161,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "900"
+    },
+    {
+      "record_id": "SYN2-WM-114",
+      "vendor_id": "SV2-017",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9705542325973511,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "980"
+    },
+    {
+      "record_id": "SYN2-WM-115",
+      "vendor_id": "SV2-052",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9423239231109619,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "400"
+    },
+    {
+      "record_id": "SYN2-WM-116",
+      "vendor_id": "SV2-012",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.987212598323822,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "240"
+    },
+    {
+      "record_id": "SYN2-WM-117",
+      "vendor_id": "SV2-025",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.942703366279602,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "2000",
+      "measured_grams": "2040"
+    },
+    {
+      "record_id": "SYN2-WM-118",
+      "vendor_id": "SV2-072",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.8532052040100098,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": false,
+      "gate_weight_decision": "pending",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;weight_finding_needs_supervisor_review;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": null,
+      "measured_grams": null
+    },
+    {
+      "record_id": "SYN2-WM-119",
+      "vendor_id": "SV2-039",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9759731292724609,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1005"
+    },
+    {
+      "record_id": "SYN2-WM-120",
+      "vendor_id": "SV2-017",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9743928909301758,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1050"
+    },
+    {
+      "record_id": "SYN2-WM-121",
+      "vendor_id": "SV2-053",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.976757824420929,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "1010"
+    },
+    {
+      "record_id": "SYN2-WM-122",
+      "vendor_id": "SV2-068",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9141917824745178,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "250",
+      "measured_grams": "225"
+    },
+    {
+      "record_id": "SYN2-WM-123",
+      "vendor_id": "SV2-043",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9644686579704285,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "505"
+    },
+    {
+      "record_id": "SYN2-WM-124",
+      "vendor_id": "SV2-027",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9844576716423035,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1030"
+    },
+    {
+      "record_id": "SYN2-WM-125",
+      "vendor_id": "SV2-057",
+      "gold_outcome": "unclear",
+      "weight_model_score": 0.9778068661689758,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "960"
+    },
+    {
+      "record_id": "SYN2-WM-126",
+      "vendor_id": "SV2-066",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9612263441085815,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "510"
+    },
+    {
+      "record_id": "SYN2-WM-127",
+      "vendor_id": "SV2-027",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.8664897084236145,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "review",
+      "worker_review_reason": "unmatched_clause;model_or_llm_needs_confirmation;low_confidence",
+      "proposed_categories": [
+        "Price Monitoring",
+        "WeightMeasures"
+      ],
+      "declared_grams": "1000",
+      "measured_grams": "990"
+    },
+    {
+      "record_id": "SYN2-WM-128",
+      "vendor_id": "SV2-063",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9535529017448425,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "505"
+    },
+    {
+      "record_id": "SYN2-WM-129",
+      "vendor_id": "SV2-005",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9673058390617371,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "1500.0",
+      "measured_grams": "1455"
+    },
+    {
+      "record_id": "SYN2-WM-130",
+      "vendor_id": "SV2-002",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.944562554359436,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "500",
+      "measured_grams": "500"
+    },
+    {
+      "record_id": "SYN2-WM-131",
+      "vendor_id": "SV2-024",
+      "gold_outcome": "compliant",
+      "weight_model_score": 0.9678571820259094,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "no_weight_finding",
+      "automatic_weight_acceptance": false,
+      "worker_status": "no_signal",
+      "worker_review_reason": "unmatched_clause;unrecognized_description",
+      "proposed_categories": [],
+      "declared_grams": "1000",
+      "measured_grams": "1030"
+    },
+    {
+      "record_id": "SYN2-WM-132",
+      "vendor_id": "SV2-072",
+      "gold_outcome": "violation",
+      "weight_model_score": 0.9876248836517334,
+      "weight_model_above_threshold": true,
+      "complete_measurement_metadata": true,
+      "gate_weight_decision": "accepted",
+      "automatic_weight_acceptance": true,
+      "worker_status": "labeled",
+      "worker_review_reason": "unmatched_clause",
+      "proposed_categories": [
+        "WeightMeasures"
+      ],
+      "declared_grams": "500",
+      "measured_grams": "495"
+    }
+  ]
+}

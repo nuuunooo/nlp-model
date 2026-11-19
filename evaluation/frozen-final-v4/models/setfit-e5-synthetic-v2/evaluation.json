@@ -1,0 +1,2399 @@
+{
+  "dataset": "marikina_synthetic_dataset_v2.zip",
+  "split_sha256": {
+    "train_fit": "aae1f2054145ac260cef44fce55813c398dd5b527d9b747b11179c4b5d53e1cd",
+    "validation": "4ccd6c773ba6b5d77e04803244dab860a2e41f8cea32ec3648f9ec6d6e39e771",
+    "test": "e4a9d70328ff8be24aa95393f0db2fa4618044ce664bcda393065cb9a3c2f774"
+  },
+  "encoder": "intfloat/multilingual-e5-small",
+  "encoder_revision": null,
+  "local_encoder": "C:\\Users\\admin\\Downloads\\executable_freeze_20261031T173550Z\\encoder_artifacts",
+  "seed": 42,
+  "train_rows": 2340,
+  "train_support": {
+    "Vendor Identification": {
+      "positive": 90,
+      "negative": 2250
+    },
+    "Permit & Licensing": {
+      "positive": 90,
+      "negative": 2250
+    },
+    "Sanitation": {
+      "positive": 99,
+      "negative": 2241
+    },
+    "WeightMeasures": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Lighting & Energy": {
+      "positive": 90,
+      "negative": 2250
+    },
+    "Stall Occupancy": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Stall Management": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Stall Construction": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Utilities": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Stall Rental": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Illegal Vendor": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Public Order": {
+      "positive": 90,
+      "negative": 2250
+    },
+    "Liquor": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Market Conduct": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Obstruction": {
+      "positive": 99,
+      "negative": 2241
+    },
+    "DressCode": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Bladed Instruments": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Traffic": {
+      "positive": 90,
+      "negative": 2250
+    },
+    "Porter Regulation": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Promotions": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Advertising": {
+      "positive": 90,
+      "negative": 2250
+    },
+    "Signage & Streamers": {
+      "positive": 99,
+      "negative": 2241
+    },
+    "Entertainment Activities": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Lighting Facilities": {
+      "positive": 81,
+      "negative": 2259
+    },
+    "Market Rules": {
+      "positive": 72,
+      "negative": 2268
+    },
+    "Price Monitoring": {
+      "positive": 90,
+      "negative": 2250
+    },
+    "Market Fees & Surcharges": {
+      "positive": 72,
+      "negative": 2268
+    },
+    "Resisting Authority": {
+      "positive": 90,
+      "negative": 2250
+    },
+    "General Penalties": {
+      "positive": 72,
+      "negative": 2268
+    }
+  },
+  "validation": {
+    "rows": 804,
+    "labeled_rows": 780,
+    "micro": {
+      "precision": 0.77491601343785,
+      "recall": 0.8480392156862745,
+      "f1": 0.8098303101228789,
+      "support": 816,
+      "true_positives": 692,
+      "false_positives": 201,
+      "false_negatives": 124
+    },
+    "macro_f1": 0.8199669388670735,
+    "exact_label_set_matches": 512,
+    "clear_rows": 24,
+    "clear_rows_with_predictions": 15,
+    "expected_abstention_rows": 24,
+    "abstentions_on_expected_abstention_rows": 11,
+    "positive_rows_without_predictions": 72,
+    "per_category": {
+      "Vendor Identification": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30,
+        "true_positives": 30,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Permit & Licensing": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "support": 30,
+        "true_positives": 20,
+        "false_positives": 10,
+        "false_negatives": 10
+      },
+      "Sanitation": {
+        "precision": 0.5769230769230769,
+        "recall": 0.45454545454545453,
+        "f1": 0.5084745762711864,
+        "support": 33,
+        "true_positives": 15,
+        "false_positives": 11,
+        "false_negatives": 18
+      },
+      "WeightMeasures": {
+        "precision": 0.6666666666666666,
+        "recall": 0.8148148148148148,
+        "f1": 0.7333333333333333,
+        "support": 27,
+        "true_positives": 22,
+        "false_positives": 11,
+        "false_negatives": 5
+      },
+      "Lighting & Energy": {
+        "precision": 1.0,
+        "recall": 0.6333333333333333,
+        "f1": 0.7755102040816326,
+        "support": 30,
+        "true_positives": 19,
+        "false_positives": 0,
+        "false_negatives": 11
+      },
+      "Stall Occupancy": {
+        "precision": 0.5526315789473685,
+        "recall": 0.7777777777777778,
+        "f1": 0.6461538461538462,
+        "support": 27,
+        "true_positives": 21,
+        "false_positives": 17,
+        "false_negatives": 6
+      },
+      "Stall Management": {
+        "precision": 0.6774193548387096,
+        "recall": 0.7777777777777778,
+        "f1": 0.7241379310344828,
+        "support": 27,
+        "true_positives": 21,
+        "false_positives": 10,
+        "false_negatives": 6
+      },
+      "Stall Construction": {
+        "precision": 0.8461538461538461,
+        "recall": 0.8148148148148148,
+        "f1": 0.8301886792452831,
+        "support": 27,
+        "true_positives": 22,
+        "false_positives": 4,
+        "false_negatives": 5
+      },
+      "Utilities": {
+        "precision": 0.8620689655172413,
+        "recall": 0.9259259259259259,
+        "f1": 0.8928571428571429,
+        "support": 27,
+        "true_positives": 25,
+        "false_positives": 4,
+        "false_negatives": 2
+      },
+      "Stall Rental": {
+        "precision": 0.9565217391304348,
+        "recall": 0.8148148148148148,
+        "f1": 0.88,
+        "support": 27,
+        "true_positives": 22,
+        "false_positives": 1,
+        "false_negatives": 5
+      },
+      "Illegal Vendor": {
+        "precision": 0.9642857142857143,
+        "recall": 1.0,
+        "f1": 0.9818181818181818,
+        "support": 27,
+        "true_positives": 27,
+        "false_positives": 1,
+        "false_negatives": 0
+      },
+      "Public Order": {
+        "precision": 0.5490196078431373,
+        "recall": 0.9333333333333333,
+        "f1": 0.691358024691358,
+        "support": 30,
+        "true_positives": 28,
+        "false_positives": 23,
+        "false_negatives": 2
+      },
+      "Liquor": {
+        "precision": 0.9310344827586207,
+        "recall": 1.0,
+        "f1": 0.9642857142857143,
+        "support": 27,
+        "true_positives": 27,
+        "false_positives": 2,
+        "false_negatives": 0
+      },
+      "Market Conduct": {
+        "precision": 1.0,
+        "recall": 0.7777777777777778,
+        "f1": 0.875,
+        "support": 27,
+        "true_positives": 21,
+        "false_positives": 0,
+        "false_negatives": 6
+      },
+      "Obstruction": {
+        "precision": 0.46296296296296297,
+        "recall": 0.7575757575757576,
+        "f1": 0.5747126436781609,
+        "support": 33,
+        "true_positives": 25,
+        "false_positives": 29,
+        "false_negatives": 8
+      },
+      "DressCode": {
+        "precision": 0.6585365853658537,
+        "recall": 1.0,
+        "f1": 0.7941176470588235,
+        "support": 27,
+        "true_positives": 27,
+        "false_positives": 14,
+        "false_negatives": 0
+      },
+      "Bladed Instruments": {
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "f1": 0.9411764705882353,
+        "support": 27,
+        "true_positives": 24,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "Traffic": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "support": 30,
+        "true_positives": 30,
+        "false_positives": 3,
+        "false_negatives": 0
+      },
+      "Porter Regulation": {
+        "precision": 0.9310344827586207,
+        "recall": 1.0,
+        "f1": 0.9642857142857143,
+        "support": 27,
+        "true_positives": 27,
+        "false_positives": 2,
+        "false_negatives": 0
+      },
+      "Promotions": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888,
+        "support": 27,
+        "true_positives": 24,
+        "false_positives": 3,
+        "false_negatives": 3
+      },
+      "Advertising": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9,
+        "support": 30,
+        "true_positives": 27,
+        "false_positives": 3,
+        "false_negatives": 3
+      },
+      "Signage & Streamers": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 33,
+        "true_positives": 33,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Entertainment Activities": {
+        "precision": 0.8709677419354839,
+        "recall": 1.0,
+        "f1": 0.9310344827586207,
+        "support": 27,
+        "true_positives": 27,
+        "false_positives": 4,
+        "false_negatives": 0
+      },
+      "Lighting Facilities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 27,
+        "true_positives": 27,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Market Rules": {
+        "precision": 0.20512820512820512,
+        "recall": 0.3333333333333333,
+        "f1": 0.25396825396825395,
+        "support": 24,
+        "true_positives": 8,
+        "false_positives": 31,
+        "false_negatives": 16
+      },
+      "Price Monitoring": {
+        "precision": 1.0,
+        "recall": 0.9666666666666667,
+        "f1": 0.9830508474576272,
+        "support": 30,
+        "true_positives": 29,
+        "false_positives": 0,
+        "false_negatives": 1
+      },
+      "Market Fees & Surcharges": {
+        "precision": 0.6428571428571429,
+        "recall": 0.75,
+        "f1": 0.6923076923076923,
+        "support": 24,
+        "true_positives": 18,
+        "false_positives": 10,
+        "false_negatives": 6
+      },
+      "Resisting Authority": {
+        "precision": 0.7333333333333333,
+        "recall": 0.7333333333333333,
+        "f1": 0.7333333333333333,
+        "support": 30,
+        "true_positives": 22,
+        "false_positives": 8,
+        "false_negatives": 8
+      },
+      "General Penalties": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 24,
+        "true_positives": 24,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    "by_language": {
+      "fil": {
+        "rows": 268,
+        "labeled_rows": 260,
+        "micro": {
+          "precision": 0.7331081081081081,
+          "recall": 0.7977941176470589,
+          "f1": 0.7640845070422535,
+          "support": 272,
+          "true_positives": 217,
+          "false_positives": 79,
+          "false_negatives": 55
+        },
+        "macro_f1": 0.7757179143278585,
+        "exact_label_set_matches": 151,
+        "clear_rows": 8,
+        "clear_rows_with_predictions": 5,
+        "expected_abstention_rows": 8,
+        "abstentions_on_expected_abstention_rows": 5,
+        "positive_rows_without_predictions": 30,
+        "per_category": {
+          "Vendor Identification": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Permit & Licensing": {
+            "precision": 0.7777777777777778,
+            "recall": 0.7,
+            "f1": 0.7368421052631579,
+            "support": 10,
+            "true_positives": 7,
+            "false_positives": 2,
+            "false_negatives": 3
+          },
+          "Sanitation": {
+            "precision": 0.5,
+            "recall": 0.36363636363636365,
+            "f1": 0.42105263157894735,
+            "support": 11,
+            "true_positives": 4,
+            "false_positives": 4,
+            "false_negatives": 7
+          },
+          "WeightMeasures": {
+            "precision": 0.6,
+            "recall": 0.6666666666666666,
+            "f1": 0.631578947368421,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 4,
+            "false_negatives": 3
+          },
+          "Lighting & Energy": {
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75,
+            "support": 10,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 4
+          },
+          "Stall Occupancy": {
+            "precision": 0.5,
+            "recall": 0.6666666666666666,
+            "f1": 0.5714285714285714,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 6,
+            "false_negatives": 3
+          },
+          "Stall Management": {
+            "precision": 0.5,
+            "recall": 0.8888888888888888,
+            "f1": 0.64,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 8,
+            "false_negatives": 1
+          },
+          "Stall Construction": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Utilities": {
+            "precision": 0.7777777777777778,
+            "recall": 0.7777777777777778,
+            "f1": 0.7777777777777778,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 2,
+            "false_negatives": 2
+          },
+          "Stall Rental": {
+            "precision": 1.0,
+            "recall": 0.4444444444444444,
+            "f1": 0.6153846153846154,
+            "support": 9,
+            "true_positives": 4,
+            "false_positives": 0,
+            "false_negatives": 5
+          },
+          "Illegal Vendor": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Public Order": {
+            "precision": 0.5294117647058824,
+            "recall": 0.9,
+            "f1": 0.6666666666666666,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 8,
+            "false_negatives": 1
+          },
+          "Liquor": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Market Conduct": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Obstruction": {
+            "precision": 0.42105263157894735,
+            "recall": 0.7272727272727273,
+            "f1": 0.5333333333333333,
+            "support": 11,
+            "true_positives": 8,
+            "false_positives": 11,
+            "false_negatives": 3
+          },
+          "DressCode": {
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1": 0.75,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 6,
+            "false_negatives": 0
+          },
+          "Bladed Instruments": {
+            "precision": 1.0,
+            "recall": 0.7777777777777778,
+            "f1": 0.875,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2
+          },
+          "Traffic": {
+            "precision": 0.9090909090909091,
+            "recall": 1.0,
+            "f1": 0.9523809523809523,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Porter Regulation": {
+            "precision": 0.8181818181818182,
+            "recall": 1.0,
+            "f1": 0.9,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 2,
+            "false_negatives": 0
+          },
+          "Promotions": {
+            "precision": 0.875,
+            "recall": 0.7777777777777778,
+            "f1": 0.8235294117647058,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 1,
+            "false_negatives": 2
+          },
+          "Advertising": {
+            "precision": 0.7272727272727273,
+            "recall": 0.8,
+            "f1": 0.7619047619047619,
+            "support": 10,
+            "true_positives": 8,
+            "false_positives": 3,
+            "false_negatives": 2
+          },
+          "Signage & Streamers": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11,
+            "true_positives": 11,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Entertainment Activities": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Lighting Facilities": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Market Rules": {
+            "precision": 0.2,
+            "recall": 0.375,
+            "f1": 0.2608695652173913,
+            "support": 8,
+            "true_positives": 3,
+            "false_positives": 12,
+            "false_negatives": 5
+          },
+          "Price Monitoring": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Market Fees & Surcharges": {
+            "precision": 0.7142857142857143,
+            "recall": 0.625,
+            "f1": 0.6666666666666666,
+            "support": 8,
+            "true_positives": 5,
+            "false_positives": 2,
+            "false_negatives": 3
+          },
+          "Resisting Authority": {
+            "precision": 0.5714285714285714,
+            "recall": 0.8,
+            "f1": 0.6666666666666666,
+            "support": 10,
+            "true_positives": 8,
+            "false_positives": 6,
+            "false_negatives": 2
+          },
+          "General Penalties": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        }
+      },
+      "en": {
+        "rows": 268,
+        "labeled_rows": 260,
+        "micro": {
+          "precision": 0.8054607508532423,
+          "recall": 0.8676470588235294,
+          "f1": 0.8353982300884956,
+          "support": 272,
+          "true_positives": 236,
+          "false_positives": 57,
+          "false_negatives": 36
+        },
+        "macro_f1": 0.8409925251289653,
+        "exact_label_set_matches": 179,
+        "clear_rows": 8,
+        "clear_rows_with_predictions": 5,
+        "expected_abstention_rows": 8,
+        "abstentions_on_expected_abstention_rows": 3,
+        "positive_rows_without_predictions": 25,
+        "per_category": {
+          "Vendor Identification": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Permit & Licensing": {
+            "precision": 0.5555555555555556,
+            "recall": 0.5,
+            "f1": 0.5263157894736842,
+            "support": 10,
+            "true_positives": 5,
+            "false_positives": 4,
+            "false_negatives": 5
+          },
+          "Sanitation": {
+            "precision": 0.6,
+            "recall": 0.5454545454545454,
+            "f1": 0.5714285714285714,
+            "support": 11,
+            "true_positives": 6,
+            "false_positives": 4,
+            "false_negatives": 5
+          },
+          "WeightMeasures": {
+            "precision": 0.7,
+            "recall": 0.7777777777777778,
+            "f1": 0.7368421052631579,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 3,
+            "false_negatives": 2
+          },
+          "Lighting & Energy": {
+            "precision": 1.0,
+            "recall": 0.7,
+            "f1": 0.8235294117647058,
+            "support": 10,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Stall Occupancy": {
+            "precision": 0.6666666666666666,
+            "recall": 0.8888888888888888,
+            "f1": 0.7619047619047619,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 4,
+            "false_negatives": 1
+          },
+          "Stall Management": {
+            "precision": 0.875,
+            "recall": 0.7777777777777778,
+            "f1": 0.8235294117647058,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 1,
+            "false_negatives": 2
+          },
+          "Stall Construction": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Utilities": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Stall Rental": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Illegal Vendor": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Public Order": {
+            "precision": 0.5263157894736842,
+            "recall": 1.0,
+            "f1": 0.6896551724137931,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 9,
+            "false_negatives": 0
+          },
+          "Liquor": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Market Conduct": {
+            "precision": 1.0,
+            "recall": 0.7777777777777778,
+            "f1": 0.875,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2
+          },
+          "Obstruction": {
+            "precision": 0.5625,
+            "recall": 0.8181818181818182,
+            "f1": 0.6666666666666666,
+            "support": 11,
+            "true_positives": 9,
+            "false_positives": 7,
+            "false_negatives": 2
+          },
+          "DressCode": {
+            "precision": 0.6923076923076923,
+            "recall": 1.0,
+            "f1": 0.8181818181818182,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 4,
+            "false_negatives": 0
+          },
+          "Bladed Instruments": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Traffic": {
+            "precision": 0.9090909090909091,
+            "recall": 1.0,
+            "f1": 0.9523809523809523,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Porter Regulation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Promotions": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Advertising": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Signage & Streamers": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11,
+            "true_positives": 11,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Entertainment Activities": {
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 3,
+            "false_negatives": 0
+          },
+          "Lighting Facilities": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Market Rules": {
+            "precision": 0.1,
+            "recall": 0.125,
+            "f1": 0.1111111111111111,
+            "support": 8,
+            "true_positives": 1,
+            "false_positives": 9,
+            "false_negatives": 7
+          },
+          "Price Monitoring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Market Fees & Surcharges": {
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666666,
+            "support": 8,
+            "true_positives": 6,
+            "false_positives": 4,
+            "false_negatives": 2
+          },
+          "Resisting Authority": {
+            "precision": 0.875,
+            "recall": 0.7,
+            "f1": 0.7777777777777778,
+            "support": 10,
+            "true_positives": 7,
+            "false_positives": 1,
+            "false_negatives": 3
+          },
+          "General Penalties": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        }
+      },
+      "taglish": {
+        "rows": 268,
+        "labeled_rows": 260,
+        "micro": {
+          "precision": 0.7861842105263158,
+          "recall": 0.8786764705882353,
+          "f1": 0.8298611111111112,
+          "support": 272,
+          "true_positives": 239,
+          "false_positives": 65,
+          "false_negatives": 33
+        },
+        "macro_f1": 0.8410907263990939,
+        "exact_label_set_matches": 182,
+        "clear_rows": 8,
+        "clear_rows_with_predictions": 5,
+        "expected_abstention_rows": 8,
+        "abstentions_on_expected_abstention_rows": 3,
+        "positive_rows_without_predictions": 17,
+        "per_category": {
+          "Vendor Identification": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Permit & Licensing": {
+            "precision": 0.6666666666666666,
+            "recall": 0.8,
+            "f1": 0.7272727272727273,
+            "support": 10,
+            "true_positives": 8,
+            "false_positives": 4,
+            "false_negatives": 2
+          },
+          "Sanitation": {
+            "precision": 0.625,
+            "recall": 0.45454545454545453,
+            "f1": 0.5263157894736842,
+            "support": 11,
+            "true_positives": 5,
+            "false_positives": 3,
+            "false_negatives": 6
+          },
+          "WeightMeasures": {
+            "precision": 0.6923076923076923,
+            "recall": 1.0,
+            "f1": 0.8181818181818182,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 4,
+            "false_negatives": 0
+          },
+          "Lighting & Energy": {
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75,
+            "support": 10,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 4
+          },
+          "Stall Occupancy": {
+            "precision": 0.5,
+            "recall": 0.7777777777777778,
+            "f1": 0.6086956521739131,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 7,
+            "false_negatives": 2
+          },
+          "Stall Management": {
+            "precision": 0.8571428571428571,
+            "recall": 0.6666666666666666,
+            "f1": 0.75,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 1,
+            "false_negatives": 3
+          },
+          "Stall Construction": {
+            "precision": 0.7,
+            "recall": 0.7777777777777778,
+            "f1": 0.7368421052631579,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 3,
+            "false_negatives": 2
+          },
+          "Utilities": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Stall Rental": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Illegal Vendor": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Public Order": {
+            "precision": 0.6,
+            "recall": 0.9,
+            "f1": 0.72,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 6,
+            "false_negatives": 1
+          },
+          "Liquor": {
+            "precision": 0.8181818181818182,
+            "recall": 1.0,
+            "f1": 0.9,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 2,
+            "false_negatives": 0
+          },
+          "Market Conduct": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Obstruction": {
+            "precision": 0.42105263157894735,
+            "recall": 0.7272727272727273,
+            "f1": 0.5333333333333333,
+            "support": 11,
+            "true_positives": 8,
+            "false_positives": 11,
+            "false_negatives": 3
+          },
+          "DressCode": {
+            "precision": 0.6923076923076923,
+            "recall": 1.0,
+            "f1": 0.8181818181818182,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 4,
+            "false_negatives": 0
+          },
+          "Bladed Instruments": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Traffic": {
+            "precision": 0.9090909090909091,
+            "recall": 1.0,
+            "f1": 0.9523809523809523,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Porter Regulation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Promotions": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8888888888888888,
+            "f1": 0.8888888888888888,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 1,
+            "false_negatives": 1
+          },
+          "Advertising": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Signage & Streamers": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11,
+            "true_positives": 11,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Entertainment Activities": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Lighting Facilities": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Market Rules": {
+            "precision": 0.2857142857142857,
+            "recall": 0.5,
+            "f1": 0.36363636363636365,
+            "support": 8,
+            "true_positives": 4,
+            "false_positives": 10,
+            "false_negatives": 4
+          },
+          "Price Monitoring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Market Fees & Surcharges": {
+            "precision": 0.6363636363636364,
+            "recall": 0.875,
+            "f1": 0.7368421052631579,
+            "support": 8,
+            "true_positives": 7,
+            "false_positives": 4,
+            "false_negatives": 1
+          },
+          "Resisting Authority": {
+            "precision": 0.875,
+            "recall": 0.7,
+            "f1": 0.7777777777777778,
+            "support": 10,
+            "true_positives": 7,
+            "false_positives": 1,
+            "false_negatives": 3
+          },
+          "General Penalties": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "rows": 804,
+    "labeled_rows": 780,
+    "micro": {
+      "precision": 0.7050113895216401,
+      "recall": 0.758578431372549,
+      "f1": 0.730814639905549,
+      "support": 816,
+      "true_positives": 619,
+      "false_positives": 259,
+      "false_negatives": 197
+    },
+    "macro_f1": 0.7407879323032225,
+    "exact_label_set_matches": 435,
+    "clear_rows": 24,
+    "clear_rows_with_predictions": 10,
+    "expected_abstention_rows": 24,
+    "abstentions_on_expected_abstention_rows": 15,
+    "positive_rows_without_predictions": 83,
+    "per_category": {
+      "Vendor Identification": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30,
+        "true_positives": 30,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "Permit & Licensing": {
+        "precision": 0.8620689655172413,
+        "recall": 0.8333333333333334,
+        "f1": 0.847457627118644,
+        "support": 30,
+        "true_positives": 25,
+        "false_positives": 4,
+        "false_negatives": 5
+      },
+      "Sanitation": {
+        "precision": 0.696969696969697,
+        "recall": 0.696969696969697,
+        "f1": 0.696969696969697,
+        "support": 33,
+        "true_positives": 23,
+        "false_positives": 10,
+        "false_negatives": 10
+      },
+      "WeightMeasures": {
+        "precision": 0.5161290322580645,
+        "recall": 0.5925925925925926,
+        "f1": 0.5517241379310345,
+        "support": 27,
+        "true_positives": 16,
+        "false_positives": 15,
+        "false_negatives": 11
+      },
+      "Lighting & Energy": {
+        "precision": 0.9444444444444444,
+        "recall": 0.5666666666666667,
+        "f1": 0.7083333333333334,
+        "support": 30,
+        "true_positives": 17,
+        "false_positives": 1,
+        "false_negatives": 13
+      },
+      "Stall Occupancy": {
+        "precision": 0.6333333333333333,
+        "recall": 0.7037037037037037,
+        "f1": 0.6666666666666666,
+        "support": 27,
+        "true_positives": 19,
+        "false_positives": 11,
+        "false_negatives": 8
+      },
+      "Stall Management": {
+        "precision": 0.4318181818181818,
+        "recall": 0.7037037037037037,
+        "f1": 0.5352112676056338,
+        "support": 27,
+        "true_positives": 19,
+        "false_positives": 25,
+        "false_negatives": 8
+      },
+      "Stall Construction": {
+        "precision": 0.8518518518518519,
+        "recall": 0.8518518518518519,
+        "f1": 0.8518518518518519,
+        "support": 27,
+        "true_positives": 23,
+        "false_positives": 4,
+        "false_negatives": 4
+      },
+      "Utilities": {
+        "precision": 1.0,
+        "recall": 0.6296296296296297,
+        "f1": 0.7727272727272727,
+        "support": 27,
+        "true_positives": 17,
+        "false_positives": 0,
+        "false_negatives": 10
+      },
+      "Stall Rental": {
+        "precision": 0.7857142857142857,
+        "recall": 0.8148148148148148,
+        "f1": 0.8,
+        "support": 27,
+        "true_positives": 22,
+        "false_positives": 6,
+        "false_negatives": 5
+      },
+      "Illegal Vendor": {
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "f1": 0.9411764705882353,
+        "support": 27,
+        "true_positives": 24,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "Public Order": {
+        "precision": 0.7368421052631579,
+        "recall": 0.9333333333333333,
+        "f1": 0.8235294117647058,
+        "support": 30,
+        "true_positives": 28,
+        "false_positives": 10,
+        "false_negatives": 2
+      },
+      "Liquor": {
+        "precision": 0.9523809523809523,
+        "recall": 0.7407407407407407,
+        "f1": 0.8333333333333334,
+        "support": 27,
+        "true_positives": 20,
+        "false_positives": 1,
+        "false_negatives": 7
+      },
+      "Market Conduct": {
+        "precision": 1.0,
+        "recall": 0.25925925925925924,
+        "f1": 0.4117647058823529,
+        "support": 27,
+        "true_positives": 7,
+        "false_positives": 0,
+        "false_negatives": 20
+      },
+      "Obstruction": {
+        "precision": 0.4024390243902439,
+        "recall": 1.0,
+        "f1": 0.5739130434782609,
+        "support": 33,
+        "true_positives": 33,
+        "false_positives": 49,
+        "false_negatives": 0
+      },
+      "DressCode": {
+        "precision": 0.8333333333333334,
+        "recall": 0.9259259259259259,
+        "f1": 0.8771929824561403,
+        "support": 27,
+        "true_positives": 25,
+        "false_positives": 5,
+        "false_negatives": 2
+      },
+      "Bladed Instruments": {
+        "precision": 1.0,
+        "recall": 0.4074074074074074,
+        "f1": 0.5789473684210527,
+        "support": 27,
+        "true_positives": 11,
+        "false_positives": 0,
+        "false_negatives": 16
+      },
+      "Traffic": {
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058,
+        "support": 30,
+        "true_positives": 21,
+        "false_positives": 0,
+        "false_negatives": 9
+      },
+      "Porter Regulation": {
+        "precision": 0.9473684210526315,
+        "recall": 0.6666666666666666,
+        "f1": 0.782608695652174,
+        "support": 27,
+        "true_positives": 18,
+        "false_positives": 1,
+        "false_negatives": 9
+      },
+      "Promotions": {
+        "precision": 0.6785714285714286,
+        "recall": 0.7037037037037037,
+        "f1": 0.6909090909090909,
+        "support": 27,
+        "true_positives": 19,
+        "false_positives": 9,
+        "false_negatives": 8
+      },
+      "Advertising": {
+        "precision": 0.84375,
+        "recall": 0.9,
+        "f1": 0.8709677419354839,
+        "support": 30,
+        "true_positives": 27,
+        "false_positives": 5,
+        "false_negatives": 3
+      },
+      "Signage & Streamers": {
+        "precision": 0.8888888888888888,
+        "recall": 0.7272727272727273,
+        "f1": 0.8,
+        "support": 33,
+        "true_positives": 24,
+        "false_positives": 3,
+        "false_negatives": 9
+      },
+      "Entertainment Activities": {
+        "precision": 0.7714285714285715,
+        "recall": 1.0,
+        "f1": 0.8709677419354839,
+        "support": 27,
+        "true_positives": 27,
+        "false_positives": 8,
+        "false_negatives": 0
+      },
+      "Lighting Facilities": {
+        "precision": 0.48,
+        "recall": 0.8888888888888888,
+        "f1": 0.6233766233766234,
+        "support": 27,
+        "true_positives": 24,
+        "false_positives": 26,
+        "false_negatives": 3
+      },
+      "Market Rules": {
+        "precision": 0.3,
+        "recall": 0.875,
+        "f1": 0.44680851063829785,
+        "support": 24,
+        "true_positives": 21,
+        "false_positives": 49,
+        "false_negatives": 3
+      },
+      "Price Monitoring": {
+        "precision": 0.7142857142857143,
+        "recall": 0.3333333333333333,
+        "f1": 0.45454545454545453,
+        "support": 30,
+        "true_positives": 10,
+        "false_positives": 4,
+        "false_negatives": 20
+      },
+      "Market Fees & Surcharges": {
+        "precision": 1.0,
+        "recall": 0.9166666666666666,
+        "f1": 0.9565217391304348,
+        "support": 24,
+        "true_positives": 22,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "Resisting Authority": {
+        "precision": 0.6578947368421053,
+        "recall": 0.8333333333333334,
+        "f1": 0.7352941176470589,
+        "support": 30,
+        "true_positives": 25,
+        "false_positives": 13,
+        "false_negatives": 5
+      },
+      "General Penalties": {
+        "precision": 1.0,
+        "recall": 0.9166666666666666,
+        "f1": 0.9565217391304348,
+        "support": 24,
+        "true_positives": 22,
+        "false_positives": 0,
+        "false_negatives": 2
+      }
+    },
+    "by_language": {
+      "fil": {
+        "rows": 268,
+        "labeled_rows": 260,
+        "micro": {
+          "precision": 0.6941580756013745,
+          "recall": 0.7426470588235294,
+          "f1": 0.7175843694493783,
+          "support": 272,
+          "true_positives": 202,
+          "false_positives": 89,
+          "false_negatives": 70
+        },
+        "macro_f1": 0.7240760206613336,
+        "exact_label_set_matches": 138,
+        "clear_rows": 8,
+        "clear_rows_with_predictions": 3,
+        "expected_abstention_rows": 8,
+        "abstentions_on_expected_abstention_rows": 6,
+        "positive_rows_without_predictions": 32,
+        "per_category": {
+          "Vendor Identification": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Permit & Licensing": {
+            "precision": 0.875,
+            "recall": 0.7,
+            "f1": 0.7777777777777778,
+            "support": 10,
+            "true_positives": 7,
+            "false_positives": 1,
+            "false_negatives": 3
+          },
+          "Sanitation": {
+            "precision": 0.6363636363636364,
+            "recall": 0.6363636363636364,
+            "f1": 0.6363636363636364,
+            "support": 11,
+            "true_positives": 7,
+            "false_positives": 4,
+            "false_negatives": 4
+          },
+          "WeightMeasures": {
+            "precision": 0.5833333333333334,
+            "recall": 0.7777777777777778,
+            "f1": 0.6666666666666666,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 5,
+            "false_negatives": 2
+          },
+          "Lighting & Energy": {
+            "precision": 1.0,
+            "recall": 0.7,
+            "f1": 0.8235294117647058,
+            "support": 10,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Stall Occupancy": {
+            "precision": 0.6,
+            "recall": 0.6666666666666666,
+            "f1": 0.631578947368421,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 4,
+            "false_negatives": 3
+          },
+          "Stall Management": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 9,
+            "false_negatives": 0
+          },
+          "Stall Construction": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8888888888888888,
+            "f1": 0.8888888888888888,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 1,
+            "false_negatives": 1
+          },
+          "Utilities": {
+            "precision": 1.0,
+            "recall": 0.4444444444444444,
+            "f1": 0.6153846153846154,
+            "support": 9,
+            "true_positives": 4,
+            "false_positives": 0,
+            "false_negatives": 5
+          },
+          "Stall Rental": {
+            "precision": 0.7,
+            "recall": 0.7777777777777778,
+            "f1": 0.7368421052631579,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 3,
+            "false_negatives": 2
+          },
+          "Illegal Vendor": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Public Order": {
+            "precision": 0.75,
+            "recall": 0.9,
+            "f1": 0.8181818181818182,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 3,
+            "false_negatives": 1
+          },
+          "Liquor": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Market Conduct": {
+            "precision": 1.0,
+            "recall": 0.1111111111111111,
+            "f1": 0.2,
+            "support": 9,
+            "true_positives": 1,
+            "false_positives": 0,
+            "false_negatives": 8
+          },
+          "Obstruction": {
+            "precision": 0.36666666666666664,
+            "recall": 1.0,
+            "f1": 0.5365853658536586,
+            "support": 11,
+            "true_positives": 11,
+            "false_positives": 19,
+            "false_negatives": 0
+          },
+          "DressCode": {
+            "precision": 0.7272727272727273,
+            "recall": 0.8888888888888888,
+            "f1": 0.8,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 3,
+            "false_negatives": 1
+          },
+          "Bladed Instruments": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Traffic": {
+            "precision": 1.0,
+            "recall": 0.4,
+            "f1": 0.5714285714285714,
+            "support": 10,
+            "true_positives": 4,
+            "false_positives": 0,
+            "false_negatives": 6
+          },
+          "Porter Regulation": {
+            "precision": 0.875,
+            "recall": 0.7777777777777778,
+            "f1": 0.8235294117647058,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 1,
+            "false_negatives": 2
+          },
+          "Promotions": {
+            "precision": 0.8571428571428571,
+            "recall": 0.6666666666666666,
+            "f1": 0.75,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 1,
+            "false_negatives": 3
+          },
+          "Advertising": {
+            "precision": 0.75,
+            "recall": 0.9,
+            "f1": 0.8181818181818182,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 3,
+            "false_negatives": 1
+          },
+          "Signage & Streamers": {
+            "precision": 0.8,
+            "recall": 0.7272727272727273,
+            "f1": 0.7619047619047619,
+            "support": 11,
+            "true_positives": 8,
+            "false_positives": 2,
+            "false_negatives": 3
+          },
+          "Entertainment Activities": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Lighting Facilities": {
+            "precision": 0.5,
+            "recall": 0.6666666666666666,
+            "f1": 0.5714285714285714,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 6,
+            "false_negatives": 3
+          },
+          "Market Rules": {
+            "precision": 0.30434782608695654,
+            "recall": 0.875,
+            "f1": 0.45161290322580644,
+            "support": 8,
+            "true_positives": 7,
+            "false_positives": 16,
+            "false_negatives": 1
+          },
+          "Price Monitoring": {
+            "precision": 0.6,
+            "recall": 0.3,
+            "f1": 0.4,
+            "support": 10,
+            "true_positives": 3,
+            "false_positives": 2,
+            "false_negatives": 7
+          },
+          "Market Fees & Surcharges": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "support": 8,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Resisting Authority": {
+            "precision": 0.6,
+            "recall": 0.9,
+            "f1": 0.72,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 6,
+            "false_negatives": 1
+          },
+          "General Penalties": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 8,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 2
+          }
+        }
+      },
+      "en": {
+        "rows": 268,
+        "labeled_rows": 260,
+        "micro": {
+          "precision": 0.7079037800687286,
+          "recall": 0.7573529411764706,
+          "f1": 0.7317939609236235,
+          "support": 272,
+          "true_positives": 206,
+          "false_positives": 85,
+          "false_negatives": 66
+        },
+        "macro_f1": 0.7360498755956213,
+        "exact_label_set_matches": 149,
+        "clear_rows": 8,
+        "clear_rows_with_predictions": 4,
+        "expected_abstention_rows": 8,
+        "abstentions_on_expected_abstention_rows": 5,
+        "positive_rows_without_predictions": 24,
+        "per_category": {
+          "Vendor Identification": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Permit & Licensing": {
+            "precision": 0.8181818181818182,
+            "recall": 0.9,
+            "f1": 0.8571428571428571,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 2,
+            "false_negatives": 1
+          },
+          "Sanitation": {
+            "precision": 0.7272727272727273,
+            "recall": 0.7272727272727273,
+            "f1": 0.7272727272727273,
+            "support": 11,
+            "true_positives": 8,
+            "false_positives": 3,
+            "false_negatives": 3
+          },
+          "WeightMeasures": {
+            "precision": 0.5,
+            "recall": 0.4444444444444444,
+            "f1": 0.47058823529411764,
+            "support": 9,
+            "true_positives": 4,
+            "false_positives": 4,
+            "false_negatives": 5
+          },
+          "Lighting & Energy": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 10,
+            "true_positives": 5,
+            "false_positives": 0,
+            "false_negatives": 5
+          },
+          "Stall Occupancy": {
+            "precision": 0.7142857142857143,
+            "recall": 0.5555555555555556,
+            "f1": 0.625,
+            "support": 9,
+            "true_positives": 5,
+            "false_positives": 2,
+            "false_negatives": 4
+          },
+          "Stall Management": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5555555555555556,
+            "f1": 0.4166666666666667,
+            "support": 9,
+            "true_positives": 5,
+            "false_positives": 10,
+            "false_negatives": 4
+          },
+          "Stall Construction": {
+            "precision": 0.8,
+            "recall": 0.8888888888888888,
+            "f1": 0.8421052631578947,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 2,
+            "false_negatives": 1
+          },
+          "Utilities": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Stall Rental": {
+            "precision": 0.875,
+            "recall": 0.7777777777777778,
+            "f1": 0.8235294117647058,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 1,
+            "false_negatives": 2
+          },
+          "Illegal Vendor": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Public Order": {
+            "precision": 0.75,
+            "recall": 0.9,
+            "f1": 0.8181818181818182,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 3,
+            "false_negatives": 1
+          },
+          "Liquor": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Market Conduct": {
+            "precision": 1.0,
+            "recall": 0.2222222222222222,
+            "f1": 0.36363636363636365,
+            "support": 9,
+            "true_positives": 2,
+            "false_positives": 0,
+            "false_negatives": 7
+          },
+          "Obstruction": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "support": 11,
+            "true_positives": 11,
+            "false_positives": 11,
+            "false_negatives": 0
+          },
+          "DressCode": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Bladed Instruments": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "support": 9,
+            "true_positives": 3,
+            "false_positives": 0,
+            "false_negatives": 6
+          },
+          "Traffic": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "support": 10,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 2
+          },
+          "Porter Regulation": {
+            "precision": 1.0,
+            "recall": 0.5555555555555556,
+            "f1": 0.7142857142857143,
+            "support": 9,
+            "true_positives": 5,
+            "false_positives": 0,
+            "false_negatives": 4
+          },
+          "Promotions": {
+            "precision": 0.5384615384615384,
+            "recall": 0.7777777777777778,
+            "f1": 0.6363636363636364,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 6,
+            "false_negatives": 2
+          },
+          "Advertising": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 1
+          },
+          "Signage & Streamers": {
+            "precision": 1.0,
+            "recall": 0.7272727272727273,
+            "f1": 0.8421052631578947,
+            "support": 11,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Entertainment Activities": {
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1": 0.75,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 6,
+            "false_negatives": 0
+          },
+          "Lighting Facilities": {
+            "precision": 0.47368421052631576,
+            "recall": 1.0,
+            "f1": 0.6428571428571429,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 10,
+            "false_negatives": 0
+          },
+          "Market Rules": {
+            "precision": 0.28,
+            "recall": 0.875,
+            "f1": 0.42424242424242425,
+            "support": 8,
+            "true_positives": 7,
+            "false_positives": 18,
+            "false_negatives": 1
+          },
+          "Price Monitoring": {
+            "precision": 0.6,
+            "recall": 0.3,
+            "f1": 0.4,
+            "support": 10,
+            "true_positives": 3,
+            "false_positives": 2,
+            "false_negatives": 7
+          },
+          "Market Fees & Surcharges": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "support": 8,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Resisting Authority": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 10,
+            "true_positives": 8,
+            "false_positives": 2,
+            "false_negatives": 2
+          },
+          "General Penalties": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        }
+      },
+      "taglish": {
+        "rows": 268,
+        "labeled_rows": 260,
+        "micro": {
+          "precision": 0.7128378378378378,
+          "recall": 0.7757352941176471,
+          "f1": 0.7429577464788732,
+          "support": 272,
+          "true_positives": 211,
+          "false_positives": 85,
+          "false_negatives": 61
+        },
+        "macro_f1": 0.7532181451826929,
+        "exact_label_set_matches": 148,
+        "clear_rows": 8,
+        "clear_rows_with_predictions": 3,
+        "expected_abstention_rows": 8,
+        "abstentions_on_expected_abstention_rows": 4,
+        "positive_rows_without_predictions": 27,
+        "per_category": {
+          "Vendor Identification": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Permit & Licensing": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 1
+          },
+          "Sanitation": {
+            "precision": 0.7272727272727273,
+            "recall": 0.7272727272727273,
+            "f1": 0.7272727272727273,
+            "support": 11,
+            "true_positives": 8,
+            "false_positives": 3,
+            "false_negatives": 3
+          },
+          "WeightMeasures": {
+            "precision": 0.45454545454545453,
+            "recall": 0.5555555555555556,
+            "f1": 0.5,
+            "support": 9,
+            "true_positives": 5,
+            "false_positives": 6,
+            "false_negatives": 4
+          },
+          "Lighting & Energy": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625,
+            "support": 10,
+            "true_positives": 5,
+            "false_positives": 1,
+            "false_negatives": 5
+          },
+          "Stall Occupancy": {
+            "precision": 0.6153846153846154,
+            "recall": 0.8888888888888888,
+            "f1": 0.7272727272727273,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 5,
+            "false_negatives": 1
+          },
+          "Stall Management": {
+            "precision": 0.45454545454545453,
+            "recall": 0.5555555555555556,
+            "f1": 0.5,
+            "support": 9,
+            "true_positives": 5,
+            "false_positives": 6,
+            "false_negatives": 4
+          },
+          "Stall Construction": {
+            "precision": 0.875,
+            "recall": 0.7777777777777778,
+            "f1": 0.8235294117647058,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 1,
+            "false_negatives": 2
+          },
+          "Utilities": {
+            "precision": 1.0,
+            "recall": 0.7777777777777778,
+            "f1": 0.875,
+            "support": 9,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2
+          },
+          "Stall Rental": {
+            "precision": 0.8,
+            "recall": 0.8888888888888888,
+            "f1": 0.8421052631578947,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 2,
+            "false_negatives": 1
+          },
+          "Illegal Vendor": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Public Order": {
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1": 0.8333333333333334,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 4,
+            "false_negatives": 0
+          },
+          "Liquor": {
+            "precision": 1.0,
+            "recall": 0.5555555555555556,
+            "f1": 0.7142857142857143,
+            "support": 9,
+            "true_positives": 5,
+            "false_positives": 0,
+            "false_negatives": 4
+          },
+          "Market Conduct": {
+            "precision": 1.0,
+            "recall": 0.4444444444444444,
+            "f1": 0.6153846153846154,
+            "support": 9,
+            "true_positives": 4,
+            "false_positives": 0,
+            "false_negatives": 5
+          },
+          "Obstruction": {
+            "precision": 0.36666666666666664,
+            "recall": 1.0,
+            "f1": 0.5365853658536586,
+            "support": 11,
+            "true_positives": 11,
+            "false_positives": 19,
+            "false_negatives": 0
+          },
+          "DressCode": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8888888888888888,
+            "f1": 0.8888888888888888,
+            "support": 9,
+            "true_positives": 8,
+            "false_positives": 1,
+            "false_negatives": 1
+          },
+          "Bladed Instruments": {
+            "precision": 1.0,
+            "recall": 0.2222222222222222,
+            "f1": 0.36363636363636365,
+            "support": 9,
+            "true_positives": 2,
+            "false_positives": 0,
+            "false_negatives": 7
+          },
+          "Traffic": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 1
+          },
+          "Porter Regulation": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 3
+          },
+          "Promotions": {
+            "precision": 0.75,
+            "recall": 0.6666666666666666,
+            "f1": 0.7058823529411765,
+            "support": 9,
+            "true_positives": 6,
+            "false_positives": 2,
+            "false_negatives": 3
+          },
+          "Advertising": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9,
+            "support": 10,
+            "true_positives": 9,
+            "false_positives": 1,
+            "false_negatives": 1
+          },
+          "Signage & Streamers": {
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8,
+            "support": 11,
+            "true_positives": 8,
+            "false_positives": 1,
+            "false_negatives": 3
+          },
+          "Entertainment Activities": {
+            "precision": 0.8181818181818182,
+            "recall": 1.0,
+            "f1": 0.9,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 2,
+            "false_negatives": 0
+          },
+          "Lighting Facilities": {
+            "precision": 0.47368421052631576,
+            "recall": 1.0,
+            "f1": 0.6428571428571429,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 10,
+            "false_negatives": 0
+          },
+          "Market Rules": {
+            "precision": 0.3181818181818182,
+            "recall": 0.875,
+            "f1": 0.4666666666666667,
+            "support": 8,
+            "true_positives": 7,
+            "false_positives": 15,
+            "false_negatives": 1
+          },
+          "Price Monitoring": {
+            "precision": 1.0,
+            "recall": 0.4,
+            "f1": 0.5714285714285714,
+            "support": 10,
+            "true_positives": 4,
+            "false_positives": 0,
+            "false_negatives": 6
+          },
+          "Market Fees & Surcharges": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Resisting Authority": {
+            "precision": 0.6153846153846154,
+            "recall": 0.8,
+            "f1": 0.6956521739130435,
+            "support": 10,
+            "true_positives": 8,
+            "false_positives": 5,
+            "false_negatives": 2
+          },
+          "General Penalties": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        }
+      }
+    }
+  }
+}

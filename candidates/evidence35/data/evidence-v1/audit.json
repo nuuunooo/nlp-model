@@ -1,0 +1,1918 @@
+{
+  "source": "C:\\Users\\admin\\Downloads\\marikina_synthetic_dataset_v2.zip",
+  "source_sha256": "1861b535d39be0799562a14273018f87c92c6cd434c61e9d33f100f8b4e8cb8d",
+  "states": [
+    "supported",
+    "compliant",
+    "insufficient"
+  ],
+  "method": "Single-incident source scenarios only. No multi-label sentence inheritance. Fitting uses original train partition; validation uses original validation partition. Structured observations are annotation/audit metadata, never model inputs.",
+  "independence": "Synthetic development labels and explicit fit-only counterfactuals; not independent operational gold.",
+  "split_counts": {
+    "train": {
+      "examples": 10416,
+      "states": {
+        "supported": 2040,
+        "insufficient": 6300,
+        "compliant": 2076
+      },
+      "kinds": {
+        "original": 2256,
+        "unrelated_target": 4080,
+        "unconfirmed_counterfactual": 2040,
+        "checked_compliance_counterfactual": 2040
+      },
+      "families": 196,
+      "original_positive_support": {
+        "Vendor Identification": 72,
+        "Permit & Licensing": 72,
+        "Sanitation": 72,
+        "WeightMeasures": 72,
+        "Lighting & Energy": 72,
+        "Stall Occupancy": 24,
+        "Stall Management": 72,
+        "Stall Construction": 72,
+        "Utilities": 72,
+        "Stall Rental": 72,
+        "Illegal Vendor": 72,
+        "Public Order": 72,
+        "Liquor": 72,
+        "Market Conduct": 72,
+        "Obstruction": 72,
+        "DressCode": 72,
+        "Bladed Instruments": 72,
+        "Traffic": 72,
+        "Porter Regulation": 72,
+        "Promotions": 72,
+        "Advertising": 72,
+        "Signage & Streamers": 72,
+        "Entertainment Activities": 72,
+        "Lighting Facilities": 72,
+        "Market Rules": 72,
+        "Price Monitoring": 72,
+        "Market Fees & Surcharges": 72,
+        "Resisting Authority": 72,
+        "General Penalties": 72
+      }
+    },
+    "validation": {
+      "examples": 2124,
+      "states": {
+        "supported": 684,
+        "insufficient": 1428,
+        "compliant": 12
+      },
+      "kinds": {
+        "original": 756,
+        "unrelated_target": 1368
+      },
+      "families": 73,
+      "original_positive_support": {
+        "Vendor Identification": 24,
+        "Permit & Licensing": 24,
+        "Sanitation": 24,
+        "WeightMeasures": 24,
+        "Lighting & Energy": 24,
+        "Stall Occupancy": 24,
+        "Stall Management": 24,
+        "Stall Construction": 24,
+        "Utilities": 24,
+        "Stall Rental": 24,
+        "Illegal Vendor": 24,
+        "Public Order": 24,
+        "Liquor": 24,
+        "Market Conduct": 24,
+        "Obstruction": 24,
+        "DressCode": 24,
+        "Bladed Instruments": 24,
+        "Traffic": 24,
+        "Porter Regulation": 24,
+        "Promotions": 24,
+        "Advertising": 12,
+        "Signage & Streamers": 24,
+        "Entertainment Activities": 24,
+        "Lighting Facilities": 24,
+        "Market Rules": 24,
+        "Price Monitoring": 24,
+        "Market Fees & Surcharges": 24,
+        "Resisting Authority": 24,
+        "General Penalties": 24
+      }
+    }
+  },
+  "leakage_checks": {
+    "shared_families": 0,
+    "shared_original_descriptions": 0,
+    "shared_model_inputs": 0
+  },
+  "exclusions": [
+    {
+      "source_id": "SYN-06-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-04",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-04",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-04",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-05",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-05",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-05",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-06",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-06",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-06",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-07",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-07",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-07",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-08",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-08",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-08",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-09",
+      "language": "fil",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-09",
+      "language": "en",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-09",
+      "language": "taglish",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-10",
+      "language": "fil",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-10",
+      "language": "en",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-10",
+      "language": "taglish",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-11",
+      "language": "fil",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-11",
+      "language": "en",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-11",
+      "language": "taglish",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-12",
+      "language": "fil",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-12",
+      "language": "en",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-12",
+      "language": "taglish",
+      "split": "train",
+      "reason": "dwelling_category_boundary_unresolved"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-13",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-13",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-13",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-14",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-14",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-14",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-15",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-15",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-15",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-16",
+      "language": "fil",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-16",
+      "language": "en",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-06-TRAIN-16",
+      "language": "taglish",
+      "split": "train",
+      "reason": "responsible_party_not_supported"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-01",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-01",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-01",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-02",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-02",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-02",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-03",
+      "language": "fil",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-03",
+      "language": "en",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-TRAIN-03",
+      "language": "taglish",
+      "split": "train",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-05",
+      "language": "fil",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-05",
+      "language": "en",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-05",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-06",
+      "language": "fil",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-06",
+      "language": "en",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-06",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-07",
+      "language": "fil",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-07",
+      "language": "en",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-07",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-08",
+      "language": "fil",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-08",
+      "language": "en",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-21-VALIDATION-08",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "consent_absence_only_in_requirement"
+    },
+    {
+      "source_id": "SYN-01x02-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x02-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-01x03-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-02x26-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x04-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-03x15-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x24-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-05x09-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-06x10-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-07x15-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-08x22-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-11x18-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x13-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-12x28-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-14x26-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-15x18-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-16x19-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-17x28-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-20x21-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-21x22-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-VALIDATION-01",
+      "language": "fil",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-VALIDATION-01",
+      "language": "en",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    },
+    {
+      "source_id": "SYN-22x23-VALIDATION-01",
+      "language": "taglish",
+      "split": "validation",
+      "reason": "multi_incident_requires_span_labels"
+    }
+  ],
+  "exclusion_counts": {
+    "responsible_party_not_supported": 36,
+    "dwelling_category_boundary_unresolved": 12,
+    "multi_incident_requires_span_labels": 240,
+    "consent_absence_only_in_requirement": 12
+  },
+  "operational_csv_usage": "The inspected 150-record market CSV remains development regression data and is not used to fit or select this verifier cutoff.",
+  "test_usage": "No test descriptions or test labels read by dataset preparation."
+}

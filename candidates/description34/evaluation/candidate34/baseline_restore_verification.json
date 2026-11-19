@@ -1,0 +1,12 @@
+{
+  "default_runtime": "3.3.0-description-only",
+  "restored_runtime_matches_frozen_snapshot": true,
+  "original_model_head_and_thresholds_unchanged": true,
+  "baseline_decisions_and_sources_replayed_exactly": 150,
+  "baseline_unit_tests_passed": 25,
+  "new_user_workflow_steps": 0,
+  "isolated_dev_db_restored_to_baseline": true,
+  "candidate_fixtures_remaining": 0,
+  "candidate_pipeline_rows_remaining": 0,
+  "temporary_postgres_stopped": true
+}
